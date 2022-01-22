@@ -15,13 +15,13 @@
         svg:hover{
         }
         .color{
-            fill:rgb(25, 25, 91);
+            fill:#004176;
         }
         .color:hover{
             fill: rgb(233, 115, 72);
             pointer-events: all;
             stroke: 2px;
-            color:rgb(25, 25, 91);
+            color: #004176;
         }
         img.header{
             width:100%;
@@ -31,6 +31,12 @@
             font-family: Roboto, "Open Sans", sans-serif;
             font-size: 24px;
         }
+        image{
+        }
+        image:hover{
+            opacity:1;
+        }
+        
 
     </style>
 
@@ -73,7 +79,7 @@
             .padding(4)
             (root)
         
-        console.log(root.leaves())
+       // console.log(root.leaves())
           // use this information to add rectangles:
           svg
             .selectAll("rect")
@@ -95,10 +101,11 @@
         .attr("xlink:href", function(d){return d.data.link})
             .append("svg:image")
             .attr("xlink:href",function(d){return d.data.img}) //"https://www.w3.org/comm/assets/icons/handshake.png")
-            .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
-            .attr("y", function(d){ return d.y0+30})    // +20 to adjust position (lower)
+            .attr("x", function(d){ console.log(d); return d.x0})    // +10 to adjust position (more right)
+            .attr("y", function(d){ return d.y0})    // +20 to adjust position (lower)
             .attr('width', function (d) { return (d.x1 - d.x0)/2; })
             .attr('height', function (d) { return (d.y1 - d.y0)/2; })
+            .attr('opacity', ".5")
 
 // root.children.forEach(child => console.log(child.data.BriefTitle ));
   
@@ -131,8 +138,8 @@
             .selectAll("tspan")
             .data(function(d) { return d.data.BriefTitle.split(" ") }) //d.data.BriefTitle.split(/(?=[A-Z][^A-Z])/g) })
             .enter().append("tspan")
-         //   .attr("dx", function(d){ return this.parentNode.getAttribute('x')})    // +10 to adjust position (more right)
-            .attr("y", function(d){ console.log( this.parentNode.getBoundingClientRect().top); return this.parentNode.getAttribute('y')}) 
+           .attr("dx", function(d,i){ return this.parentNode.getAttribute('x')*-i})    // +10 to adjust position (more right)
+            .attr("dy", function(d){  return 15}) //console.log( this.parentNode.getBoundingClientRect());
             .text(function(d) { return d; });
         })
     }
