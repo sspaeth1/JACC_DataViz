@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
+    <title>Data Viz JACC: top 10</title>
+</head>
+<body>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@100;300;700&display=swap');
+
+body,
+div {
+}
+.container{    
+margin:1%;
+}
+.treemap .node {
+    font-size: 70%;
+    line-height: 150%;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 1%;
+    background: #004176;
+    transition: color 0.5s;
+    border:2px solid #fff;
+    color:#fff;
+}
+.treemap .node:hover {
+    background: #00ae81;
+    color: #c8f5e9;
+    transition: background 1s;
+}
+
+.treemap{
+    width: 95%;
+    position: absolute;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.node p{
+    padding-left:10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.node h3{
+    font-family: "Roboto", sans-serif;
+    padding-left:5px;
+    padding-right:5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.1em;
+
+}
+
+.treeImage{
+    position: relative;
+    display:block;
+    margin:auto;
+    margin-top:2%;
+    height: 90px;
+    border-radius: 5%;
+    max-width: 100%;
+box-shadow: 2px 2px 5px rgb(26, 27, 55);
+box-shadow: -2px -2px 5px rgb(175, 176, 225);
+
+}
+.usage{
+    color:rgb(150, 183, 189);
+    font-weight: 200;
+}
+.treeImage:hover{
+    height: 100px;
+    left:0;
+    transition: height .5s;
+}
+img.header{
+            width:100%;
+        }
+        .page-title{
+            margin-bottom: 3px;
+            font-family: 'Roboto', "Open Sans", sans-serif;
+            font-size: 24px;
+            margin-left:15px;
+            font-weight: 700;
+        }
+
+@media screen and (max-width:600px) {
+    .treemap .node {
+    font-size: 50%;
+    }
+    .treeImage{
+        height:75px;
+    }
+}
+</style>
+<img src="./build/imgs/header.jpg" alt="" class="header">
+<h1 class="page-title"><em>JACC</em> Journals Most Read Articles From 2021</h1>
+
+
+<div class="container">
+    <div class="treemap"></div>
+
+ </div>
+
+<script type="module">
+
+var data = {
+  "name": "cluster",
+  "children": [
+    { 
+        "name": "CVD and Cancer",
+         "usage": "9,956",
+          "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2020.12.003",
+          "image":"./build/imgs/Ho-JCO110820-0479DR.jpg",
+          "usageSD":5415
+    },
+    { 
+        "name": "Mitochondrial Transfer Mitigates Anthracycline Induced Cardiomyopathy",
+         "usage": "9,287", 
+         "link":"https://www.jacc.org/doi/10.1016/j.jaccao.2021.05.006",
+         "image":"./build/imgs/Yang-JCO031421-0103DR.jpg",
+         "usageSD":4806
+    },
+    { 
+        "name": "Heart Disease After Breast Cancer Irradiation", 
+        "usage": "9,197" , 
+        "link":"https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.008",
+        "image":"./build/imgs/Watt-JCO051121-0237DR.jpg",
+        "usageSD":4725
+    },
+    { 
+        "name": "Venous and Arterial Thromboembolism in Patients With Cancer", 
+        "usage": "9,039", 
+        "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.03.001",
+        "image":"./build/imgs/Khorana-JCO111420-0488RR.jpg",
+        "usageSD":4581
+    },
+    { 
+        "name": "Radiation-Induced Cardiac Toxicity", 
+        "usage": "8,701",
+         "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.007",
+         "image":"./build/imgs/Bergom-JCO050421-0224DR.jpg",
+         "usageSD":4274
+    },
+    { 
+        "name": "Cardiovascular Manifestations From Therapeutic Radiation", 
+        "usage": "8,267", 
+        "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.003",
+        "image":"./build/imgs/Mitchell JCO040221-0140DR.jpg",
+        "usageSD":3879
+    },
+    { 
+        "name": "Cardiotoxicity",
+         "usage": "7,305", 
+         "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2020.11.012",
+         "image":"./build/imgs/Neilan-JCO080320-0324DR.jpg",
+         "usageSD":3005
+    },
+    { 
+        "name": "Cardio-Oncology Echocardiography Protocol for Anthracyclines and/or Trastuzumab",
+         "usage": "6,901", 
+         "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.01.011",
+         "image":"./build/imgs/Dobson-JCO080420-0329DRRR CI.jpg",
+         "usageSD":2637
+    },
+    { 
+        "name": "Sustained Increases In Igfbp-7 May Be Related To Doxorubicin In Breast Cancer Patients", 
+        "usage": "6,300", 
+        "link":"https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.005",
+        "image":"./build/imgs/Ky-JCO052821-0264DR.jpg",
+        "usageSD":2091
+    },
+    { 
+        "name": "TAVR vs SAVR After Chest Radiation", 
+        "usage": "4,763", 
+        "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.005",
+        "image":"./build/imgs/Kaneko JCO050921-0233DRR.jpg",
+        "usageSD":694
+    }
+  ]
+};
+
+  var width = 100,
+     height = 80;
+var treemap =
+  d3.layout.treemap()
+  .size([width, height])
+  .padding(1)
+  .value(function(d) { return d.usageSD; });
+
+var div = d3.select(".treemap");
+
+function position() {
+  this
+//   .style("left", function(d) { return d.x0 + "px"; })
+//     .style("top", function(d) { return d.y0 + "px"; })
+//     .style("width", function(d) { return d.x1 - d.x0 + "px"; })
+//     .style("height", function(d) { return d.y1 - d.y0 + "px"; })
+    .style("left", function(d) { return d.x + "%"; })
+    .style("top", function(d) { return d.y + "%"; })
+    .style("width", function(d) { return d.dx + "%"; })
+    .style("height", function(d) { return d.dy + "%"; });
+}
+
+function getLabel(d) {
+  return d.name
+}
+
+function displayUsage(d){
+    return "Usage: " + d.usage;
+}
+
+var node =
+  div.datum(data).selectAll(".node")
+  .data(treemap.nodes)
+  .enter()
+  .append("a")
+  .attr('href', function(d){return d.link })
+  .append("div")
+  .attr("class", "node")
+  .call(position)
+  .append("h3")
+  .text(getLabel)
+  .append('p')
+  .attr('class', 'usage')
+  .text(displayUsage)
+  .append("img")
+  .attr('src', function(d){return d.image})
+  .attr('class', 'treeImage')
+  .style("height", "auto")
+
+
+  console.log(data  );
+        </script>
+</body>
+</html>
