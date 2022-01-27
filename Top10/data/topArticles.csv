@@ -1,12 +1,12 @@
-﻿BriefTitle,parent,usageBase,img,link,usage
-JACC,,,,,
-CVD and Cancer,JACC,9956,./build/imgs/Ho-JCO110820-0479DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2020.12.003,5414.545455
-Mitochondrial Transfer Mitigates Anthracycline Induced Cardiomyopathy,JACC,9287,./build/imgs/Yang-JCO031421-0103DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.05.006,4806.363636
-Heart Disease After Breast Cancer Irradiation,JACC,9197,./build/imgs/Watt-JCO051121-0237DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.008,4724.545455
-Venous and Arterial Thromboembolism in Patients With Cancer,JACC,9039,./build/imgs/Khorana-JCO111420-0488RR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.03.001,4580.909091
-Radiation-Induced Cardiac Toxicity,JACC,8701,./build/imgs/Bergom-JCO050421-0224DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.007,4273.636364
-Cardiovascular Manifestations From Therapeutic Radiation,JACC,8267,./build/imgs/Mitchell JCO040221-0140DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.003,3879.090909
-Cardiotoxicity,JACC,7305,./build/imgs/Neilan-JCO080320-0324DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2020.11.012,3004.545455
-Cardio-Oncology Echocardiography Protocol for Anthracyclines and/or Trastuzumab,JACC,6901,./build/imgs/Dobson-JCO080420-0329DRRR CI.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.01.011,2637.272727
-Sustained Increases In Igfbp-7 May Be Related To Doxorubicin In Breast Cancer Patients  ,JACC,6300,./build/imgs/Ky-JCO052821-0264DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.005,2090.909091
-TAVR vs SAVR After Chest Radiation,JACC,4763,./build/imgs/Kaneko JCO050921-0233DRR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.005,693.6363636
+﻿BriefTitle,parent,usageBase,img,link,usage,C3-2000-0.7
+JACC,,,,,,
+CVD and Cancer,JACC,9956,./build/imgs/Ho-JCO110820-0479DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2020.12.003,11366,5414.545455
+Mitochondrial Transfer Mitigates Anthracycline Induced Cardiomyopathy,JACC,9287,./build/imgs/Yang-JCO031421-0103DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.05.006,10410,4806.363636
+Heart Disease After Breast Cancer Irradiation,JACC,9197,./build/imgs/Watt-JCO051121-0237DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.008,10281,4724.545455
+Venous and Arterial Thromboembolism in Patients With Cancer,JACC,9039,./build/imgs/Khorana-JCO111420-0488RR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.03.001,10056,4580.909091
+Radiation-Induced Cardiac Toxicity,JACC,8701,./build/imgs/Bergom-JCO050421-0224DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.007,9573,4273.636364
+Cardiovascular Manifestations From Therapeutic Radiation,JACC,8267,./build/imgs/Mitchell JCO040221-0140DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.003,8953,3879.090909
+Cardiotoxicity,JACC,7305,./build/imgs/Neilan-JCO080320-0324DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2020.11.012,7579,3004.545455
+Cardio-Oncology Echocardiography Protocol for Anthracyclines and/or Trastuzumab,JACC,6901,./build/imgs/Dobson-JCO080420-0329DRRR CI.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.01.011,7001,2637.272727
+Sustained Increases In Igfbp-7 May Be Related To Doxorubicin In Breast Cancer Patients  ,JACC,6300,./build/imgs/Ky-JCO052821-0264DR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.005,6143,2090.909091
+TAVR vs SAVR After Chest Radiation,JACC,4763,./build/imgs/Kaneko JCO050921-0233DRR.jpg,https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.005,3947,693.6363636

@@ -64,7 +64,7 @@ margin:1%;
     margin:auto;
     margin-top:2%;
     height: 90px;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     max-width: 100%;
 box-shadow: 2px 2px 5px rgb(26, 27, 55);
 box-shadow: -2px -2px 5px rgb(175, 176, 225);
@@ -77,7 +77,9 @@ box-shadow: -2px -2px 5px rgb(175, 176, 225);
 .treeImage:hover{
     height: 100px;
     left:0;
+    max-width: 90%;
     transition: height .5s;
+    transition: max-width .5s;
 }
 img.header{
             width:100%;
@@ -130,7 +132,6 @@ img.header{
 <img src="./build/imgs/header.jpg" alt="" class="header">
 <h1 class="page-title"><em>JACC</em> Journals Most Read Articles From 2021</h1>
 
-
 <div class="container">
     <div class="treemap"></div>
 
@@ -142,74 +143,74 @@ var data = {
   "name": "cluster",
   "children": [
     { 
-        "name": "Cardiovascular Risk Factors Associated With Future Cancer",
+        "name": "CV Risk Factors Associated With Future Cancer",
          "usage": "9,956",
           "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2020.12.003",
           "image":"./build/imgs/Ho-JCO110820-0479DR.jpg",
-          "usageSD":5415
+          "usageSD":11366
     },
     { 
         "name": "Mitochondria Transfer Mitigates Anthracycline Cardiomyopathy",
          "usage": "9,287", 
          "link":"https://www.jacc.org/doi/10.1016/j.jaccao.2021.05.006",
          "image":"./build/imgs/Yang-JCO031421-0103DR.jpg",
-         "usageSD":4806
+         "usageSD":10410
     },
     { 
         "name": "Coronary Artery Disease In Young Women After Radiation", 
         "usage": "9,197" , 
         "link":"https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.008",
         "image":"./build/imgs/Watt-JCO051121-0237DR.jpg",
-        "usageSD":4725
+        "usageSD":10281
     },
     { 
         "name": "Venous And Arterial Thromboembolism In Cancer Patients", 
         "usage": "9,039", 
         "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.03.001",
         "image":"./build/imgs/Khorana-JCO111420-0488RR.jpg",
-        "usageSD":4581
+        "usageSD":10056
     },
     { 
         "name": "Past, Present, And Future of Radiation Cardiotoxicity", 
         "usage": "8,701",
          "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.007",
          "image":"./build/imgs/Bergom-JCO050421-0224DR.jpg",
-         "usageSD":4274
+         "usageSD":9573
     },
     { 
-        "name": "Cardiovascular Disease and Radiation:  ICOS Expert Consensus", 
+        "name": "CV Disease and Radiation:  ICOS Expert Consensus", 
         "usage": "8,267", 
         "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.003",
         "image":"./build/imgs/Mitchell JCO040221-0140DR.jpg",
-        "usageSD":3879
+        "usageSD":8953
     },
     { 
         "name": "Immunotherapy and Cardiotoxicity",
          "usage": "7,305", 
          "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2020.11.012",
          "image":"./build/imgs/Neilan-JCO080320-0324DR.jpg",
-         "usageSD":3005
+         "usageSD":7579
     },
     { 
         "name": "BSE And BCOS Echo Guidelines for Doxorubicin and Trastuzumab",
          "usage": "6,901", 
          "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.01.011",
          "image":"./build/imgs/Dobson-JCO080420-0329DRRR CI.jpg",
-         "usageSD":2637
+         "usageSD":7001
     },
     { 
         "name": "Sustained Increases In Igfbp-7 with Doxorubicin", 
         "usage": "6,300", 
         "link":"https://www.jacc.org/doi/10.1016/j.jaccao.2021.06.005",
         "image":"./build/imgs/Ky-JCO052821-0264DR.jpg",
-        "usageSD":2091
+        "usageSD":6143
     },
     { 
         "name": "TAVR Compared to SAVR After Chest Radiation", 
         "usage": "4,763", 
         "link": "https://www.jacc.org/doi/10.1016/j.jaccao.2021.07.005",
         "image":"./build/imgs/Kaneko JCO050921-0233DRR.jpg",
-        "usageSD":694
+        "usageSD":3947
     }
   ]
 };
@@ -218,6 +219,7 @@ var data = {
      height = 80;
 var treemap =
   d3.layout.treemap()
+  .ratio(.8)
   .size([width, height])
   .padding(0)
   .value(function(d) { return d.usageSD; });

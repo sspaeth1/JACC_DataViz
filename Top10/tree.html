@@ -55,13 +55,12 @@
         
         d3.csv("./data/topArticles.csv", type, function(error, data) {
           if (error) throw error;
-        
+        console.log(data);
           var root = stratify(data)
               .sum(function(d) { return d.usage; })
-              .sort(function(a, b) { return b.height - a.height || b.usage - a.usage; });
-        
+              .sort(function(a, b) { return  b.height - a.height || b.usage - a.usage; });
+
           treemap(root);
-        
           d3.select("body")
             .selectAll(".node")
             .data(root.leaves())
