@@ -27,27 +27,37 @@ margin:1%;
     border:2px solid #fff;
     color:#fff;
     z-index: 0;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+
 }
 .treemap .node:hover {
     background: #00ae81;
     color: #c8f5e9;
     transition: background 1s;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.node:hover{
+    cursor: pointer;
+
 }
 
 .treemap{
     width: 95%;
     position: absolute;
     height: 100vh;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .node p{
     padding-left:10px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 3px;
+    margin-top: 0px;
+    font-size: 15px;
 }
-
+.node:hover p{
+    color:#004176;
+}
 .node h3{
     font-family: "Roboto", sans-serif;
     padding-left:5px;
@@ -66,20 +76,22 @@ margin:1%;
     height: 90px;
     /* border-radius: 5%; */
     max-width: 100%;
-box-shadow: 2px 2px 5px rgb(26, 27, 55);
-box-shadow: -2px -2px 5px rgb(175, 176, 225);
+    transition: max-width 1s;
+    box-shadow: 2px 2px 5px rgb(26, 27, 55);
+    box-shadow: -2px -2px 5px rgb(175, 176, 225);
 
 }
 .usage{
     color:rgb(150, 183, 189);
     font-weight: 200;
 }
-.treeImage:hover{
+.node:hover .treeImage{
     height: 100px;
     left:0;
-    max-width: 90%;
+    max-width: 80%;
     transition: height .5s;
     transition: max-width .5s;
+    box-shadow: -2px -2px 5px rgb(175, 225, 207);
 }
 img.header{
             width:100%;
@@ -98,26 +110,6 @@ img.header{
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
   z-index: 1000;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  z-index: 100;
 }
 
 @media screen and (max-width:600px) {
@@ -255,13 +247,12 @@ var node =
   .attr('href', function(d){return d.link })
   .append("div")
   .style("z-index", "0")
-  .attr("class", "node tooltip")
+  .attr("class", "node")
   .call(position)
   .append("h3")
   .text(getLabel)
   .append('p')
   .attr('class', 'usage')
-//   .attr('class', 'usage tooltiptext')
   .text(displayUsage)
   .append("img")
   .attr('src', function(d){return d.image})
