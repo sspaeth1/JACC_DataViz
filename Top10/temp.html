@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@100;300;700&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.container{  
+}
+.instructions{
+    margin-bottom:20px;
+}
+.treemap .node {
+    font-size: 70%;
+    line-height: 150%;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 1%;
+    background: #004176;
+    transition: color 0.5s;
+    border:2px solid #fff;
+    color:#fff;
+    z-index: 0;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+.treemap .node:hover {
+    background: #00ae81;
+    color: #c8f5e9;
+    transition: background 1s;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.node:hover{
+    cursor: pointer;
+
+}
+
+.treemap{
+    width: 95%;
+    height: 100vh;
+    text-align: center;  
+}
+
+.node p{
+    padding-left:10px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    font-size: 15px;
+}
+.node:hover p{
+    color:#004176;
+}
+.node h3{
+    padding-left:5px;
+    padding-right:5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5em;
+
+}
+
+.treeImage{
+    position: relative;
+    display:block;
+    margin:auto;
+    margin-top:2%;
+    max-height: 90%;      
+    max-width: 90%;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+    transition: max-width 1s;
+    box-shadow: 2px 2px 5px rgb(26, 27, 55);
+    box-shadow: -2px -2px 5px rgb(175, 176, 225);
+}
+
+.usage{
+    color:rgb(150, 183, 189);
+    font-weight: 200;
+}
+.node:hover .treeImage{
+     max-height: 80%;
+    left:0;
+    max-width: 80%;
+    transition: max-height .5s;
+    transition: max-width .5s;
+    box-shadow: -2px -2px 5px rgb(175, 225, 207);
+}
+img.header{
+            width:100%;
+}
+.page-title{
+    margin-bottom: 3px;
+    font-family: 'Roboto', "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.landing__top-info p{
+    margin: 0.5rem 0;
+    font-weight: 100;
+}
+
+
+</style>
+<div class="treemap" style="height: 300px;" >
+<a href="">
+    <div class="node"style="right: 0vw; bottom: 0vh; width: 100vw; height: 80vh;">
+        <h3>H3 ph text is in this areaa</h3>
+        <p>Paragraph  345</p>
+        <img src="./build/imgs/Dobson-JCO080420-0329DRRR CI.jpg" alt="">
+    </div>
+</a>    
+</div>
+
+
+
+</body>
+</html>

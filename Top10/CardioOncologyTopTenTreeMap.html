@@ -13,8 +13,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@100;300;700&display=swap');
 
-.container{    
-margin:1%;
+body{
+    font-family: "Roboto", sans-serif;
+}
+.container{  
+}
+.instructions{
+    margin-bottom:20px;
 }
 .treemap .node {
     font-size: 70%;
@@ -28,7 +33,7 @@ margin:1%;
     color:#fff;
     z-index: 0;
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
-
+    margin-bottom: -8% !important;
 }
 .treemap .node:hover {
     background: #00ae81;
@@ -39,18 +44,17 @@ margin:1%;
 
 .node:hover{
     cursor: pointer;
-
+    z-index: 100;
+    overflow: visible;
 }
 
 .treemap{
     width: 95%;
-    position: absolute;
     height: 100vh;
-    text-align: center;    
+    text-align: center;  
 }
 
 .node p{
-    padding-left:10px;
     font-family: 'Roboto', sans-serif;
     margin-top: 0px;
     font-size: 15px;
@@ -59,7 +63,6 @@ margin:1%;
     color:#004176;
 }
 .node h3{
-    font-family: "Roboto", sans-serif;
     padding-left:5px;
     padding-right:5px;
     font-weight: 700;
@@ -69,47 +72,40 @@ margin:1%;
 }
 
 .treeImage{
-    position: relative;
-    display:block;
-    margin:auto;
     margin-top:2%;
-    height: 90px;
-    /* border-radius: 5%; */
-    max-width: 100%;
+    max-height: 90%;      
+    max-width: 90%;
     transition: max-width 1s;
     box-shadow: 2px 2px 5px rgb(26, 27, 55);
     box-shadow: -2px -2px 5px rgb(175, 176, 225);
-
+    object-fit: fill;
 }
+
 .usage{
     color:rgb(150, 183, 189);
     font-weight: 200;
 }
 .node:hover .treeImage{
-    height: 100px;
+     max-height: 100%;
     left:0;
-    max-width: 80%;
-    transition: height .5s;
+    max-width: 100%;
+    transition: max-height 3s;
     transition: max-width .5s;
     box-shadow: -2px -2px 5px rgb(175, 225, 207);
 }
 img.header{
-            width:100%;
+     width:100%;
 }
 .page-title{
     margin-bottom: 3px;
     font-family: 'Roboto', "Open Sans", sans-serif;
     font-size: 24px;
-    margin-left:15px;
     font-weight: 700;
 }
 
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  z-index: 1000;
+.landing__top-info p{
+    margin: 0.5rem 0;
+    font-weight: 100;
 }
 
 @media screen and (max-width:600px) {
@@ -119,11 +115,17 @@ img.header{
     .treeImage{
         height:75px;
     }
+    .node h3{
+        font-size: 13px;
+        font-weight: 600;
+    }
 }
 </style>
 <img src="./build/imgs/header.jpg" alt="" class="header">
-<h1 class="page-title"><em>JACC</em> Journals Most Read Articles From 2021</h1>
-
+<div class='instructions'>
+    <h1 class="page-title"><em>JACC</em> : CardioOncology Most Read Articles in 2021 ​</h1>
+    <p class=".landing__top-info p">The following treemap visualization depicts usage distribution among the top 10 articles in 2021. Click to read full text.</p>    
+</div>
 <div class="container">
     <div class="treemap"></div>
 
@@ -220,14 +222,10 @@ var div = d3.select(".treemap");
 
 function position() {
   this
-//   .style("left", function(d) { return d.x0 + "px"; })
-//     .style("top", function(d) { return d.y0 + "px"; })
-//     .style("width", function(d) { return d.x1 - d.x0 + "px"; })
-//     .style("height", function(d) { return d.y1 - d.y0 + "px"; })
-    .style("left", function(d) { return d.x + "%"; })
-    .style("top", function(d) { return d.y + "%"; })
-    .style("width", function(d) { return d.dx + "%"; })
-    .style("height", function(d) { return d.dy + "%"; });
+    .style("right", function(d) { return d.x + "vw"; })
+    .style("bottom", function(d) { return d.y + "vh"; })
+    .style("width", function(d) { return d.dx + "vw"; })
+    .style("height", function(d) { return d.dy + "vh"; });
 }
 
 function getLabel(d) {
@@ -238,18 +236,17 @@ function displayUsage(d){
     return "Usage: " + d.usage;
 }
 
-var node =
+
   div.datum(data).selectAll(".node")
   .data(treemap.nodes)
   .enter()
   .append("a")
-  .style("z-index", "-1")
   .attr('href', function(d){return d.link })
   .append("div")
-  .style("z-index", "0")
   .attr("class", "node")
   .call(position)
   .append("h3")
+  .attr('data-id', function(d){return d.usage})
   .text(getLabel)
   .append('p')
   .attr('class', 'usage')
@@ -257,11 +254,9 @@ var node =
   .append("img")
   .attr('src', function(d){return d.image})
   .attr('class', 'treeImage')
-  .style("height", "auto")
-  .style("z-index", "1000");
+  .attr('height',  function(d) { console.log(  document.querySelectorAll(`[data-id='${d.usage}']`)[0]) } )// return d.dy  + "%"; })
 
 
-  console.log(data  );
         </script>
 </body>
 </html>
