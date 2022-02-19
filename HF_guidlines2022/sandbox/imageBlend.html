@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image blend</title>
+</head>
+<body>
+
+    <style>
+
+        .imgContainer{
+            position: relative;
+            width:50%;
+            margin: auto;
+            border: 2px solid black;
+            min-height: 500px;
+        }
+        .imgContainer img{
+            position: absolute;
+            margin: auto;
+            border: 1px solid black;
+
+        }
+        .imgOpacitySlider{
+            -webkit-appearance: none;
+            display: block;
+            position: absolute;
+            width:400px;
+            height: 45px;
+            opacity: .7;
+            outline:none;
+            background: rgb(181, 181, 181);
+            
+        }
+        .imgOpacitySlider:hover{
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+     .imgOpacitySlider::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            appearance: none;
+            background: #e9920f;
+            cursor: pointer;
+            height: 35px;
+            width:30px;
+        }
+        .imgOpacitySlider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
+            }
+
+        .displayOutputStyle{
+            position: relative;
+        }
+
+    </style>
+<div>
+    <div class="imgContainer">
+        <div class="">
+            <img src="./imgs/blenderLogo.png" alt="blender" class=""  id="img1">
+        </div>
+        <div>
+            <img src="./imgs/mayaLogo.png" alt="Maya" class="" id="img2">
+        </div>
+    </div>
+    <div>
+        <input type="range" min="0" max="100" class="imgOpacitySlider" value="0" id="opacitySlider">
+    </div>
+        <div id="displayOutput" class="displayOutputStyle"></div>
+</div>
+
+    
+
+    <script>
+        const imgSlider =  document.querySelector('#opacitySlider');
+        const grabDisplayOutput = document.querySelector('#displayOutput');
+        const grabbedImage1 = document.querySelector('#img1');
+        const grabbedImage2 = document.querySelector('#img2');
+        grabbedImage1.style.opacity = 0;
+        grabbedImage2.style.opacity = 100;
+
+            
+        imgSlider.addEventListener('mouseup', ()=>{
+
+            const grabsliderValue = imgSlider.value;
+
+            grabDisplayOutput.innerHTML = grabsliderValue/100;
+            grabbedImage1.style.opacity = grabsliderValue/100;
+            grabbedImage2.style.opacity = 1- grabsliderValue/100;
+
+            if(grabsliderValue >= 100){
+                grabDisplayOutput.innerHTML = grabsliderValue 
+            }
+
+        } )
+    </script>
+
+</body>
+</html>
