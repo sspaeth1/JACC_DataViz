@@ -6,6 +6,7 @@ body{
 }
 .container{  
     cursor: pointer;
+    margin-top:70vh;
 
 }
 .instructions{

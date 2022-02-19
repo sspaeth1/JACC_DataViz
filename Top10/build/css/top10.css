@@ -4,8 +4,10 @@
 body{
     font-family: "Roboto", sans-serif;
 }
-.container{  
+.treeContainer{  
     cursor: pointer;
+    position: absolute;
+    left:100vw;
 
 }
 .instructions{

@@ -77,7 +77,7 @@ var data = {
 };
 
   var width = 100,
-     height = 80;
+     height = 100;
 var treemap =
   d3.layout.treemap()
   .ratio(.8)
@@ -120,6 +120,6 @@ function displayUsage(d){
   .text(displayUsage)
   .append("img")
   .attr('src', function(d){return d.image})
-  .attr('class', 'treeImage')
+  .attr('class', 'treeImage');
 
  
