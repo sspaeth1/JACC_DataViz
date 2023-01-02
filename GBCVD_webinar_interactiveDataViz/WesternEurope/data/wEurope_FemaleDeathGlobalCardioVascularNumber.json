@@ -1,0 +1,182 @@
+﻿[
+    {
+        "year": 1990,
+        "Sum of val": 6060602.35,
+        "SUM of upper": 6408052.388,
+        "SUM of lower": 5617075.345
+    },
+    {
+        "year": 1991,
+        "Sum of val": 6131765.81,
+        "SUM of upper": 6496866.471,
+        "SUM of lower": 5708669.732
+    },
+    {
+        "year": 1992,
+        "Sum of val": 6233799.16,
+        "SUM of upper": 6594902.065,
+        "SUM of lower": 5793946.729
+    },
+    {
+        "year": 1993,
+        "Sum of val": 6410947.78,
+        "SUM of upper": 6780715.402,
+        "SUM of lower": 5939166.466
+    },
+    {
+        "year": 1994,
+        "Sum of val": 6504838.31,
+        "SUM of upper": 6879573.526,
+        "SUM of lower": 6021183.249
+    },
+    {
+        "year": 1995,
+        "Sum of val": 6531942.06,
+        "SUM of upper": 6911914.998,
+        "SUM of lower": 6069771.228
+    },
+    {
+        "year": 1996,
+        "Sum of val": 6565869.1,
+        "SUM of upper": 6930236.375,
+        "SUM of lower": 6089200.413
+    },
+    {
+        "year": 1997,
+        "Sum of val": 6618226.83,
+        "SUM of upper": 6973418.587,
+        "SUM of lower": 6134644.28
+    },
+    {
+        "year": 1998,
+        "Sum of val": 6668012.34,
+        "SUM of upper": 7015474.606,
+        "SUM of lower": 6169685.11
+    },
+    {
+        "year": 1999,
+        "Sum of val": 6810148.93,
+        "SUM of upper": 7186014.834,
+        "SUM of lower": 6294596.875
+    },
+    {
+        "year": 2000,
+        "Sum of val": 6902256.77,
+        "SUM of upper": 7256712.648,
+        "SUM of lower": 6400405.749
+    },
+    {
+        "year": 2001,
+        "Sum of val": 6998142.69,
+        "SUM of upper": 7349319.806,
+        "SUM of lower": 6489746.605
+    },
+    {
+        "year": 2002,
+        "Sum of val": 7139988.03,
+        "SUM of upper": 7506435.828,
+        "SUM of lower": 6593458.14
+    },
+    {
+        "year": 2003,
+        "Sum of val": 7220071.75,
+        "SUM of upper": 7593256.098,
+        "SUM of lower": 6630155.822
+    },
+    {
+        "year": 2004,
+        "Sum of val": 7208096.12,
+        "SUM of upper": 7581350.801,
+        "SUM of lower": 6625290.979
+    },
+    {
+        "year": 2005,
+        "Sum of val": 7305647.42,
+        "SUM of upper": 7675699.589,
+        "SUM of lower": 6714029.648
+    },
+    {
+        "year": 2006,
+        "Sum of val": 7300784.56,
+        "SUM of upper": 7672529.581,
+        "SUM of lower": 6692121.738
+    },
+    {
+        "year": 2007,
+        "Sum of val": 7332694.78,
+        "SUM of upper": 7712064.908,
+        "SUM of lower": 6669361.95
+    },
+    {
+        "year": 2008,
+        "Sum of val": 7430121.48,
+        "SUM of upper": 7826884.225,
+        "SUM of lower": 6764388.56
+    },
+    {
+        "year": 2009,
+        "Sum of val": 7478332.93,
+        "SUM of upper": 7878738.498,
+        "SUM of lower": 6839295.77
+    },
+    {
+        "year": 2010,
+        "Sum of val": 7595969.69,
+        "SUM of upper": 7997119.904,
+        "SUM of lower": 6936228.362
+    },
+    {
+        "year": 2011,
+        "Sum of val": 7689626.89,
+        "SUM of upper": 8124956.455,
+        "SUM of lower": 6956790.835
+    },
+    {
+        "year": 2012,
+        "Sum of val": 7767644.67,
+        "SUM of upper": 8181289.652,
+        "SUM of lower": 7065137.827
+    },
+    {
+        "year": 2013,
+        "Sum of val": 7881961.84,
+        "SUM of upper": 8319724.618,
+        "SUM of lower": 7141116.138
+    },
+    {
+        "year": 2014,
+        "Sum of val": 8007580.71,
+        "SUM of upper": 8484453.393,
+        "SUM of lower": 7243502.559
+    },
+    {
+        "year": 2015,
+        "Sum of val": 8193649.8,
+        "SUM of upper": 8691427.336,
+        "SUM of lower": 7415690.378
+    },
+    {
+        "year": 2016,
+        "Sum of val": 8340451.5,
+        "SUM of upper": 8895681.636,
+        "SUM of lower": 7515425.619
+    },
+    {
+        "year": 2017,
+        "Sum of val": 8488770.64,
+        "SUM of upper": 9101099.136,
+        "SUM of lower": 7611154.37
+    },
+    {
+        "year": 2018,
+        "Sum of val": 8716559.31,
+        "SUM of upper": 9393574.886,
+        "SUM of lower": 7763603.321
+    },
+    {
+        "year": 2019,
+        "Sum of val": 8936530.27,
+        "SUM of upper": 9705357.939,
+        "SUM of lower": 7923894.764
+    }
+]
