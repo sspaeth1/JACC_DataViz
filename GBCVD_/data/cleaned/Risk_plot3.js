@@ -11,7 +11,7 @@ let riskData3 =
             ["Smoking", 0, 5.14, 2.9, 0, 29.78, 127.06, 17.13, 0.72, 14.31]
         ],
         "Environmental": [
-            ["x", "Alcoholic cardiomyopathy", "Aortic aneurysm", "Atrial fibrillation and flutter", "Hypertensive heart disease", "Intracerebral hemorrhage", "Ischemic heart disease", "Ischemic stroke", "Lower extremity peripheral arterial disease", "Subarachnoid hemorrhage"],
+            ["x", "Alcoholic cardiomyopathy", "Aortic aneurysm", "Atrial fibrillation and flutter", "Hypertensive heart disease", "Intracerebral hemorrhage", "Ischemic heart disease", "Ischemic stroke", "Lower extremity peripheral arterial disease", "Myocarditis", "Other cardiomyopathy", "Subarachnoid hemorrhage"],
             ["Dietary risks", 0, 0.18, 2.93, 118.04, 36.99, 572.08, 43.98, 0.24, 16.13],
             ["High alcohol use", 0.09, 0, 3.51, 10.14, 24.19, -41.1, 16.51, 0, 0],
             ["Low physical activity", 0, 0, 0, 0, 0, 10.53, 10.99, 0.11, 0],
