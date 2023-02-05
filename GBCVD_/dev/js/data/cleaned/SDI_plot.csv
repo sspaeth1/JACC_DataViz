@@ -1,0 +1,711 @@
+"","location_id","location_name.x","location_type.y","super_region_name","region_name","SDI","Mort","low95","up95"
+"1",6,"China","admin0","Southeast Asia, East Asia, and Oceania","East Asia",72.16,290.09,250.74,333.87
+"2",7,"Democratic People's Republic of Korea","admin0","Southeast Asia, East Asia, and Oceania","East Asia",56.99,359.95,298.49,425.04
+"3",8,"Taiwan (Province of China)","admin0","Southeast Asia, East Asia, and Oceania","East Asia",87.47,94.22,76.9,109.75
+"4",10,"Cambodia","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",47.36,340.64,275.68,391.12
+"5",11,"Indonesia","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.69,412.22,354.13,451.97
+"6",12,"Lao People's Democratic Republic","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",48.91,421.56,350.01,490.84
+"7",13,"Malaysia","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",74.25,274.49,233.08,317.14
+"8",14,"Maldives","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.09,253.32,222.56,284.5
+"9",15,"Myanmar","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",53.39,370.16,320.47,438.18
+"10",16,"Philippines","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.12,332.44,293.4,375.79
+"11",17,"Sri Lanka","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",70.15,254.24,202.54,314.42
+"12",18,"Thailand","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",68.25,124.87,100.01,149.92
+"13",19,"Timor-Leste","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",44.47,380.94,319.59,437.99
+"14",20,"Viet Nam","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",62.79,317.2,269.85,351.99
+"15",22,"Fiji","admin0","Southeast Asia, East Asia, and Oceania","Oceania",67.51,448.69,365.87,542.45
+"16",23,"Kiribati","admin0","Southeast Asia, East Asia, and Oceania","Oceania",52.72,429.17,361.99,516.09
+"17",24,"Marshall Islands","admin0","Southeast Asia, East Asia, and Oceania","Oceania",57.41,540.25,451.49,646.72
+"18",25,"Micronesia (Federated States of)","admin0","Southeast Asia, East Asia, and Oceania","Oceania",58.75,530.65,447,638.93
+"19",26,"Papua New Guinea","admin0","Southeast Asia, East Asia, and Oceania","Oceania",41.78,339.74,280.6,412.88
+"20",27,"Samoa","admin0","Southeast Asia, East Asia, and Oceania","Oceania",59.34,427.35,368.41,481.39
+"21",28,"Solomon Islands","admin0","Southeast Asia, East Asia, and Oceania","Oceania",42.94,553.98,465.24,678.28
+"22",29,"Tonga","admin0","Southeast Asia, East Asia, and Oceania","Oceania",62.63,242.94,199.51,286.96
+"23",30,"Vanuatu","admin0","Southeast Asia, East Asia, and Oceania","Oceania",47.31,547.65,480.65,625.43
+"24",33,"Armenia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",70.18,342.68,309.55,381.79
+"25",34,"Azerbaijan","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",69.49,626.51,560.71,688.92
+"26",35,"Georgia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",73.25,424.83,386.09,472.37
+"27",36,"Kazakhstan","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",72.51,478.25,429.17,529.71
+"28",37,"Kyrgyzstan","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",60.4,427.37,381.03,478.23
+"29",38,"Mongolia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",61.76,419.89,370.09,475.21
+"30",39,"Tajikistan","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",54.15,624.61,551.96,690.18
+"31",40,"Turkmenistan","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",68.22,539.38,443,659.02
+"32",41,"Uzbekistan","admin0","Central Europe, Eastern Europe, and Central Asia","Central Asia",66.26,798.32,729.9,872.16
+"33",43,"Albania","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",70.68,339.58,289.59,391.01
+"34",44,"Bosnia and Herzegovina","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",72.31,362.28,312.24,419.77
+"35",45,"Bulgaria","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",76.82,535.84,465.33,631.47
+"36",46,"Croatia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",79.83,248.98,211.48,290.07
+"37",47,"Czechia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",82.85,213.21,180.2,250.41
+"38",48,"Hungary","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",79.08,292.19,247.38,338.36
+"39",49,"North Macedonia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",75.06,585.8,518.69,667.97
+"40",50,"Montenegro","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",79.58,412.13,371.6,454.48
+"41",51,"Poland","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",81.2,220.71,195.08,247.74
+"42",52,"Romania","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",76.85,364.59,304.39,421.13
+"43",53,"Serbia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",79.24,478.2,419.92,537.55
+"44",54,"Slovakia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",81.06,294.02,250.31,344.56
+"45",55,"Slovenia","admin0","Central Europe, Eastern Europe, and Central Asia","Central Europe",84.24,138.7,115.85,166.62
+"46",57,"Belarus","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",78.45,469.51,400.03,532.76
+"47",58,"Estonia","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",84.49,229.76,192.3,267.97
+"48",59,"Latvia","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",83.07,337.6,290.06,383.78
+"49",60,"Lithuania","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",85.65,310.19,265.96,357.17
+"50",61,"Republic of Moldova","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",73.22,410.4,361.9,470.98
+"51",62,"Russian Federation","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",80.85,403.31,353.73,446.61
+"52",63,"Ukraine","admin0","Central Europe, Eastern Europe, and Central Asia","Eastern Europe",76.08,503.48,452.49,553.5
+"53",66,"Brunei Darussalam","admin0","High-income","High-income Asia Pacific",81.02,274.14,250.77,302.27
+"54",67,"Japan","admin0","High-income","High-income Asia Pacific",87.12,75.63,63.99,81.71
+"55",68,"Republic of Korea","admin0","High-income","High-income Asia Pacific",88.67,89.64,74.12,98.95
+"56",69,"Singapore","admin0","High-income","High-income Asia Pacific",85.61,81.48,72.96,86.21
+"57",71,"Australia","admin0","High-income","Australasia",84.43,97.85,84.77,105.4
+"58",72,"New Zealand","admin0","High-income","Australasia",84.94,125.24,109.51,133.95
+"59",74,"Andorra","admin0","High-income","Western Europe",86.94,111.82,89.66,134.91
+"60",75,"Austria","admin0","High-income","Western Europe",85.38,139.85,123.15,150.06
+"61",76,"Belgium","admin0","High-income","Western Europe",85.37,99.26,85.38,106.7
+"62",77,"Cyprus","admin0","High-income","Western Europe",83.56,214.59,190.8,233.59
+"63",78,"Denmark","admin0","High-income","Western Europe",89.64,99.05,87.54,106.22
+"64",79,"Finland","admin0","High-income","Western Europe",85.98,152.21,131.17,163.99
+"65",80,"France","admin0","High-income","Western Europe",83.84,83.54,74.53,89.67
+"66",81,"Germany","admin0","High-income","Western Europe",90.3,141.66,122.97,151.93
+"67",82,"Greece","admin0","High-income","Western Europe",79.19,159.03,141.61,168.51
+"68",83,"Iceland","admin0","High-income","Western Europe",87.64,116.57,100.71,129.74
+"69",84,"Ireland","admin0","High-income","Western Europe",87.38,118.45,102.48,127.96
+"70",85,"Israel","admin0","High-income","Western Europe",80.9,82.35,72.64,88.42
+"71",86,"Italy","admin0","High-income","Western Europe",80.58,115.01,97.76,124.79
+"72",87,"Luxembourg","admin0","High-income","Western Europe",88.44,116.67,101.01,127.63
+"73",88,"Malta","admin0","High-income","Western Europe",80.16,135.31,116.99,148.39
+"74",89,"Netherlands","admin0","High-income","Western Europe",88.85,103.24,89.41,111.53
+"75",90,"Norway","admin0","High-income","Western Europe",91.61,94.76,82.31,102.61
+"76",91,"Portugal","admin0","High-income","Western Europe",74.42,112.53,100.12,120.39
+"77",92,"Spain","admin0","High-income","Western Europe",76.93,98.35,85.38,105.71
+"78",93,"Sweden","admin0","High-income","Western Europe",88.69,117.08,102.78,125.38
+"79",94,"Switzerland","admin0","High-income","Western Europe",93.31,90.57,76.21,98.74
+"80",95,"United Kingdom","admin0","High-income","Western Europe",85.9,118.11,106.34,123.97
+"81",97,"Argentina","admin0","High-income","Southern Latin America",72.31,172.84,160.84,181.03
+"82",98,"Chile","admin0","High-income","Southern Latin America",77.15,118.81,109.53,125.15
+"83",99,"Uruguay","admin0","High-income","Southern Latin America",71.93,158.92,145.73,167.34
+"84",101,"Canada","admin0","High-income","High-income North America",87.32,102.09,89.96,108.6
+"85",102,"United States of America","admin0","High-income","High-income North America",86.24,150.79,134.46,159.6
+"86",105,"Antigua and Barbuda","admin0","Latin America and Caribbean","Caribbean",74.99,246.43,224.58,270.78
+"87",106,"Bahamas","admin0","Latin America and Caribbean","Caribbean",80.5,235.62,196.61,276.36
+"88",107,"Barbados","admin0","Latin America and Caribbean","Caribbean",74.67,197.08,169,228.17
+"89",108,"Belize","admin0","Latin America and Caribbean","Caribbean",61.02,178.85,160.91,198.69
+"90",109,"Cuba","admin0","Latin America and Caribbean","Caribbean",66.87,201.74,169.79,231.94
+"91",110,"Dominica","admin0","Latin America and Caribbean","Caribbean",74.7,281.54,257.76,315.82
+"92",111,"Dominican Republic","admin0","Latin America and Caribbean","Caribbean",61.94,286.93,232.41,357.49
+"93",112,"Grenada","admin0","Latin America and Caribbean","Caribbean",66.9,298.45,280.64,321.72
+"94",113,"Guyana","admin0","Latin America and Caribbean","Caribbean",65.08,402.48,327.2,475.69
+"95",114,"Haiti","admin0","Latin America and Caribbean","Caribbean",44.83,479.18,375.68,597.67
+"96",115,"Jamaica","admin0","Latin America and Caribbean","Caribbean",68.33,196.56,160.97,235.55
+"97",116,"Saint Lucia","admin0","Latin America and Caribbean","Caribbean",67.25,198.29,173.26,224.93
+"98",117,"Saint Vincent and the Grenadines","admin0","Latin America and Caribbean","Caribbean",63.72,281.58,258.9,306.74
+"99",118,"Suriname","admin0","Latin America and Caribbean","Caribbean",63.37,256.01,235.09,279.99
+"100",119,"Trinidad and Tobago","admin0","Latin America and Caribbean","Caribbean",76.88,220.57,182.55,264.93
+"101",121,"Bolivia (Plurinational State of)","admin0","Latin America and Caribbean","Andean Latin America",59.9,191.31,152.09,249.75
+"102",122,"Ecuador","admin0","Latin America and Caribbean","Andean Latin America",66.1,163.67,136.88,193.04
+"103",123,"Peru","admin0","Latin America and Caribbean","Andean Latin America",66.21,101.08,85.18,123.63
+"104",125,"Colombia","admin0","Latin America and Caribbean","Central Latin America",65.54,133.27,111.76,156.63
+"105",126,"Costa Rica","admin0","Latin America and Caribbean","Central Latin America",70.03,115.61,97.71,135.75
+"106",127,"El Salvador","admin0","Latin America and Caribbean","Central Latin America",56.38,148.15,124.67,172.98
+"107",128,"Guatemala","admin0","Latin America and Caribbean","Central Latin America",54,168.96,147.61,194.63
+"108",129,"Honduras","admin0","Latin America and Caribbean","Central Latin America",51.3,330.06,293.43,383.22
+"109",130,"Mexico","admin0","Latin America and Caribbean","Central Latin America",66.46,174.41,157.57,197.7
+"110",131,"Nicaragua","admin0","Latin America and Caribbean","Central Latin America",52.4,180.55,151.79,212.89
+"111",132,"Panama","admin0","Latin America and Caribbean","Central Latin America",70.89,128.7,108.79,150.08
+"112",133,"Venezuela (Bolivarian Republic of)","admin0","Latin America and Caribbean","Central Latin America",59.65,239.67,194.58,287.75
+"113",135,"Brazil","admin0","Latin America and Caribbean","Tropical Latin America",65.3,162.2,145.84,171.54
+"114",136,"Paraguay","admin0","Latin America and Caribbean","Tropical Latin America",63.57,204.93,167.19,241.2
+"115",139,"Algeria","admin0","North Africa and Middle East","North Africa and Middle East",65.95,339.45,292.8,387.01
+"116",140,"Bahrain","admin0","North Africa and Middle East","North Africa and Middle East",75.3,273.58,248.42,299.81
+"117",141,"Egypt","admin0","North Africa and Middle East","North Africa and Middle East",60.68,509.81,443.92,590.44
+"118",142,"Iran (Islamic Republic of)","admin0","North Africa and Middle East","North Africa and Middle East",69.72,280.18,254.89,297.35
+"119",143,"Iraq","admin0","North Africa and Middle East","North Africa and Middle East",66.26,474.98,410.36,536.88
+"120",144,"Jordan","admin0","North Africa and Middle East","North Africa and Middle East",72.53,235.02,198.89,275.19
+"121",145,"Kuwait","admin0","North Africa and Middle East","North Africa and Middle East",84.67,210.49,178.34,247.3
+"122",146,"Lebanon","admin0","North Africa and Middle East","North Africa and Middle East",74.47,134.2,108.6,157.4
+"123",147,"Libya","admin0","North Africa and Middle East","North Africa and Middle East",72.58,306.84,243.41,395.73
+"124",148,"Morocco","admin0","North Africa and Middle East","North Africa and Middle East",56.27,447.31,368.01,521.13
+"125",149,"Palestine","admin0","North Africa and Middle East","North Africa and Middle East",63.1,351.05,301.81,392.46
+"126",150,"Oman","admin0","North Africa and Middle East","North Africa and Middle East",77.34,483.09,420.13,547.99
+"127",151,"Qatar","admin0","North Africa and Middle East","North Africa and Middle East",84.69,229.49,191,270.6
+"128",152,"Saudi Arabia","admin0","North Africa and Middle East","North Africa and Middle East",81.51,364.56,317.17,414.45
+"129",153,"Syrian Arab Republic","admin0","North Africa and Middle East","North Africa and Middle East",62.3,504.73,410.11,615.19
+"130",154,"Tunisia","admin0","North Africa and Middle East","North Africa and Middle East",68.24,293.05,224.02,369.03
+"131",155,"Türkiye","admin0","North Africa and Middle East","North Africa and Middle East",71.27,248.97,201.37,296.02
+"132",156,"United Arab Emirates","admin0","North Africa and Middle East","North Africa and Middle East",84.93,257.43,213.95,297.71
+"133",157,"Yemen","admin0","North Africa and Middle East","North Africa and Middle East",45.04,539.92,450.14,658.36
+"134",160,"Afghanistan","admin0","North Africa and Middle East","North Africa and Middle East",33.72,600.24,475.34,691.81
+"135",161,"Bangladesh","admin0","South Asia","South Asia",49.24,306.78,250.83,361.53
+"136",162,"Bhutan","admin0","South Asia","South Asia",47.31,248.62,208.75,281.13
+"137",163,"India","admin0","South Asia","South Asia",57.54,279.15,259.34,302.45
+"138",164,"Nepal","admin0","South Asia","South Asia",43.32,283.32,236.91,332.54
+"139",165,"Pakistan","admin0","South Asia","South Asia",50.4,350.85,300.31,413.19
+"140",168,"Angola","admin0","Sub-Saharan Africa","Central Sub-Saharan Africa",45.37,375.74,304.71,454.06
+"141",169,"Central African Republic","admin0","Sub-Saharan Africa","Central Sub-Saharan Africa",30.92,475.68,381.26,564.81
+"142",170,"Congo","admin0","Sub-Saharan Africa","Central Sub-Saharan Africa",58.31,427.18,354.29,493.15
+"143",171,"Democratic Republic of the Congo","admin0","Sub-Saharan Africa","Central Sub-Saharan Africa",38.32,356.61,282.62,437.01
+"144",172,"Equatorial Guinea","admin0","Sub-Saharan Africa","Central Sub-Saharan Africa",65.79,345.83,259.51,449.36
+"145",173,"Gabon","admin0","Sub-Saharan Africa","Central Sub-Saharan Africa",63.47,352.34,290.53,433.18
+"146",175,"Burundi","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",28.94,293.79,244.21,352.26
+"147",176,"Comoros","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",47.6,255.02,216.5,309.79
+"148",177,"Djibouti","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",48.8,291.05,242.56,358.22
+"149",178,"Eritrea","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",40.39,335.71,265.84,411.71
+"150",179,"Ethiopia","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",35.88,195.39,171.24,217.01
+"151",180,"Kenya","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",52.38,237.01,190.77,279.41
+"152",181,"Madagascar","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",40.02,428.98,339.42,529.03
+"153",182,"Malawi","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",38.46,318.56,276.59,366.83
+"154",183,"Mauritius","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",71.83,213.85,183.54,252.62
+"155",184,"Mozambique","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",32.65,373.83,294.14,458.7
+"156",185,"Rwanda","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",43.56,264.04,216.4,317.17
+"157",186,"Seychelles","admin0","Southeast Asia, East Asia, and Oceania","Southeast Asia",73.02,274.84,256.17,299.11
+"158",187,"Somalia","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",7.77,324.81,250.21,401.18
+"159",189,"United Republic of Tanzania","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",44.66,280.51,236.08,328.39
+"160",190,"Uganda","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",42.33,232.11,198.49,281.02
+"161",191,"Zambia","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",50.59,218.11,201.12,238.91
+"162",193,"Botswana","admin0","Sub-Saharan Africa","Southern Sub-Saharan Africa",64.27,272.3,238.3,309.26
+"163",194,"Lesotho","admin0","Sub-Saharan Africa","Southern Sub-Saharan Africa",51.04,456.16,355.98,546.57
+"164",195,"Namibia","admin0","Sub-Saharan Africa","Southern Sub-Saharan Africa",61.76,356.88,289.98,429.77
+"165",196,"South Africa","admin0","Sub-Saharan Africa","Southern Sub-Saharan Africa",67.96,268.2,249.73,284.26
+"166",197,"Eswatini","admin0","Sub-Saharan Africa","Southern Sub-Saharan Africa",58.55,397.49,294.11,493.1
+"167",198,"Zimbabwe","admin0","Sub-Saharan Africa","Southern Sub-Saharan Africa",47.38,394.36,323.42,463.98
+"168",200,"Benin","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",37.35,307.54,266.08,353.69
+"169",201,"Burkina Faso","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",28.51,300.05,247.98,364.55
+"170",202,"Cameroon","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",47.97,343.19,289.28,440.81
+"171",203,"Cabo Verde","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",53.35,284.34,247.74,318.38
+"172",204,"Chad","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",24.04,354.61,291.6,430.48
+"173",205,"Côte d'Ivoire","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",42.59,355.09,300.3,437.85
+"174",206,"Gambia","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",40.97,398.62,316.99,471.03
+"175",207,"Ghana","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",56.49,372.36,307.92,434.87
+"176",208,"Guinea","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",33.64,349.82,290.1,424.53
+"177",209,"Guinea-Bissau","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",35.31,484.6,393.24,554.96
+"178",210,"Liberia","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",35.24,360.27,300.09,444.39
+"179",211,"Mali","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",26.86,260.69,213.05,309.9
+"180",212,"Mauritania","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",49.89,312.06,258.76,389.79
+"181",213,"Niger","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",16.81,287.26,239.76,348
+"182",214,"Nigeria","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",50.34,287.79,249.86,325.53
+"183",215,"Sao Tome and Principe","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",50.54,294.11,265.27,329.8
+"184",216,"Senegal","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",40.81,346.67,291.93,406.8
+"185",217,"Sierra Leone","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",35.87,359.7,281.29,443.5
+"186",218,"Togo","admin0","Sub-Saharan Africa","Western Sub-Saharan Africa",40.85,374.5,309.73,458.46
+"187",298,"American Samoa","nonsovereign","Southeast Asia, East Asia, and Oceania","Oceania",72.37,337.23,298.82,382.87
+"188",305,"Bermuda","nonsovereign","Latin America and Caribbean","Caribbean",82.14,143.43,126.35,167.94
+"189",320,"Cook Islands","nonsovereign","Southeast Asia, East Asia, and Oceania","Oceania",77.91,245.39,210.47,283.94
+"190",349,"Greenland","nonsovereign","High-income","High-income North America",82.62,244.83,218.49,268.69
+"191",351,"Guam","nonsovereign","Southeast Asia, East Asia, and Oceania","Oceania",80.4,326.19,297.81,361.69
+"192",367,"Monaco","admin0","High-income","Western Europe",90.83,127.35,106.14,152.29
+"193",369,"Nauru","admin0","Southeast Asia, East Asia, and Oceania","Oceania",62.52,721.74,606.94,844.96
+"194",374,"Niue","nonsovereign","Southeast Asia, East Asia, and Oceania","Oceania",72.62,406.18,349.15,472.61
+"195",376,"Northern Mariana Islands","nonsovereign","Southeast Asia, East Asia, and Oceania","Oceania",77.15,291.66,243.93,332.43
+"196",380,"Palau","admin0","Southeast Asia, East Asia, and Oceania","Oceania",75.4,408.43,341.8,473.92
+"197",385,"Puerto Rico","nonsovereign","Latin America and Caribbean","Caribbean",82.55,102.23,85.14,122.14
+"198",393,"Saint Kitts and Nevis","admin0","Latin America and Caribbean","Caribbean",75.5,280.84,257.95,305.82
+"199",396,"San Marino","admin0","High-income","Western Europe",88.8,122.23,97.83,146.71
+"200",413,"Tokelau","nonsovereign","Southeast Asia, East Asia, and Oceania","Oceania",68.64,382.14,298.34,463.93
+"201",416,"Tuvalu","admin0","Southeast Asia, East Asia, and Oceania","Oceania",57.66,500.15,447.48,570.03
+"202",422,"United States Virgin Islands","nonsovereign","Latin America and Caribbean","Caribbean",82.18,276.53,236.22,315.98
+"203",433,"Northern Ireland","admin1","High-income","Western Europe",83.85,114.58,101.86,121.86
+"204",434,"Scotland","admin1","High-income","Western Europe",85.21,139.01,125.24,146.79
+"205",435,"South Sudan","admin0","Sub-Saharan Africa","Eastern Sub-Saharan Africa",27.84,287.5,223.48,353.12
+"206",522,"Sudan","admin0","North Africa and Middle East","North Africa and Middle East",54.19,465.86,390.08,566.44
+"207",523,"Alabama","admin1","High-income","High-income North America",82.56,194.6,165.5,219.92
+"208",524,"Alaska","admin1","High-income","High-income North America",85.75,129.99,112.41,145.11
+"209",525,"Arizona","admin1","High-income","High-income North America",84.67,137.63,118.27,159.4
+"210",526,"Arkansas","admin1","High-income","High-income North America",81.77,204.15,176.92,234.72
+"211",527,"California","admin1","High-income","High-income North America",87.02,128.68,107.87,148.87
+"212",528,"Colorado","admin1","High-income","High-income North America",87.67,125.6,105.98,142.08
+"213",529,"Connecticut","admin1","High-income","High-income North America",90.31,121.92,100.31,141.38
+"214",530,"Delaware","admin1","High-income","High-income North America",86.64,155.55,141.05,173.44
+"215",531,"District of Columbia","admin1","High-income","High-income North America",90.6,163.06,140.32,179.6
+"216",532,"Florida","admin1","High-income","High-income North America",86.2,143.71,124.56,161.93
+"217",533,"Georgia","admin1","High-income","High-income North America",84.66,166.63,141.43,187.19
+"218",534,"Hawaii","admin1","High-income","High-income North America",86.95,116.05,96.96,132.16
+"219",535,"Idaho","admin1","High-income","High-income North America",83.65,142.56,122.97,166.88
+"220",536,"Illinois","admin1","High-income","High-income North America",87.92,147.86,123.44,165.32
+"221",537,"Indiana","admin1","High-income","High-income North America",84.29,171.15,150.97,196.68
+"222",538,"Iowa","admin1","High-income","High-income North America",86.41,155.05,131.62,176.57
+"223",539,"Kansas","admin1","High-income","High-income North America",85.94,156.57,132.97,177.04
+"224",540,"Kentucky","admin1","High-income","High-income North America",82.13,185.1,160.63,213.17
+"225",541,"Louisiana","admin1","High-income","High-income North America",82.53,197.67,176.76,223.21
+"226",542,"Maine","admin1","High-income","High-income North America",86.58,138.06,119.4,154.07
+"227",543,"Maryland","admin1","High-income","High-income North America",88.92,149.59,123.2,170.08
+"228",544,"Massachusetts","admin1","High-income","High-income North America",90.66,123.62,103.79,137.38
+"229",545,"Michigan","admin1","High-income","High-income North America",86.4,170.59,146.64,192.18
+"230",546,"Minnesota","admin1","High-income","High-income North America",88.7,122.99,104.67,136.89
+"231",547,"Mississippi","admin1","High-income","High-income North America",81.05,214.05,187.34,239.42
+"232",548,"Missouri","admin1","High-income","High-income North America",84.82,169.27,145.29,192.19
+"233",549,"Montana","admin1","High-income","High-income North America",85.91,144.95,123.45,164.06
+"234",550,"Nebraska","admin1","High-income","High-income North America",86.51,139.88,120.2,157.07
+"235",551,"Nevada","admin1","High-income","High-income North America",84.77,163.88,140.99,186.86
+"236",552,"New Hampshire","admin1","High-income","High-income North America",89.83,134.06,112,153.14
+"237",553,"New Jersey","admin1","High-income","High-income North America",89.19,136.59,114.08,155.45
+"238",554,"New Mexico","admin1","High-income","High-income North America",83.17,137.83,118.62,156.7
+"239",555,"New York","admin1","High-income","High-income North America",88.52,140.33,118.4,159.71
+"240",556,"North Carolina","admin1","High-income","High-income North America",84.44,151.04,132.07,174.45
+"241",557,"North Dakota","admin1","High-income","High-income North America",87.3,141.85,123.84,156.24
+"242",558,"Ohio","admin1","High-income","High-income North America",85.05,174.27,151.81,196.22
+"243",559,"Oklahoma","admin1","High-income","High-income North America",82.87,202.19,176.53,223.23
+"244",560,"Oregon","admin1","High-income","High-income North America",87.02,131.03,117.86,149.3
+"245",561,"Pennsylvania","admin1","High-income","High-income North America",87.24,150.37,127.73,168.07
+"246",562,"Rhode Island","admin1","High-income","High-income North America",88.39,145.99,126.33,167
+"247",563,"South Carolina","admin1","High-income","High-income North America",83.77,170.86,145.3,195
+"248",564,"South Dakota","admin1","High-income","High-income North America",85.57,145.63,127.73,161.02
+"249",565,"Tennessee","admin1","High-income","High-income North America",83.3,196.14,171.52,226.64
+"250",566,"Texas","admin1","High-income","High-income North America",83.48,158.3,134.83,180
+"251",567,"Utah","admin1","High-income","High-income North America",85.46,137.26,120.56,151.42
+"252",568,"Vermont","admin1","High-income","High-income North America",89,138.17,122.32,152.93
+"253",569,"Virginia","admin1","High-income","High-income North America",88.01,141.66,119.19,163.28
+"254",570,"Washington","admin1","High-income","High-income North America",87.76,133.13,111.32,149.09
+"255",571,"West Virginia","admin1","High-income","High-income North America",81.77,184.99,160.23,207.52
+"256",572,"Wisconsin","admin1","High-income","High-income North America",87.17,142.59,122.91,160.88
+"257",573,"Wyoming","admin1","High-income","High-income North America",86.21,136.06,116.18,153.22
+"258",4618,"North East England","admin1","High-income","Western Europe",82.73,131.9,116.42,145.37
+"259",4619,"North West England","admin1","High-income","Western Europe",84.44,129.23,118.14,140.16
+"260",4620,"Yorkshire and the Humber","admin1","High-income","Western Europe",83.75,131.13,113.34,142.49
+"261",4621,"East Midlands","admin1","High-income","Western Europe",83.59,118.84,106.79,130.22
+"262",4622,"West Midlands","admin1","High-income","Western Europe",83.59,118.58,105.6,128.49
+"263",4623,"East of England","admin1","High-income","Western Europe",85.64,108.24,94.69,118.38
+"264",4624,"Greater London","admin1","High-income","Western Europe",90.49,103.06,91.39,113.96
+"265",4625,"South East England","admin1","High-income","Western Europe",87.61,107.68,93.75,116.71
+"266",4626,"South West England","admin1","High-income","Western Europe",86.15,109.69,95.58,120.26
+"267",4636,"Wales","admin1","High-income","Western Europe",83.43,124.34,111.78,132.37
+"268",4643,"Aguascalientes","admin1","Latin America and Caribbean","Central Latin America",68.12,152.9,135.91,172.54
+"269",4644,"Baja California","admin1","Latin America and Caribbean","Central Latin America",70.41,198.09,171.23,228.76
+"270",4645,"Baja California Sur","admin1","Latin America and Caribbean","Central Latin America",70.97,186.63,165.1,205.44
+"271",4646,"Campeche","admin1","Latin America and Caribbean","Central Latin America",66.54,168.03,149.17,187.75
+"272",4647,"Coahuila","admin1","Latin America and Caribbean","Central Latin America",67.76,198.79,172.28,228.75
+"273",4648,"Colima","admin1","Latin America and Caribbean","Central Latin America",69.91,182.82,160.14,210.43
+"274",4649,"Chiapas","admin1","Latin America and Caribbean","Central Latin America",56.99,166.71,149.28,188.48
+"275",4650,"Chihuahua","admin1","Latin America and Caribbean","Central Latin America",67.34,228.23,197.47,266.82
+"276",4651,"Mexico City","admin1","Latin America and Caribbean","Central Latin America",75.98,176.39,152.19,200.06
+"277",4652,"Durango","admin1","Latin America and Caribbean","Central Latin America",63.93,182.5,155.47,207.24
+"278",4653,"Guanajuato","admin1","Latin America and Caribbean","Central Latin America",64.64,190.81,165.21,213.17
+"279",4654,"Guerrero","admin1","Latin America and Caribbean","Central Latin America",58.49,149.24,132.24,176.14
+"280",4655,"Hidalgo","admin1","Latin America and Caribbean","Central Latin America",63.35,165.26,142.07,189.72
+"281",4656,"Jalisco","admin1","Latin America and Caribbean","Central Latin America",67.6,170.95,153.87,191.7
+"282",4657,"México","admin1","Latin America and Caribbean","Central Latin America",68.16,163.73,143.32,186.49
+"283",4658,"Michoacán de Ocampo","admin1","Latin America and Caribbean","Central Latin America",61.31,144.91,124.68,164.63
+"284",4659,"Morelos","admin1","Latin America and Caribbean","Central Latin America",67.01,173.83,151.64,199.24
+"285",4660,"Nayarit","admin1","Latin America and Caribbean","Central Latin America",65.82,142.27,125.25,165.52
+"286",4661,"Nuevo León","admin1","Latin America and Caribbean","Central Latin America",71.01,194.77,169.35,219.99
+"287",4662,"Oaxaca","admin1","Latin America and Caribbean","Central Latin America",58.9,156.73,133.84,180.27
+"288",4663,"Puebla","admin1","Latin America and Caribbean","Central Latin America",62.2,178.72,158.36,204.86
+"289",4664,"Querétaro","admin1","Latin America and Caribbean","Central Latin America",68.26,184.02,161.34,206.55
+"290",4665,"Quintana Roo","admin1","Latin America and Caribbean","Central Latin America",68.11,191.85,163.21,221.42
+"291",4666,"San Luis Potosí","admin1","Latin America and Caribbean","Central Latin America",64.67,155.98,133.6,175.5
+"292",4667,"Sinaloa","admin1","Latin America and Caribbean","Central Latin America",67.72,155.8,134.54,180.45
+"293",4668,"Sonora","admin1","Latin America and Caribbean","Central Latin America",71.07,232.04,206.22,260.86
+"294",4669,"Tabasco","admin1","Latin America and Caribbean","Central Latin America",64.87,196.25,175.27,225.24
+"295",4670,"Tamaulipas","admin1","Latin America and Caribbean","Central Latin America",68.21,174.24,150.82,201.89
+"296",4671,"Tlaxcala","admin1","Latin America and Caribbean","Central Latin America",64.78,144.46,128.85,163.87
+"297",4672,"Veracruz de Ignacio de la Llave","admin1","Latin America and Caribbean","Central Latin America",62.81,188.76,166.3,214.6
+"298",4673,"Yucatán","admin1","Latin America and Caribbean","Central Latin America",65.31,208.63,182.85,234.3
+"299",4674,"Zacatecas","admin1","Latin America and Caribbean","Central Latin America",63.48,149.49,131.01,174.47
+"300",4709,"Aceh","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66.96,406.88,328.6,465.51
+"301",4710,"North Sumatra","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66.7,443.33,355.58,517.75
+"302",4711,"West Sumatra","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66.58,410.56,352.8,476.45
+"303",4712,"Riau","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",72.28,393.91,319.21,452.28
+"304",4713,"Jambi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.96,434.57,343.81,490.43
+"305",4714,"South Sumatra","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.55,405.74,336.61,493.1
+"306",4715,"Bengkulu","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.37,443.29,370.65,515.57
+"307",4716,"Lampung","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.89,375.97,308.13,453.73
+"308",4717,"Bangka-Belitung Islands","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.43,501.11,429.81,577.92
+"309",4718,"Riau Islands","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",74.78,363.2,283.85,427.44
+"310",4719,"North Kalimantan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",75.3,257.1,193.29,331.7
+"311",4720,"Jakarta","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",79.94,377.73,303.82,441.79
+"312",4721,"West Java","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.37,411.36,334.05,478.6
+"313",4722,"Central Java","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.34,409.86,343.09,451.75
+"314",4723,"Yogyakarta","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",67.54,410.02,370.8,456.92
+"315",4724,"East Java","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.55,394.38,328.35,447.39
+"316",4725,"Banten","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.07,430.06,347.26,501.1
+"317",4726,"Bali","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.96,382.84,306.92,447.74
+"318",4727,"West Nusa Tenggara","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.7,455.42,373.32,528.77
+"319",4728,"East Nusa Tenggara","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",54.95,379.71,304.32,448.69
+"320",4729,"West Kalimantan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.61,449.03,407.88,509.48
+"321",4730,"Central Kalimantan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.9,435.33,353.65,505.4
+"322",4731,"South Kalimantan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",62.32,507.78,419.55,589.4
+"323",4732,"East Kalimantan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",75.93,452.29,394.84,529.61
+"324",4733,"North Sulawesi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.05,456.05,369.35,516.56
+"325",4734,"Central Sulawesi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.63,465.13,371.38,553.07
+"326",4735,"South Sulawesi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",62.11,391.29,315.63,444.61
+"327",4736,"Southeast Sulawesi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.53,493.78,402.74,578.61
+"328",4737,"Gorontalo","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",57,393.28,299.13,487.66
+"329",4738,"West Sulawesi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",57.57,478.62,386.13,585.84
+"330",4739,"Maluku","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.03,505.4,430.92,593.55
+"331",4740,"North Maluku","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",56.29,504.27,407.56,603.43
+"332",4741,"West Papua","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",67.51,436.15,366.75,519.4
+"333",4742,"Papua","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.58,474.8,370.99,570.31
+"334",4749,"England","admin1","High-income","Western Europe",86.14,115.71,104.15,121.49
+"335",4750,"Acre","admin1","Latin America and Caribbean","Tropical Latin America",56.59,168.76,153.56,181.25
+"336",4751,"Alagoas","admin1","Latin America and Caribbean","Tropical Latin America",53.57,203.78,178.4,228.32
+"337",4752,"Amazonas","admin1","Latin America and Caribbean","Tropical Latin America",60.95,145.17,130.71,157.55
+"338",4753,"Amapá","admin1","Latin America and Caribbean","Tropical Latin America",63.22,175.95,154.86,198.32
+"339",4754,"Bahia","admin1","Latin America and Caribbean","Tropical Latin America",57.74,147.98,130.59,164.28
+"340",4755,"Ceará","admin1","Latin America and Caribbean","Tropical Latin America",56.87,164.01,141.06,185.42
+"341",4756,"Distrito Federal","admin1","Latin America and Caribbean","Tropical Latin America",77.6,172,153.79,188.07
+"342",4757,"Espírito Santo","admin1","Latin America and Caribbean","Tropical Latin America",67.02,165.87,145.41,180.84
+"343",4758,"Goiás","admin1","Latin America and Caribbean","Tropical Latin America",64.09,159.2,142.38,174.06
+"344",4759,"Maranhão","admin1","Latin America and Caribbean","Tropical Latin America",49.89,218.11,196.06,241.38
+"345",4760,"Minas Gerais","admin1","Latin America and Caribbean","Tropical Latin America",65.23,135.61,120.39,147.74
+"346",4761,"Mato Grosso do Sul","admin1","Latin America and Caribbean","Tropical Latin America",64.75,170.86,153.48,188.59
+"347",4762,"Mato Grosso","admin1","Latin America and Caribbean","Tropical Latin America",65.12,151.7,133.59,165.77
+"348",4763,"Pará","admin1","Latin America and Caribbean","Tropical Latin America",58.21,168.23,143.49,196.13
+"349",4764,"Paraíba","admin1","Latin America and Caribbean","Tropical Latin America",56.39,169.5,154.21,185.29
+"350",4765,"Paraná","admin1","Latin America and Caribbean","Tropical Latin America",67.49,158.75,144.94,172.8
+"351",4766,"Pernambuco","admin1","Latin America and Caribbean","Tropical Latin America",58.68,181.24,158.19,197.72
+"352",4767,"Piaui","admin1","Latin America and Caribbean","Tropical Latin America",52.52,174.01,149.3,194.73
+"353",4768,"Rio de Janeiro","admin1","Latin America and Caribbean","Tropical Latin America",71.61,182.09,160.34,200.75
+"354",4769,"Rio Grande do Norte","admin1","Latin America and Caribbean","Tropical Latin America",58.99,148.52,130.66,164.03
+"355",4770,"Rondônia","admin1","Latin America and Caribbean","Tropical Latin America",62.49,156.19,135.36,175.96
+"356",4771,"Roraima","admin1","Latin America and Caribbean","Tropical Latin America",62.1,211.62,182.73,243.04
+"357",4772,"Rio Grande do Sul","admin1","Latin America and Caribbean","Tropical Latin America",69.33,147.26,133.51,159.84
+"358",4773,"Santa Catarina","admin1","Latin America and Caribbean","Tropical Latin America",70.13,150.86,132.37,164.28
+"359",4774,"Sergipe","admin1","Latin America and Caribbean","Tropical Latin America",59.58,151.88,135,165.69
+"360",4775,"São Paulo","admin1","Latin America and Caribbean","Tropical Latin America",71.37,168.94,148.47,186.42
+"361",4776,"Tocantins","admin1","Latin America and Caribbean","Tropical Latin America",60.86,190.17,168.56,214.61
+"362",4940,"Sweden except Stockholm","admin1","High-income","Western Europe",87.52,118.54,103.55,127.41
+"363",4944,"Stockholm","admin2","High-income","Western Europe",91.66,111.34,95.65,124.49
+"364",35424,"Hokkaidō","admin2","High-income","High-income Asia Pacific",84.37,73.57,61.94,83.15
+"365",35425,"Aomori","admin2","High-income","High-income Asia Pacific",82.83,84.43,72.57,95.46
+"366",35426,"Iwate","admin2","High-income","High-income Asia Pacific",83.5,87.03,71.74,97.44
+"367",35427,"Miyagi","admin2","High-income","High-income Asia Pacific",85.99,79.6,66.74,88.31
+"368",35428,"Akita","admin2","High-income","High-income Asia Pacific",83.22,80.22,63.94,89.49
+"369",35429,"Yamagata","admin2","High-income","High-income Asia Pacific",83.79,81.94,67.79,92.65
+"370",35430,"Fukushima","admin2","High-income","High-income Asia Pacific",84.09,86.05,74.4,98.13
+"371",35431,"Ibaraki","admin2","High-income","High-income Asia Pacific",85.98,84.69,71.02,94.93
+"372",35432,"Tochigi","admin2","High-income","High-income Asia Pacific",86.12,95.7,80.04,107.04
+"373",35433,"Gunma","admin2","High-income","High-income Asia Pacific",86.11,87.17,73.09,97.27
+"374",35434,"Saitama","admin2","High-income","High-income Asia Pacific",85.64,83.21,70.03,92.74
+"375",35435,"Chiba","admin2","High-income","High-income Asia Pacific",86.13,77.78,63.91,86.59
+"376",35436,"Tōkyō","admin2","High-income","High-income Asia Pacific",92.88,75.43,62.83,85.75
+"377",35437,"Kanagawa","admin2","High-income","High-income Asia Pacific",88.27,72.25,61.55,81.68
+"378",35438,"Niigata","admin2","High-income","High-income Asia Pacific",84.52,78.09,64.38,88.19
+"379",35439,"Toyama","admin2","High-income","High-income Asia Pacific",86.52,67.57,53.97,76.71
+"380",35440,"Ishikawa","admin2","High-income","High-income Asia Pacific",85.94,66.3,53.35,74.48
+"381",35441,"Fukui","admin2","High-income","High-income Asia Pacific",85.61,67.81,54.02,77.65
+"382",35442,"Yamanashi","admin2","High-income","High-income Asia Pacific",85.78,75.81,61.78,84.83
+"383",35443,"Nagano","admin2","High-income","High-income Asia Pacific",85.86,75.17,60.7,86.36
+"384",35444,"Gifu","admin2","High-income","High-income Asia Pacific",85.33,75.53,62.19,85.4
+"385",35445,"Shizuoka","admin2","High-income","High-income Asia Pacific",86.55,80.06,67.75,90.62
+"386",35446,"Aichi","admin2","High-income","High-income Asia Pacific",88.3,73.16,60,81.96
+"387",35447,"Mie","admin2","High-income","High-income Asia Pacific",86.06,78.08,62.88,88.11
+"388",35448,"Shiga","admin2","High-income","High-income Asia Pacific",87.43,69.85,54.58,78.56
+"389",35449,"Kyōto","admin2","High-income","High-income Asia Pacific",87.6,70.33,58.4,79.15
+"390",35450,"Ōsaka","admin2","High-income","High-income Asia Pacific",87.64,80.63,70.04,88.47
+"391",35451,"Hyōgo","admin2","High-income","High-income Asia Pacific",86.82,71.21,56.36,81.36
+"392",35452,"Nara","admin2","High-income","High-income Asia Pacific",85.17,66.85,53.51,76.02
+"393",35453,"Wakayama","admin2","High-income","High-income Asia Pacific",84.7,84.2,70.87,94.87
+"394",35454,"Tottori","admin2","High-income","High-income Asia Pacific",83.6,78.81,65.95,88.77
+"395",35455,"Shimane","admin2","High-income","High-income Asia Pacific",83.87,62.18,50.58,69.71
+"396",35456,"Okayama","admin2","High-income","High-income Asia Pacific",86.26,73.72,60.18,82.8
+"397",35457,"Hiroshima","admin2","High-income","High-income Asia Pacific",86.99,71.29,59.44,79.87
+"398",35458,"Yamaguchi","admin2","High-income","High-income Asia Pacific",85.63,82.01,65.48,91.74
+"399",35459,"Tokushima","admin2","High-income","High-income Asia Pacific",85.75,68.9,57.56,78.26
+"400",35460,"Kagawa","admin2","High-income","High-income Asia Pacific",85.78,69.56,56.99,79.07
+"401",35461,"Ehime","admin2","High-income","High-income Asia Pacific",84.35,73.3,59.65,83.39
+"402",35462,"Kōchi","admin2","High-income","High-income Asia Pacific",83.49,74.61,60.32,83.35
+"403",35463,"Fukuoka","admin2","High-income","High-income Asia Pacific",85.83,62.18,51.51,71.26
+"404",35464,"Saga","admin2","High-income","High-income Asia Pacific",83.49,62.45,49.94,70.05
+"405",35465,"Nagasaki","admin2","High-income","High-income Asia Pacific",82.92,69.62,57.6,79.06
+"406",35466,"Kumamoto","admin2","High-income","High-income Asia Pacific",83.45,61.36,49.07,69.52
+"407",35467,"Ōita","admin2","High-income","High-income Asia Pacific",84.93,71.05,58.26,79.87
+"408",35468,"Miyazaki","admin2","High-income","High-income Asia Pacific",82.66,74.06,61.1,84.12
+"409",35469,"Kagoshima","admin2","High-income","High-income Asia Pacific",83.2,77.63,66.4,87.82
+"410",35470,"Okinawa","admin2","High-income","High-income Asia Pacific",82.18,72.07,60.8,81.57
+"411",35494,"Piemonte","admin1","High-income","Western Europe",80.7,116.99,98.08,132.5
+"412",35495,"Valle d'Aosta","admin1","High-income","Western Europe",81.23,113.64,92.89,127.65
+"413",35496,"Liguria","admin1","High-income","Western Europe",82.21,107.97,88.26,122.65
+"414",35497,"Lombardia","admin1","High-income","Western Europe",82.94,100.94,81.47,116.51
+"415",35498,"Provincia autonoma di Bolzano","admin1","High-income","Western Europe",83.97,96.16,77.41,106.5
+"416",35499,"Provincia autonoma di Trento","admin1","High-income","Western Europe",82.94,98.62,79.09,110.9
+"417",35500,"Veneto","admin1","High-income","Western Europe",80.85,104.38,79.56,118.78
+"418",35501,"Friuli-Venezia Giulia","admin1","High-income","Western Europe",82.03,103.46,84.34,115.21
+"419",35502,"Emilia-Romagna","admin1","High-income","Western Europe",82.97,100.46,77.9,114.73
+"420",35503,"Toscana","admin1","High-income","Western Europe",81.17,108.82,89.27,126.9
+"421",35504,"Umbria","admin1","High-income","Western Europe",79.91,109.51,89.11,123.83
+"422",35505,"Marche","admin1","High-income","Western Europe",80.35,106.43,84.71,119.36
+"423",35506,"Lazio","admin1","High-income","Western Europe",82.73,117.73,97.82,136.56
+"424",35507,"Abruzzo","admin1","High-income","Western Europe",81.68,124.52,98.53,137.72
+"425",35508,"Molise","admin1","High-income","Western Europe",78.84,138.58,117.65,151.71
+"426",35509,"Campania","admin1","High-income","Western Europe",76.69,149.78,126.81,169.69
+"427",35510,"Puglia","admin1","High-income","Western Europe",76.4,114.1,95.61,130.14
+"428",35511,"Basilicata","admin1","High-income","Western Europe",78.4,135.5,111.96,153.85
+"429",35512,"Calabria","admin1","High-income","Western Europe",77.57,142.93,123.09,161.16
+"430",35513,"Sicilia","admin1","High-income","Western Europe",76.31,139.76,115.11,159.69
+"431",35514,"Sardegna","admin1","High-income","Western Europe",77.28,103.53,83.98,116.08
+"432",35617,"Baringo","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",51.49,244.66,185.98,317.06
+"433",35618,"Bomet","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",52.94,191.76,150.39,237.16
+"434",35619,"Bungoma","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",49.67,216.69,155.35,278.64
+"435",35620,"Busia","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",47.77,221.47,170.71,295.2
+"436",35621,"Elgeyo-Marakwet","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",52.63,263.06,198.37,338.45
+"437",35622,"Embu","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.76,216.87,165.19,271
+"438",35623,"Garissa","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",32.11,275.47,229.36,327.2
+"439",35624,"Homa Bay","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",49.39,239.92,170.14,338.36
+"440",35625,"Isiolo","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",43.4,223.51,172.22,284.19
+"441",35626,"Kajiado","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",50.7,233.79,186.05,292.57
+"442",35627,"Kakamega","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",50.95,224.63,171.97,300.34
+"443",35628,"Kericho","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",52.36,200.48,138.49,267.76
+"444",35629,"Kiambu","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",59.31,278.98,225.34,329.23
+"445",35630,"Kilifi","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",48.6,216.68,163.48,277.17
+"446",35631,"Kirinyaga","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.3,233.88,185.29,292
+"447",35632,"Kisii","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.46,307.93,236.02,383.6
+"448",35633,"Kisumu","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.44,301.48,212.67,374.89
+"449",35634,"Kitui","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",47.47,203.48,156.46,254.36
+"450",35635,"Kwale","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",47.51,248.61,180.01,324.65
+"451",35636,"Laikipia","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",57.57,210.15,165.3,255.78
+"452",35637,"Lamu","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",50.38,219.75,169.66,276.45
+"453",35638,"Machakos","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.8,214.13,171.9,259.51
+"454",35639,"Makueni","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",51.26,193.62,145.69,247.83
+"455",35640,"Mandera","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",23.83,266.64,204.55,339.38
+"456",35641,"Marsabit","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",40.02,210.94,165.72,275.99
+"457",35642,"Meru","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",50.82,224.34,178.08,299.29
+"458",35643,"Migori","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",47.28,244.39,178.54,333.66
+"459",35644,"Mombasa","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",59.64,233.15,182.07,297.58
+"460",35645,"Murang'a","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",55.09,226.8,180.19,281.36
+"461",35646,"Nairobi","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",68.37,273.88,222.69,316.78
+"462",35647,"Nakuru","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",57,212.86,160.7,270.1
+"463",35648,"Nandi","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",51.63,233.88,180.15,291.59
+"464",35649,"Narok","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",45.91,245.12,187.42,307.71
+"465",35650,"Nyamira","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",58.93,374.62,280.04,466.42
+"466",35651,"Nyandarua","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",57.61,312.65,231.25,386.3
+"467",35652,"Nyeri","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",57.88,263.17,188.27,320.61
+"468",35653,"Samburu","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",37.83,211.74,148.53,304.37
+"469",35654,"Siaya","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",47.65,169.89,124,213.83
+"470",35655,"Taita Taveta","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.1,249.93,187.01,313.18
+"471",35656,"Tana River","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",38.28,309.49,236.69,379.35
+"472",35657,"Tharaka Nithi","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",52.97,256.36,205.18,320.6
+"473",35658,"Trans Nzoia","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",54.85,216.46,167.47,270.88
+"474",35659,"Turkana","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",37.34,212.07,155.2,305.37
+"475",35660,"Uasin Gishu","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",56.73,205.16,143.58,273.54
+"476",35661,"Vihiga","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",52.31,258.94,191.02,337.72
+"477",35662,"Wajir","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",25.21,238.46,172.3,312.63
+"478",35663,"West Pokot","admin1","Sub-Saharan Africa","Eastern Sub-Saharan Africa",44.41,218.39,159.03,291.37
+"479",44643,"Darlington","health_districts","High-income","Western Europe",83.72,132.81,116.41,150.88
+"480",44644,"Northumberland","health_districts","High-income","Western Europe",82.33,119.29,102.64,132.34
+"481",44645,"Stockton-on-Tees","health_districts","High-income","Western Europe",83.1,132.7,112.85,148.83
+"482",44646,"Newcastle upon Tyne","health_districts","High-income","Western Europe",87.25,124.05,109.79,140.24
+"483",44647,"North Tyneside","health_districts","High-income","Western Europe",83.64,116.49,99.1,131.06
+"484",44648,"Redcar and Cleveland","health_districts","High-income","Western Europe",79.84,142.18,124.76,163.18
+"485",44649,"County Durham","health_districts","High-income","Western Europe",81.23,140.72,124.13,155.02
+"486",44650,"Gateshead","health_districts","High-income","Western Europe",83.02,126.71,110.8,141.35
+"487",44651,"Middlesbrough","health_districts","High-income","Western Europe",80.15,151.66,130.94,169.35
+"488",44652,"South Tyneside","health_districts","High-income","Western Europe",80.11,131.15,115.75,147.23
+"489",44653,"Sunderland","health_districts","High-income","Western Europe",81.92,134.85,119.52,148.74
+"490",44654,"Hartlepool","health_districts","High-income","Western Europe",79.89,149.1,131.12,162.6
+"491",44655,"Cheshire East","health_districts","High-income","Western Europe",88.48,106.15,96.56,119.08
+"492",44656,"Stockport","health_districts","High-income","Western Europe",86.17,117.09,103.07,131.82
+"493",44657,"Trafford","health_districts","High-income","Western Europe",89.68,107.37,93.88,118.88
+"494",44658,"Cheshire West and Chester","health_districts","High-income","Western Europe",87.12,115.27,105.04,127.34
+"495",44659,"Sefton","health_districts","High-income","Western Europe",82.58,131,116.14,145.83
+"496",44660,"Lancashire","health_districts","High-income","Western Europe",84.11,134.35,122.13,151.29
+"497",44661,"Cumbria","health_districts","High-income","Western Europe",84.35,131.17,115.76,147.46
+"498",44662,"Bolton","health_districts","High-income","Western Europe",81.42,139.02,123.31,152.08
+"499",44663,"Wirral","health_districts","High-income","Western Europe",81.93,118.67,105.81,133.49
+"500",44664,"Bury","health_districts","High-income","Western Europe",83.01,116.13,100.59,129.72
+"501",44665,"St Helens","health_districts","High-income","Western Europe",81.22,138.38,123.5,153.28
+"502",44666,"Warrington","health_districts","High-income","Western Europe",87.88,125.67,113.4,139.41
+"503",44667,"Oldham","health_districts","High-income","Western Europe",79.84,141.82,126.6,158.63
+"504",44668,"Rochdale","health_districts","High-income","Western Europe",80.21,139.31,124.54,152.42
+"505",44669,"Wigan","health_districts","High-income","Western Europe",80.69,134.7,119.66,149.72
+"506",44670,"Halton","health_districts","High-income","Western Europe",83.62,127.96,111.37,144.39
+"507",44671,"Liverpool","health_districts","High-income","Western Europe",84.84,137.9,124.37,150.88
+"508",44672,"Tameside","health_districts","High-income","Western Europe",80.05,133.19,116.42,148.29
+"509",44673,"Salford","health_districts","High-income","Western Europe",83.87,125.93,112.17,141.31
+"510",44674,"Blackburn with Darwen","health_districts","High-income","Western Europe",81.15,134.61,120.55,150.13
+"511",44675,"Knowsley","health_districts","High-income","Western Europe",81.37,132.4,118.88,146.5
+"512",44676,"Blackpool","health_districts","High-income","Western Europe",78.99,167.8,151.59,183.7
+"513",44677,"Manchester","health_districts","High-income","Western Europe",88.14,138.9,125.4,154.55
+"514",44678,"North Yorkshire","health_districts","High-income","Western Europe",85.62,120.89,103.55,132.87
+"515",44679,"East Riding of Yorkshire","health_districts","High-income","Western Europe",83.57,118.09,98.48,131.55
+"516",44680,"York","health_districts","High-income","Western Europe",88.87,112.4,96.24,125.79
+"517",44681,"North East Lincolnshire","health_districts","High-income","Western Europe",80.48,137.63,118.39,155.15
+"518",44682,"Calderdale","health_districts","High-income","Western Europe",83.79,122.59,103.18,137.91
+"519",44683,"North Lincolnshire","health_districts","High-income","Western Europe",82.59,118.53,100.75,132.21
+"520",44684,"Bradford","health_districts","High-income","Western Europe",81.6,145.92,126.24,162.76
+"521",44685,"Kirklees","health_districts","High-income","Western Europe",82.42,136.26,119.39,152.08
+"522",44686,"Leeds","health_districts","High-income","Western Europe",86.88,132.39,112.3,147.21
+"523",44687,"Sheffield","health_districts","High-income","Western Europe",85.49,133.94,114.76,150.21
+"524",44688,"Wakefield","health_districts","High-income","Western Europe",80.68,140.63,117.12,155.57
+"525",44689,"Rotherham","health_districts","High-income","Western Europe",80.42,131.49,114.38,147.04
+"526",44690,"Doncaster","health_districts","High-income","Western Europe",79.56,136.22,118.97,150.85
+"527",44691,"Kingston upon Hull, City of","health_districts","High-income","Western Europe",79.99,149.42,130.52,168.29
+"528",44692,"Barnsley","health_districts","High-income","Western Europe",78.93,134.96,117.97,150
+"529",44693,"Northamptonshire","health_districts","High-income","Western Europe",83.96,114.25,99.6,128.28
+"530",44694,"Leicestershire","health_districts","High-income","Western Europe",85.19,103.12,89.59,114.91
+"531",44695,"Lincolnshire","health_districts","High-income","Western Europe",82.14,126.2,111.02,144.27
+"532",44696,"Rutland","health_districts","High-income","Western Europe",85.27,96.21,84.03,110.86
+"533",44697,"Derby","health_districts","High-income","Western Europe",84.6,126.92,111.52,142.4
+"534",44698,"Derbyshire","health_districts","High-income","Western Europe",82.42,121.66,108.43,137.83
+"535",44699,"Nottinghamshire","health_districts","High-income","Western Europe",82.3,118.89,106.54,129.09
+"536",44700,"Nottingham","health_districts","High-income","Western Europe",85.89,124.57,109.54,139.27
+"537",44701,"Leicester","health_districts","High-income","Western Europe",82.91,139.83,121.23,153.95
+"538",44702,"Warwickshire","health_districts","High-income","Western Europe",86.67,111.07,98.23,122.94
+"539",44703,"Herefordshire, County of","health_districts","High-income","Western Europe",84.63,117.82,102.39,132.12
+"540",44704,"Solihull","health_districts","High-income","Western Europe",87.21,96.52,81.67,107
+"541",44705,"Shropshire","health_districts","High-income","Western Europe",84.32,105.34,90.96,118.62
+"542",44706,"Worcestershire","health_districts","High-income","Western Europe",84.36,113.75,101.72,127.48
+"543",44707,"Staffordshire","health_districts","High-income","Western Europe",82.93,117.51,104.2,130.08
+"544",44708,"Dudley","health_districts","High-income","Western Europe",80.42,116.68,103.34,129.39
+"545",44709,"Coventry","health_districts","High-income","Western Europe",84.86,120.21,107.54,133.47
+"546",44710,"Telford and Wrekin","health_districts","High-income","Western Europe",82.73,130.09,112.86,145.09
+"547",44711,"Stoke-on-Trent","health_districts","High-income","Western Europe",79.82,135.55,118.37,153.79
+"548",44712,"Walsall","health_districts","High-income","Western Europe",79.25,131.17,116.01,146.85
+"549",44713,"Wolverhampton","health_districts","High-income","Western Europe",81.24,138.06,123.71,153.51
+"550",44714,"Birmingham","health_districts","High-income","Western Europe",83.81,120.58,105.41,134.63
+"551",44715,"Sandwell","health_districts","High-income","Western Europe",79.57,136.45,119.49,151.72
+"552",44716,"Bedford","health_districts","High-income","Western Europe",85.81,117.72,105.05,132.97
+"553",44717,"Central Bedfordshire","health_districts","High-income","Western Europe",85.23,97.01,81.83,110.23
+"554",44718,"Suffolk","health_districts","High-income","Western Europe",84.12,107.92,94.14,121.34
+"555",44719,"Hertfordshire","health_districts","High-income","Western Europe",88.75,101.94,88.5,114.79
+"556",44720,"Essex","health_districts","High-income","Western Europe",84.55,108.67,94.89,120.24
+"557",44721,"Cambridgeshire","health_districts","High-income","Western Europe",88.8,105.39,91.04,117.26
+"558",44722,"Thurrock","health_districts","High-income","Western Europe",81.96,94.47,82.94,108.23
+"559",44723,"Norfolk","health_districts","High-income","Western Europe",83.73,115.39,102.69,127.5
+"560",44724,"Southend-on-Sea","health_districts","High-income","Western Europe",82.58,111,97.11,125.64
+"561",44725,"Peterborough","health_districts","High-income","Western Europe",83.79,122.31,106.25,136.95
+"562",44726,"Luton","health_districts","High-income","Western Europe",83.97,117.76,103.64,131.28
+"563",44727,"Richmond upon Thames","health_districts","High-income","Western Europe",93.21,79.78,64.86,92.25
+"564",44728,"Kensington and Chelsea","health_districts","High-income","Western Europe",94.65,82.8,68.96,93.02
+"565",44729,"Barnet","health_districts","High-income","Western Europe",88.6,96.71,82.11,110.23
+"566",44730,"Westminster","health_districts","High-income","Western Europe",93.72,83.12,71.61,93.1
+"567",44731,"Bromley","health_districts","High-income","Western Europe",86.95,89.27,77.1,101.53
+"568",44732,"Bexley","health_districts","High-income","Western Europe",84.45,109.21,93.97,122.71
+"569",44733,"Redbridge","health_districts","High-income","Western Europe",85.03,95.84,81.88,109.61
+"570",44734,"Merton","health_districts","High-income","Western Europe",88.77,94.49,81.78,106.01
+"571",44735,"Brent","health_districts","High-income","Western Europe",86.02,116.06,99.64,129.91
+"572",44736,"Hillingdon","health_districts","High-income","Western Europe",89.31,108.81,94.21,122.78
+"573",44737,"Havering","health_districts","High-income","Western Europe",83.46,97.17,83.58,109.81
+"574",44738,"Kingston upon Thames","health_districts","High-income","Western Europe",90.87,87.01,75.11,98.44
+"575",44739,"Sutton","health_districts","High-income","Western Europe",85.84,92.17,79.29,106.07
+"576",44740,"Harrow","health_districts","High-income","Western Europe",86,100.57,88.52,116.72
+"577",44741,"Enfield","health_districts","High-income","Western Europe",84.65,116.66,101.31,129.63
+"578",44742,"Croydon","health_districts","High-income","Western Europe",85.21,107.36,94.15,121.1
+"579",44743,"Hammersmith and Fulham","health_districts","High-income","Western Europe",93.52,103.47,90.01,116.58
+"580",44744,"Ealing","health_districts","High-income","Western Europe",88.27,108.79,94.95,121.06
+"581",44745,"Greenwich","health_districts","High-income","Western Europe",84.61,113.57,98.86,127.11
+"582",44746,"Wandsworth","health_districts","High-income","Western Europe",92.42,106.72,93.89,121.13
+"583",44747,"Waltham Forest","health_districts","High-income","Western Europe",84.05,107.22,95.44,119.45
+"584",44748,"Camden","health_districts","High-income","Western Europe",93.65,93,79.88,103.23
+"585",44749,"Lambeth","health_districts","High-income","Western Europe",91.64,105.21,92.38,118.4
+"586",44750,"Lewisham","health_districts","High-income","Western Europe",85.73,116.18,101.29,130.34
+"587",44751,"Hounslow","health_districts","High-income","Western Europe",89.7,108.3,94.03,123.09
+"588",44752,"Southwark","health_districts","High-income","Western Europe",91.95,97.42,84.21,109.29
+"589",44753,"Newham","health_districts","High-income","Western Europe",84.17,122.13,106.84,137.47
+"590",44754,"Barking and Dagenham","health_districts","High-income","Western Europe",80.73,111.38,98.55,125.07
+"591",44755,"Haringey","health_districts","High-income","Western Europe",87.21,117.52,102.36,131.14
+"592",44756,"Hackney","health_districts","High-income","Western Europe",89.29,112.01,98.91,124.62
+"593",44757,"Islington","health_districts","High-income","Western Europe",92.47,108.88,95.01,121.01
+"594",44758,"Tower Hamlets","health_districts","High-income","Western Europe",90.45,102.81,92.09,114.82
+"595",44759,"Wokingham","health_districts","High-income","Western Europe",91.17,85.46,71.68,96.21
+"596",44760,"Buckinghamshire","health_districts","High-income","Western Europe",88.88,96.31,79.95,107.34
+"597",44761,"Surrey","health_districts","High-income","Western Europe",90.49,98.35,84.4,110.09
+"598",44762,"Windsor and Maidenhead","health_districts","High-income","Western Europe",91.58,88.68,76.45,100.98
+"599",44763,"West Berkshire","health_districts","High-income","Western Europe",89.78,86.86,72.27,98.66
+"600",44764,"Hampshire","health_districts","High-income","Western Europe",87.29,104.39,88.26,115.78
+"601",44765,"Bracknell Forest","health_districts","High-income","Western Europe",89.1,88.45,77.79,99.14
+"602",44766,"West Sussex","health_districts","High-income","Western Europe",86.48,110.06,93.31,122.49
+"603",44767,"Oxfordshire","health_districts","High-income","Western Europe",89.95,98.37,84.29,110.26
+"604",44768,"Reading","health_districts","High-income","Western Europe",90.59,111.8,99.81,125.06
+"605",44769,"Kent","health_districts","High-income","Western Europe",84.53,115.23,102.93,126.24
+"606",44770,"Brighton and Hove","health_districts","High-income","Western Europe",89.83,108.44,93.1,119.74
+"607",44771,"Medway","health_districts","High-income","Western Europe",82.07,116.78,100.6,130.36
+"608",44772,"East Sussex","health_districts","High-income","Western Europe",83.96,123.98,109.42,137.99
+"609",44773,"Portsmouth","health_districts","High-income","Western Europe",86.59,127.39,109.9,142.73
+"610",44774,"Isle of Wight","health_districts","High-income","Western Europe",82.64,138.54,119.16,155.1
+"611",44775,"Milton Keynes","health_districts","High-income","Western Europe",88.72,99.65,83.76,111.12
+"612",44776,"Southampton","health_districts","High-income","Western Europe",86.13,117.49,103.43,129.12
+"613",44777,"Slough","health_districts","High-income","Western Europe",87.86,127.69,109.45,141.94
+"614",44778,"South Gloucestershire","health_districts","High-income","Western Europe",88.5,94.27,79.83,106.82
+"615",44779,"Dorset","health_districts","High-income","Western Europe",85.16,94.16,80.88,105.35
+"616",44780,"Wiltshire","health_districts","High-income","Western Europe",85.95,102.43,89.37,113.06
+"617",44781,"North Somerset","health_districts","High-income","Western Europe",85.9,99.8,84.33,112.46
+"618",44782,"Devon","health_districts","High-income","Western Europe",85.54,110.89,96.66,123.57
+"619",44783,"Poole","health_districts","High-income","Western Europe",86.35,106.35,93.03,119.3
+"620",44784,"Bath and North East Somerset","health_districts","High-income","Western Europe",89.54,98.34,82.76,111.28
+"621",44785,"Gloucestershire","health_districts","High-income","Western Europe",87.18,116.91,104.12,129.08
+"622",44786,"Somerset","health_districts","High-income","Western Europe",84.34,113.15,100.33,124.33
+"623",44787,"Swindon","health_districts","High-income","Western Europe",86.75,100.44,86.43,112.82
+"624",44788,"Torbay","health_districts","High-income","Western Europe",81.3,137.49,120.12,155.2
+"625",44789,"Bristol, City of","health_districts","High-income","Western Europe",89.7,111.39,97.38,125.48
+"626",44790,"Bournemouth","health_districts","High-income","Western Europe",87.05,119.98,103.99,135.04
+"627",44791,"Cornwall","health_districts","High-income","Western Europe",83.98,121.41,104.56,134.24
+"628",44792,"Plymouth","health_districts","High-income","Western Europe",84.33,116.21,100.3,128.67
+"629",53533,"Mountain Province","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",52.05,285.7,247.48,338.84
+"630",53534,"Ifugao","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",59.71,211.18,183.3,246.85
+"631",53535,"Benguet","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",71.35,294.74,252.63,346.02
+"632",53536,"Abra","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.65,242.95,202.65,280.46
+"633",53537,"Apayao","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.11,252.92,217.24,300.61
+"634",53538,"Kalinga","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",57.82,221.54,191.51,263.08
+"635",53539,"La Union","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66.1,278.98,239.96,326.44
+"636",53540,"Ilocos Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",68.69,287.05,254.46,330.18
+"637",53541,"Ilocos Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",67.23,251.88,219.86,299.47
+"638",53542,"Pangasinan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66.56,348.32,300.56,400.16
+"639",53543,"Nueva Vizcaya","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.62,288.48,253.91,329.01
+"640",53544,"Cagayan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.51,316.58,259.94,372.21
+"641",53545,"Isabela","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.73,307.21,262.27,348.31
+"642",53546,"Quirino","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",57.15,219.18,188.04,262.48
+"643",53547,"Batanes","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",68.23,291.06,252.16,332.99
+"644",53548,"Bataan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.69,329.39,288.16,377.8
+"645",53549,"Zambales","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.08,368.52,325.55,423.86
+"646",53550,"Tarlac","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.06,349.87,304.14,393.54
+"647",53551,"Pampanga","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",69.6,336.69,292.57,383.57
+"648",53552,"Bulacan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",70.75,395.62,342.35,460.25
+"649",53553,"Nueva Ecija","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.02,346.78,301.45,396.83
+"650",53554,"Aurora","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.45,325.76,274.5,375.89
+"651",53555,"Rizal","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",70.94,449.55,387.52,506.01
+"652",53556,"Cavite","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",72.68,332.3,287.64,385.29
+"653",53557,"Laguna","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",70.09,418.04,367.32,478.06
+"654",53558,"Batangas","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",68.44,302.35,260.54,344.1
+"655",53559,"Quezon","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",62.86,383.51,336.79,438.66
+"656",53560,"Occidental Mindoro","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",46.68,322.88,272.35,368.76
+"657",53561,"Oriental Mindoro","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.32,305.55,257.99,354.28
+"658",53562,"Romblon","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",53.24,257.29,219.01,297.32
+"659",53563,"Palawan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",53,277.75,236.51,321.34
+"660",53564,"Marinduque","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",55.19,330.68,277.23,387.96
+"661",53565,"Catanduanes","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.95,305.52,257.42,363.75
+"662",53566,"Camarines Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",59.43,404.09,346.6,470.96
+"663",53567,"Sorsogon","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.03,342.52,294.16,395.3
+"664",53568,"Albay","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.99,387.67,336.76,452.69
+"665",53569,"Masbate","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",45.41,364.4,303.39,423.47
+"666",53570,"Camarines Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.26,386.98,338.09,440.84
+"667",53571,"Capiz","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",56.81,299.6,260.91,347.27
+"668",53572,"Aklan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.01,267.51,227.18,318.68
+"669",53573,"Antique","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",57.43,255.75,207.59,292.9
+"670",53574,"Negros Occidental","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.32,291.3,250.35,333.24
+"671",53575,"Iloilo","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",67.29,275.69,232.28,314.57
+"672",53576,"Guimaras","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.92,257.51,224.45,289.88
+"673",53577,"Negros Oriental","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",57.61,275.7,241.79,315.16
+"674",53578,"Cebu","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",65.61,377.3,333.53,425.98
+"675",53579,"Bohol","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.38,257.13,225.95,297.95
+"676",53580,"Siquijor","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.07,290.71,251.4,326.71
+"677",53581,"Southern Leyte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.02,267.43,232.36,321.47
+"678",53582,"Eastern Samar","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",49.57,320.16,272.18,384.36
+"679",53583,"Northern Samar","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",52.22,328.6,285.71,387.95
+"680",53584,"Samar (Western Samar)","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",52.55,346.5,286.48,398.82
+"681",53585,"Leyte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",61.09,306.85,258.98,351.21
+"682",53586,"Biliran","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",64.41,262.77,225.86,306.42
+"683",53587,"Zamboanga Sibugay","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",54.97,320.83,271.9,374.82
+"684",53588,"Zamboanga Del Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",53.72,309.36,265.87,367.68
+"685",53589,"Zamboanga Del Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.09,376.66,318.1,429.04
+"686",53590,"Misamis Occidental","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.57,306.03,257.02,356.6
+"687",53591,"Bukidnon","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",55.05,316.71,264.16,373.21
+"688",53592,"Lanao Del Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.25,269.06,231.4,319.06
+"689",53593,"Misamis Oriental","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66.02,349.62,306.55,403.86
+"690",53594,"Camiguin","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.24,268.24,226.43,317.85
+"691",53595,"Davao Oriental","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",54.67,287.57,246.39,343.8
+"692",53596,"Davao de Oro","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",53.44,301.71,260.5,360.25
+"693",53597,"Davao Del Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",66,358.07,295.58,433.83
+"694",53598,"Davao Occidental","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.15,379.83,319.74,459.41
+"695",53599,"Davao Del Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.81,445.3,394.01,508.04
+"696",53600,"South Cotabato","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",63.21,338.93,291.5,392.75
+"697",53601,"Sultan Kudarat","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",52.07,270.68,225.39,320.35
+"698",53602,"Cotabato (North Cotabato)","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",55.38,292.93,240.59,352.38
+"699",53603,"Sarangani","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.39,337.48,293.03,383.87
+"700",53604,"Agusan Del Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",60.94,315.5,263.04,372.25
+"701",53605,"Agusan Del Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",54.24,376.13,313.05,445.21
+"702",53606,"Surigao Del Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",58.87,323.59,261.99,376.26
+"703",53607,"Surigao Del Norte","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",62.74,340.01,284.31,402.42
+"704",53608,"Dinagat Islands","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",62.08,268.73,229.31,314.94
+"705",53609,"Tawi-Tawi","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",53.58,315.66,263.34,352.94
+"706",53610,"Basilan","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",54.68,428.76,389.08,474.67
+"707",53611,"Sulu","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",48.35,388.21,315.94,461.54
+"708",53612,"Maguindanao","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",51.13,332.58,285.52,388.75
+"709",53613,"Lanao Del Sur","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",53.07,397.53,333.94,454.6
+"710",53614,"National Capital Region","admin1","Southeast Asia, East Asia, and Oceania","Southeast Asia",75.17,380.87,333.25,431.79

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="locationMetricSelection"></div>
+</body>
+
+<script src="https://pagecdn.io/lib/billboardjs/3.5.1/billboard.pkgd.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/billboard.css">
+
+<script src="../data/IN/IHME_GBD_REGION_CVD_1990_2021_DISEASE_Y2022M12D09.js"></script>
+<script>
+
+    let selected_region_name = "Australasia", // "Central Europe",
+        selected_Cause_name = "Cardiovascular diseases",
+        selected_measure_name = "Deaths",
+        selected_metric_name = "Rate",
+        selected_age_group_name = "Age-standardized";
+
+    MULTIPLY_RATE = 100000;
+
+    let causeNameItems = Array.from(new Set(diseaseData.map(item => item.cause_name)))
+    let regionLocations = new Set(diseaseData.map(item => item.region_name === selected_region_name && item.region_name != item.location_name ? item.location_name : null))
+    let regionFiltered = diseaseData.filter(item => item.region_name === selected_region_name)
+
+    // let arr = regionLocations.forEach(r => diseaseData.map(item => r.push(item.Daly)))
+    ////filter
+    console.log("diseaseData", regionFiltered)
+
+    let arr = []
+
+    regionLocations.forEach(
+        (regionNameIsolated, i) => {
+            if (arr[i] === undefined) {
+                arr[i] = []
+            }
+            regionFiltered.map(item => {
+                if (item.location_name === regionNameIsolated && item.measure_name === "Deaths") {
+                    let itemVal = item.val * MULTIPLY_RATE
+                    arr[i].push(parseFloat(itemVal.toFixed(2)))
+                }
+            });
+            arr[i].unshift(regionNameIsolated)
+
+        })
+
+    arr = Object.values(arr).map(item => { if (item[0] != null) return item })
+
+    arr.shift()
+    // document.querySelector('body').innerHTML = Object.values(arr)
+
+    console.log("arr", arr)
+
+
+
+    ///////
+    // let filters = {
+    //     region_name: selected_region_name,
+    //     // cause_name: selected_Cause_name,
+    //     measure_name: selected_measure_name,
+    //     metric_name: selected_metric_name,
+    //     age_group_name: selected_age_group_name
+    // };
+
+
+    // let FilterSelection = (selected_region_name, cause_name_selection, selected_measure_name, selected_metric_name, selected_age_group_name) => {
+
+
+    //     console.log("   ::::  ", selected_region_name, selected_Cause_name)
+
+    //     let filteredArray = diseaseData.filter(item => item.region_name != item.location_name ? Object.keys(filters).every(key => item[key] === filters[key]) : false)
+
+
+
+    //     let vals = filteredArray.map(item => item) // Number(item.val))
+    //     // console.log("filteredArray", filteredArray)
+
+    //     let { cause_name } = diseaseData[0]
+    //     console.log("regionLocations", regionLocations)
+
+    // }
+
+    // FilterSelection(selected_region_name, selected_Cause_name, selected_measure_name, selected_metric_name, selected_age_group_name)
+////////
+</script>
+<script>
+    let dummyData = [
+        ["countryA", 2, 5, 3],
+        ["countryB", 23, 2, 4]
+    ]
+
+    console.log("dummydata", dummyData)
+    console.log("causeNameItems", causeNameItems)
+
+    var chart = bb.generate({
+        bindto: "#locationMetricSelection",
+        data: {
+            columns:
+                arr,
+            type: "bar",
+            // groups: [["countryA", "countryB"]]
+            groups: [regionFiltered]
+        },
+        axis: {
+            x: {
+                type: "category",
+                // categories: ["aortic", "hypertensie", "ischmeic "]
+                categories: causeNameItems,
+                tick: {
+                    rotate: -75,
+                    multiline: false,
+                    tooltip: true
+                },
+                height: 130
+            }
+        }
+    })
+</script>
+
+</html>

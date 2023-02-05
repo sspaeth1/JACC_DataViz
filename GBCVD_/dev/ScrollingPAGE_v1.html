@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100; 200;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            border-top: #f60 5px solid;
+            margin: 0;
+            height: 200vh;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            /* background: #e7e4e4; */
+            background: #002e5a;
+        }
+
+        main.interactive {
+            max-width: 1000px;
+            top: 0;
+            margin: 0 auto;
+            margin-top: 0;
+            padding-top: 0;
+            background-color: rgb(235, 235, 235);
+            background-image: url(./imgs/bgGlobeDesign.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 1rem;
+            box-shadow: 2px 2px 10px #fff;
+
+        }
+
+        .svg_chevronDown {
+            margin: auto;
+            text-align: center;
+        }
+
+        .pageHeader H1,
+        .pageHeader h2 {
+            width: 60%;
+            display: inline-block;
+            float: right;
+
+        }
+
+        .pageHeader H1 {
+            margin-bottom: 5px;
+            font-size: 38px;
+            font-weight: 100;
+        }
+
+        .pageHeader h2 {
+            margin-top: 5px;
+            margin-bottom: 70px;
+            color: #dc9d65;
+            font-weight: 400;
+        }
+
+        .intro {
+            /* z-index: 0; */
+            height: auto;
+        }
+
+        .statsSection {
+            float: left;
+            display: flex;
+            flex-flow: row;
+        }
+
+        .statsSection h3 {
+            width: 43%;
+            margin: 160px 96px;
+            font-size: 22px;
+            font-weight: 400;
+            /* color: #8c4a07; */
+            color: #9d754c;
+            text-shadow: -2px -2px 2px #afa4a4, 5px 1px 3px #cebeb4;
+        }
+
+        .statsSection p {
+            width: 92%;
+            padding: 135px 96px;
+            line-height: 1.75rem;
+            box-shadow: inset 2px 2px 20px #915912;
+            background: #dd9d65;
+            color: #fff;
+            border-radius: 2%
+        }
+
+        #sankeyChart svg {
+            /* box-shadow: inset 2px 2px 10px #858585; */
+            padding: 28px;
+            margin-top: 40px;
+        }
+
+        #globeViz {
+            transform: translateX(-100vw);
+            /* z-index: -1; */
+            position: sticky;
+            top: 200px
+        }
+
+        h1.instructions {
+            font-weight: 200;
+            text-align: center;
+        }
+
+        .chartGrid>* {
+            z-index: 10;
+        }
+
+        .chartGrid {
+
+            display: grid;
+
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-template-areas:
+                'globe globe globe regionMetrics regionMetrics regionMetrics regionMetrics'
+                'globe globe globe regionMetrics regionMetrics regionMetrics regionMetrics'
+                'globe globe globe regionMetrics regionMetrics regionMetrics regionMetrics'
+                'socioDemographicChart socioDemographicChart socioDemographicChart yearGenderMortality yearGenderMortality risks risks'
+                'socioDemographicChart socioDemographicChart socioDemographicChart yearGenderMortality yearGenderMortality risks risks';
+
+            gap: 0px;
+            height: 50%;
+
+        }
+
+        #risksArea {
+            /* background-color: #7aac5d; */
+            grid-area: risks;
+        }
+
+        #dateAgeArea {
+            /* background-color: #85b8d5; */
+            grid-area: yearGenderMortality;
+        }
+
+        #regionMetrics {
+            /* background-color: #6afdfb; */
+            grid-area: regionMetrics;
+            background: #d0a45f21;
+            margin-bottom: 30px;
+        }
+
+        #sciScatter {
+            /* background-color: #d7f6dd; */
+            margin: 2rem;
+            grid-area: socioDemographicChart;
+            background: #d0a45f21;
+        }
+
+
+        #item-4 {
+            /* background-color: #9d6fbd; */
+            grid-area: globe;
+        }
+
+        .regionMetricsButtons {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .metricSelectionSection {
+            display: flex;
+            flex-flow: row;
+        }
+
+        .regionMetricsButtons>div>p {
+            text-align: center;
+            margin: 3px;
+        }
+
+        .metricToggle {
+            padding: 5px;
+            background-color: #001678;
+            color: #fff;
+            margin-right: 5px;
+            border-radius: 2px
+        }
+
+        .metricToggle:hover {
+            background-color: #253ca1;
+        }
+
+        .borderRight {
+            padding: 0 5px;
+            border-right: 2px solid rgb(146, 146, 146);
+        }
+
+        .dataCardsGroup {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+        }
+
+        .dataCard {
+            border: 2px solid #afa4a4;
+            border-radius: 10px;
+            padding: 20px;
+            width: 25%;
+            min-height: 200px;
+            margin-right: 1rem;
+            background: #fff;
+            box-shadow: inset 2px 2px 10px #858585;
+            border-top: 14px solid #002e5a;
+        }
+
+        p.dataCard {
+            font-weight: 200;
+        }
+
+        ._center {
+            text-align: center;
+        }
+
+
+        /*/////Sankey////*/
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .2;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+
+        /*/////Sankey end////*/
+    </style>
+
+    <!-- <script src="//unpkg.com/d3"></script> -->
+
+    <script src="./js/d3v7.js"></script>
+    <script src="../dev/js/d3v4_13.js"></script>
+
+    <!-- <script src="//unpkg.com/globe.gl"></script> -->
+    <script src="./js/globe.gl.min.js"></script>
+    <!-- <script src="./js/billboard.min.js"></script> -->
+    <script src="https://pagecdn.io/lib/billboardjs/3.5.1/billboard.pkgd.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="./css/billboard.css">
+    <link rel="stylesheet" href="./css/graph.min.css">
+
+    <script src="../data/cleaned/Risk_plot.js" type="text/javascript"></script>
+    <script src="../data/cleaned/sdi.js" type="text/javascript"></script>
+
+    <title>SANKEY Experiment</title>
+
+
+    <!--<script src="../../dist/globe.gl.js"></script>-->
+</head>
+
+<body>
+
+    <main class="interactive">
+        <div class="pageHeader">
+            <h1>Global Burden of Cardiovascular Diseases and Risks Collaboration</h1>
+            <h2>1990-2021</h2>
+        </div>
+        <section class="intro">
+            <div>
+
+            </div>
+            </div>
+            <div class="statsSection">
+                <h3>Cardiovascular diseases (CVDs), principally ischemic heart disease (IHD) and stroke, are the leading
+                    cause of global mortality and a major contributor to disability.
+                </h3>
+                <p>This interactive accompanies this paper which reviews the magnitude of total CVD burden, including 13
+                    underlying causes of cardiovascular death and 9 related risk factors, using estimates from the
+                    Global
+                    Burden of Disease (GBD) Study 2019. GBD, an ongoing multinational collaboration to provide
+                    comparable
+                    and consistent estimates of population health over time, used all available population-level data
+                    sources on incidence, prevalence, case fatality, mortality, and health risks to produce estimates
+                    for
+                    204 countries and territories from 1990 to 2019.
+                </p>
+
+            </div>
+
+            <div class="sankeyArea">
+                <!-- <h2>View the makeup of Global CVD</h2> -->
+                <div id="sankeyChart"></div>
+
+            </div>
+
+
+            <!-- <iframe width="90%" height="500px" style="overflow: hidden;" src="../tests/sankey_d3v4.html"
+                frameborder="0"></iframe> -->
+            <!-- <img src="" alt="Sankey" style="min-width:200px;min-height:200px;border:2px solid black"> -->
+            <div>
+                <div class="dataCardsGroup">
+                    <p class="dataCard">Prevalent cases of total CVD nearly doubled from 271 million (95% uncertainty
+                        interval [UI]: 257 to
+                        285
+                        million) in 1990 to 523 million (95% UI: 497 to 550 million) in 2019, and the number of CVD
+                        deaths
+                        steadily increased from 12.1 million (95% UI:11.4 to 12.6 million) in 1990, reaching 18.6
+                        million
+                        (95%
+                        UI: 17.1 to 19.7 million) in 2019. The global trends for disability-adjusted life years (DALYs)
+                        and
+                        years of life lost also increased significantly, and years lived with disability doubled from
+                        17.7
+                        million (95% UI: 12.9 to 22.5 million) to 34.4 million (95% UI:24.9 to 43.6 million) over that
+                        period.
+                    </p>
+                    <p class="dataCard">The total number of DALYs due to IHD has risen steadily since 1990, reaching 182
+                        million (95% UI: 170
+                        to
+                        194 million) DALYs, 9.14 million (95% UI: 8.40 to 9.74 million) deaths in the year 2019, and 197
+                        million
+                        (95% UI: 178 to 220 million) prevalent cases of IHD in 2019.
+                    </p>
+                    <p class="dataCard"> The total number of DALYs due to stroke has risen steadily since 1990, reaching
+                        143 million (95% UI:
+                        133
+                        to 153 million) DALYs, 6.55 million (95% UI: 6.00 to 7.02 million) deaths in the year 2019, and
+                        101
+                        million (95% UI: 93.2 to 111 million) prevalent cases of stroke in 2019.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <h1 class="instructions">Rotate the globe and select one of the 21 regions to see more associated data</h1>
+        <div class="svg_chevronDown">
+            <svg width="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.49 12.15">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke: #231f20;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                </defs>
+                <polyline class="cls-1" points=".24 .44 20.24 11.58 40.24 .44" />
+            </svg>
+        </div>
+
+        <div id="globeViz"></div>
+
+
+        <div class="chartGrid">
+            <div id="risksArea">
+                <label for="riskSelect">
+                    CVD Risks
+                </label>
+
+                <select name="riskSelect" id="riskSelect">
+                    <option value="Select risk type" selected>Select risk type</option>
+                    <option value="Metabolic">Metabolic</option>
+                    <option value="Behavioral">Behavioral</option>
+                    <option value="Environmental">Environmental</option>
+                </select>
+                <div id="risksChart"></div>
+
+            </div>
+            <div id="dateAgeArea">
+                <h3> Cardiovascular disease mortality rate 1990 vs. 2021</h3>
+                <div>
+                    <input type="range" min="0" max="90" step="10">
+                </div>
+                <div id="dateAgeChart"></div>
+            </div>
+
+            <div id="regionMetrics">
+                <h3 class="_center">CVD Location Metrics <span id="locationMetricSelection"></span></h3>
+
+                <div class="regionMetricsButtons">
+                    <div class="borderRight">
+                        <p> Prevalent Cases</p>
+                        <div class="metricSelectionSection">
+                            <div class="metricToggle PrevalentCasesCount" data-name="Prevalence Cases (Count)">Count
+                            </div>
+                            <div class="metricToggle PrevalenceRate" data-name="Prevalence Cases (Rate)">Rate</div>
+                        </div>
+
+                    </div>
+                    <div class="borderRight">
+                        <p>Deaths</p>
+                        <div class="metricSelectionSection">
+                            <div class="metricToggle DeathsCount" data-name="Deaths (Count)">Count</div>
+                            <div class="metricToggle DeathsRate" data-name="Deaths (Rate)">Rate</div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <p>DALYs</p>
+                        <div class="metricSelectionSection">
+                            <div class="metricToggle DALYsRate" data-name="DALYs (Rate)">Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="regionMetricsChart"></div>
+            </div>
+            <div id="sciScatter">
+                <h4>Socioeconomic continuum </h4>
+                <!-- <div id="sciScatterPlot"></div> -->
+                <div id="d3Scatter"></div>
+
+            </div>
+            <!-- <div id="item-4">&nbsp;</div> -->
+        </div>
+
+    </main>
+
+
+
+    <script src="./js/CVD_region_metrics.js"></script>
+    <script src="./js/_globe_nav.js"></script>
+
+
+
+    <!-- <script src="//unpkg.com/three"></script> -->
+    <script>
+        // const world = Globe()
+        //     .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+        //     .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+        //     .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
+        //     (document.getElementById('globeViz'));
+
+        // custom globe material
+        // const globeMaterial = world.globeMaterial();
+        // globeMaterial.bumpScale = 10;
+        // new THREE.TextureLoader().load('//unpkg.com/three-globe/example/img/earth-water.png', texture => {
+        //     globeMaterial.specularMap = texture;
+        //     globeMaterial.specular = new THREE.Color('grey');
+        //     globeMaterial.shininess = 15;
+        // });
+
+        // setTimeout(() => { // wait for scene to be populated (asynchronously)
+        //     const directionalLight = world.scene().children.find(obj3d => obj3d.type === 'DirectionalLight');
+        //     directionalLight && directionalLight.position.set(1, 1, 1); // change light position to see the specularMap's effect
+        // });
+    </script>
+
+
+    <script>
+        ///SANKEY addon d3v4
+        /* Modified to work with d3.v4 build */
+        (function (global, factory) {
+            typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-arrays'), require('d3-interpolate')) :
+                typeof define === 'function' && define.amd ? define('d3-sankey', ['exports', 'd3-arrays', 'd3-interpolate'], factory) :
+                    factory((global.d3_sankey = {}), global.d3_arrays, global.d3_interpolate);
+        }(this, function (exports, d3Arrays, d3Interpolate) {
+            'use strict';
+
+            //  https://github.com/d3/d3-plugins/tree/master/sankey
+
+            function sankey() {
+                var sankey = {},
+                    nodeWidth = 24,
+                    nodePadding = 8,
+                    size = [1, 1],
+                    nodes = [],
+                    links = [];
+
+                sankey.nodeWidth = function (_) {
+                    if (!arguments.length) return nodeWidth;
+                    nodeWidth = +_;
+                    return sankey;
+                };
+
+                sankey.nodePadding = function (_) {
+                    if (!arguments.length) return nodePadding;
+                    nodePadding = +_;
+                    return sankey;
+                };
+
+                sankey.nodes = function (_) {
+                    if (!arguments.length) return nodes;
+                    nodes = _;
+                    return sankey;
+                };
+
+                sankey.links = function (_) {
+                    if (!arguments.length) return links;
+                    links = _;
+                    return sankey;
+                };
+
+                sankey.size = function (_) {
+                    if (!arguments.length) return size;
+                    size = _;
+                    return sankey;
+                };
+
+                sankey.layout = function (iterations) {
+                    computeNodeLinks();
+                    computeNodeValues();
+                    computeNodeBreadths();
+                    computeNodeDepths(iterations);
+                    computeLinkDepths();
+                    return sankey;
+                };
+
+                sankey.relayout = function () {
+                    computeLinkDepths();
+                    return sankey;
+                };
+
+                sankey.link = function () {
+                    var curvature = .5;
+
+                    function link(d) {
+                        var x0 = d.source.x + d.source.dx,
+                            x1 = d.target.x,
+                            xi = d3.interpolateNumber(x0, x1),
+                            x2 = xi(curvature),
+                            x3 = xi(1 - curvature),
+                            y0 = d.source.y + d.sy + d.dy / 2,
+                            y1 = d.target.y + d.ty + d.dy / 2;
+                        return "M" + x0 + "," + y0 + "C" + x2 + "," + y0 + " " + x3 + "," + y1 + " " + x1 + "," + y1;
+                    }
+
+                    link.curvature = function (_) {
+                        if (!arguments.length) return curvature;
+                        curvature = +_;
+                        return link;
+                    };
+
+                    return link;
+                };
+
+                // Populate the sourceLinks and targetLinks for each node.
+                // Also, if the source and target are not objects, assume they are indices.
+                function computeNodeLinks() {
+                    nodes.forEach(function (node) {
+                        node.sourceLinks = [];
+                        node.targetLinks = [];
+                    });
+                    links.forEach(function (link) {
+                        var source = link.source,
+                            target = link.target;
+                        if (typeof source === "number") source = link.source = nodes[link.source];
+                        if (typeof target === "number") target = link.target = nodes[link.target];
+                        source.sourceLinks.push(link);
+                        target.targetLinks.push(link);
+                    });
+                }
+
+                // Compute the value (size) of each node by summing the associated links.
+                function computeNodeValues() {
+                    nodes.forEach(function (node) {
+                        node.value = Math.max(
+                            d3.sum(node.sourceLinks, value),
+                            d3.sum(node.targetLinks, value)
+                        );
+                    });
+                }
+
+                // Iteratively assign the breadth (x-position) for each node.
+                // Nodes are assigned the maximum breadth of incoming neighbors plus one;
+                // nodes with no incoming links are assigned breadth zero, while
+                // nodes with no outgoing links are assigned the maximum breadth.
+                function computeNodeBreadths() {
+                    var remainingNodes = nodes,
+                        nextNodes,
+                        x = 0;
+
+                    while (remainingNodes.length) {
+                        nextNodes = [];
+                        remainingNodes.forEach(function (node) {
+                            node.x = x;
+                            node.dx = nodeWidth;
+                            node.sourceLinks.forEach(function (link) {
+                                if (nextNodes.indexOf(link.target) < 0) {
+                                    nextNodes.push(link.target);
+                                }
+                            });
+                        });
+                        remainingNodes = nextNodes;
+                        ++x;
+                    }
+
+                    //
+                    moveSinksRight(x);
+                    scaleNodeBreadths((size[0] - nodeWidth) / (x - 1));
+                }
+
+                function moveSourcesRight() {
+                    nodes.forEach(function (node) {
+                        if (!node.targetLinks.length) {
+                            node.x = d3.min(node.sourceLinks, function (d) {
+                                return d.target.x;
+                            }) - 1;
+                        }
+                    });
+                }
+
+                function moveSinksRight(x) {
+                    nodes.forEach(function (node) {
+                        if (!node.sourceLinks.length) {
+                            node.x = x - 1;
+                        }
+                    });
+                }
+
+                function scaleNodeBreadths(kx) {
+                    nodes.forEach(function (node) {
+                        node.x *= kx;
+                    });
+                }
+
+                function computeNodeDepths(iterations) {
+                    var nodesByBreadth = d3.nest()
+                        .key(function (d) {
+                            return d.x;
+                        })
+                        .sortKeys(d3.ascending)
+                        .entries(nodes)
+                        .map(function (d) {
+                            return d.values;
+                        });
+
+                    //
+                    initializeNodeDepth();
+                    resolveCollisions();
+                    for (var alpha = 1; iterations > 0; --iterations) {
+                        relaxRightToLeft(alpha *= .99);
+                        resolveCollisions();
+                        relaxLeftToRight(alpha);
+                        resolveCollisions();
+                    }
+
+                    function initializeNodeDepth() {
+                        var ky = d3.min(nodesByBreadth, function (nodes) {
+                            return (size[1] - (nodes.length - 1) * nodePadding) / d3.sum(nodes, value);
+                        });
+
+                        nodesByBreadth.forEach(function (nodes) {
+                            nodes.forEach(function (node, i) {
+                                node.y = i;
+                                node.dy = node.value * ky;
+                            });
+                        });
+
+                        links.forEach(function (link) {
+                            link.dy = link.value * ky;
+                        });
+                    }
+
+                    function relaxLeftToRight(alpha) {
+                        nodesByBreadth.forEach(function (nodes, breadth) {
+                            nodes.forEach(function (node) {
+                                if (node.targetLinks.length) {
+                                    var y = d3.sum(node.targetLinks, weightedSource) / d3.sum(node.targetLinks, value);
+                                    node.y += (y - center(node)) * alpha;
+                                }
+                            });
+                        });
+
+                        function weightedSource(link) {
+                            return center(link.source) * link.value;
+                        }
+                    }
+
+                    function relaxRightToLeft(alpha) {
+                        nodesByBreadth.slice().reverse().forEach(function (nodes) {
+                            nodes.forEach(function (node) {
+                                if (node.sourceLinks.length) {
+                                    var y = d3.sum(node.sourceLinks, weightedTarget) / d3.sum(node.sourceLinks, value);
+                                    node.y += (y - center(node)) * alpha;
+                                }
+                            });
+                        });
+
+                        function weightedTarget(link) {
+                            return center(link.target) * link.value;
+                        }
+                    }
+
+                    function resolveCollisions() {
+                        nodesByBreadth.forEach(function (nodes) {
+                            var node,
+                                dy,
+                                y0 = 0,
+                                n = nodes.length,
+                                i;
+
+                            // Push any overlapping nodes down.
+                            nodes.sort(ascendingDepth);
+                            for (i = 0; i < n; ++i) {
+                                node = nodes[i];
+                                dy = y0 - node.y;
+                                if (dy > 0) node.y += dy;
+                                y0 = node.y + node.dy + nodePadding;
+                            }
+
+                            // If the bottommost node goes outside the bounds, push it back up.
+                            dy = y0 - nodePadding - size[1];
+                            if (dy > 0) {
+                                y0 = node.y -= dy;
+
+                                // Push any overlapping nodes back up.
+                                for (i = n - 2; i >= 0; --i) {
+                                    node = nodes[i];
+                                    dy = node.y + node.dy + nodePadding - y0;
+                                    if (dy > 0) node.y -= dy;
+                                    y0 = node.y;
+                                }
+                            }
+                        });
+                    }
+
+                    function ascendingDepth(a, b) {
+                        return a.y - b.y;
+                    }
+                }
+
+                function computeLinkDepths() {
+                    nodes.forEach(function (node) {
+                        node.sourceLinks.sort(ascendingTargetDepth);
+                        node.targetLinks.sort(ascendingSourceDepth);
+                    });
+                    nodes.forEach(function (node) {
+                        var sy = 0,
+                            ty = 0;
+                        node.sourceLinks.forEach(function (link) {
+                            link.sy = sy;
+                            sy += link.dy;
+                        });
+                        node.targetLinks.forEach(function (link) {
+                            link.ty = ty;
+                            ty += link.dy;
+                        });
+                    });
+
+                    function ascendingSourceDepth(a, b) {
+                        return a.source.y - b.source.y;
+                    }
+
+                    function ascendingTargetDepth(a, b) {
+                        return a.target.y - b.target.y;
+                    }
+                }
+
+                function center(node) {
+                    return node.y + node.dy / 2;
+                }
+
+                function value(link) {
+                    return link.value;
+                }
+
+                return sankey;
+            };
+
+            var version = "0.2.0";
+
+            exports.version = version;
+            exports.sankey = sankey;
+
+        }));
+
+    </script>
+
+
+    <script src="./js/sankey_d3v4.js"></script>
+
+
+
+
+
+    <script>
+        // set the dimensions and margins of the graph
+        var margin_scatter = { top: 10, right: 30, bottom: 30, left: 60 },
+            width_scatter = 460 - margin_scatter.left - margin_scatter.right,
+            width_scatter = 250 - margin_scatter.top - margin_scatter.bottom;
+
+        // append the svg object to the body of the page
+        var svg_scatter = d3.select("#d3Scatter")
+            .append("svg")
+            .attr("width_scatter", width_scatter + margin_scatter.left + margin_scatter.right)
+            .attr("height", width_scatter + margin_scatter.top + margin_scatter.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin_scatter.left + "," + margin_scatter.top + ")");
+
+        //Read the data
+        d3.csv("../data/cleaned/SDI_plot_mortVsSDI.csv", function (data) {
+            console.log(data)
+            // Add X axis
+            var x = d3.scaleLinear()
+                .domain([0, 100])
+                .range([0, width_scatter]);
+            svg_scatter.append("g")
+                .attr("transform", "translate(0," + width_scatter + ")")
+                .call(d3.axisBottom(x));
+
+            // Add Y axis
+            var y = d3.scaleLinear()
+                .domain([0, 700])
+                .range([width_scatter, 0]);
+            svg_scatter.append("g")
+                .call(d3.axisLeft(y));
+
+
+            var tooltip = d3.select("#my_dataviz")
+                .append("div")
+                .style("opacity", 0)
+                .attr("class", "tooltip")
+                .style("background-color", "white")
+                .style("border", "solid")
+                .style("border-width", "1px")
+                .style("border-radius", "5px")
+                .style("padding", "10px")
+
+            // Add X axis label:
+            svg_scatter.append("text")
+                .attr("text-anchor", "end")
+                .attr("x", width_scatter)
+                .attr("y", width_scatter + margin_scatter.top + 20)
+                .text("Socio-Demographic Index");
+
+            // Y axis label:
+            svg_scatter.append("text")
+                .attr("text-anchor", "end")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -margin_scatter.left + 20)
+                .attr("x", -margin_scatter.top)
+                .text("Mortalitu Rate per 100,000")
+
+            var mouseover = function (d) {
+                tooltip
+                    .style("opacity", 1)
+                // console.log(this)
+            }
+
+            var mousemove = function (d, i) {
+                tooltip
+                    .html("<b>" + SDIkey[i] + "</b> | Mortality: " + d.Mort + ",  SDI: " + d.SDI)
+                    .style("left", (d3.mouse(this)[0] + 90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                    .style("top", (d3.mouse(this)[1]) + "px")
+            }
+
+            // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+            var mouseleave = function (d) {
+                tooltip
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 0)
+            }
+
+            // Add dots
+            svg_scatter.append('g')
+                .selectAll("dot")
+                .data(data.filter(function (d, i) { return i < 50 })) // the .filter part is just to keep a few dots on the chart, not all of them
+                .enter()
+                .append("circle")
+                .attr("cx", function (d) { return x(d.SDI); })
+                .attr("cy", function (d) { return y(d.Mort); })
+                .attr("r", 5)
+                .style("fill", "#69b3a2")
+                .style("opacity", 0.3)
+                .style("stroke", "white")
+                .on("mouseover", mouseover)
+                .on("mousemove", mousemove)
+                .on("mouseleave", mouseleave)
+        })
+    </script>
+    </script>
+</body>
+
+</html>

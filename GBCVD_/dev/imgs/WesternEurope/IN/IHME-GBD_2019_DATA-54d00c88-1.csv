@@ -1,0 +1,721 @@
+measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,cause_id,cause_name,rei_id,rei_name,metric_id,metric_name,year,val,upper,lower
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,3153511.923710859,3491428.320846281,2804260.0541272773
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,3299912.2159765363,3697686.1708915625,2879723.9208610407
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.5249181419422329,0.5739379065598689,0.4727619608285093
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.5444766669461225,0.6030077989773552,0.4834491742613623
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,117.06775106163293,129.6122137484721,104.10248189020439
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,124.23908854914671,139.21496377636325,108.41933111698714
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,449431.4773041341,496029.7995379768,400718.09804276784
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,515547.35934939375,591952.943838326,431384.05093193013
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.586842453733975,0.6478268256253137,0.5216936383077387
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.5711180876395893,0.6484924064758292,0.4914368160108621
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,240.0106866388207,264.89567106992513,213.99619456285538
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,261.25173880322706,299.96998929955544,218.60229007897667
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,3201365.065362519,3530076.7904961044,2852477.0970478645
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,3344998.9296456752,3747922.5412916886,2899542.995198235
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.52529596968533,0.5740353443238535,0.47204878410865064
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.5455040117944282,0.6039058838853355,0.48300477110165685
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,116.97924739517667,128.99051428633413,104.23073195710403
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,124.07016305286058,139.01510003078198,107.54764941916804
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,443998.3219387014,489330.4204376197,394943.7676337217
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,510593.36041751713,587935.8447198498,425824.4073366232
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.585610629121371,0.6475778078142176,0.5213334122620406
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.5712066720139274,0.6495490070477773,0.4913969986080922
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,236.16576070671658,260.2782156360096,210.07330593576353
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,257.8909248572825,296.9551320204513,215.0757505836897
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,429892.6145707046,475095.14878217777,381639.14628219506
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,500512.653323066,575683.1848144063,416452.4189772947
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.5815743491728219,0.6423786640625037,0.5165004076530851
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.56898572460297,0.6476234329100405,0.48789175561121045
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,226.8617114585791,250.7158646259238,201.3975280120337
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,251.10373018995142,288.8162649930486,208.93129306029456
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,3265652.0688923164,3615303.3885365184,2910737.8663666854
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,3404981.4506896026,3827390.131919453,2960416.3725359095
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.525846294629079,0.5745707691799224,0.47312044290152966
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.5461910543651434,0.6045517058537105,0.4831273923673406
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,117.51111096660313,130.09295194523082,104.73989059260938
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,124.47441031976079,139.91621882047514,108.22264015498295
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,3369807.9576722654,3728772.299996062,2999760.9700511536
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,3506806.9836415597,3921498.322857739,3057902.182885743
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.5267435903546167,0.5757586911599051,0.4739476824307809
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.5469893618897669,0.6054390242850863,0.4839416874377812
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,119.4752158533768,132.20215543613753,106.35534544020828
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,126.3961439789523,141.34289937863588,110.21622985939757
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,434920.23143719044,480045.36437680223,386605.82506084046
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,502722.99067352054,578965.8008644448,418796.19937538967
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.583734677073459,0.6446638658022569,0.518357248248819
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.5704475566072476,0.6488412867605489,0.49030973031958974
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,230.38677472913548,254.29054623874384,204.7935752101851
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,253.04098061941818,291.41709592308496,210.7972042966593
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,3442259.4863582584,3806680.621125811,3068098.6936625717
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,3560870.4706093073,4000877.367503212,3104663.912755197
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5273135381978268,0.5771209034276332,0.4736601793345202
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5473958683442808,0.6056500629424769,0.48383300401223855
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,120.29614499601995,133.03151774794196,107.22040182548861
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,126.5559888149883,142.19416166666588,110.34206794658058
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,3504823.0349386255,3872276.397962386,3109982.6803685636
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,3594387.0436216085,4018537.352185198,3134200.0799154793
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5267137330712099,0.5770135769540947,0.47220171394006244
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5474116614848336,0.6054039153437962,0.48359823663941354
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,119.0977887312792,131.58426310152285,105.68067389769304
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,124.23516639674015,138.89535282689494,108.32942132371157
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,3481686.461757336,3820738.9566018665,3087962.1296420684
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,3575751.473980406,4020540.773214221,3114041.444585506
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5272203464230415,0.57708528232556,0.47368465383857106
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5474196400645399,0.6052619322245197,0.48431580966495114
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,119.97062818013534,131.65357012201488,106.40382485866893
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,125.3240458044021,140.91315900651054,109.141889607784
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,417067.3680239932,463643.56670548464,368998.56405499694
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,488773.6710842853,563437.6705517934,403272.1191749794
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5768017701415968,0.6392842852354413,0.5126629433517542
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5652069459553078,0.6444313130090473,0.4830989725090689
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,218.59915570286284,243.01132143009644,193.40466491099514
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,243.7156260523873,280.94509328909777,201.08226528686106
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,410057.49294308573,456090.23677177256,362554.1260702506
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,483211.7838016516,558032.7493659706,397896.7820198882
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5736878032436029,0.6356782215843599,0.5098068549798344
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5621726070518728,0.6412961700530517,0.4794913694641044
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,214.1883663573398,238.23299026811637,189.3755810234108
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,240.18502011234725,277.37549377486016,197.7783857839736
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,420736.0952846773,466429.67109394213,372455.979202359
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,491959.85610012367,566500.4877792858,407402.90586697374
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5792759780460589,0.6407703464332182,0.514666114183979
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5671635460053036,0.6462057740774994,0.48588026865495937
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,221.26365374131348,245.29374683143166,195.87330808960405
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,246.0548744570076,283.3365460046748,203.7635177210819
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,3540111.4093484753,3909191.8227938088,3156824.1690441957
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,3622416.13376351,4059146.366310071,3147612.759773877
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5261325520572501,0.5762066566085129,0.47127897052318185
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5472996122139285,0.6037542542849879,0.4835878286523704
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,118.6650067810811,131.0366314843598,105.81716734594305
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,123.48699500989409,138.37498745904324,107.30110147655702
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,399105.58555700467,443454.57196499436,352137.1554902266
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,472542.0933027217,545858.0939339133,388983.6088231372
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5698789923794139,0.6317206265080728,0.5062606645496459
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5578096315602861,0.6354252878807206,0.4758467864057937
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,207.7023908730892,230.7824750490145,183.25909673374449
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,234.0975807159957,270.41836275591265,192.70266724225618
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,3711379.4070575032,4101500.3890218553,3301476.8914793325
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,3761336.2339418908,4228477.941051467,3267961.355851359
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.5255444687814563,0.5749388710041633,0.46939131832395603
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.5449082729865652,0.6027807997048136,0.4815165284968635
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,119.65816369253885,132.23601014796085,106.44254304923655
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,123.17075320976247,138.46802852409422,107.0144322723229
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,370880.93401803175,412356.29914303677,326368.29654257593
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,442293.682117945,513758.2126254936,361982.77153524244
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.556697852799212,0.619607192376313,0.49121003812525704
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.5423938981707831,0.6183233114518568,0.4625953988331624
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,190.4113482713223,211.704921138332,167.5584309617416
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,216.50172274564503,251.48344325316754,177.1897198855411
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,383764.3505630614,426577.40762573323,338932.6241480309
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,456918.80433345045,529915.8028187113,374627.0589630438
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5611033132459924,0.6231007946863153,0.4969034034041346
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5473229327433923,0.6226770255442559,0.4677258270535334
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,198.03860619864756,220.13195107384234,174.90354271584846
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,224.6661939606701,260.5586931633688,184.20348362481468
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,3637063.524579897,4022291.7137012584,3226557.973020453
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,3717997.7661955995,4167767.603526526,3246778.8329714155
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5257699212668551,0.5754236028940376,0.4697438352826702
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5459382924798666,0.6041983591887031,0.48295481560492176
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,118.76538785218419,131.3447049258055,105.36065881268706
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,123.37733164785598,138.30240849704413,107.74049207475464
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,3574176.6705891476,3954045.6213979656,3187762.4118228736
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,3645866.6575288447,4094363.1681091688,3165618.8981537633
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5255890907364038,0.5758204736991506,0.47079580631677165
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5467404638111576,0.6031675156880661,0.48243610167214823
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,118.22877259666073,130.79430696749102,105.44672857972223
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,122.61228967507475,137.69544801274364,106.46132121694295
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,391827.91317872703,436032.6198487226,346114.88921950705
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,465507.69779671705,539819.2452272648,381843.741390573
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5653280011138264,0.6266581538890762,0.5017648197310163
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5526419117265173,0.6285554567690733,0.47125000240613757
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,203.09938703648066,226.01237645566113,179.4045791031151
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,229.78907989746094,266.4715712733156,188.48994853155048
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,361175.0345556163,402022.05099023966,317880.7406430238
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,430022.7152141852,501293.5110739983,351117.1683553444
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5517081732242397,0.6151798558172041,0.4862513121882629
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5366840151896786,0.6129322604600989,0.45695377382595626
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,184.35832047726728,205.2082869088064,162.25916480944775
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,209.4487362226952,244.1622004056011,171.01665697238565
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,3780007.4646360744,4183749.917011131,3369854.5081834444
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,3807459.9021729277,4285360.126502687,3324559.5553525924
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5253838264628923,0.5751130975605385,0.46946309564734023
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5440442143326926,0.6008066903071619,0.4800851634907191
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,120.33758302783681,133.19083565738532,107.28025022810321
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,123.04532194087119,138.48957833992372,107.4394770556878
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,3873092.836894175,4281011.639757507,3432653.958340311
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,3877504.081728524,4357109.638342877,3350514.211320855
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5255904143758767,0.5756077330025291,0.4690790250970716
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5430447965983878,0.6009604610674248,0.4799005796330222
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,121.7530286416827,134.5762042741901,107.90756465366204
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,123.66985589101728,138.96648713133496,106.86194029488729
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,354692.0226031866,395673.4200500103,312046.13352843333
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,423770.5415728267,495155.03740671,344716.6250391221
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5458931923721543,0.6096750794544817,0.48048859227531093
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.529616245590634,0.6070890015065905,0.4493465289759398
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,179.94354571517434,200.7343656237305,158.3082903351226
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,205.33437076040195,239.9231141867312,167.02947550424165
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,3941565.071682936,4348873.457506598,3511272.019345193
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,3910704.104747302,4395808.476260031,3384219.94226917
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5256767083713335,0.5761214538433452,0.46977804142826296
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5416100855218395,0.6003820351129139,0.4797751642755342
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,122.36271489752403,135.00727587356056,109.00461345100692
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,123.1081666702944,138.37915322951324,106.53455274104113
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,347368.7007081911,388182.01959634596,305658.3281464348
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,414082.7419758424,483623.87951609225,335860.2915477011
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5398930136555848,0.6034472756662921,0.4744767930777019
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5222259551989117,0.5994118151984101,0.4431330567621925
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,175.10539592049196,195.67901797731406,154.0795772830406
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,199.5658636923581,233.08099428956257,161.86680189292792
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,331033.17580592283,369889.7996737945,290019.04927650734
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,391810.5192269386,456411.4392879434,316745.97502986673
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5338883279701759,0.597511274598664,0.46846165837403353
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5154601746690712,0.5914009332718954,0.43648616080119473
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,165.7601693210183,185.217072804788,145.22292696904526
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,187.76809392500195,218.72691465699606,151.79477086812528
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,3965416.3666281127,4381857.902139638,3505239.3857272565
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,3892597.550743748,4366719.235699557,3361761.956527481
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5255058682553175,0.5758790532176671,0.46848817619598093
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5399879976772917,0.5991677458737954,0.47844862980248754
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,121.58339077769,134.3518794474465,107.47393226871061
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,120.95467273846084,135.68705452066692,104.46001981342694
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,4055681.1624072203,4485020.548999322,3578710.286545547
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,3939580.1717811506,4413740.807746992,3393666.303744235
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5267731100918284,0.577591124583937,0.47053223323248267
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5396158422346672,0.599576981882484,0.47861113235022057
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,121.30497294699913,134.14646629671878,107.03882704548916
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,119.28642699528861,133.64352232522225,102.75671775577342
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,322521.7124327939,360737.3031240481,281016.4458263583
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,381678.4656079049,446004.9614786883,306904.9268828188
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5283602903717346,0.5922438613173044,0.4636297771407456
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.510279093440267,0.585017515357221,0.43177388554890545
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,160.41291211183784,179.4202345789587,139.76940059723267
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,181.86473496169106,212.51545848082256,146.23613385440356
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,4047518.278705993,4484064.313222262,3569636.899564282
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,3939663.546121524,4430117.421466125,3398520.7425976973
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5257872001947149,0.5772911523098947,0.4686769843701265
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5392547609804511,0.5984246856394044,0.47852467129680565
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,122.58321151040789,135.8044525767352,108.11008745204248
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,120.84715445605056,135.891575009599,104.24787708257911
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,313754.1411904163,351798.76823410747,272755.705191614
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,372106.0274228593,435667.05503798166,299333.1541885778
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5227513602970213,0.587039590647753,0.4582719385419598
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5063542595265407,0.5813637390700561,0.42898358917706386
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,155.03799751422522,173.8373120687691,134.77909226327645
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,176.30368527685602,206.41887445060067,141.82392737492535
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,4231065.945054245,4683054.641445315,3752915.5892205066
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,4018058.8011860535,4529086.198348405,3491899.6038340223
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5301631953966561,0.5814881779010946,0.47410418791788034
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5407907822208449,0.6002481443812938,0.4793468816162233
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,123.37671657419523,136.55658236063255,109.43398401042901
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,118.52940192560891,133.60428627906185,103.00814201737009
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,4117859.112206095,4559913.209819623,3659838.2848658254
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,3961395.2629222595,4446263.535317376,3435828.9955167156
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5284052637381038,0.5795925615095707,0.4721449791180262
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5402302335583125,0.5997966759142513,0.4794455374030405
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,121.59412996078129,134.64731656339876,108.06947006183665
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,118.37828936889315,132.86759751559978,102.67280391335521
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,307508.8115648511,345441.417094642,266842.8783797279
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,366426.42900519527,429222.56250389904,294320.6975102398
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5165074725420912,0.5797205014401703,0.4517131337731811
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5029024847590898,0.5785616955943412,0.4268179172527332
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,150.9978283042919,169.62409474451047,131.0294001943026
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,172.6405926580178,202.22678198743017,138.66821721248857
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,4297947.15128264,4765956.518590159,3812418.5328769074
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,4048236.5798363453,4566832.478228447,3492749.2449185913
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.5317533409776012,0.5824458474711416,0.47486838455157093
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.5413480043308643,0.6008183596173899,0.47942670518029734
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,123.83264788231466,137.31695495903654,109.84357534988939
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,117.93123164574736,133.03871161083504,101.7490485448987
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,297158.3694495799,334066.21854099754,257113.73720481666
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,355490.18696023937,417854.0528982654,282529.1214050486
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.5054919433512117,0.5699840624757296,0.4400709530996967
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.49741140539495626,0.5721685980389845,0.4220559085493123
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,144.25573097091694,162.17267121765698,124.81603722569342
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,165.70661732080947,194.7766328844027,131.6968701808
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,301470.9013433239,338226.85888242465,261407.6937774378
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,361355.77200337546,422186.87532770453,288602.28170354944
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5103199002937372,0.5742908146851523,0.4452602299047445
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.499508568292684,0.5747943431322377,0.4235713060254217
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,147.14801685565428,165.0886082540584,127.59315595223651
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,169.3179454671747,197.8211498805821,135.2283516166647
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,4543413.3356646085,5056792.685794655,4037440.5759164104
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,4213808.0835529035,4734006.71450602,3616775.5089090536
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.5353759931251459,0.5862794615340464,0.4775962702472339
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.5424900839039501,0.6006425822187668,0.47982872376608404
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,126.37824670962523,140.65825545482838,112.30425750026504
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,118.29483645398268,132.89844695356206,101.53425567412785
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,4398742.347729807,4877371.456339928,3891660.5474959253
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,4115447.44704049,4660005.298040503,3549381.351324857
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.533130347387271,0.5841694759138405,0.47508366051808654
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.5418018472087601,0.6020404498010783,0.4793632259672268
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,125.25895850254905,138.88844141246503,110.81925434354672
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,118.40967987468456,134.07770179451938,102.12282260238457
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,4465672.855033108,4934042.834052158,3950950.9435749324
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,4167955.496606608,4718079.56989246,3595752.830347805
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.5343359972200998,0.5843840247686206,0.4767750819221488
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.5420328006249083,0.6022294071362055,0.47957196962624216
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,125.6820048167838,138.8638208319814,111.19565889418008
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,118.4498831749226,134.08395898630638,102.18835182557964
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,293818.0513909129,331248.43488870206,253806.26091129906
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,350725.2524583358,413346.98684072285,277166.70778211905
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.502187614807378,0.5664739864689157,0.43619903646431746
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.49607984154499046,0.570459819977892,0.42092473793514673
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,141.94790507845934,160.03108444283978,122.61760930482467
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,162.70019497255117,191.75019442973013,128.57664818819364
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,291599.2136344851,329455.8665138322,251031.16916700013
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,350688.45457092894,412390.96987737506,276864.7861129887
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.4995503817583067,0.5644470177595262,0.4333088394217853
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.4949363058150462,0.569954126913351,0.4202158927977715
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,140.28438990713138,158.49670737847455,120.76765905963272
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,161.9805658992328,190.48052994559046,127.88192524622
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,292446.5412987207,331466.7250398923,251406.13183542565
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,353944.1064033842,416043.6358338164,278546.89108820714
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.49691043790406475,0.5624656269845935,0.43026482396055166
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.49418386882609916,0.5676671103212677,0.41895625754629556
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,140.1285428782392,158.82543519301768,120.46364018635381
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,162.86077314734956,191.434712343276,128.16815203221663
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,4611072.281968277,5130989.596725248,4095965.930978931
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,4272645.13635936,4816988.723554885,3689142.435708455
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.5351175398410957,0.5870046828468825,0.4780066941032552
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.5420989683569362,0.6017199855550379,0.47892940594637257
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,126.78504415060345,141.08057796036374,112.62179155796285
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,118.50553553492135,133.6033792024558,102.32157973707825
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,291997.9372096519,331257.1238768539,250230.25450027006
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,354112.71228905837,416404.437050382,278959.783193297
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.4951696705109389,0.5608204107773713,0.4283559841557344
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.4943515497159368,0.568158107494975,0.42006602736437215
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,139.35901159411486,158.0958612520691,119.42495646146878
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,162.37973305760428,190.94384071998277,127.91807115853827
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,4665093.723846919,5187905.103572899,4146612.680422454
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,4340027.308431355,4898975.165821359,3734554.223587305
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.5351608257101443,0.5875965129843045,0.4775552318690938
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.5419794768349804,0.6007594565946406,0.4780047896835337
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,126.83485260024385,141.04908026866343,112.73835837921585
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,118.96611744100619,134.28764694301555,102.36926746750667
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,4862278.384396242,5450119.66485159,4276112.041643086
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,4517728.14140156,5120140.845716675,3868448.381540597
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.536217535057855,0.588840615127624,0.4777520753554723
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.5416704384597657,0.6004555904055432,0.47821159719655715
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,129.27563381414438,144.90484055739827,113.69095941065636
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,121.00867118957977,137.14447187861305,103.61752269371416
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,299377.6799869672,341237.1157236756,254767.9199522385
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,364193.24547192594,429166.27018799377,285043.5550369669
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.4923734038952349,0.557596072573252,0.42327285310755713
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.4949474152352124,0.5700628556092383,0.4199553371243118
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,141.0612086759396,160.7845982077513,120.0419173596454
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,165.4204223613833,194.93185708527903,129.46979619159347
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,298098.3468713833,339469.5666624928,254619.12195296003
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,363081.3482602165,427934.3103277025,284514.62400788255
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.49267304439148996,0.5579240990662073,0.42326888608862223
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.4946336244310975,0.5700984446754136,0.420612713310093
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,141.05904521037635,160.63575479018627,120.48483533015118
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,165.41382598544394,194.95975731316207,129.6201325996635
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,290237.1689077679,329926.1397349946,248739.06006199194
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,352895.34323669557,414760.21210108633,277503.3699852893
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.4935377581596559,0.5589863777890596,0.4258525358886993
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.49426527623818034,0.5687681337442262,0.42054504024289263
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,137.93499615762667,156.79714968246833,118.21305115061124
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,161.2825447670788,189.5564329703531,126.82641057875426
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,4772975.434112151,5329669.087604834,4205510.008930365
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,4440285.759422369,5032626.188240853,3809163.238069386
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.535923098379022,0.5891351328077664,0.4775796273851117
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.541925377869619,0.6010807131104327,0.4777558466684365
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,128.32921776666632,143.29683326659273,113.07198564207812
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,120.31273626581945,136.36262621733718,103.21201762359436
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,4931901.535915876,5538478.973917763,4318802.99530413
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,4591976.166749258,5233457.331870994,3941858.5824101954
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.5356369476129197,0.5886811516652259,0.47775900806073096
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.5409781623000691,0.6006325778510533,0.47610760432681143
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,129.7049608462041,145.65744940934303,113.58097263885561
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,121.6221301737367,138.6122675210014,104.40325041489534
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,312539.06108681124,357012.4988805865,265197.34414273436
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,377483.0096723862,446501.19097183866,294333.76723166107
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.49150225051633406,0.5588440894904075,0.42260154256652493
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.49325477254489386,0.5695404948371251,0.4205105644958828
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,146.08929597900712,166.8773958551187,123.96048406427299
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,170.5263231164311,201.7049891321372,132.96401111823158
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,305448.52236162015,348361.98196960444,259756.62429847373
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,367157.1025886088,434141.662317068,286483.7981513797
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.49212219997869794,0.5583069857519587,0.42366481377836357
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.4940834645381237,0.5700945268833413,0.42038622902215433
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,143.2993190171453,163.43190794227263,121.86324256660062
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,166.2681292065027,196.60227596070933,129.73499581179308
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,5030285.538749447,5671881.450407668,4411390.497920632
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,4706647.419476995,5354165.710228379,4009593.1159018776
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.5347233444437633,0.588410173365774,0.4758196507628372
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.5399524205915168,0.5990169705816533,0.4773555375164728
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,130.9255104365355,147.62461659676563,114.81725007974929
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,123.32469831616002,140.29112701669442,105.06031519227302
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,5145815.071577745,5795202.081965999,4477221.09260565
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,4820159.303693455,5545286.863601488,4091526.691752317
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.5345962005158205,0.5893633644714049,0.47596614007241517
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.539379612354447,0.5987156134273173,0.47458483401052
+1,Deaths,1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,132.5907948781685,149.32337051356467,115.36331859121232
+1,Deaths,1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,124.98824774808045,143.79103358905869,106.094574804772
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,320542.06924103334,366724.0110074637,271742.1063799063
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,385577.6962559618,457172.97329170915,301616.9453346283
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.4914806455380566,0.5598650299945922,0.4225758213387674
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.49330032817451025,0.569703982182329,0.4198168672756947
+1,Deaths,73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,149.40313159227972,170.92831466498487,126.65770135810682
+1,Deaths,73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,173.8724493990244,206.15763161906486,136.01117900442512
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,77888433.20192994,86438543.78760715,69843437.6830639
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,66646963.017150424,73969126.99659087,59324542.01296094
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.5126758608881483,0.5602549023019722,0.46259744883797355
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.5210452498244267,0.5682876628363578,0.4713570943670866
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,2891.450525398486,3208.8560852340256,2592.796340642369
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,2509.205517568329,2784.8792081012975,2233.522150256568
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,9146766.03865678,9916269.400076954,8310179.4654889675
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1990,7809184.008868997,8659972.342146365,6846178.762049998
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.6037966060018249,0.6526909985471069,0.5530125094569134
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1990,0.5850255245300444,0.6417793413774706,0.5237400933919497
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,4884.663643568226,5295.602884524761,4437.899836406249
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1990,3957.275435424615,4388.409311665798,3469.276048664897
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,79076107.70432958,87635840.70620525,70284463.74382792
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,67377934.02938704,74771522.50420314,59770024.89374107
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.5139693208715908,0.560675541985462,0.4630542470855018
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.5228696511941091,0.5701054174126791,0.4742758370544337
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,2889.4747638363883,3202.2510652013384,2568.2243369503194
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,2499.1312215685703,2773.3685970984166,2216.9444266535297
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,9009499.897036955,9763584.767596891,8176709.97178988
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1991,7663799.646795524,8490819.28399267,6727019.333231757
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.6029400055085623,0.6516978783878744,0.5520765432295621
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1991,0.5843670656507933,0.6417466698459264,0.5230173429186024
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,4792.214951354187,5193.317879661649,4349.248263223283
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1991,3870.8383853970804,4288.550160844974,3397.6885950129954
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,80742176.19541761,89279078.28551684,72347175.95819697
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,68560234.99493611,76051010.87802042,61385196.85801553
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.5156844644907698,0.5636681550841292,0.46498794573305047
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.5245694720424803,0.5710496417169488,0.4769334643435397
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,2905.4236723396684,3212.615261540705,2603.338274498953
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,2506.326376800247,2780.163378377905,2244.0316612345796
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,83454702.03266445,92525174.73863958,74665779.61267683
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,70368964.65333244,77979788.16057175,62660768.20264
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.5179959088527314,0.5654119401623303,0.4671677812149708
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.5270389483378402,0.573849788875136,0.47831152815141226
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,2958.853639309246,3280.443681843037,2647.2458514363866
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,2536.3146102601495,2810.632172734166,2258.4874264588757
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,8798872.564627271,9560720.813527549,7985307.8042152235
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1992,7475920.909316704,8296956.661637737,6566530.426825619
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.6016323526698312,0.6500883177709611,0.5510915484926449
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1992,0.5830313331936043,0.6408091664526605,0.5206035998754875
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,4660.955561249642,5064.523269096136,4229.99248426139
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1992,3762.9358374724225,4176.196610791296,3305.202525639567
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,8449366.081612313,9213252.697216436,7649004.437936264
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,7172702.381952086,7985675.878923505,6264045.431626863
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5983818347022496,0.6468263855141695,0.5470535092940464
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5789230077964692,0.6380476406783102,0.5141376420120833
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,4443.492326824257,4845.217649436036,4022.5849134150503
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,3587.443898571906,3994.0544974933478,3132.9769963146264
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,85463234.8630227,94521684.56251396,76790269.80289294
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1994,71472143.53676333,78801571.0464136,64153548.528852165
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5197380291277162,0.5675889881286567,0.46894326990231006
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1994,0.5283835675875918,0.5753466350971419,0.47926489986278387
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,2986.6713226165775,3303.235655668068,2683.578465569198
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1994,2540.1732168241783,2800.666529790105,2280.064899038567
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,86286341.52639458,94881381.17277534,77415920.6755169
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,71676873.36414358,79425424.94548391,63824228.25239016
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5204689345217158,0.5684638645624503,0.46908658165205347
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5288641974982481,0.5753448779936406,0.47922909201421393
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,2973.221945741281,3269.386553593133,2667.5683570591955
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,2512.153270709512,2783.7269078495447,2236.9313312564377
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,86688219.5659746,95441727.14563708,77454933.79155089
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,72016703.32438107,79693028.14717215,64161656.83373455
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5207277027149796,0.5689572017041298,0.469117024925785
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5296903041869567,0.5768556274382389,0.4801426534394859
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,2945.762212938654,3243.2161459868125,2632.0048826838593
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,2489.1607420870246,2754.4826120195326,2217.661597455025
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,8658910.020589987,9426193.971915629,7849951.896350148
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1993,7366144.889231754,8176222.507598526,6460054.463528239
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.600165339818168,0.6485230618273495,0.5494718338586474
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1993,0.5811556593512718,0.6393805018970804,0.5173053338514693
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,4569.455440862908,4974.364351769092,4142.554353607339
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1993,3695.5438519390163,4101.954180159008,3240.964563537497
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,8330618.04740677,9076827.854463777,7527407.413719289
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1995,7049356.158753425,7860183.688387986,6136910.748215704
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5963024225942606,0.6451643197945475,0.5446562013164206
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1995,0.5765966963781765,0.6369021045543535,0.5108352594547937
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,4366.3595171065745,4757.473390562321,3945.3695767822455
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1995,3514.997535946621,3919.2978301237204,3060.0278482903436
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,8154122.716677786,8884378.301499898,7363510.33606749
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1996,6900993.001301577,7698655.453106607,5990377.946425253
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.593390726263827,0.6419706994692989,0.5418562774886816
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1996,0.5732587590993733,0.6335816904362258,0.5074115940200483
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,4259.203291780598,4640.643098217889,3846.2368733171484
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1996,3430.204308703626,3826.6900287379167,2977.5744213500143
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,88069533.53517136,97201479.93338913,78691663.35950479
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,72982145.68437183,80467740.92293671,64517273.14790543
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5209190404052263,0.5694917085665587,0.46858470928406304
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5302349053477059,0.5765059699210096,0.4800128535201818
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,2913.2171721403624,3215.2892053904156,2603.010323787467
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,2454.4254709046218,2706.169722133873,2169.747642284507
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,7740837.411389588,8457246.473229209,6974693.331556261
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1998,6539661.885437993,7318677.0431119725,5639378.953557197
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5852303591870222,0.6335750306856537,0.5327343509009643
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1998,0.5632501272324543,0.6229409110741932,0.49772738284821794
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,4012.371963620583,4383.7141687907415,3615.250197247602
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1998,3228.1805319394007,3612.7266461182676,2783.7728722091024
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,87409799.72026947,96185877.90329523,78435101.9636044
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,72611368.31425077,80183888.80782965,64712487.728599705
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5207714639405825,0.5694186633154169,0.46908919278968864
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5303177894010577,0.5760213566646423,0.4806456177351511
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,2929.988149284734,3224.16346092887,2629.1550830313718
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,2475.2980733242416,2733.4428490409314,2206.0277875686847
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,7914390.244060064,8630162.317008834,7142527.455605323
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1997,6693876.255244624,7468339.395960083,5775513.1091142995
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5897216899822659,0.6380486747888998,0.5381289605065808
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1997,0.5686244062789794,0.6286925193141801,0.5030164396637422
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,4118.8042349739035,4491.306089750399,3717.1116694231678
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1997,3316.1495222842364,3699.818935368788,2861.191977179121
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,89749384.41877316,98890011.645695,80144146.02152537
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,74207948.82408738,81991949.45571603,66147896.273183174
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5218804921308727,0.5704598307261812,0.4689395998803537
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5303736837640991,0.5766835864511957,0.4800696419879667
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,2930.6940552328074,3229.1738949389305,2617.0427109677653
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,2462.50247814024,2720.805276546236,2195.039225280464
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,91667744.05304253,101019125.70992722,82019336.61204968
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,75011050.96358974,82943303.27264471,66795403.80697129
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.5225220069322648,0.5715750171762433,0.46988619318846175
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.5303631817664406,0.5763295075275425,0.4801248732289198
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,2955.4493680615406,3256.9462063861542,2644.376155026186
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,2456.3524959209935,2716.106325621098,2187.318465074504
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,7288454.164326772,7973430.196049122,6560164.116558693
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2000,6114165.040148334,6862122.194924407,5236285.587598593
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.5771285376699995,0.6261671031899402,0.5230776163453318
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2000,0.552356605227088,0.6112481419102694,0.48781725221892963
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,3741.913527902515,4093.5822112203064,3368.0073029970245
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2000,2992.869484376481,3358.9927619542277,2563.149545963844
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,7557506.010419226,8261571.60856523,6805443.877330972
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,1999,6364603.759959033,7124130.281275117,5466379.01175375
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5812235142415809,0.6299104773762806,0.5277998196692728
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,1999,0.5577523994005509,0.6167373240426492,0.4926586141387735
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,3899.992155199918,4263.319727249468,3511.8963448593777
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,1999,3129.464774170787,3502.922664583506,2687.8092030131324
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,7073345.855074762,7758418.315701352,6369454.89204978
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,5896677.574693276,6634131.930036189,5031395.45796193
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5725395137470471,0.6220154805963101,0.5191138240753537
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5461831108254988,0.6052176805157895,0.48273373022467836
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,3610.5213185647876,3960.2099630242283,3251.2269506634225
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,2872.0614568396904,3231.2491864264057,2450.6133811602253
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,95391890.88742188,105438922.23103967,85512608.11306985
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,77201191.1940521,85485511.22242421,68674476.8424522
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5247714579100646,0.5735866982618631,0.47237022418991376
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5316577865386827,0.578413278316733,0.4820845279611636
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,2998.7020999770293,3314.536640086919,2688.140838153645
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,2462.2695394629195,2726.4912249774675,2190.3168830994614
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,6911220.99449273,7591292.412292403,6222133.534611691
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2002,5756085.437701919,6487975.929255856,4905625.8448396
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5670758858671227,0.6170023795878166,0.5138612853621686
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2002,0.5386803700529875,0.5976983447804605,0.47541476214551603
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,3506.2237990096946,3851.2399100580283,3156.6336392739076
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2002,2789.061686560199,3143.6929287201115,2376.9788062604116
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,93230128.24684033,103291961.49639553,83448879.23616336
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2001,75900105.65773347,83946780.88414103,67784397.35906953
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.523435772990531,0.5725530990102847,0.470676137290389
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2001,0.5308627010020875,0.5768983868685047,0.48183499857399836
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,2968.006916272094,3288.3281604517533,2656.6181489349424
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2001,2452.856543721466,2712.90018678699,2190.5819653818744
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,97006900.74320437,106803224.4886971,86887201.95835312
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,77803563.12124282,86156727.18542102,69444063.88623703
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5257870647189739,0.5738538313240217,0.4742332177565879
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.531785669949056,0.5789904972246487,0.4819901589914348
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,3011.501148112455,3315.6201332651613,2697.343245162786
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,2449.2402799397287,2712.1961790037485,2186.0849509916748
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,6747154.20921705,7409581.80963762,6058015.787861657
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2003,5588421.905176607,6315677.623856476,4750013.19044754
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5614166333412262,0.6116706082515198,0.5091263815897197
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2003,0.5307760075154837,0.5893834475862295,0.46888417236014823
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,3401.178939647933,3735.1026552959574,3053.790542623557
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2003,2693.3222062389764,3043.8207924177314,2289.253786280855
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,97601346.04992172,108108963.13251996,86994817.50683014
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,77483737.70361948,85703371.12588818,69265415.34936011
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5261745827338088,0.5743683006053246,0.4741100250667729
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5310457748902737,0.5786466429083332,0.4796690564074223
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,2992.5489532658307,3314.7223635153605,2667.3428247235274
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,2407.65196358492,2663.0606097807386,2152.2840562016618
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,6431482.178139755,7073977.710437431,5758879.944413635
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2004,5274693.530893494,5972556.41215694,4470666.441077653
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5555921551520899,0.6046648620733271,0.5039089622598338
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2004,0.5232766497609048,0.5814228788074433,0.46204954394290704
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,3220.473513683647,3542.194042033655,2883.67748145303
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2004,2527.801326744763,2862.239471219262,2142.4859084230216
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,101190021.13876472,112339075.43732649,90417756.15064347
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,78355028.59519106,86288039.64099644,69975590.8664096
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5305955192428291,0.5780626444743878,0.47869664140648654
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5330120515158566,0.580830011099528,0.4816721564336086
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,2987.987749413159,3317.202402071065,2669.8991132441915
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,2341.481632839391,2578.543631155158,2091.0790755660273
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,6237603.323628504,6869511.440314752,5562607.256349468
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,5098821.662316372,5792132.002812769,4306581.136505521
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5502887382595473,0.5994040590112597,0.4983548394930911
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5172870710019166,0.5763109302127238,0.4565300212132941
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,3102.40233500629,3416.6950392714953,2766.6789382789116
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,2429.521007314825,2759.8742042649187,2052.028887021843
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,99722765.84804614,109810795.67118351,88854003.35359292
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,78062180.62698543,86364704.45808144,69614126.94540544
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5281961717843431,0.5763041338390006,0.47597765397389097
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5316384930120859,0.5789919843735601,0.48010468293609543
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,2982.6968464693464,3284.428697613649,2657.6133678720175
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,2363.6423690913016,2615.0342331149523,2107.8440111956047
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,6043155.132538027,6648658.690437003,5386628.945464006
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2006,4930372.111893981,5601515.839212013,4159850.362386536
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5448479282068932,0.593609231186312,0.49291012529995865
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2006,0.5121706050648138,0.5713056908437494,0.4518576633547613
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,2986.155551164166,3285.358164867435,2661.74069253181
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2006,2336.0083122903566,2653.9959388174357,1970.9354190481365
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,99545944.81185296,109981594.2199308,88679647.99618323
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2005,78202373.77521743,86513540.18622826,69680978.08111426
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5268250946231212,0.5750551069108881,0.4740795851695066
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2005,0.5308472088647791,0.578657657544725,0.47897797151255417
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,3014.850278026666,3330.904544012055,2685.7534168962525
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2005,2398.8176228265042,2653.758380894575,2137.4281895485797
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,5884647.693907694,6480525.327343194,5236532.650712186
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2007,4811364.982349967,5477663.049887763,4049047.3580513
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5386050942332049,0.5874217506091531,0.48693238198350547
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2007,0.5071286085051,0.5650294106404563,0.44775758635724794
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,2889.5725543413578,3182.1697912335017,2571.3248803451124
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2007,2266.858600516378,2580.7827177775443,1907.6951886143734
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,5732210.676051497,6326663.864001111,5089825.39595786
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,4709736.620644575,5375645.05899217,3956139.6330243987
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5324038312751737,0.5805339292125825,0.48022078562364523
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5022736635827822,0.5607750219552412,0.44296807721142234
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,2797.8933602590077,3088.046099148694,2484.3449560785557
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,2206.8083315176896,2518.8283887183115,1853.7006643931425
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,103732002.88520083,114634474.99624395,92445607.74391833
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2008,79221180.49421255,87333101.34803303,70591411.74220514
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5331918970820807,0.5802083708770428,0.4818991913929143
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2008,0.5342876266048145,0.5804625110572721,0.48356041582372294
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,3024.7966081930012,3342.709689452009,2695.6884372087948
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2008,2336.959115941252,2576.254052836498,2082.3880955694694
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,104956998.27225389,115469068.95258665,94018845.00711434
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,79626348.37017837,87967279.47583722,71014788.92429693
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.5355525345045385,0.5827998261079752,0.483582112607384
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.535616366849025,0.5814990449232242,0.4840770155967836
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,3024.0257854157217,3326.900041718095,2708.875218391972
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,2319.635512786188,2562.6194044050967,2068.767809820953
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,108466488.18183416,118937014.19164056,96638297.0501713
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,81570622.02750726,90466050.64476097,72845090.22354922
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.5397282368615378,0.5857317155469989,0.4863732702030398
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.5381516167855283,0.5835551071904863,0.4885354609171812
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,3052.6834662249007,3347.366203433371,2719.7905689971008
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,2318.17030136969,2570.9711005534673,2070.1978305361204
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,5613852.030095586,6199876.417681037,4979290.009316128
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2009,4605380.045023165,5270185.616813119,3859272.1032939726
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.5275402485507482,0.5757981555822471,0.4743999364991499
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2009,0.4987301242233011,0.5577865208967447,0.43891081968838647
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,2725.2482562212112,3009.734190622151,2417.1996950331845
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2009,2146.7314056207783,2456.6209230202,1798.9439624923814
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,5415423.022635185,5994652.5366776,4778926.178945159
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2011,4465763.339395764,5112193.202613711,3723733.2513231975
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.522004455480631,0.5703183083759924,0.46883306299675775
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2011,0.4950491282702215,0.5543239291876453,0.43544288548762305
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,2605.2858831494727,2883.9452731418532,2299.075964809997
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2011,2062.705126042488,2361.2865982677986,1719.9665727379288
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,107091611.33952162,118597491.16494167,95721561.57118945
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,80766040.6202356,89315509.39069194,71727034.82209246
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.5378180004286257,0.5851079510502621,0.484781102961117
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.5370551654051052,0.5835364212034966,0.48607121862571295
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,3049.549766803537,3377.1921722132092,2725.7752695683234
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,2323.8010295733925,2569.786398900937,2063.7306978010297
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,5505193.918118302,6085143.061981933,4877956.23591024
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2010,4508860.030169969,5170280.661185733,3763209.7257143925
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.5243124885189584,0.5740317739141514,0.471606648661257
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2010,0.49640830027186605,0.5553453090777944,0.4361598885987947
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,2659.6417069279414,2939.823832000859,2356.6137801065074
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2010,2091.6441028144777,2398.474776884391,1745.7395833482692
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,111041325.62899622,122298093.1640493,99098722.08256443
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,83239505.44161679,92034966.98806566,73795292.06022835
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.5421728452037671,0.5886163704471161,0.4893907092775649
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.5397518127615788,0.5856243263151617,0.48930964196871196
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,3053.168224551088,3362.681865121385,2724.7969856467225
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,2308.7202084903292,2552.6699978067604,2046.77672178618
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,5328548.464907931,5901655.474237404,4693005.216465546
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2013,4434301.517146225,5074908.829399222,3689112.2823888096
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.5183038927192017,0.5682160617890143,0.4646463873265659
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2013,0.49442232614062587,0.5540259172855809,0.4351566201107481
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,2543.104428740322,2816.6256293386386,2239.784892394931
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2013,2033.3658512190614,2327.1187743659757,1691.6564891486782
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,111829765.5756154,123290186.0726163,100095821.42692928
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,84370869.62475166,93574568.89949897,74828235.90156399
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.5431222218894299,0.5891745609596357,0.49112931837462065
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.5406085694178022,0.5872150110878068,0.48917986277432535
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,3040.434484863185,3352.021096091075,2721.411295916231
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,2312.7215731750453,2565.0076283075036,2051.144858668248
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,110059498.22937226,121754510.74238378,98098584.36506474
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,82349819.55687037,91310368.62579824,73177443.93086545
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.5414983397198422,0.5882179032603302,0.4874939782782937
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.5394453016685848,0.5851342968164095,0.4892115104292054
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,3061.3825756917568,3386.6875980280797,2728.6813197108454
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,2311.818251646934,2563.3690260602216,2054.3208400282506
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,5368408.169048453,5944802.092371392,4723744.728026037
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2012,4456876.188559343,5109650.9660332175,3709691.0137164863
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.5197780039877609,0.5690714496818139,0.4664498942255504
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2012,0.4942968498475548,0.5537469833195604,0.43404491528798494
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,2572.3238543484417,2848.508487069448,2263.427232640516
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2012,2050.7483773823533,2351.110505263989,1706.945067600836
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,5266647.585075111,5847523.788494078,4630787.005624495
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2014,4391453.930653578,5032015.9566549705,3654330.799365384
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.5168844361767011,0.5663876264980067,0.4634413323134262
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2014,0.4942806063451983,0.553853390888458,0.43490620231860444
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,2502.9703023383745,2779.031280979308,2200.7780403570064
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2014,2007.0110834195618,2299.76494264339,1670.1262344146314
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,5356363.83449958,5959996.059433882,4703870.916002603
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,4475021.96888181,5129474.534159149,3724463.4685881245
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.5161931117457275,0.5667653321843481,0.46234680061087824
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.4945780242238747,0.5549061195838473,0.4350697888537865
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,2534.611735434731,2820.2482919641266,2225.8544777857064
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,2038.7456111106462,2336.9033194788794,1696.8036365245682
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,114269544.830172,126588702.32628687,101504655.9782303
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2015,86303190.08373426,95716569.87859264,76263090.02587953
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.5445493849292052,0.5921541090938369,0.49173753265767817
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2015,0.5413997859622599,0.5876230931993465,0.49036548935026847
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,3072.3228110091427,3403.5434231501827,2729.1179854530164
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2015,2338.447007697533,2593.509303682761,2066.4032754265127
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,5417507.90974566,6042411.447266902,4767514.929332284
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,4502077.75389161,5172177.426029468,3740247.1872002063
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.515827291073285,0.5669997180835398,0.46240073381116453
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.4945792966827046,0.5555338843284796,0.4351116654927201
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,2541.5909307214274,2834.7606297785464,2236.650671920992
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,2038.7786056817952,2342.235131737596,1693.7814853672298
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,117355282.68024853,130380178.61926275,103557235.61277355
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2017,88907465.8618773,99053415.37575404,78488062.05103539
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.5454605230496326,0.5925099643193859,0.49255235156571714
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2017,0.5419214636050513,0.5873273783754176,0.49291712417255856
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,3086.3475749237878,3428.8916434727907,2723.4702665250115
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2017,2354.784736203256,2623.5082547284906,2078.8185637760075
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,116109516.40203916,128535191.94334586,102985539.15798327
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,87674827.03279865,97494522.98526499,77660289.0545895
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.5454608370684689,0.5922819495532886,0.49255876366536927
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.5418674605176099,0.5878384541026443,0.49245242074247425
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,3087.057164990208,3417.424320915767,2738.1239402220767
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,2348.395915811737,2611.419347391004,2080.1535835175473
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,5342994.790378435,5946477.9169006385,4708024.12332849
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2016,4469772.830166413,5133089.423998338,3711236.800435146
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.5158945315714646,0.567009691196768,0.4621136745120552
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2016,0.4948091514582709,0.5556710913575966,0.43627021041845293
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,2517.520020573482,2801.870073812135,2218.3336224033483
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2016,2030.2180741091236,2331.5034836416503,1685.6829901267731
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,121297993.66909628,135332530.17556337,106740961.16196099
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,92617375.9878554,104044766.31872463,81132496.02603121
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.5457372125196536,0.5928166123799872,0.4933110822523265
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.5420914819783588,0.5878874140270973,0.49224008947631137
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,3125.4518815775,3487.0759052268004,2750.364847873313
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,2401.5977079589406,2697.913535673246,2103.791156020817
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,5580340.102122283,6232815.233972487,4910823.366723731
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2019,4674862.923147485,5381238.392132762,3881242.9903656477
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.5153739152068073,0.5669547409758757,0.46090913288971896
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2019,0.4943995569441561,0.5547295194355147,0.4348638361297114
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,2600.969940017859,2905.085490951062,2288.9113788473223
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2019,2108.0832085078628,2426.6162413581887,1750.2081474123518
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,119142584.3678698,133000124.02575347,105962411.85143842
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,90721366.05036688,102125430.28802109,79444978.79013075
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.545215996281934,0.5923353260499066,0.49286817309109965
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.5417698322015553,0.5871995946011789,0.49241717231258275
+2,DALYs (Disability-Adjusted Life Years),1,Global,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,3100.97777808639,3461.654212679802,2757.931483584314
+2,DALYs (Disability-Adjusted Life Years),1,Global,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,2377.1028721404996,2675.9148833965046,2081.636283500352
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,5496850.306227778,6126596.960776013,4835294.859306335
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,1,Number,2018,4601800.368724469,5289764.16951247,3823576.8971347935
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.5153479380682282,0.5660094802387816,0.4616926255140631
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,2,Percent,2018,0.49419570646088,0.5550876897247472,0.4337264880485737
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,1,Male,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,2569.3780116519724,2863.7388031900664,2260.148921515983
+2,DALYs (Disability-Adjusted Life Years),73,Western Europe,2,Female,22,All ages,491,Cardiovascular diseases,107,High systolic blood pressure,3,Rate,2018,2078.843488281703,2389.628170981467,1727.284388209184

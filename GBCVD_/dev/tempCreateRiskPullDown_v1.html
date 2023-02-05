@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./js/d3v7.js"></script> -->
+    <script src="../dev/js/d3v7.js"></script>
+
+
+    <script src="./js/billboard.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="./css/billboard.css">
+    <link rel="stylesheet" href="./css/graph.min.css">
+</head>
+
+<body>
+
+    <div id="risksArea">
+        <label for="riskSelect">
+            CVD Risk Type
+            <!-- <span>Select risk type</span> -->
+        </label>
+
+        <select name="riskSelect" id="riskSelect">
+            <!-- <option value="Select risk type" selected>Select risk type</option> -->
+            <option value="Metabolic">Metabolic</option>
+            <option value="Behavioral">Behavioral</option>
+            <option value="Environmental">Environmental</option>
+        </select>
+        <div id="risksChart"></div>
+
+    </div>
+</body>
+
+<script src="../data/cleaned/Risk_plot3.js"></script>
+<script src="../data/cleaned/Risk_plot.js"></script>
+<script>
+    let selectedLocation = "Andean Latin America", // "Central Europe",
+        selectedRiskType = "Behavioral",
+
+        Ischemic_heart_disease_arr = [],
+        Ischemic_stroke_arr = [],
+        Intracerebral_hemorrhage_arr = [],
+        Subarachnoid_hemorrhage_arr = [],
+        Hypertensive_heart_disease_arr = [],
+        Atrial_fibrillation_and_flutter_arr = [],
+        Aortic_aneurysm_arr = [],
+        Lower_extremity_peripheral_arterial_disease_arr = [],
+        Alcoholic_cardiomyopathy_arr = [];
+
+
+    let categoriesSelect = {
+        Environmental: [
+            "Ambient particulate matter pollution",
+            "High temperature",
+            "Household air pollution from solid fuels",
+            "Lead exposure",
+            "Low temperature"
+        ],
+        Metabolic: [
+            "High fasting plasma glucose",
+            "High LDL cholesterol",
+            "High systolic blood pressure",
+            "Kidney dysfunction"
+        ],
+        Behavioral: [
+            "Dietary risks",
+            "High alcohol use",
+            "High body-mass index",
+            "Low physical activity",
+            "Secondhand smoke",
+            "Smoking"
+        ]
+    }
+
+
+    let = causeNameArr =
+    {
+        "Behavioral":
+            ["Alcoholic cardiomyopathy", "Aortic aneurysm", "Atrial fibrillation and flutter", "Hypertensive heart disease", "Intracerebral hemorrhage", "Ischemic heart disease", "Ischemic stroke", "Lower extremity peripheral arterial disease", "Subarachnoid hemorrhage"],
+        "Environmental":
+            ["Alcoholic cardiomyopathy", "Aortic aneurysm", "Atrial fibrillation and flutter", "Hypertensive heart disease", "Intracerebral hemorrhage", "Ischemic heart disease", "Ischemic stroke", "Lower extremity peripheral arterial disease", "Myocarditis", "Other cardiomyopathy", "Subarachnoid hemorrhage"],
+        "Metabolic":
+            ["Aortic aneurysm", "Atrial fibrillation and flutter", "Hypertensive heart disease", "Intracerebral hemorrhage", "Ischemic heart disease", "Ischemic stroke", "Lower extremity peripheral arterial disease", "Subarachnoid hemorrhage"]
+    }
+
+
+    CauseArrs = [Ischemic_heart_disease_arr,
+        Ischemic_stroke_arr,
+        Intracerebral_hemorrhage_arr,
+        Subarachnoid_hemorrhage_arr,
+        Hypertensive_heart_disease_arr,
+        Atrial_fibrillation_and_flutter_arr,
+        Aortic_aneurysm_arr,
+        Lower_extremity_peripheral_arterial_disease_arr,
+        Alcoholic_cardiomyopathy_arr
+    ]
+
+    // riskData2.forEach(item => console.log(item))
+
+    let fillCauseArrs = (matchCause, DalyNum) => {
+        switch (matchCause) {
+            case "Ischemic heart disease":
+                Ischemic_heart_disease_arr.push(DalyNum)
+                break
+            case "Ischemic stroke":
+                Ischemic_stroke_arr.push(DalyNum)
+                break
+            case "Intracerebral hemorrhage":
+                Intracerebral_hemorrhage_arr.push(DalyNum)
+                break
+            case "Subarachnoid hemorrhage":
+                Subarachnoid_hemorrhage_arr.push(DalyNum)
+                break
+            case "Hypertensive heart disease":
+                Hypertensive_heart_disease_arr.push(DalyNum)
+                break
+            case "Atrial fibrillation and flutter":
+                Atrial_fibrillation_and_flutter_arr.push(DalyNum)
+                break
+            case "Aortic aneurysm":
+                Aortic_aneurysm_arr.push(DalyNum)
+                break
+            case "Lower extremity peripheral arterial disease":
+                Lower_extremity_peripheral_arterial_disease_arr.push(DalyNum)
+                break
+            case "Alcoholic cardiomyopathy":
+                Alcoholic_cardiomyopathy_arr.push(DalyNum)
+                break
+            default:
+                console.log("error: non listed cause")
+        }
+    }
+
+    ////////////////////
+
+    let filteredRiskDataLocation = riskData2.filter(item => {
+        if (item.location_name === selectedLocation) {
+            return item
+        }
+    })
+    let filteredRiskDataLocationAndRiskType = filteredRiskDataLocation.filter(item => {
+        if (item.risk_type === selectedRiskType) {
+            return item
+        }
+    })
+
+    console.log("filteredRiskDataLocationAndRiskType: ", filteredRiskDataLocationAndRiskType)
+
+
+    console.log('RISKDATA 2: ', riskData2)
+
+    console.log("RISKDATA 3: ", riskData3[selectedLocation][selectedRiskType])//[selectedRiskType])
+
+
+    ///////////////////
+
+
+
+
+    /////////////
+    let riskFilterSelection = (location_name_selection, risk_type_selection) => {
+        let filters = { location_name: location_name_selection, risk_type: risk_type_selection };
+        console.log("   ::::  ", location_name_selection, risk_type_selection)
+        let filteredArray = riskData2.filter(item => Object.keys(filters).every(key => item[key] === filters[key]))
+        let vals = filteredArray.map(item => Number(item.val))
+
+
+        ///////////
+
+        let dalyArr = []
+        dalyArr = filteredArray.map(item => item.Daly)
+        // const cause_nameArr = filteredArray.map(item => item.cause_name)  /// DEDUPE cause list line 1 of 2
+        // const deduCauseNameArr = [...new Set(cause_nameArr)]
+
+        dalyArr.unshift('Dalys')
+
+        // filteredArray.forEach(item => {
+        //     clearCauseArrs()
+        // })
+
+        filteredArray.forEach(item => {
+            fillCauseArrs(item.cause_name.replace("_", /\s/g), item.Daly)
+        });
+
+        //add name for each array
+        // CauseArrs.forEach((arr, i) => arr.unshift(causeNameArr[i]))
+
+        ///// add causename arr
+        // CauseArrs.unshift(causeNameArr)
+
+        /////////////
+
+
+
+        // ///////////
+
+        // let filteredArrayLocation = []
+
+
+        // //filter Locaiton
+        // for (item of riskData2) {
+        //     // let [item] = riskData2;
+        //     if (item.location_name === "Central Asia") {
+        //         filteredArrayLocation.push(item)
+
+        //         /// filter cause
+        //         filteredArrayLocation.forEach(locationItem => {
+        //             // console.log(locationItem.cause_name) //.replaceAll(" ", "_"))
+        //             fillCauseArrs(locationItem.cause_name, locationItem.Daly)
+        //         });
+        //     }
+
+        // }
+        // // console.log(">>>>>>>>>>>>>-Central Asia", filteredArrayLocation)
+
+
+
+        // //////////////
+
+
+        console.log("CauseArrs: ", CauseArrs)
+        return [CauseArrs]
+    }
+
+
+    let riskFilterSelection_ = riskFilterSelection(selectedLocation, selectedRiskType)
+    // var dataConcatArr = [];
+    // for (i in filteredArray) {
+    //     dataConcatArr.push([rei_nameArr[i], causeNameArr[i], dalyArr[i]])
+    // }
+
+    ///////////////
+
+</script>
+
+
+<script>
+
+    console.log(categoriesSelect[selectedRiskType])
+    let createRiskBarChart = () => {
+        let risksBarChart = bb.generate({
+            bindto: "#risksChart",
+            size: { height: 500 },
+            data: {
+                // columns: riskData.regions.regionNameA[selectedRiskType],
+                // rows: riskFilterSelection_,
+                rows: CauseArrs,
+                type: "bar",
+                groups: [causeNameArr[selectedRiskType]]
+            },
+            axis: {
+                rotated: true,
+                x: {
+                    type: "category",
+                    categories: categoriesSelect[selectedRiskType]
+                }
+            },
+            zoom: {
+                enabled: true, // for ESM specify as: zoom()
+                type: "drag"
+            }
+        })
+    }
+
+    createRiskBarChart()
+
+
+    let riskSelect = document.getElementById("riskSelect");
+    // riskSelect.addEventListener('change', (el) => window.localStorage.setItem('riskType', JSON.stringify(el.target.options[el.target.selectedIndex].text)))
+    riskSelect.addEventListener('change', (el) => {
+        selectedRiskType = el.target.options[el.target.selectedIndex].text
+        riskFilterSelection_ = riskFilterSelection(selectedLocation, selectedRiskType)
+        console.log("riskFilterSelection_: ", [riskFilterSelection_[0]])
+
+        createRiskBarChart()
+
+    });
+
+</script>
+
+</html>

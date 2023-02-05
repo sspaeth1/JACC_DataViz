@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/billboard.css">
+</head>
+
+<body>
+    <div id="chart_1"></div>
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.0/d3.min.js"></script>
+<script src="./js/billboard.js"></script>
+
+
+<script>
+    // let dataArr = [];
+
+    let dataArr,
+        dataObj = {}
+    pushAll = []
+    // d3.csv("../data/IN/IHME_GBD_REGION_CVD_1990_2021_RISKS_Y2022M12D09.CSV", function (data, i) {
+    d3.json("../data/IN/IHME_GBD_REGION_CVD_1990_2021_RISKS_Y2022M12D09.json", function (data, i) {
+
+        // d3.csv("../data/IN/IHME_GBD_REGION_CVD_1990_2021_DISEASE_Y2022M12D09_CentralAsia.csv", function (data, i) {
+
+        // let pushAll = Object.entries(data);
+        // console.log(data);
+        pushAll.push(data)
+
+
+        // console.log(pushAll);
+
+        window.localStorage.setItem('dataKey', JSON.stringify(pushAll))
+
+        for (let i in data) {
+            // console.log(Object.entries(i))
+        }
+    });
+
+    dataArr = JSON.parse(window.localStorage.getItem('dataKey'))
+
+    console.log("dataArr", dataArr);
+
+
+
+    //////////
+    // fetch('../data/IN/IHME_GBD_REGION_CVD_1990_2021_DISEASE_Y2022M12D09.json')
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         console.log('<<<<<<<<data', data)
+    //         window.localStorage.setItem('dataKey', JSON.stringify(data))
+    //     })
+
+
+    //////////////
+
+
+
+    // d3.csv("../data/IN/IHME_GBD_REGION_CVD_1990_2021_RISKS_Y2022M12D09.CSV", function (data) {
+    //     data = Object.entries(data)
+    //     for (let i in data) {
+    //         // (let i = 0; i < 2; i++) {
+    //         // let newEntry = Object.entries(i)
+    //         // console.log(newEntry)
+    //         console.log(i)
+    //         // dataArr.push(newEntry)
+    //     }
+
+    // });
+
+
+
+
+
+    // generate the chart
+    // var chart = bb.generate({
+    //     title: {
+    //         text: 'Risk Factor - fMALE'
+    //     },
+    //     data: {
+    //         url: "../data/IN/IHME_GBD_REGION_CVD_1990_2021_RISKS_Y2022M12D09.CSV",
+    //         type: console.log("")
+    //     },
+    // colors: {
+    //     data1: "#4f79a7",
+    //     data2: "#f28e2c",
+    //     data3: "#e1575a",
+    //     data4: "#77b7b3",
+    //     data5: "#77b7b3",
+    //     data6: "#58a150",
+    //     data7: "#edc949",
+    //     data8: "#af7aa1"
+    // },
+    //     bindto: "#chart_1"
+    // })
+
+
+    // Update axis' label
+    // chart.axis.labels({
+    //     x: "Year",
+    //     y: "Deaths (per 100,000)",
+    //     y2: "New Y2 Axis Label"
+    // });
+
+    // chart.categories([
+    //     "Category 1", "Category 2", "Category 3", "Category 4"
+    // ]);
+
+    // call some API
+    // chart.load(...data);
+    // })
+
+
+    //test destructuring
+    const { location_id } = dataArr[0]
+
+    let arrLocationID = [],
+        arrLocationName = []
+
+
+    let LOCATION_NAME_ARR = []
+
+
+    function SearchAndReturn(location_name) {
+
+    }
+    for (i in dataArr) {
+        if (dataArr[i].location_name === "Western Sub-Saharan Africa") {
+            LOCATION_NAME_ARR.push(dataArr[i])
+        }
+        // arrLocationID.push(dataArr[i].location_id)
+        // arrLocationName.push(dataArr[i].location_name)
+    }
+
+
+    // filter measure name  (DALYS Daths Prevelenece)
+    let filtered_LOCATION_NAME_ARR_measure = dataArr.filter(limit => limit.measure_name === "DALYs (Disability-Adjusted Life Years)")
+    console.log("filtered_LOCATION_NAME_ARR_measure", filtered_LOCATION_NAME_ARR_measure)
+
+    // filter metric name  (Rate | Number)
+    let filtered_LOCATION_NAME_ARR__measure_NUM = filtered_LOCATION_NAME_ARR_measure.filter(limit => limit.metric_name === "Number")
+    console.log("filtered_LOCATION_NAME_ARR__measure_NUM", filtered_LOCATION_NAME_ARR__measure_NUM)
+
+    // filter val
+    let valArr = []
+    let filtered_LOCATION_NAME_ARR__measure_NUM_val = filtered_LOCATION_NAME_ARR__measure_NUM.forEach(limit => console.log('val', limit.val))
+
+
+    // let { filtered_LOCATION_NAME_ARR__measure_NUM: { val } } = filtered_LOCATION_NAME_ARR__measure_NUM
+    console.log("location_id destructured : ", location_id)
+
+
+    // dataArr.filter(area => area.location_name === "Central Asia" ? LOCATION_NAME_ARR.push(dataArr[i]) : "")
+
+    console.log("filtered_LOCATION_NAME_ARR__measure_NUM", filtered_LOCATION_NAME_ARR__measure_NUM_val)
+
+
+    ////////////////////
+    // const filters = { metric_name: "Rate", region_name: "Central Asia", measure_name: "DALYs (Disability-Adjusted Life Years)" };
+    const filters = { metric_name: "Rate", measure_name: "Deaths" };
+
+    const filteredArray = dataArr.filter(item => Object.keys(filters).every(key => item[key] === filters[key]))
+    const vals = filteredArray.map(item => Number(item.val))
+
+    const locations = filteredArray.map(item => item.location_name != item.region_name ? item.location_name : null)
+    const region = filteredArray.map(item => item.region_name)
+
+    let ArraysGroupsArr = []
+    // const ArraysGroups = filteredArray.each(item => { ArraysGroupsArr.push(`{ ${item.region_name} : ${item.location_name}}) `) })
+
+
+    console.log("filteredArray >>>>>>>", locations, region)
+
+
+    ////////////////////
+
+    var chartExplore = bb.generate({
+        data: {
+            json: {
+                "id": vals
+            },
+            types: { "id": "line" }
+        },
+        axis: {
+            x: {
+                "labels": arrLocationName
+            }
+        }
+    })
+
+
+
+</script>
+
+</html>

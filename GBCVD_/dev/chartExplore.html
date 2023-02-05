@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./billboard.css">
+</head>
+
+<body>
+
+</body>
+
+<div id="chart_1"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.0/d3.min.js"></script>
+<script src="../dev/billboard.js"></script>
+
+
+
+<script>
+    let data;
+
+
+    let arrRheumaticHD = [], arrIschemicHD = [], arrIschemicStroke = [], arrIntracerebralHemorrhage = [], arrSubarachnoidHemorrhage = [], arrHypertensiveHD = [],
+        arrData = [arrRheumaticHD, arrIschemicHD, arrIschemicStroke, arrIntracerebralHemorrhage, arrSubarachnoidHemorrhage, arrHypertensiveHD];
+    let arrXCords = [], arrYCords = [], arrGraph = [], arrGraph2 = [];
+
+
+
+    fetch("../data/centralAsia2.JSON")
+        .then(res => res.json())
+        .then(data => {
+            let centralAsia = data.CentralAsia;
+            console.log("centralAsia: ", centralAsia)
+
+
+            for (item of centralAsia) {
+                for (element of item) {
+                    if (element['Cardiovascular Disease Type'] || element['Deaths (Count)']) {
+                        arrGraph2.push(`{ ${element['Cardiovascular Disease Type']}, ${element['Deaths (Count)']} }`)
+
+                    }
+
+                }
+                arrXCords.push(Object.values(item[0])[0]);
+                arrYCords.push(Object.values(item[1])[0])
+            }
+            arrXCords.unshift(Object.keys(centralAsia[0][0])[0])
+            arrYCords.unshift(Object.keys(centralAsia[0][1])[0])
+
+            console.log(arrXCords, arrYCords)
+
+            arrGraph.push(arrXCords)
+            arrGraph.push(arrYCords)
+            let makeGraphArr2 = () => {
+                arrGraph.map(item => {
+                    item.forEach(element => {
+                        // console.log("item element", element)
+                    });
+                })
+
+            };
+            makeGraphArr2();
+            console.log('arrGraph2', arrGraph2)
+
+        })
+    console.log("arrData: ", arrData)
+
+
+
+
+</script>
+
+<script>
+
+    // generate the chart
+    var chart = bb.generate({
+        title: {
+            text: 'Risk Factor - MALE'
+        },
+        data: {
+            // for ESM import usage, import 'line' module and execute it as
+            // type: line(),
+            type: "line",
+            columns: [
+                ["High Systolic Blood Pressure", 13.92, 13.75, 13.36, 12.06, 11.01, 10.47],
+                ["Dietary Risks", 14.63, 14.36, 14.1, 12.62, 11.35, 10.72],
+                ["High Fasting Plasma Glucose", 1.78, 1.85, 1.8, 1.72, 1.59, 1.52],
+                ["High Body Mass Index", 6.7, 7.2, 7.79, 7.7, 7.51, 7.89],
+                ["High LDL Cholesterol", 8.11, 8.23, 8.46, 7.81, 7.18, 6.87],
+                ["Household Air Polution from Solid Fuels", 10.54, 10.19, 9.7, 8.62, 7.65, 6.76]
+            ]
+
+        },
+        zoom: {
+            // for ESM import usage, import 'zoom' module and execute it as
+            // enabled: zoom()
+            enabled: true
+        },
+        axis: {
+            x: {
+                type: "category",
+                categories: ["1990", "1995", "2000", "2005", "2010", "2015"]
+            },
+            y: {
+                max: 15,
+                min: 0
+            }
+        },
+        // colors: {
+        //     data1: "#4f79a7",
+        //     data2: "#f28e2c",
+        //     data3: "#e1575a",
+        //     data4: "#77b7b3",
+        //     data5: "#77b7b3",
+        //     data6: "#58a150",
+        //     data7: "#edc949",
+        //     data8: "#af7aa1"
+        // },
+        // color: function (color, d) {
+        //     // d will be "id" when called for legends
+        //     return (d.id && d.id === "data3") ?
+        //         d3.rgb(color).darker(d.value / 150).toString() : color;
+        // },
+        bindto: "#chart_1"
+    });
+
+
+    // Update axis' label
+    chart.axis.labels({
+        x: "Year",
+        y: "Deaths (per 100,000)",
+        y2: "New Y2 Axis Label"
+    });
+
+    // chart.categories([
+    //     "Category 1", "Category 2", "Category 3", "Category 4"
+    // ]);
+
+    // call some API
+    chart.load(...data);
+</script>
+
+</html>

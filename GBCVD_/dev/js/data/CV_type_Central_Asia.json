@@ -1,0 +1,146 @@
+[
+    {
+        "Cardiovascular Disease Type": "Rheumatic heart disease",
+        "Prevalent Cases (Count)": 871505,
+        "Deaths (Count)": 2832,
+        "Prevalence (Rate)": 875.1,
+        "Deaths (Rate)": 3.6,
+        "Disability-Adjusted": 144.2
+    },
+    {
+        "Cardiovascular Disease Type": "Ischemic heart disease",
+        "Prevalent Cases (Count)": 3110689,
+        "Deaths (Count)": 175845,
+        "Prevalence (Rate)": 4316.2,
+        "Deaths (Rate)": 306.6,
+        "Disability-Adjusted": 5128.4
+    },
+    {
+        "Cardiovascular Disease Type": "Ischemic stroke",
+        "Prevalent Cases (Count)": 844343,
+        "Deaths (Count)": 46717,
+        "Prevalence (Rate)": 1018.4,
+        "Deaths (Rate)": 89.8,
+        "Disability-Adjusted": 1483.2
+    },
+    {
+        "Cardiovascular Disease Type": "Intracerebral hemorrhage",
+        "Prevalent Cases (Count)": 168275,
+        "Deaths (Count)": 36502,
+        "Prevalence (Rate)": 178.7,
+        "Deaths (Rate)": 56.3,
+        "Disability-Adjusted": 1129.6
+    },
+    {
+        "Cardiovascular Disease Type": "Subarachnoid hemorrhage",
+        "Prevalent Cases (Count)": 78239,
+        "Deaths (Count)": 4226,
+        "Prevalence (Rate)": 83,
+        "Deaths (Rate)": 6.1,
+        "Disability-Adjusted": 150.3
+    },
+    {
+        "Cardiovascular Disease Type": "Hypertensive heart disease",
+        "Prevalent Cases (Count)": 64841,
+        "Deaths (Count)": 14629,
+        "Prevalence (Rate)": 98.5,
+        "Deaths (Rate)": 27.1,
+        "Disability-Adjusted": 421.3
+    },
+    {
+        "Cardiovascular Disease Type": "Non-rheumatic calcifc aortic valve disease",
+        "Prevalent Cases (Count)": 107364,
+        "Deaths (Count)": 223,
+        "Prevalence (Rate)": 147.6,
+        "Deaths (Rate)": 0.4,
+        "Disability-Adjusted": 8.6
+    },
+    {
+        "Cardiovascular Disease Type": "Non-rheumatic degenerative mitral valve disease",
+        "Prevalent Cases (Count)": 322876,
+        "Deaths (Count)": 230,
+        "Prevalence (Rate)": 482,
+        "Deaths (Rate)": 0.4,
+        "Disability-Adjusted": 14
+    },
+    {
+        "Cardiovascular Disease Type": "Other non-rheumatic valve diseases",
+        "Prevalent Cases (Count)": 222,
+        "Deaths (Count)": 63,
+        "Prevalence (Rate)": 0.3,
+        "Deaths (Rate)": 0.1,
+        "Disability-Adjusted": 2.1
+    },
+    {
+        "Cardiovascular Disease Type": "Myocarditis",
+        "Prevalent Cases (Count)": 5428,
+        "Deaths (Count)": 775,
+        "Prevalence (Rate)": 6,
+        "Deaths (Rate)": 1,
+        "Disability-Adjusted": 29.4
+    },
+    {
+        "Cardiovascular Disease Type": "Alcoholic cardiomyopathy",
+        "Prevalent Cases (Count)": 5361,
+        "Deaths (Count)": 1002,
+        "Prevalence (Rate)": 5.7,
+        "Deaths (Rate)": 1.1,
+        "Disability-Adjusted": 37.3
+    },
+    {
+        "Cardiovascular Disease Type": "Other cardiomyopathy",
+        "Prevalent Cases (Count)": 53935,
+        "Deaths (Count)": 10679,
+        "Prevalence (Rate)": 62.7,
+        "Deaths (Rate)": 14.2,
+        "Disability-Adjusted": 374
+    },
+    {
+        "Cardiovascular Disease Type": "Pulmonary arterial hypertension",
+        "Prevalent Cases (Count)": 2161,
+        "Deaths (Count)": 334,
+        "Prevalence (Rate)": 2.3,
+        "Deaths (Rate)": 0.5,
+        "Disability-Adjusted": 13.5
+    },
+    {
+        "Cardiovascular Disease Type": "Atrial fibrillation and flutter",
+        "Prevalent Cases (Count)": 367236,
+        "Deaths (Count)": 1494,
+        "Prevalence (Rate)": 545.7,
+        "Deaths (Rate)": 3.3,
+        "Disability-Adjusted": 81
+    },
+    {
+        "Cardiovascular Disease Type": "Aortic aneurysm",
+        "Prevalent Cases (Count)": " ",
+        "Deaths (Count)": 1510,
+        "Prevalence (Rate)": " ",
+        "Deaths (Rate)": 2.3,
+        "Disability-Adjusted": 45.6
+    },
+    {
+        "Cardiovascular Disease Type": "Lower extremity peripheral arterial disease",
+        "Prevalent Cases (Count)": 710900,
+        "Deaths (Count)": 324,
+        "Prevalence (Rate)": 995.1,
+        "Deaths (Rate)": 0.6,
+        "Disability-Adjusted": 13.7
+    },
+    {
+        "Cardiovascular Disease Type": "Endocarditis",
+        "Prevalent Cases (Count)": 861,
+        "Deaths (Count)": 157,
+        "Prevalence (Rate)": 1,
+        "Deaths (Rate)": 0.2,
+        "Disability-Adjusted": 6.8
+    },
+    {
+        "Cardiovascular Disease Type": "Other cardiovascular and circulatory diseases",
+        "Prevalent Cases (Count)": 404881,
+        "Deaths (Count)": 2170,
+        "Prevalence (Rate)": 499.4,
+        "Deaths (Rate)": 3.2,
+        "Disability-Adjusted": 98.9
+    }
+]

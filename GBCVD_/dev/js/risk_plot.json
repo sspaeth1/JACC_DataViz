@@ -1,0 +1,138 @@
+[
+    {
+        "Andean Latin America": {
+            "Behavioral": [
+                {
+                    "Row Labels": "Dietary risks",
+                    "Alcoholic cardiomyopathy": 0,
+                    "Aortic aneurysm": 0.18,
+                    "Atrial fibrillation and flutter": 2.93,
+                    "Hypertensive heart disease": 118.04,
+                    "Intracerebral hemorrhage": 36.99,
+                    "Ischemic heart disease": 572.08,
+                    "Ischemic stroke": 43.98,
+                    "Lower extremity peripheral arterial disease": 0.24,
+                    "Subarachnoid hemorrhage": 16.13
+                },
+                {
+                    "Row Labels": "High alcohol use",
+                    "Alcoholic cardiomyopathy": 0.09,
+                    "Aortic aneurysm": 0,
+                    "Atrial fibrillation and flutter": 3.51,
+                    "Hypertensive heart disease": 10.14,
+                    "Intracerebral hemorrhage": 24.19,
+                    "Ischemic heart disease": -41.1,
+                    "Ischemic stroke": 16.51,
+                    "Lower extremity peripheral arterial disease": 0,
+                    "Subarachnoid hemorrhage": 0
+                },
+                {
+                    "Row Labels": "Low physical activity",
+                    "Alcoholic cardiomyopathy": 0,
+                    "Aortic aneurysm": 0,
+                    "Atrial fibrillation and flutter": 0,
+                    "Hypertensive heart disease": 0,
+                    "Intracerebral hemorrhage": 0,
+                    "Ischemic heart disease": 10.53,
+                    "Ischemic stroke": 10.99,
+                    "Lower extremity peripheral arterial disease": 0.11,
+                    "Subarachnoid hemorrhage": 0
+                },
+                {
+                    "Row Labels": "Secondhand smoke",
+                    "Alcoholic cardiomyopathy": 0,
+                    "Aortic aneurysm": 0,
+                    "Atrial fibrillation and flutter": 0,
+                    "Hypertensive heart disease": 0,
+                    "Intracerebral hemorrhage": 8.08,
+                    "Ischemic heart disease": 16.81,
+                    "Ischemic stroke": 4.88,
+                    "Lower extremity peripheral arterial disease": 0,
+                    "Subarachnoid hemorrhage": 4.78
+                },
+                {
+                    "Row Labels": "Smoking",
+                    "Alcoholic cardiomyopathy": 0,
+                    "Aortic aneurysm": 5.14,
+                    "Atrial fibrillation and flutter": 2.9,
+                    "Hypertensive heart disease": 0,
+                    "Intracerebral hemorrhage": 29.78,
+                    "Ischemic heart disease": 127.06,
+                    "Ischemic stroke": 17.13,
+                    "Lower extremity peripheral arterial disease": 0.72,
+                    "Subarachnoid hemorrhage": 14.31
+                }
+            ]
+        },
+        "Environmental": [
+            {
+                "Row Labels": "Ambient particulate matter pollution",
+                "Alcoholic cardiomyopathy": 0,
+                "Aortic aneurysm": 0,
+                "Atrial fibrillation and flutter": 0,
+                "Hypertensive heart disease": 0,
+                "Intracerebral hemorrhage": 62.63,
+                "Ischemic heart disease": 242.62,
+                "Ischemic stroke": 54.98,
+                "Lower extremity peripheral arterial disease": 0,
+                "Myocarditis": 0,
+                "Other cardiomyopathy": 0,
+                "Subarachnoid hemorrhage": 30.26
+            },
+            {
+                "Row Labels": "High temperature",
+                "Alcoholic cardiomyopathy": 0,
+                "Aortic aneurysm": 0,
+                "Atrial fibrillation and flutter": 0,
+                "Hypertensive heart disease": -0.17,
+                "Intracerebral hemorrhage": 0.25,
+                "Ischemic heart disease": -0.34,
+                "Ischemic stroke": 0.16,
+                "Lower extremity peripheral arterial disease": 0,
+                "Myocarditis": 0,
+                "Other cardiomyopathy": 0,
+                "Subarachnoid hemorrhage": 0.1
+            },
+            {
+                "Row Labels": "Household air pollution from solid fuels",
+                "Alcoholic cardiomyopathy": 0,
+                "Aortic aneurysm": 0,
+                "Atrial fibrillation and flutter": 14.39,
+                "Hypertensive heart disease": 46.74,
+                "Intracerebral hemorrhage": 11.93,
+                "Ischemic heart disease": 0,
+                "Ischemic stroke": 0,
+                "Lower extremity peripheral arterial disease": 0,
+                "Myocarditis": 6.83
+            },
+            {
+                "Row Labels": "Lead exposure",
+                "Alcoholic cardiomyopathy": 0,
+                "Aortic aneurysm": 0.18,
+                "Atrial fibrillation and flutter": 2.9,
+                "Hypertensive heart disease": 41.89,
+                "Intracerebral hemorrhage": 23.7,
+                "Ischemic heart disease": 63.92,
+                "Ischemic stroke": 21.29,
+                "Lower extremity peripheral arterial disease": 0.05,
+                "Myocarditis": 0,
+                "Other cardiomyopathy": 0,
+                "Subarachnoid hemorrhage": 10.39
+            },
+            {
+                "Row Labels": "Low temperature",
+                "Alcoholic cardiomyopathy": 0,
+                "Aortic aneurysm": 0,
+                "Atrial fibrillation and flutter": 0,
+                "Hypertensive heart disease": 9.15,
+                "Intracerebral hemorrhage": 22.44,
+                "Ischemic heart disease": 52.16,
+                "Ischemic stroke": 16.33,
+                "Lower extremity peripheral arterial disease": 0,
+                "Myocarditis": 0,
+                "Other cardiomyopathy": 0,
+                "Subarachnoid hemorrhage": 11.12
+            }
+        ]
+    }
+]

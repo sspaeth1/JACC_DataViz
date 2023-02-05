@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333;
+        margin: 10px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    #menu .item {
+        margin-bottom: 12px;
+    }
+
+    #menu .item input {
+        width: 100px;
+    }
+
+    #menu select {
+        margin-top: 4px;
+    }
+
+    #menu .item .value {
+        font-weight: bold;
+    }
+
+    #menu .item span,
+    #menu .item input {
+        vertical-align: middle;
+    }
+
+    #menu .item .low {
+        display: inline-block;
+        width: 30px;
+        text-align: right;
+    }
+
+    svg {
+        border: 1px solid #eee;
+    }
+
+    .map path {
+        fill: #87B687;
+        stroke: #777;
+    }
+
+    .projection-center {
+        fill: red;
+    }
+
+    .graticule path {
+        fill: none;
+        stroke: #eee;
+    }
+
+    .circles path {
+        fill: none;
+        stroke: #aaa;
+    }
+</style>
+
+<body>
+
+
+
+    <div id="menu">
+        <div class="projection-type item">
+            <div><select name="type" value="150"></select></div>
+        </div>
+        <div class="slider item">
+            <div class="label">scale (<span class="value">120</span>)</div>
+            <div><span class="low">0</span> <input type="range" name="scale" min="0" max="400" value="120">
+                <span>400</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">center (lon) (<span class="value">0</span>)</div>
+            <div><span class="low">-180</span> <input type="range" name="centerLon" min="-180" max="180" value="0">
+                <span>180</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">center (lat) (<span class="value">0</span>)</div>
+            <div><span class="low">-90</span> <input type="range" name="centerLat" min="-90" max="90" value="0">
+                <span>90</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">translate (x) (<span class="value">480</span>)</div>
+            <div><span class="low">0</span> <input type="range" name="translateX" min="0" max="960" value="480">
+                <span>960</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">translate (y) (<span class="value">250</span>)</div>
+            <div><span class="low">0</span> <input type="range" name="translateY" min="0" max="500" value="250">
+                <span>500</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">rotate (λ) (<span class="value">0</span>)</div>
+            <div><span class="low">-180</span> <input type="range" name="rotateLambda" min="-180" max="180" value="0">
+                <span>180</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">rotate (φ) (<span class="value">0</span>)</div>
+            <div><span class="low">-180</span> <input type="range" name="rotatePhi" min="-180" max="180" value="0">
+                <span>180</span>
+            </div>
+        </div>
+        <div class="slider item">
+            <div class="label">rotate (γ) (<span class="value">0</span>)</div>
+            <div><span class="low">-180</span> <input type="range" name="rotateGamma" min="-180" max="180" value="0">
+                <span>180</span>
+            </div>
+        </div>
+    </div>
+
+    <svg width="900px" height="500px">
+        <g class="graticule">
+            <path></path>
+        </g>
+        <g class="circles"></g>
+        <g class="map"></g>
+        <circle class="projection-center" r="4"></circle>
+    </svg>
+
+
+
+
+</body>
+
+
+<!-- <script src="./js/d3v4_13.js"></script> -->
+<script src="./js/d3v7.js"></script>
+<script>
+    let geojson;
+    let projectionTypes = [
+        'AzimuthalEqualArea',
+        'AzimuthalEquidistant',
+        'Gnomonic',
+        'Orthographic',
+        'Stereographic',
+        'Albers',
+        'ConicConformal',
+        'ConicEqualArea',
+        'ConicEquidistant',
+        'Equirectangular',
+        'Mercator',
+        'TransverseMercator'
+    ];
+
+    let projection;
+    let geoGenerator = d3.geoPath()
+        .projection(projection);
+
+    let graticule = d3.geoGraticule();
+
+    let circles = [
+        [-135, 0], [-90, 0], [-45, 0], [0, 0], [45, 0], [90, 0], [135, 0], [180, 0],
+        [0, -70], [0, -35], [0, 35], [0, 70],
+        [180, -70], [180, -35], [180, 35], [180, 70],
+    ];
+    let geoCircle = d3.geoCircle().radius(10).precision(1);
+
+    let state = {
+        type: 'AzimuthalEqualArea',
+        scale: 120,
+        translateX: 450,
+        translateY: 250,
+        centerLon: 0,
+        centerLat: 0,
+        rotateLambda: 0.1,
+        rotatePhi: 0,
+        rotateGamma: 0
+    }
+
+    function initMenu() {
+        d3.select('#menu')
+            .selectAll('.slider.item input')
+            .on('input', function (d) {
+                let attr = d3.select(this).attr('name');
+                state[attr] = this.value;
+                d3.select(this.parentNode.parentNode).select('.value').text(this.value);
+                update()
+            });
+
+        d3.select('#menu .projection-type select')
+            .on('change', function (d) {
+                state.type = this.options[this.selectedIndex].value;
+                update()
+            })
+            .selectAll('option')
+            .data(projectionTypes)
+            .enter()
+            .append('option')
+            .attr('value', function (d) { return d; })
+            .text(function (d) { return d; });
+    }
+
+    function update() {
+        // Update projection
+        projection = d3['geo' + state.type]()
+        geoGenerator.projection(projection);
+
+        projection
+            .scale(state.scale)
+            .translate([state.translateX, state.translateY])
+            .center([state.centerLon, state.centerLat])
+            .rotate([state.rotateLambda, state.rotatePhi, state.rotateGamma])
+
+        // Update world map
+        let u = d3.select('g.map')
+            .selectAll('path')
+            .data(geojson.features)
+
+        u.enter()
+            .append('path')
+            .merge(u)
+            .attr('d', geoGenerator)
+
+        // Update projection center
+        let projectedCenter = projection([state.centerLon, state.centerLat]);
+        d3.select('.projection-center')
+            .attr('cx', projectedCenter[0])
+            .attr('cy', projectedCenter[1]);
+
+        // Update graticule
+        d3.select('.graticule path')
+            .datum(graticule())
+            .attr('d', geoGenerator);
+
+        // Update circles
+        u = d3.select('.circles')
+            .selectAll('path')
+            .data(circles.map(function (d) {
+                geoCircle.center(d);
+                return geoCircle();
+            }));
+
+        u.enter()
+            .append('path')
+            .merge(u)
+            .attr('d', geoGenerator);
+    }
+
+
+    // d3.json('./js/geojson/ne_110m_land.json')
+    d3.json('./js/geojson/GeoJSON_1172023.geojson')
+        // d3.json('./js/geojson/GeoJSON_regions.json')
+        .then(function (json) {
+            geojson = json;
+            initMenu();
+            update();
+        });
+
+
+</script>
+
+</html>
