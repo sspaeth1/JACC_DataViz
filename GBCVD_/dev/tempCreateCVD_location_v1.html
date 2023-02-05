@@ -10,7 +10,6 @@
 
 <body>
     <div id="locationMetricSelection"></div>
-    <div id="dummyData"></div>
 
 </body>
 
@@ -94,50 +93,7 @@
 
 </script>
 <script>
-    let dummyData = {
-        diseaseNameCountry1dataCountry2data:
-            [
-                ["diseaseA", 2, 5, 3],
-                ["diseaseB", 23, 2, 4]
-            ],
-        diseaseCategories:
-            ["diseaseA", "diseaseB"],
-        countries: [
-            "country A", "country B", "country C"
-        ]
-    }
-    console.log("dummydata", dummyData)
-    console.log("causeNameItems", causeNameItems)
 
-
-
-
-    //////// START  dummy data chart /////////
-
-    var chart = bb.generate({
-        // bindto="#dummyData",
-        data: {
-            columns:
-                dummyData.diseaseNameCountry1dataCountry2data,
-            type: "bar",
-            // groups: [ ["aortic", "hypertensie", "ischmeic "] ]
-            groups: [dummyData.diseaseCategories],
-        },
-        axis: {
-            x: {
-                type: "category",
-                categories: dummyData.countries,
-                tick: {
-                    rotate: -75,
-                    multiline: false,
-                    tooltip: true
-                },
-                height: 130
-            }
-        }
-    })
-
-    //////// end dummy data chart /////////
 
 
     ///////////////// start chart
