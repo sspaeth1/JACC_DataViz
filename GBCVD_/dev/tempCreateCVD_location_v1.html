@@ -31,6 +31,7 @@
 
     let causeNameItems = Array.from(new Set(diseaseData.map(item => item.cause_name)))
     let regionLocations = Array.from(new Set(diseaseData.map(item => item.region_name === selected_region_name && item.region_name != item.location_name ? item.location_name : null)))
+    regionLocations.shift()
     let regionFiltered = diseaseData.filter(item => item.region_name === selected_region_name && item.measure_name === selected_measure_name && item.region_name != item.location_name ? item.location_name : null)
 
     // let arr = regionLocations.forEach(r => diseaseData.map(item => r.push(item.Daly)))
@@ -41,19 +42,19 @@
 
 
     /////// create arr:   [location_name, disease_cause.val, disease_cause.val, disease_cause.val, disease_cause.val ... ]
-    regionLocations.forEach(
-        (regionNameIsolated, i) => {
+    causeNameItems.forEach(
+        (causeNameIsolated, i) => {
             if (arrLocations[i] === undefined) {
                 arrLocations[i] = []
             }
 
             regionFiltered.map(item => {
-                if (item.location_name === regionNameIsolated && item.measure_name === "Deaths") {
+                if (item.cause_name === causeNameIsolated && item.measure_name === "Deaths") {
                     let itemVal = item.val * MULTIPLY_RATE
                     arrLocations[i].push(parseFloat(itemVal.toFixed(2)))
                 }
             });
-            arrLocations[i].unshift(regionNameIsolated)
+            arrLocations[i].unshift(causeNameIsolated)
         })
 
     arrLocations = Object.values(arrLocations)
@@ -120,13 +121,12 @@
                 dummyData.diseaseNameCountry1dataCountry2data,
             type: "bar",
             // groups: [ ["aortic", "hypertensie", "ischmeic "] ]
-            groups: [dummyData.diseaseCategories], //[causeNameItems]  //regionLocations
+            groups: [dummyData.diseaseCategories],
         },
         axis: {
             x: {
                 type: "category",
-                // categories: ["countryA", "countryB"]
-                categories: dummyData.countries,//regionLocationArr,
+                categories: dummyData.countries,
                 tick: {
                     rotate: -75,
                     multiline: false,
@@ -144,6 +144,9 @@
 
     var chart = bb.generate({
         bindto: "#locationMetricSelection",
+        size: {
+            height: 700
+        },
         data: {
             columns:
                 arrLocations,
