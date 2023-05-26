@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css">
+    <link rel="stylesheet" href="./css/ccdGuideline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,500&display=swap" rel="stylesheet">
+    <title>CCD Guidelines Interactive Tool</title>
+</head>
+<body>
+
+
+    <style>
+body{
+     font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.flex_basis-50{
+    flex-basis: 50%;
+}
+
+.ccdSelectedTab{
+    background-color: var(--start-color) ;
+    color: #fff;
+    position: relative;
+}
+.ccdSelectedTab:after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+    border-bottom:10px solid #ffffff;
+    border-left:  11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid transparent;
+}
+
+.question{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.bg_alert{
+    background-color: rgb(207, 76, 76);
+}
+
+.bg_green {
+    background-color: rgb(12, 131, 82);
+}
+
+.bg_grey{
+    background-color: rgb(156, 156, 156);
+}
+
+
+
+/* // RANGE slider /////////// */
+/* .range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.range {
+  width: 100%;
+}
+.bubble {
+  background: red;
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: red;
+  top: -1px;
+  left: 50%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	background: #b1b1b1;
+	border-radius: 5px;
+} */
+
+
+
+/* ///////////// */
+
+/* *, *:before, *:after {
+  box-sizing: border-box;
+} */
+
+
+.range-slider {
+  width: 60%;
+  margin-top:.5rem;
+  margin-bottom:.5rem;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (6rem));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c502c;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+.range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -moz-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+.range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+}
+
+.range-slider__value {
+  display: inline;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 2px;
+}
+.range-slider__value:after {
+  position: absolute;
+  top: .7rem;
+  left: -6px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: "";
+}
+
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+/* ////////////// */
+
+.evalRestartText{
+  position:relative;
+}
+.evalRestartText:before {
+    content: url('http://127.0.0.1:5500/vnlaJS/imgs/icon-restart.svg');
+    width: 20px;
+    height: 20px;
+    left: .3rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+    </style>
+
+    <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 bg_acc-4 br_1 br_primary br_solid">
+        <div class="ccdGuidlineHeader  text_center  " >
+            <h1 class="font_4 m-b_n3 ">Chronic Coronary Disease Guideline</h1>
+            <h2 class="font_1 font_light"> Interactive  Tool</h2>
+        </div>
+        <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid text_center">
+            <div  id="btnTabEval" class="ccdSelectedTab flex_basis-50  h:bg_primary h:c_white  font_2 p_4">Evaluate</div>
+            <div class="br-r_1 br_solid br_primary h_2xlh"></div>
+            <div id="btnTabRec" class="flex_basis-50  h:bg_primary h:c_white font_2 p_4">Recommendations</div>
+        </section>
+        <section class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_4 p-t_0 bg_white-6">
+
+            <div id="displayEvalQuestions">
+
+              <div class="ccdQsReset flex flex_row c_secondary-1  w_100 justify_between">
+                <div class="left ccdQsReset">
+
+                </div>
+                <div class="right"></div>
+                <div class="flex flex-column">
+                  <div>
+                    <div id="btnResetAll" class=" flex flex_row justify_between">
+                      <!-- <div class="w_20">  <img src="./imgs/restart.svg" alt="restart"></div> -->
+                      <div><p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 " > Reset All</p></div>
+                  </div>
+                      <div class="font_n2 c_secondary-2 p-b_2 text_center">
+                       <span class="font_bold">Y:</span> Yes | <span class="font_bold">N:</span> No
+                      </div>
+                  </div>
+                </div>
+
+             </div>
+
+
+             <div class="questionsBox br_1 br_primary br_solid p_2 w_100 ">
+                   <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                                MI within last year
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of relevant information.</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div id="selection_PCI" class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+
+                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            PCI within last year
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of PCI within last year</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            Type 2 diabetes
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of   Type 2 diabetes</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+
+                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            maximally tolerated statin therapy?
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of maximally tolerated statin therapy?</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+
+                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            On a beta-blocker?
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of a beta-blocker?</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+
+                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            Anticoagulation
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of Anticoagulation</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+
+                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            Angina?
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of Angina</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="flex flex_row gap_3 m-b_3">
+                        <div class="btnYes  h:bg_success h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">Y</div>
+                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius">N</div>
+                    </div>
+                </div>
+
+
+                <div class="question flex flex_row justify_between  m-b_3">
+                    <div class="left flex flex_row items_center m-l_4">
+                        <div>
+                            LVEF
+                        </div>
+                        <div class="tooltip-container m-l_3">
+                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                                <div class="tooltip-content">
+                                  <p>This panel displays a summary of LVEF</p>
+                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
+                                </div>
+                         </div>
+                    </div>
+                    <!-- <div class="flex flex_row gap_3 m-b_3 range-wrap">
+                       <input class="range" type="range" id="lvef" name="lvef" min="0" max="200">
+                       <output class="bubble m-t_5"></output>
+                    </div> -->
+
+                    <div class="range-slider">
+                        <input id='rangeSlider' class="range-slider__range" type="range" value="0" min="0" max="100">
+                        <span class="range-slider__value"></span>
+                      </div>
+
+                </div>
+             </div>
+
+
+                <div id='btnCCD_Submit' class="btnSubmit p_4 c_white bg_primary h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 float_right font_2 br_radius text_center" >
+                    Submit
+                </div>
+
+
+
+
+
+            </div>
+            <div id="displayReturnRecs" class="display_none">
+                <div id="recsdefault" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4">
+                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
+                </div>
+
+            </div>
+        </section >
+    </main>
+
+
+
+    <script>
+        // const allRanges = document.querySelectorAll(".range-wrap");
+        // allRanges.forEach(wrap => {
+        // const range = wrap.querySelector(".range");
+        // const bubble = wrap.querySelector(".bubble");
+
+        // range.addEventListener("input", () => {
+        //     setBubble(range, bubble);
+        // });
+        // setBubble(range, bubble);
+        // });
+
+        // function setBubble(range, bubble) {
+        // const val = range.value;
+        // const min = range.min ? range.min : 0;
+        // const max = range.max ? range.max : 100;
+        // const newVal = Number(((val - min) * 100) / (max - min));
+        // bubble.innerHTML = val;
+
+        // // Sorta magic numbers based on size of the native UI thumb
+        // bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+        // }
+
+    </script>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/JavaScript">
+</script>
+
+<script>
+//     var rangeSlider = function(){
+//   var slider = $('.range-slider'),
+//       range = $('.range-slider__range'),
+//       value = $('.range-slider__value');
+
+//   slider.each(function(){
+
+//     value.each(function(){
+//       var value = $(this).prev().attr('value');
+//       $(this).html(value + "%");
+//     });
+
+//     range.on('input', function(){
+//       $(this).next(value).html(this.value  + "%");
+//     });
+//   });
+// };
+
+// rangeSlider();
+
+
+///// vanilla version //////
+  var rangeSlider = function() {
+    var sliders = document.querySelectorAll('.range-slider');
+
+    sliders.forEach(function(slider) {
+      var range = slider.querySelector('.range-slider__range');
+      var value = slider.querySelector('.range-slider__value');
+
+      var updateValue = function() {
+        var percentValue = range.value + "%";
+        value.textContent = percentValue;
+      };
+
+      updateValue();
+
+      range.addEventListener('input', updateValue);
+    });
+  };
+
+  rangeSlider()
+</script>
+
+<script>
+    let LVEFslider =  document.getElementById('rangeSlider');
+    LVEFslider.addEventListener( 'click', ()=> console.log(LVEFslider.value));
+</script>
+
+
+<script>
+    let btnTabRec = document.getElementById('btnTabRec'),
+        btnTabEval = document.getElementById('btnTabEval'),
+        displayEvalQuestions = document.getElementById('displayEvalQuestions'),
+        displayReturnRecs =  document.getElementById('displayReturnRecs')
+
+
+
+    function showRecsHideEvalTab(){
+      displayReturnRecs.classList.contains('display_none')? displayReturnRecs.classList.remove('display_none'): '';
+            btnTabRec.classList.contains('ccdSelectedTab')? '': btnTabRec.classList.add('ccdSelectedTab') ;
+
+            displayEvalQuestions.classList.contains('display_none')? '':   displayEvalQuestions.classList.add('display_none');
+            btnTabEval.classList.contains('ccdSelectedTab')? btnTabEval.classList.remove('ccdSelectedTab') : '' ;
+
+
+    }
+
+    function  showEvalsHideRecsTab(){
+            displayEvalQuestions.classList.contains('display_none')? displayEvalQuestions.classList.remove('display_none'):'' ;
+            btnTabEval.classList.contains('ccdSelectedTab')? '': btnTabEval.classList.add('ccdSelectedTab') ;
+
+            displayReturnRecs.classList.contains('display_none')? '':   displayReturnRecs.classList.add('display_none');
+            btnTabRec.classList.contains('ccdSelectedTab')? btnTabRec.classList.remove('ccdSelectedTab'): '' ;
+    }
+
+
+    let btnCCD_Submit = document.getElementById('btnCCD_Submit')
+
+
+    btnTabRec.addEventListener('click', ()=>showRecsHideEvalTab())
+
+    btnTabEval.addEventListener('click', ()=> showEvalsHideRecsTab())
+
+    btnCCD_Submit.addEventListener('click', ()=> showRecsHideEvalTab())
+
+</script>
+
+<script>
+    let grabYesBtns = document.querySelectorAll('.btnYes')
+    let grabNoBtns = document.querySelectorAll('.btnNo')
+    grabYesNoBtns = [...grabYesBtns, ...grabNoBtns]
+
+
+    let  toggleClass = (event) => {
+    console.log(event.target.nextElementSibling)
+    if(event.target.classList.contains('btnYes')){
+            event.target.classList.toggle('bg_grey')
+            event.target.classList.toggle('bg_success')
+
+            event.target.nextElementSibling.classList.contains('bg_alert')? event.target.nextElementSibling.classList.remove('bg_alert'): "";
+            event.target.nextElementSibling.classList.contains('bg_grey')? "" :  event.target.nextElementSibling.classList.add('bg_grey')
+
+        }
+
+    if(event.target.classList.contains('btnNo')){
+        event.target.classList.toggle('bg_grey')
+        event.target.classList.toggle('bg_alert')
+
+        event.target.previousElementSibling.classList.contains('bg_success')? event.target.previousElementSibling.classList.remove('bg_success'): "";
+        event.target.previousElementSibling.classList.contains('bg_grey')? "" :  event.target.previousElementSibling.classList.add('bg_grey')
+    }
+    }
+
+
+    grabYesNoBtns.forEach(element => {
+        element.addEventListener('click',toggleClass )
+    });
+
+
+    let grabBtnResetAll = document.getElementById('btnResetAll')
+    grabBtnResetAll.addEventListener('click', ()=>{
+        grabYesNoBtns.forEach( element =>{
+             element.classList.contains('bg_success')? element.classList.remove('bg_success') : "";
+             element.classList.contains('bg_alert')? element.classList.remove('bg_alert') : "";
+             element.classList.contains('bg_grey')? '' : element.classList.add('bg_grey');
+
+            let grabELVF_Slider = document.getElementById('rangeSlider')
+            grabELVF_Slider.value = 0;
+            grabELVF_Slider.nextElementSibling.innerHTML = "0%"
+          })
+    })
+
+</script>
+</body>
+</html>
