@@ -379,32 +379,10 @@ input::-moz-focus-outer {
                 </div>
 
 
-                <div class="question flex flex_row justify_between  m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            LVEF
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of LVEF</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <!-- <div class="flex flex_row gap_3 m-b_3 range-wrap">
-                       <input class="range" type="range" id="lvef" name="lvef" min="0" max="200">
-                       <output class="bubble m-t_5"></output>
-                    </div> -->
 
-                    <div class="range-slider">
-                        <input id='rangeSlider' class="range-slider__range" type="range" value="0" min="0" max="100">
-                        <span class="range-slider__value"></span>
-                      </div>
-
-                </div>
-                <div class="question flex flex_row justify_between  m-b_3">
-                  <div class="left flex flex_row items_center m-l_4">
+             <div class="question flex flex_row justify_between  m-b_3">
+                  <div class="flex flex_row items_center justify_between left m-l_4 w_100">
+                    <div class="flex">
                       <div>
                           LVEF
                       </div>
@@ -415,33 +393,24 @@ input::-moz-focus-outer {
                                 <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
                               </div>
                        </div>
-                  </div>
-                  <style>
-                    .range-labels {
-                      display: flex;
-                      justify-content: space-between;
-                      margin-bottom: 10px;
-                    }
-                  </style>
-                  <div class="flex flex_column">
-                    <div class="range-labels font_0 ">
-                      <label class="m-l_5" for="range-0">LVEF &lt 50%</label>
-                      <label class="m-l_5" for="range-1">= 41-49%</label>
-                      <label class="m-l_5" for="range-2"> &gt 50</label>
+
                     </div>
 
-                     <input type="range" id="range-slider-threelimit" min="0" max="2" step="1">
+                       <div class="flex flex_row gap_3 ">
+                          <!-- <div class=" bg_grey br_radius display_none "></div> -->
+                          <div class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light">&lt 40%</div>
+                          <div class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light">41-49%</div>
+                          <div class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light">&gt 50%</div>
+                          <!-- <div class="btnLVEF bg_grey br_radius display_none "></div> -->
 
-
+                       </div>
                   </div>
-
-
-
-              </div>
              </div>
 
 
-                <div id='btnCCD_Submit' class="btnSubmit p_4 c_white bg_primary h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 float_right font_2 br_radius text_center" >
+
+
+                <div id='btnCCD_Submit' class="btnSubmit p_4 c_white bg_primary-1 h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 float_right font_2 br_radius text_center" >
                     Submit
                 </div>
 
@@ -483,94 +452,18 @@ input::-moz-focus-outer {
 <!-- buttons /?for LVEF/ -->
 
 
-    <script>
-        // const allRanges = document.querySelectorAll(".range-wrap");
-        // allRanges.forEach(wrap => {
-        // const range = wrap.querySelector(".range");
-        // const bubble = wrap.querySelector(".bubble");
-
-        // range.addEventListener("input", () => {
-        //     setBubble(range, bubble);
-        // });
-        // setBubble(range, bubble);
-        // });
-
-        // function setBubble(range, bubble) {
-        // const val = range.value;
-        // const min = range.min ? range.min : 0;
-        // const max = range.max ? range.max : 100;
-        // const newVal = Number(((val - min) * 100) / (max - min));
-        // bubble.innerHTML = val;
-
-        // // Sorta magic numbers based on size of the native UI thumb
-        // bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
-        // }
-
-    </script>
-
-
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/JavaScript">
-</script>
-
 <script>
-//     var rangeSlider = function(){
-//   var slider = $('.range-slider'),
-//       range = $('.range-slider__range'),
-//       value = $('.range-slider__value');
-
-//   slider.each(function(){
-
-//     value.each(function(){
-//       var value = $(this).prev().attr('value');
-//       $(this).html(value + "%");
-//     });
-
-//     range.on('input', function(){
-//       $(this).next(value).html(this.value  + "%");
-//     });
-//   });
-// };
-
-// rangeSlider();
-
-
-///// vanilla version //////
-  var rangeSlider = function() {
-    var sliders = document.querySelectorAll('.range-slider');
-
-    sliders.forEach(function(slider) {
-      var range = slider.querySelector('.range-slider__range');
-      var value = slider.querySelector('.range-slider__value');
-
-      var updateValue = function() {
-        var percentValue = range.value + "%";
-        value.textContent = percentValue;
-      };
-
-      updateValue();
-
-      range.addEventListener('input', updateValue);
-    });
-  };
-
-  rangeSlider()
-</script>
-
-<script>
-    let LVEFslider =  document.getElementById('rangeSlider');
-    LVEFslider.addEventListener( 'click', ()=> console.log(LVEFslider.value));
-</script>
-
-
-<script>
-    let btnTabRec = document.getElementById('btnTabRec'),
+    const btnTabRec = document.getElementById('btnTabRec'),
         btnTabEval = document.getElementById('btnTabEval'),
         displayEvalQuestions = document.getElementById('displayEvalQuestions'),
         displayReturnRecs =  document.getElementById('displayReturnRecs');
 
-     let grabrecsDefault = document.getElementById('recsDefault'),
+     const grabrecsDefault = document.getElementById('recsDefault'),
          grabBetaBlockers = document.getElementById('Beta_Blockers'),
          grabSGLT2_GLP1 = document.getElementById('SGLT2_GLP-1')
+
+    const btnCCD_Submit = document.getElementById('btnCCD_Submit')
+
 
 
 function hideDefaultAddSpecificGuidelines(){
@@ -601,7 +494,6 @@ function hideDefaultAddSpecificGuidelines(){
     }
 
 
-    let btnCCD_Submit = document.getElementById('btnCCD_Submit')
 
 
     btnTabRec.addEventListener('click', ()=>showRecsHideEvalTab())
@@ -621,8 +513,52 @@ function hideDefaultAddSpecificGuidelines(){
     grabYesNoBtns = [...grabYesBtns, ...grabNoBtns]
 
 
+    const btnsLVEF = document.querySelectorAll('.btnLVEF');
+
+
+    btnsLVEF.forEach(btn => {
+      btn.addEventListener('click', (event) => {
+        btnsLVEF.forEach(otherBtn => {
+          if (otherBtn  === btn) {
+            // otherBtn.style.backgroundColor = 'bg_success';
+                event.target.classList.toggle('bg_success')
+          } else {
+            // otherBtn.style.backgroundColor = 'bg_grey';
+            otherBtn.classList.contains('bg_success')? otherBtn.classList.remove('bg_success'): "";
+
+          }
+        });
+      });
+    });
+
+
+
     let  toggleClass = (event) => {
-    console.log(event.target.nextElementSibling)
+
+
+//       if(event.target.classList.contains('btnLVEF')){
+//         // console.group('LVEF')
+//         //   console.log("prev sib", event.target.previousElementSibling)
+//         //   console.log("next sib", event.target.nextElementSibling)
+//         // console.groupEnd('LVEF')
+
+
+
+//           let prevExists = event.target.previousElementSibling.classList.contains('bg_success')
+// console.log(prevExists == true)
+//             event.target.previousElementSibling.classList.contains('bg_success')? event.target.previousElementSibling.classList.remove('bg_success'): "";
+//             event.target.previousElementSibling.classList.contains('bg_grey')? "" :  event.target.previousElementSibling.classList.add('bg_grey')
+//             event.target.nextElementSibling.classList.contains('bg_success')? event.target.nextElementSibling.classList.remove('bg_success'): "";
+//             event.target.nextElementSibling.classList.contains('bg_grey')? "" :  event.target.nextElementSibling.classList.add('bg_grey')
+//             event.target.classList.toggle('bg_grey')
+//             event.target.classList.toggle('bg_success')
+//             return
+//           }
+
+
+
+
+
     if(event.target.classList.contains('btnYes')){
             event.target.classList.toggle('bg_grey')
             event.target.classList.toggle('bg_success')
