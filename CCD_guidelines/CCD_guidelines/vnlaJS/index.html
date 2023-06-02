@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css">
-    <link rel="stylesheet" href="./css/ccdGuideline.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,500&display=swap" rel="stylesheet">
-    <title>CCD Guidelines Interactive Tool</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css">
+  <link rel="stylesheet" href="./css/ccdGuideline.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/color-code_LOE_COR.css">
+  <title>CCD Guidelines Interactive Tool</title>
 </head>
+
 <body>
 
 
-    <style>
-body{
-     font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
+  <style>
+    body {
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
 
-.flex_basis-50{
-    flex-basis: 50%;
-}
+    .flex_basis-50 {
+      flex-basis: 50%;
+    }
 
-.ccdSelectedTab{
-    background-color: var(--start-color) ;
-    color: #fff;
-    position: relative;
-}
-.ccdSelectedTab:after{
-    content:"";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -1px;
-    border-bottom:10px solid #eaeff3;
-    border-left:  11px solid transparent;
-    border-right: 11px solid transparent;
-    border-top: 11px solid transparent;
-}
+    .ccdSelectedTab {
+      background-color: var(--start-color);
+      color: #fff;
+      position: relative;
+    }
 
-.question{
-    font-weight: 300;
-    font-size: 1.4rem;
-}
+    .ccdSelectedTab:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1px;
+      border-bottom: 10px solid #eaeff3;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-top: 11px solid transparent;
+    }
 
-.bg_alert{
-    background-color: rgb(207, 76, 76);
-}
+    .question {
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
 
-.bg_green {
-    background-color: rgb(12, 131, 82);
-}
+    .bg_alert {
+      background-color: rgb(207, 76, 76);
+    }
 
-.bg_grey{
-    background-color: rgb(156, 156, 156);
-}
+    .bg_green {
+      background-color: rgb(12, 131, 82);
+    }
+
+    .bg_grey {
+      background-color: rgb(156, 156, 156);
+    }
 
 
 
-/* // RANGE slider /////////// */
-/* .range-wrap {
+    /* // RANGE slider /////////// */
+    /* .range-wrap {
   position: relative;
   margin: 0 auto 3rem;
 }
@@ -95,335 +101,364 @@ input[type=range]::-webkit-slider-runnable-track {
 
 
 
-/* ///////////// */
+    /* ///////////// */
 
-/* *, *:before, *:after {
+    /* *, *:before, *:after {
   box-sizing: border-box;
 } */
 
 
-.range-slider {
-  width: 60%;
-  margin-top:.5rem;
-  margin-bottom:.5rem;
-}
+    .range-slider {
+      width: 60%;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
 
-.range-slider__range {
-  -webkit-appearance: none;
-  width: calc(100% - (6rem));
-  height: 10px;
-  border-radius: 5px;
-  background: #d7dcdf;
-  outline: none;
-  padding: 0;
-  margin: 0;
-}
-.range-slider__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-          appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #2c502c;
-  cursor: pointer;
-  -webkit-transition: background 0.15s ease-in-out;
-  transition: background 0.15s ease-in-out;
-}
-.range-slider__range::-webkit-slider-thumb:hover {
-  background: #1abc9c;
-}
-.range-slider__range:active::-webkit-slider-thumb {
-  background: #1abc9c;
-}
-.range-slider__range::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border: 0;
-  border-radius: 50%;
-  background: #2c3e50;
-  cursor: pointer;
-  -moz-transition: background 0.15s ease-in-out;
-  transition: background 0.15s ease-in-out;
-}
-.range-slider__range::-moz-range-thumb:hover {
-  background: #1abc9c;
-}
-.range-slider__range:active::-moz-range-thumb {
-  background: #1abc9c;
-}
-.range-slider__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
-}
+    .range-slider__range {
+      -webkit-appearance: none;
+      width: calc(100% - (6rem));
+      height: 10px;
+      border-radius: 5px;
+      background: #d7dcdf;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.range-slider__value {
-  display: inline;
-  position: relative;
-  width: 60px;
-  color: #fff;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 3px;
-  background: #2c3e50;
-  padding: 5px 10px;
-  margin-left: 2px;
-}
-.range-slider__value:after {
-  position: absolute;
-  top: .7rem;
-  left: -6px;
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-right: 7px solid #2c3e50;
-  border-bottom: 7px solid transparent;
-  content: "";
-}
+    .range-slider__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #2c502c;
+      cursor: pointer;
+      -webkit-transition: background 0.15s ease-in-out;
+      transition: background 0.15s ease-in-out;
+    }
 
-::-moz-range-track {
-  background: #d7dcdf;
-  border: 0;
-}
+    .range-slider__range::-webkit-slider-thumb:hover {
+      background: #1abc9c;
+    }
 
-input::-moz-focus-inner,
-input::-moz-focus-outer {
-  border: 0;
-}
+    .range-slider__range:active::-webkit-slider-thumb {
+      background: #1abc9c;
+    }
 
-/* ////////////// */
+    .range-slider__range::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border: 0;
+      border-radius: 50%;
+      background: #2c3e50;
+      cursor: pointer;
+      -moz-transition: background 0.15s ease-in-out;
+      transition: background 0.15s ease-in-out;
+    }
 
-.evalRestartText{
-  position:relative;
-}
-.evalRestartText:before {
-    content: url('http://127.0.0.1:5500/vnlaJS/imgs/icon-restart.svg');
-    width: 20px;
-    height: 20px;
-    left: .3rem;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
+    .range-slider__range::-moz-range-thumb:hover {
+      background: #1abc9c;
+    }
 
-    </style>
+    .range-slider__range:active::-moz-range-thumb {
+      background: #1abc9c;
+    }
 
-    <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 bg_acc-4 br_1 br_primary br_solid">
-        <div class="ccdGuidlineHeader  text_center  " >
-            <h1 class="font_4 m-b_n3 ">Chronic Coronary Disease Guideline</h1>
-            <h2 class="font_1 font_light"> Interactive  Tool</h2>
-        </div>
-        <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid text_center">
-            <div  id="btnTabEval" class="ccdSelectedTab flex_basis-50  h:bg_primary h:c_white  font_2 p_4">Evaluate</div>
-            <div id="btnTabRec" class=" flex_basis-50  h:bg_primary h:c_white font_2 p_4">Recommendations</div>
-        </section>
-        <section class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_4 p-t_0 bg_white-6 min-h_80">
+    .range-slider__range:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+    }
 
-            <div id="displayEvalQuestions" >
+    .range-slider__value {
+      display: inline;
+      position: relative;
+      width: 60px;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      background: #2c3e50;
+      padding: 5px 10px;
+      margin-left: 2px;
+    }
 
-              <div class="ccdQsReset flex flex_row c_secondary-1  w_100 justify_between">
-                <div class="left ccdQsReset">
+    .range-slider__value:after {
+      position: absolute;
+      top: .7rem;
+      left: -6px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #2c3e50;
+      border-bottom: 7px solid transparent;
+      content: "";
+    }
 
+    ::-moz-range-track {
+      background: #d7dcdf;
+      border: 0;
+    }
+
+    input::-moz-focus-inner,
+    input::-moz-focus-outer {
+      border: 0;
+    }
+
+    /* ////////////// */
+
+    .evalRestartText {
+      position: relative;
+    }
+
+    .evalRestartText:before {
+      content: url('http://127.0.0.1:5500/vnlaJS/imgs/icon-restart.svg');
+      width: 20px;
+      height: 20px;
+      left: .3rem;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+    }
+  </style>
+
+  <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 bg_acc-4 br_1 br_primary br_solid">
+    <div class="ccdGuidlineHeader  text_center  ">
+      <h1 class="font_4 m-b_n3 ">Chronic Coronary Disease Guideline</h1>
+      <h2 class="font_1 font_light"> Interactive Tool</h2>
+    </div>
+    <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid text_center">
+      <div id="btnTabEval" class="ccdSelectedTab flex_basis-50  h:bg_primary h:c_white  font_2 p_4">Evaluate</div>
+      <div id="btnTabRec" class=" flex_basis-50  h:bg_primary h:c_white font_2 p_4">Recommendations</div>
+    </section>
+    <section
+      class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_3 p-t_0 bg_white-6 min-h_80">
+
+      <div id="displayEvalQuestions">
+
+        <div class="ccdQsReset flex flex_row c_secondary-1  w_100 justify_between">
+          <div class="left ccdQsReset">
+
+          </div>
+          <div class="right"></div>
+          <div class="flex flex-column">
+            <div>
+              <div id="btnResetAll" class=" flex flex_row justify_between">
+                <!-- <div class="w_20">  <img src="./imgs/restart.svg" alt="restart"></div> -->
+                <div>
+                  <p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 "> Reset All
+                  </p>
                 </div>
-                <div class="right"></div>
-                <div class="flex flex-column">
-                  <div>
-                    <div id="btnResetAll" class=" flex flex_row justify_between">
-                      <!-- <div class="w_20">  <img src="./imgs/restart.svg" alt="restart"></div> -->
-                      <div><p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 " > Reset All</p></div>
-                  </div>
-                      <div class="font_n2 c_secondary-2 p-b_2 text_center">
-                       <span class="font_bold">Y:</span> Yes | <span class="font_bold">N:</span> No
-                      </div>
-                  </div>
-                </div>
-
-             </div>
-
-
-             <div class="questionsBox br_1 br_primary br_solid p_2 w_100 bg_white">
-                   <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                                MI within last year
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of relevant information.</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div id="selection_PCI" class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-
-                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            PCI within last year
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of PCI within last year</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            Type 2 diabetes
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of   Type 2 diabetes</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-
-                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            maximally tolerated statin therapy?
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of maximally tolerated statin therapy?</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-
-                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            On a beta-blocker?
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of a beta-blocker?</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-
-                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            Anticoagulation
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of Anticoagulation</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-
-                <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
-                    <div class="left flex flex_row items_center m-l_4">
-                        <div>
-                            Angina?
-                        </div>
-                        <div class="tooltip-container m-l_3">
-                                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                                <div class="tooltip-content">
-                                  <p>This panel displays a summary of Angina</p>
-                                  <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="flex flex_row gap_3 m-b_3">
-                        <div class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light ">Y</div>
-                        <div class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light">N</div>
-                    </div>
-                </div>
-
-
-
-             <div class="question flex flex_row justify_between  m-b_3">
-                  <div class="flex flex_row items_center justify_between left m-l_4 w_100">
-                    <div class="flex">
-                      <div>
-                          LVEF
-                      </div>
-                      <div class="tooltip-container m-l_3">
-                              <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
-                              <div class="tooltip-content">
-                                <p>This panel displays a summary of LVEF</p>
-                                <p class="align-right"> <a href="https://google.com" target="_blank">Read More</a></p>
-                              </div>
-                       </div>
-
-                    </div>
-
-                       <div class="flex flex_row gap_3 ">
-                          <!-- <div class=" bg_grey br_radius display_none "></div> -->
-                          <div class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light">&lt 40%</div>
-                          <div class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light">41-49%</div>
-                          <div class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light">&gt 50%</div>
-                          <!-- <div class="btnLVEF bg_grey br_radius display_none "></div> -->
-
-                       </div>
-                  </div>
-             </div>
-
-
-
-
-                <div id='btnCCD_Submit' class="btnSubmit p_4 c_white bg_primary-1 h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 float_right font_2 br_radius text_center" >
-                    Submit
-                </div>
-
-
-
-
-
+              </div>
+              <div class="font_n2 c_secondary-2 p-b_2 text_center">
+                <span class="font_bold">Y:</span> Yes | <span class="font_bold">N:</span> No
+              </div>
             </div>
-            <div id="displayReturnRecs"  class="display_none" >
-                <div id="recsDefault" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
-                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
+          </div>
+
+        </div>
+
+
+        <div class="questionsBox br_1 br_primary br_solid p_2 w_100 bg_white">
+          <div
+            class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                MI within last year
+              </div>
+              <div class="tooltip-container m-l_3">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>This panel displays a summary.</p>
                 </div>
-                <div id="SGLT2_GLP-1" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white ">
+              </div>
+            </div>
+            <div id="mi" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div
+            class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Type 2 diabetes?
+              </div>
+            </div>
+            <div id="diabetes" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+          <div
+            class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                History of HFrEF?
+              </div>
+            </div>
+            <div id="hxHFrEF" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between p-b_3 m-b_3 br-b_1 br_solid br_primary-3">
+            <div class="flex flex_row items_center justify_between left m-l_4 w_100">
+              <div class="flex">
+                <div>
+                  LVEF
+                </div>
+              </div>
+              <div id="LVEF" class="flex flex_row gap_3 btnSet" data-selected-choice="">
+                <div
+                  id="LVEFlessOrEqual40" class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="Y">
+                  &leq; 40%</div>
+                <div
+                  id="LVEF41to49" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="Y">
+                  41-49%</div>
+                <div
+                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="Y">
+                  &geq; 50%</div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                LDL-C at goal
+              </div>
+              <div class="tooltip-container m-l_3">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>LDL-C ≥ 70 mg/dL</p>
+                </div>
+              </div>
+            </div>
+            <div id="LDL-C_goal" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light"data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On maximally tolerated statin therapy?
+              </div>
+            </div>
+            <div id="maxStatin" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On a beta-blocker?
+              </div>
+            </div>
+            <div id="betaBlocker" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Blood pressure at goal?
+              </div>
+              <div class="tooltip-container m-l_3 ">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>BP&gt; 130&Backslash;&lt;80 mm Hg</p>
+                </div>
+              </div>
+            </div>
+            <div id="bloodPressureGoal" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Angina?
+              </div>
+            </div>
+            <div id="angina" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+
+          <div id='btnCCD_Submit'
+            class="btnSubmit p_4 c_white bg_primary-1 h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
+            Submit
+          </div>
+
+
+          <button id="submitButton" style="display: none;"
+            class="btnSubmit p_4 c_white bg_primary-1 h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 float_right font_2 br_radius text_center">Submit</button>
+
+
+        </div>
+      </div>
+
+      <div id="displayReturnRecs" class="display_none">
+        <!-- <div id="recsDefault" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
+                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
+                </div> -->
+
+
+
+        <!-- <div id="SGLT2_GLP-1" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white ">
                   <div class="br-b_1 br_solid flex">
                     <img src="./imgs/sgl2_.png" alt="icon for SGLT2 Inhibitors and GLP-1 Receptor Agonists" class="aspect_1x1  h_2xlh m-t_0 m_3 p-t_0 p_3 w_10">
                     <h1 class="c_primary font_2 font_medium p-b_1 p-t_0 p_2">SGLT2 Inhibitors and GLP-1 Receptor Agonists </h1>
@@ -440,174 +475,466 @@ input::-moz-focus-outer {
                   </div> <p>In patients with CCD and LVEF ≤40% with or without previous MI, the use of beta-blocker therapy is recommended to reduce the risk of future MACE, including cardiovascular death (COR 1/LOE A).
                   </p>
                   <p><a href="#"  class="font_0 c_accent h:c_accent-3"> 4.3.2. Beta Blockers </a></p>
-                </div>
-
-            </div>
-        </section >
-    </main>
-
-
-    <!-- ////  force  click submit on eval on second attempt/edits made -->
-<!-- < add equal to or greater than equal too -->
-<!-- buttons /?for LVEF/ -->
-
-
-<script>
-    const btnTabRec = document.getElementById('btnTabRec'),
-        btnTabEval = document.getElementById('btnTabEval'),
-        displayEvalQuestions = document.getElementById('displayEvalQuestions'),
-        displayReturnRecs =  document.getElementById('displayReturnRecs');
-
-     const grabrecsDefault = document.getElementById('recsDefault'),
-         grabBetaBlockers = document.getElementById('Beta_Blockers'),
-         grabSGLT2_GLP1 = document.getElementById('SGLT2_GLP-1')
-
-    const btnCCD_Submit = document.getElementById('btnCCD_Submit')
+                </div> -->
 
 
 
-function hideDefaultAddSpecificGuidelines(){
-        // grabrecsDefault.classList.toggle('display_none', !grabrecsDefault.classList.contains('display_none'));
-        // grabBetaBlockers.classList.toggle('display_none', !grabBetaBlockers.classList.contains('display_none'));
-        // grabSGLT2_GLP1.classList.toggle('display_none', !grabSGLT2_GLP1.classList.contains('display_none'));
-        grabrecsDefault.classList.contains('display_none')? grabrecsDefault.classList.remove('display_none'):grabrecsDefault.classList.add('display_none') ;
-        // grabBetaBlockers.classList.contains('display_none')? grabBetaBlockers.classList.remove('display_none'):grabBetaBlockers.classList.add('display_none') ;
 
-}
+      </div>
 
-    function showRecsHideEvalTab(){
-      displayReturnRecs.classList.contains('display_none')? displayReturnRecs.classList.remove('display_none'): '';
-            btnTabRec.classList.contains('ccdSelectedTab')? '': btnTabRec.classList.add('ccdSelectedTab') ;
+    </section>
+  </main>
 
-            displayEvalQuestions.classList.contains('display_none')? '':   displayEvalQuestions.classList.add('display_none');
-            btnTabEval.classList.contains('ccdSelectedTab')? btnTabEval.classList.remove('ccdSelectedTab') : '' ;
+  <script src="./js/dataLogic.js"></script>
 
+  <!-- ////  force  click submit on eval on second attempt/edits made -->
+  <!-- < add equal to or greater than equal too -->
+  <!-- buttons /?for LVEF/ -->
+  <!-- "See full Guideline..."   added to  anchor link at bottom -->
+<!-- all fields required, please complete and click Submit-->
 
+  <script>
+
+    //not currently used
+    const objList =
+    //   [
+    //     { "name": "mi", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "diabetes", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "hxHFrEF", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "LVEF", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "LDL-C_goal", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "maxStatin", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "betaBlocker", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "bloodPressureGoal", "status": "undefined", "cors" : "", "guideline": ""},
+    //     { "name": "angina", "status": "undefined", "cors" : "", "guideline": ""}
+    // ]
+    {
+      "mi": {
+        "name": "mi",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "diabetes": {
+        "name": "diabetes",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "hxHFrEF": {
+        "name": "hxHFrEF",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "LVEF": {
+        "name": "LVEF",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "LDL-C_goal": {
+        "name": "LDL-C_goal",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "maxStatin": {
+        "name": "maxStatin",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "betaBlocker": {
+        "name": "betaBlocker",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "bloodPressureGoal": {
+        "name": "bloodPressureGoal",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      },
+      "angina": {
+        "name": "angina",
+        "status": "undefined",
+        "cors": "",
+        "guideline": ""
+      }
     }
 
-    function  showEvalsHideRecsTab(){
-            displayEvalQuestions.classList.contains('display_none')? displayEvalQuestions.classList.remove('display_none'):'' ;
-            btnTabEval.classList.contains('ccdSelectedTab')? '': btnTabEval.classList.add('ccdSelectedTab') ;
-
-            displayReturnRecs.classList.contains('display_none')? '':   displayReturnRecs.classList.add('display_none');
-            btnTabRec.classList.contains('ccdSelectedTab')? btnTabRec.classList.remove('ccdSelectedTab'): '' ;
-    }
 
 
+  </script>
+
+  <script>
+    const grabYesBtns = document.querySelectorAll('.btnYes'),
+      grabNoBtns = document.querySelectorAll('.btnNo'),
+      grabLVEFBtns = document.querySelectorAll('.btnLVEF'),
+      grabAllBtnSets = document.querySelectorAll('.btnSet')
 
 
-    btnTabRec.addEventListener('click', ()=>showRecsHideEvalTab())
-
-    btnTabEval.addEventListener('click', ()=> showEvalsHideRecsTab())
-
-    btnCCD_Submit.addEventListener('click', ()=> {
-      hideDefaultAddSpecificGuidelines()
-      showRecsHideEvalTab()
-    })
-
-</script>
-
-<script>
-    let grabYesBtns = document.querySelectorAll('.btnYes')
-    let grabNoBtns = document.querySelectorAll('.btnNo')
-    grabYesNoBtns = [...grabYesBtns, ...grabNoBtns]
+    let grabYesNoBtns = [...grabYesBtns, ...grabNoBtns]
 
 
-    const btnsLVEF = document.querySelectorAll('.btnLVEF');
-
-
-    btnsLVEF.forEach(btn => {
+    //Handle three choice buttons/ LVEF
+    grabLVEFBtns.forEach(btn => {
       btn.addEventListener('click', (event) => {
-        btnsLVEF.forEach(otherBtn => {
-          if (otherBtn  === btn) {
+
+        selectedChoiseAddedToDataset(event)
+        grabLVEFBtns.forEach(otherBtn => {
+          if (otherBtn === btn) {
             // otherBtn.style.backgroundColor = 'bg_success';
-                event.target.classList.toggle('bg_success')
+            event.target.classList.toggle('bg_success')
+            console.log(buttonSelection[event.target.id])
+             buttonSelection[event.target.id] = event.target.dataset.yn
           } else {
             // otherBtn.style.backgroundColor = 'bg_grey';
-            otherBtn.classList.contains('bg_success')? otherBtn.classList.remove('bg_success'): "";
-
+            otherBtn.classList.contains('bg_success') ? otherBtn.classList.remove('bg_success') : "";
+            buttonSelection[otherBtn.id] = ""
           }
         });
       });
     });
 
 
-
-    let  toggleClass = (event) => {
-
-
-//       if(event.target.classList.contains('btnLVEF')){
-//         // console.group('LVEF')
-//         //   console.log("prev sib", event.target.previousElementSibling)
-//         //   console.log("next sib", event.target.nextElementSibling)
-//         // console.groupEnd('LVEF')
+    //Handle color change btns
+    let toggleClass = (event) => {
 
 
+      if (event.target.classList.contains('btnYes')) {
+        event.target.classList.toggle('bg_grey')
+        event.target.classList.toggle('bg_success')
+        // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
+        // event.target.classList.toggle('shadow_emboss-bold', !element.classList.contains('shadow_emboss-bold'));
+        // event.target.classList.toggle('shadow_overlap-light')
+        event.target.classList.contains('shadow_emboss-bold') ? "" : event.target.nextElementSibling.classList.add('shadow_emboss-bold')
 
-//           let prevExists = event.target.previousElementSibling.classList.contains('bg_success')
-// console.log(prevExists == true)
-//             event.target.previousElementSibling.classList.contains('bg_success')? event.target.previousElementSibling.classList.remove('bg_success'): "";
-//             event.target.previousElementSibling.classList.contains('bg_grey')? "" :  event.target.previousElementSibling.classList.add('bg_grey')
-//             event.target.nextElementSibling.classList.contains('bg_success')? event.target.nextElementSibling.classList.remove('bg_success'): "";
-//             event.target.nextElementSibling.classList.contains('bg_grey')? "" :  event.target.nextElementSibling.classList.add('bg_grey')
-//             event.target.classList.toggle('bg_grey')
-//             event.target.classList.toggle('bg_success')
-//             return
-//           }
+        event.target.nextElementSibling.classList.contains('shadow_emboss-bold') ? event.target.nextElementSibling.classList.remove('shadow_emboss-bold') : "";
 
+        event.target.nextElementSibling.classList.contains('bg_alert') ? event.target.nextElementSibling.classList.remove('bg_alert') : "";
+        event.target.nextElementSibling.classList.contains('bg_grey') ? "" : event.target.nextElementSibling.classList.add('bg_grey')
 
+      }
 
-
-
-    if(event.target.classList.contains('btnYes')){
-            event.target.classList.toggle('bg_grey')
-            event.target.classList.toggle('bg_success')
-            // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
-            // event.target.classList.toggle('shadow_bevel-light', !element.classList.contains('shadow_bevel-light'));
-            event.target.classList.toggle('shadow_overlap-light')
-            event.target.classList.contains('shadow_bevel-light')? "" :  event.target.nextElementSibling.classList.add('shadow_bevel-light')
-
-            event.target.nextElementSibling.classList.contains('shadow_bevel-light')? event.target.nextElementSibling.classList.remove('shadow_bevel-light'): "";
-
-            event.target.nextElementSibling.classList.contains('bg_alert')? event.target.nextElementSibling.classList.remove('bg_alert'): "";
-            event.target.nextElementSibling.classList.contains('bg_grey')? "" :  event.target.nextElementSibling.classList.add('bg_grey')
-
-        }
-
-    if(event.target.classList.contains('btnNo')){
+      if (event.target.classList.contains('btnNo')) {
         event.target.classList.toggle('bg_grey')
         event.target.classList.toggle('bg_alert')
         // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
-        //     event.target.classList.toggle('shadow_bevel-light', !element.classList.contains('shadow_bevel-light'));
-            event.target.classList.toggle('shadow_overlap-light')
-            event.target.classList.toggle('shadow_bevel-light')
+        //     event.target.classList.toggle('shadow_emboss-bold', !element.classList.contains('shadow_emboss-bold'));
+        event.target.classList.toggle('shadow_overlap-light')
+        event.target.classList.toggle('shadow_emboss-bold')
 
-            event.target.previousElementSibling.classList.contains('shadow_bevel-light')? event.target.previousElementSibling.classList.remove('shadow_bevel-light'): "";
+        event.target.previousElementSibling.classList.contains('shadow_emboss-bold') ? event.target.previousElementSibling.classList.remove('shadow_emboss-bold') : "";
 
-        event.target.previousElementSibling.classList.contains('bg_success')? event.target.previousElementSibling.classList.remove('bg_success'): "";
-        event.target.previousElementSibling.classList.contains('bg_grey')? "" :  event.target.previousElementSibling.classList.add('bg_grey')
+        event.target.previousElementSibling.classList.contains('bg_success') ? event.target.previousElementSibling.classList.remove('bg_success') : "";
+        event.target.previousElementSibling.classList.contains('bg_grey') ? "" : event.target.previousElementSibling.classList.add('bg_grey')
+      }
     }
-    }
 
-
+    //// Handle  selection buttons ////
     grabYesNoBtns.forEach(element => {
-        element.addEventListener('click',toggleClass )
+      element.addEventListener('click', (event) => {
+        toggleClass(event);
+        selectedChoiseAddedToDataset(event)
+      })
     });
 
-
+    // handle Reset all btn
     let grabBtnResetAll = document.getElementById('btnResetAll')
-    grabBtnResetAll.addEventListener('click', ()=>{
-        grabYesNoBtns.forEach( element =>{
-             element.classList.contains('bg_success')? element.classList.remove('bg_success') : "";
-             element.classList.contains('bg_alert')? element.classList.remove('bg_alert') : "";
-             element.classList.contains('bg_grey')? '' : element.classList.add('bg_grey');
+    grabBtnResetAll.addEventListener('click', () => {
+      grabYesNoBtns.forEach(element => {
+        element.classList.contains('bg_success') ? element.classList.remove('bg_success') : "";
+        element.classList.contains('bg_alert') ? element.classList.remove('bg_alert') : "";
+        element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
 
-            let grabELVF_Slider = document.getElementById('rangeSlider')
-            grabELVF_Slider.value = 0;
-            grabELVF_Slider.nextElementSibling.innerHTML = "0%"
-          })
+      })
     })
 
-</script>
+  </script>
+
+
+  <script>
+
+    const tempTestLongEntry = `
+    <div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white">
+          <div class="br-b_1 br_solid flex"><img src="./imgs/Betablockers.png"
+              alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 p_3 w_10">
+            <h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Beta Blockers (sample multiple entry)</h1>
+          </div>
+          <p class="guidelineItem br-l_10 br_cor-I br_solid guidelineItem p-l_4">Beta-blocker therapy is recommended</p>
+          <p class="guidelineItem br-l_10 br_cor-I br_solid guidelineItem p-l_4">Sustained release metoprolol succinate,
+            carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers
+          </p>
+          <p class="guidelineItem IIb br-l_10 br_cor-IIB br_solid guidelineItem p-l_4">It may be reasonable to reassess the
+            indication for long-term (>1 year) use of beta-blocker therapy</p>
+            <a class="font_0 c_accent h:c_accent-3 block m-t_3 underline">4.3.2. Beta Blockers </a>
+        </div>
+
+        <div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white">
+                  <div class="br-b_1 br_solid flex"><img src="./imgs/Betablockers.png"
+                      alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 p_3 w_10">
+                    <h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Beta Blockers (sample multiple entry)</h1>
+                  </div>
+                  <div class="flex items_center justify_center m-b_2 m-t_2">
+                    <div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white"> I </div>
+                    <div class="guidelineItem guidelineItem p-l_4 w_90 flex items_center">Beta-blocker therapy is recommended</div>
+                  </div>
+
+                  <div class="flex items_center justify_center m-b_2">
+                    <div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white"> I</div>
+                    <div class="guidelineItem guidelineItem p-l_4 w_90 flex items_center">Sustained release metoprolol succinate,
+                      carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers</div>
+                  </div>
+
+                  <div class="flex items_center justify_center m-b_2">
+                    <div class="bg_cor-IIB h_10 w_10  flex items_center justify_center c_white">IIB</div>
+                    <div class="guidelineItem guidelineItem p-l_4 w_90 flex items_center">It may be reasonable to reassess the
+                      indication for long-term (>1 year) use of beta-blocker therapy</div>
+                  </div>
+
+                  <p class="guidelineItem IIb br-l_10 br_cor-IIB br_solid guidelineItem p-l_4"></p>
+                    <a class="font_0 c_accent h:c_accent-3 block m-t_3 underline">4.3.2. Beta Blockers </a>
+                </div>
+    `
+    const btnTabRec = document.getElementById('btnTabRec'),
+      btnTabEval = document.getElementById('btnTabEval'),
+      displayEvalQuestions = document.getElementById('displayEvalQuestions'),
+      displayReturnRecs = document.getElementById('displayReturnRecs');
+
+    const grabrecsDefault = document.getElementById('recsDefault'),
+      grabBetaBlockers = document.getElementById('Beta_Blockers'),
+      grabSGLT2_GLP1 = document.getElementById('SGLT2_GLP-1')
+
+    const btnCCD_Submit = document.getElementById('btnCCD_Submit')
+    let btnSubmitUnlocked = false;
+
+    // console.log(btnSubmitUnlocked)
+
+
+    // handle submit btn
+    function lockUnlockBtnSubmit() {
+      grabAllBtnSets.forEach((btn) => {
+        if (btn.dataset.selectedChoice === "Y") {
+          return btnSubmitUnlocked = true
+        } else {
+          return btnSubmitUnlocked = false
+        }
+      })
+
+      // for( btn of grabAllBtnSets){
+      //   console.log(btn.dataset)
+      //   if(btn.dataset.selectedChoice === "Y"){
+      //     return btnSubmitUnlocked = true
+      //   }else{
+      //   return  btnSubmitUnlocked = false
+      //   }
+      // }
+
+      //  const grabAllSelectionBtnsClicked = grabAllBtnSets.forEach( btn => {
+      //   btn.dataset.selectedChoice === "Y"? btnSubmitUnlocked = true: btnSubmitUnlocked = false;
+      //  });
+      //  console.log(grabAllSelectionBtnsClicked)
+      // const allBoxesClicked = Array.from(boxes).every(box => box.dataset.value === 'true');
+      if (btnSubmitUnlocked) {
+        submitButton.style.display = 'block';
+      }
+    };
+
+    lockUnlockBtnSubmit()
+
+
+    btnCCD_Submit.addEventListener('click', () => {
+      hideDefaultAddSpecificGuidelines()
+      showRecsHideEvalTab()
+      performMatchingAndAddGuidelines()
+
+  })
+
+
+
+    function hideDefaultAddSpecificGuidelines() {
+      // grabrecsDefault.classList.toggle('display_none', !grabrecsDefault.classList.contains('display_none'));
+      // grabBetaBlockers.classList.toggle('display_none', !grabBetaBlockers.classList.contains('display_none'));
+      // grabSGLT2_GLP1.classList.toggle('display_none', !grabSGLT2_GLP1.classList.contains('display_none'));
+      // grabrecsDefault.classList.contains('display_none')? grabrecsDefault.classList.remove('display_none'):grabrecsDefault.classList.add('display_none') ;
+      // grabBetaBlockers.classList.contains('display_none')? grabBetaBlockers.classList.remove('display_none'):grabBetaBlockers.classList.add('display_none') ;
+
+    }
+
+
+    //Handle tabs
+    function showRecsHideEvalTab() {
+      displayReturnRecs.classList.contains('display_none') ? displayReturnRecs.classList.remove('display_none') : '';
+      btnTabRec.classList.contains('ccdSelectedTab') ? '' : btnTabRec.classList.add('ccdSelectedTab');
+
+      displayEvalQuestions.classList.contains('display_none') ? '' : displayEvalQuestions.classList.add('display_none');
+      btnTabEval.classList.contains('ccdSelectedTab') ? btnTabEval.classList.remove('ccdSelectedTab') : '';
+    }
+
+    function showEvalsHideRecsTab() {
+      displayEvalQuestions.classList.contains('display_none') ? displayEvalQuestions.classList.remove('display_none') : '';
+      btnTabEval.classList.contains('ccdSelectedTab') ? '' : btnTabEval.classList.add('ccdSelectedTab');
+
+      displayReturnRecs.classList.contains('display_none') ? '' : displayReturnRecs.classList.add('display_none');
+      btnTabRec.classList.contains('ccdSelectedTab') ? btnTabRec.classList.remove('ccdSelectedTab') : '';
+    }
+
+
+    // handle change buttonSelection - value selected object
+    function selectedChoiseAddedToDataset(event) {
+      // console.log(event.target.parentElement.id)
+      // console.log(event.target.dataset.yn)
+      buttonSelection[event.target.parentElement.id] = event.target.dataset.yn
+    }
+
+    btnTabRec.addEventListener('click', () => showRecsHideEvalTab())
+
+    btnTabEval.addEventListener('click', () => showEvalsHideRecsTab())
+
+  </script>
+
+
+  <script>
+    //// fill recs
+
+    ////auto recs///
+
+    let autoAddRecs = [...dataSetObj.Antiplatelet_Therapy_and_Oral_Anticoagulants, ...dataSetObj.Colchicine, ...dataSetObj.Nutrition_Supplements]
+    // console.log("autoAddRecs", autoAddRecs)
+    // console.log("dataSetObj", dataSetObj)
+
+
+    function convertArrayToList(array) {
+        const list = {};
+        array.forEach(obj => {
+          list[obj.name] = obj;
+        });
+        return list;
+      }
+
+      let autoAddRecsObj = convertArrayToList(autoAddRecs)
+
+      // console.log("autoAddRecsObj >>>>>", autoAddRecsObj)
+
+    let categoryCard = {}
+    let categoryIndex = 0
+
+    function createCard(newDiv, category, i, sourceData, autoLoad = false,) {
+
+      const underscoredTitle = Object.keys(sourceData)[i].split('_');
+      const cartCategoryTitle = underscoredTitle.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+
+      newDiv = document.createElement('div')
+      newDiv.setAttribute('class', 'br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white')
+
+      // Create the div element
+      var divElement = document.createElement('div');
+      divElement.classList.add('br-b_1', 'br_solid', 'flex');
+      divElement.setAttribute('data-category', category)
+
+      // Create the img element
+      var imgElement = document.createElement('img');
+      // imgElement.src = `./imgs/${Object.keys(dataSetObj)[i]}.png`;
+      imgElement.src = './imgs/Betablockers.png'
+      imgElement.alt = `icon ${Object.keys(dataSetObj)[i]}`;
+      imgElement.classList.add('aspect_1x1', 'h_2xlh', 'm-t_0', 'm_3', 'p-t_0', 'p_3', 'w_10');
+
+      // Create the h1 element
+      var h1Element = document.createElement('h1');
+      h1Element.setAttribute('class', 'font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0');
+      h1Element.textContent = cartCategoryTitle
+
+      // Append the img and h1 elements to the div element
+      divElement.appendChild(imgElement);
+      divElement.appendChild(h1Element);
+      newDiv.appendChild(divElement);
+
+      // Append the div element to displayReturnRecs
+      displayReturnRecs.appendChild(newDiv);
+
+      const newPUserOutput = document.createElement('p')
+      newPUserOutput.setAttribute('class', 'guidelineItem br-l_10 br_cor-I br_solid guidelineItem p-l_4')
+
+      newPUserOutput.innerText = category.userOutput
+      const newPsectionLinkText = document.createElement('p')
+      const newASectionLink = document.createElement('a')
+
+      newASectionLink.setAttribute('class', 'font_0 c_accent h:c_accent-3 block m-t_3 underline')
+      newPUserOutput.appendChild(newASectionLink)
+      newASectionLink.innerText = category.sectionLinkText
+
+      //auto add guideline only if no requirements
+      if (autoLoad) {
+        newDiv.appendChild(newPUserOutput)
+        newDiv.appendChild(newPsectionLinkText)
+      }
+
+      displayReturnRecs.appendChild(newDiv)
+
+    }
+
+
+  /*
+    //auto recs
+    autoAddRecs.forEach((category, i) => {
+      createCard("newDiv", category, i, autoAddRecsObj ,true)
+    })
+*/
+
+//add tempt test long entry
+    // const tempNewdiv = document.createElement('div')
+    // tempNewdiv.innerHTML = tempTestLongEntry
+    // displayReturnRecs.append(tempNewdiv)
+
+    // add categoryCards
+    for (let category in dataSetObj) {
+      createCard(categoryCard[category], category, categoryIndex, dataSetObj)
+
+
+      function tempJustForwrapping() {
+        //   // Create the div element
+        // categoryCard[category] = document.createElement('div')
+        // categoryCard[category].setAttribute('id', category )
+        // categoryCard[category].classList.add('br-b_1', 'br_solid', 'flex');
+
+
+
+        // categoryCard[category].setAttribute('class','br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white')
+        //    //  img element
+        //     var imgElement = document.createElement('img');
+        //     // imgElement.src = `./imgs/${Object.keys(dataSetObj)[categoryIndex]}.png`;
+        //     imgElement.src = `./imgs/Betablockers.png`;
+
+        //     imgElement.alt = `icon ${Object.keys(dataSetObj)[categoryIndex]}`;
+        //     imgElement.classList.add('aspect_1x1', 'h_2xlh', 'm-t_0', 'm_3', 'p-t_0', 'p_3', 'w_10');
+
+        //     //    Create the h1 element
+        //     var h1Element = document.createElement('h1');
+        //     h1Element.classList.add('c_primary', 'font_2', 'font_medium', 'p-b_1', 'p-t_0', 'p_2');
+        //     h1Element.textContent = Object.keys(dataSetObj)[categoryIndex]
+
+        //     categoryCard[category].appendChild(imgElement);
+        //     categoryCard[category].appendChild(h1Element);
+        //     displayReturnRecs.appendChild(categoryCard[category])
+      }
+
+
+      categoryIndex++
+
+    }
+
+
+
+
+
+
+
+  </script>
+
 </body>
+
 </html>
