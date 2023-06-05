@@ -739,8 +739,8 @@ input[type=range]::-webkit-slider-runnable-track {
       <h2 class="font_1 font_light"> Interactive Tool</h2>
     </div>
     <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid text_center">
-      <div id="btnTabEval" class="ccdSelectedTab flex_basis-50  h:bg_primary h:c_white  font_2 p_4">Evaluate</div>
-      <div id="btnTabRec" class=" flex_basis-50  h:bg_primary h:c_white font_2 p_4">Recommendations</div>
+      <div id="btnTabEval" class="ccdSelectedTab flex_basis-50   font_2 p_4">Evaluate</div>
+      <div id="btnTabRec" class=" flex_basis-50 font_2 p_4">Recommendations</div>
     </section>
     <section
       class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_3 p-t_0 bg_white-6 min-h_80">
@@ -1513,9 +1513,6 @@ function lockUnlockBtnSubmit() {
       buttonSelection[event.target.parentElement.id] = event.target.dataset.yn
     }
 
-    btnTabRec.addEventListener('click', () => showRecsHideEvalTab())
-
-    btnTabEval.addEventListener('click', () => showEvalsHideRecsTab())
 
     btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
 
