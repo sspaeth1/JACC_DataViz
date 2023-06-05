@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css">
+  <link rel="stylesheet" href="./css/ccdGuideline.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/color-code_LOE_COR.css">
+  <title>CCD Guidelines Interactive Tool</title>
+</head>
+
+<script>//set default button empty state object
+  let buttonSelection = {}
+
+  function setbuttonSelectionToEmpty(){
+    buttonSelection =
+        {
+            "mi": "",
+            "diabetes": "",
+            "hxHFrEF": "",
+            "LVEFlessOrEqual40": "",
+            "LVEF41to49": "",
+            "LVEFgreaterOrEqual50": "",
+            "LDL-C_goal": "",
+            "maxStatin": "",
+            "betaBlocker": "",
+            "bloodPressureGoal": "",
+            "angina": ""
+        }
+    }
+    setbuttonSelectionToEmpty()
+
+  ///  spreadsheet data as nested object
+  let dataSetObj =
+  [
+      {
+          "fullRec": "In patients with CCD who have types 2 diabetes, the use of either an SGLT2 inhibitor or a GLP-1 receptor agonist with proven cardiovascular benefit is recommended to reduce the risk of MACE (COR 1/ LOE A).",
+          "mi": "",
+          "diabetes": "Y",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "SGLT2 Inhibitors and GLP-1 Receptor Agonists",
+          "cor": 1,
+          "userOutput": "SGLT2 inhibitor or GLP-1 receptor agonists is recommended",
+          "sectionLinkText": "4.2.8. SGLT2 Inhibitors and GLP-1 Receptor Agonists"
+      },
+      {
+          "fullRec": "In patients with CCD and heart failure with LVEF ≤40%, use of an SGLT2 inhibitor is recommended to reduce the risk of cardiovascular death and heart failure hospitalization and to improve QOL, irrespective of diabetes status (COR 1/LOE A).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "Y",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "SGLT2 Inhibitors and GLP-1 Receptor Agonists",
+          "cor": 1,
+          "userOutput": "SGLT2 inhibitor is recommended irrespective of diabetes status",
+          "sectionLinkText": "4.2.8. SGLT2 Inhibitors and GLP-1 Receptor Agonists"
+      },
+      {
+          "fullRec": "In patients with CCD and heart failure with LVEF >40%, use of an SGLT2 inhibitor can be beneficial in decreasing heart failure hospitalizations and to improve QOL, irrespective of diabetes status (COR 2a/LOE B-R).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "Y",
+          "LVEFgreaterOrEqual50": "Y",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "SGLT2 Inhibitors and GLP-1 Receptor Agonists",
+          "cor": "2a",
+          "userOutput": "SGLT2 inhibitor can be beneficial  irrespective of diabetes status",
+          "sectionLinkText": "4.2.8. SGLT2 Inhibitors and GLP-1 Receptor Agonists"
+      },
+      {
+          "fullRec": "In patients with CCD and LVEFlessOrEqual40with or without previous MI, the use of beta-blocker therapy is recommended to reduce the risk of future MACE, including cardiovascular death (COR 1/LOE A).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "Y",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "N",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "Beta Blockers",
+          "cor": 1,
+          "userOutput": "Beta-blocker therapy is recommended",
+          "sectionLinkText": "4.3.2. Beta Blockers"
+      },
+      {
+          "fullRec": "In patients with CCD and LVEF <50%, the use of sustained release metoprolol succinate, carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers (COR 1/LOE A).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "Y",
+          "LVEF41to49": "Y",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "Beta Blockers",
+          "cor": 1,
+          "userOutput": "Sustained release metoprolol succinate, carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers",
+          "sectionLinkText": "4.3.2. Beta Blockers"
+      },
+      {
+          "fullRec": "In patients with CCD who were initiated on beta-blocker therapy for previous MI without a history of or current LVEF ≤50%, angina, arrhythmias, or uncontrolled hypertension, it may be reasonable to reassess the indication for long-term (>1 year) use of beta-blocker therapy for reducing MACE (COR 2b/LOE B-NR).",
+          "mi": "N",
+          "diabetes": "",
+          "hxHFrEF": "N",
+          "LVEFlessOrEqual40": "N",
+          "LVEF41to49": "N",
+          "LVEFgreaterOrEqual50": "Y",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "Y",
+          "bloodPressureGoal": "N",
+          "angina": "N",
+          "category": "Beta Blockers",
+          "cor": "2b",
+          "userOutput": "It may be reasonable to reassess the indication for long-term (>1 year) use of beta-blocker therapy",
+          "sectionLinkText": "4.3.2. Beta Blockers"
+      },
+      {
+          "fullRec": "In patients with CCD without previous MI or LVEF ≤50%, the use of beta-blocker therapy is not beneficial in reducing MACE, in the absence of another primary indication for beta-blocker therapy (COR 3: No benefit/ LOE B-NR).",
+          "mi": "N",
+          "diabetes": "",
+          "hxHFrEF": "N",
+          "LVEFlessOrEqual40": "N",
+          "LVEF41to49": "N",
+          "LVEFgreaterOrEqual50": "Y",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "Y",
+          "bloodPressureGoal": "",
+          "angina": "N",
+          "category": "Beta Blockers",
+          "cor": "3: No benefit",
+          "userOutput": "Beta-blocker therapy is not beneficial",
+          "sectionLinkText": "4.3.2. Beta Blockers"
+      },
+      {
+          "fullRec": "In patients in whom high-intensity statin therapy is contraindicated or not tolerated, moderate-intensity statin therapy is recommended with the aim of achieving a 30% to 49% reduction in LDL-C levels to reduce the risk of MACE (COR 1/LOE A).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "N",
+          "maxStatin": "N",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "Lipid Management",
+          "cor": 1,
+          "userOutput": "Moderate intensity statin therapy is recommended.",
+          "sectionLinkText": "4.2.6. Lipid Management "
+      },
+      {
+          "fullRec": "In patients with CCD who are judged to be at very high risk and on maximally tolerated statin therapy with an LDL-C level ≥70 mg/dL (≥1.8 mmol/L), ezetimibe can be beneficial to further reduce the risk of MACE (COR 2a/ LOE B-R).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "N",
+          "maxStatin": "Y",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "",
+          "category": "Lipid Management",
+          "cor": "2a",
+          "userOutput": "Other treatment options may be beneficial.",
+          "sectionLinkText": "4.2.6. Lipid Management "
+      },
+      {
+          "fullRec": "In adults with CCD who have hypertension, a BP target of <130/<80 mm Hg is recommended to reduce CVD events and all-cause death (COR 1/ LOE B-R).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "Y",
+          "angina": "",
+          "category": "Blood Pressure Management",
+          "cor": 1,
+          "userOutput": "BP target of <130/<80 mm Hg is recommended.",
+          "sectionLinkText": "4.2.7. Blood Pressure Management "
+      },
+      {
+          "fullRec": "In patients with CCD who also have hypertension, diabetes, LVEF ≤40%, or CKD, the use of ACE inhibitors, or ARBs if ACE inhibitor–intolerant, is recommended to reduce cardiovascular events (COR 1/ LOE A).",
+          "mi": "",
+          "diabetes": "Y OR",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "Y OR",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "Y OR",
+          "angina": "",
+          "category": "Renin-Angiotensin-Aldosterone Inhibitors",
+          "cor": 1,
+          "userOutput": "ACE inhibitors, or ARBs if ACE inhibitor–intolerant, is recommended",
+          "sectionLinkText": "4.3.3. Renin-Angiotensin-Aldosterone Inhibitors "
+      },
+      {
+          "fullRec": "In patients with CCD without hypertension, diabetes, or CKD and LVEF >40%, the use of ACE inhibitors or ARBs may be considered to reduce cardiovascular events (COR 2b/ LOE B-R).",
+          "mi": "",
+          "diabetes": "N",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "Y OR",
+          "LVEFgreaterOrEqual50": "Y OR",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "N",
+          "angina": "",
+          "category": "Renin-Angiotensin-Aldosterone Inhibitors",
+          "cor": "2b",
+          "userOutput": "ACE inhibitors or ARBs may be considered",
+          "sectionLinkText": "4.3.3. Renin-Angiotensin-Aldosterone Inhibitors "
+      },
+      {
+          "fullRec": "In patients with CCD and angina, antianginal therapy with either a beta blocker, CCB, or long-acting nitrate is recommended for relief of angina or equivalent symptoms (COR 1/ LOE B-R).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "Y",
+          "category": "Medical Therapy for Relief of Angina",
+          "cor": 1,
+          "userOutput": "Antianginal therapy with either a beta blocker, CCB, or long-acting nitrate is recommended",
+          "sectionLinkText": "4.3.6. Medical Therapy for Relief of Angina"
+      },
+      {
+          "fullRec": "In patients with CCD and angina who remain symptomatic after initial treatment, addition of a second antianginal agent from a different therapeutic class (beta blockers, CCB, long-acting nitrates) is recommended for relief of angina or equivalent symptoms (COR 1/ LOE B-R)",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "Y",
+          "category": "Medical Therapy for Relief of Angina",
+          "cor": 1,
+          "userOutput": "Addition of a second antianginal agent from a different therapeutic class (beta blockers, CCB, long-acting nitrates) is recommended",
+          "sectionLinkText": "4.3.6. Medical Therapy for Relief of Angina"
+      },
+      {
+          "fullRec": "In patients with CCD, ranolazine is recommended in patients who remain symptomatic despite treatment with beta blockers, CCB, or long-acting nitrate therapies (COR 1/ B-R)",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "Y",
+          "category": "Medical Therapy for Relief of Angina",
+          "cor": 1,
+          "userOutput": "Ranolazine is recommended in patients who remain symptomatic despite treatment",
+          "sectionLinkText": "4.3.6. Medical Therapy for Relief of Angina"
+      },
+      {
+          "fullRec": "In patients with CCD, sublingual nitroglycerin or nitroglycerin spray is recommended for immediate short-term relief of angina or equivalent symptoms (COR 1/ LOE B-NR).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "Y",
+          "category": "Medical Therapy for Relief of Angina",
+          "cor": 1,
+          "userOutput": "Sublingual nitroglycerin or nitroglycerin spray is recommended for immediate short-term relief of angina",
+          "sectionLinkText": "4.3.6. Medical Therapy for Relief of Angina"
+      },
+      {
+          "fullRec": "In patients with CCD and normal LV function, the addition of ivabradine to standard anti-anginal therapy is potentially harmful (COR 3: Harm/ LOE B-R).",
+          "mi": "",
+          "diabetes": "",
+          "hxHFrEF": "",
+          "LVEFlessOrEqual40": "",
+          "LVEF41to49": "",
+          "LVEFgreaterOrEqual50": "Y",
+          "LDL-C_goal": "",
+          "maxStatin": "",
+          "betaBlocker": "",
+          "bloodPressureGoal": "",
+          "angina": "Y",
+          "category": "Medical Therapy for Relief of Angina",
+          "cor": "3 H",
+          "userOutput": "Ivabradine is potentially harmful",
+          "sectionLinkText": "4.3.6. Medical Therapy for Relief of Angina"
+      },
+      {
+          "fullRec": "All recs in section 4.1.1",
+          "mi": "Y/N OR",
+          "diabetes": "Y/N OR",
+          "hxHFrEF": "Y/N OR",
+          "LVEFlessOrEqual40": "Y/N OR",
+          "LVEF41to49": "Y/N OR",
+          "LVEFgreaterOrEqual50": "Y/N OR",
+          "LDL-C_goal": "Y/N OR",
+          "maxStatin": "Y/N OR",
+          "betaBlocker": "Y/N OR",
+          "bloodPressureGoal": "Y/N OR",
+          "angina": "Y/N OR",
+          "category": "Antiplatelet Therapy and Oral Anticoagulants",
+          "cor": "N/A",
+          "userOutput": "See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.",
+          "sectionLinkText": "4.3.1. Antiplatelet Therapy and Oral Anticoagulants "
+      },
+      {
+          "fullRec": "In patients with CCD, the addition of colchicine for secondary prevention may be considered to reduce recurrent ASCVD events (COR 2b/ LOE B-R).",
+          "mi": "Y/N OR",
+          "diabetes": "Y/N OR",
+          "hxHFrEF": "Y/N OR",
+          "LVEFlessOrEqual40": "Y/N OR",
+          "LVEF41to49": "Y/N OR",
+          "LVEFgreaterOrEqual50": "Y/N OR",
+          "LDL-C_goal": "Y/N OR",
+          "maxStatin": "Y/N OR",
+          "betaBlocker": "Y/N OR",
+          "bloodPressureGoal": "Y/N OR",
+          "angina": "Y/N OR",
+          "category": "Colchicine",
+          "cor": "2b",
+          "userOutput": "Colchicine for secondary prevention may be considered",
+          "sectionLinkText": "4.3.4. Colchicine "
+      },
+      {
+          "fullRec": "In patients with CCD, the use of nonprescription or dietary supplements, including omega-3 fatty acid, vitamins C, D, E, beta-carotene, and calcium, is not beneficial to reduce the risk of acute CVD events. (COR 3)",
+          "mi": "Y/N OR",
+          "diabetes": "Y/N OR",
+          "hxHFrEF": "Y/N OR",
+          "LVEFlessOrEqual40": "Y/N OR",
+          "LVEF41to49": "Y/N OR",
+          "LVEFgreaterOrEqual50": "Y/N OR",
+          "LDL-C_goal": "Y/N OR",
+          "maxStatin": "Y/N OR",
+          "betaBlocker": "Y/N OR",
+          "bloodPressureGoal": "Y/N OR",
+          "angina": "Y/N OR",
+          "category": "Nutrition Supplements",
+          "cor": "3",
+          "userOutput": "Use of nonprescription or dietary supplements is not beneficial",
+          "sectionLinkText": "4.2.1. Nutrition, Including Supplements"
+      }
+  ]
+
+
+
+
+
+  let autoAddRecs =
+  [
+
+      {
+          "fullRec": "All recs in section 4.1.1",
+          "mi": "Y/N OR",
+          "diabetes": "Y/N OR",
+          "hxHFrEF": "Y/N OR",
+          "LVEFlessOrEqual40": "Y/N OR",
+          "LVEF41to49": "Y/N OR",
+          "LVEFgreaterOrEqual50": "Y/N OR",
+          "LDL-C_goal": "Y/N OR",
+          "maxStatin": "Y/N OR",
+          "betaBlocker": "Y/N OR",
+          "bloodPressureGoal": "Y/N OR",
+          "angina": "Y/N OR",
+          "category": "Antiplatelet Therapy and Oral Anticoagulants",
+          "cor": "N/A",
+          "userOutput": "See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.",
+          "sectionLinkText": "4.3.1. Antiplatelet Therapy and Oral Anticoagulants "
+      },
+      {
+          "fullRec": "In patients with CCD, the addition of colchicine for secondary prevention may be considered to reduce recurrent ASCVD events (COR 2b/ LOE B-R).",
+          "mi": "Y/N OR",
+          "diabetes": "Y/N OR",
+          "hxHFrEF": "Y/N OR",
+          "LVEFlessOrEqual40": "Y/N OR",
+          "LVEF41to49": "Y/N OR",
+          "LVEFgreaterOrEqual50": "Y/N OR",
+          "LDL-C_goal": "Y/N OR",
+          "maxStatin": "Y/N OR",
+          "betaBlocker": "Y/N OR",
+          "bloodPressureGoal": "Y/N OR",
+          "angina": "Y/N OR",
+          "category": "Colchicine",
+          "cor": "2b",
+          "userOutput": "Colchicine for secondary prevention may be considered",
+          "sectionLinkText": "4.3.4. Colchicine "
+      },
+      {
+          "fullRec": "In patients with CCD, the use of nonprescription or dietary supplements, including omega-3 fatty acid, vitamins C, D, E, beta-carotene, and calcium, is not beneficial to reduce the risk of acute CVD events. (COR 3: No Benefit/LOE B-NR)",
+          "mi": "Y/N OR",
+          "diabetes": "Y/N OR",
+          "hxHFrEF": "Y/N OR",
+          "LVEFlessOrEqual40": "Y/N OR",
+          "LVEF41to49": "Y/N OR",
+          "LVEFgreaterOrEqual50": "Y/N OR",
+          "LDL-C_goal": "Y/N OR",
+          "maxStatin": "Y/N OR",
+          "betaBlocker": "Y/N OR",
+          "bloodPressureGoal": "Y/N OR",
+          "angina": "Y/N OR",
+          "category": "Nutrition Supplements",
+          "cor": "3",
+          "userOutput": "Use of nonprescription or dietary supplements is not beneficial",
+          "sectionLinkText": "4.2.1. Nutrition, Including Supplements"
+      }
+  ]
+
+
+let  categoryNames =
+[
+    "SGLT2 Inhibitors and GLP-1 Receptor Agonists",
+    "Beta Blockers",
+    "Lipid Management",
+    "Blood Pressur Management",
+    "Renin Angiotensin Aldosterone Inhibitors",
+    "Medical Therapy for Relief of Angina",
+    "Antiplatelet Therapy and Oral Anticoagulants",
+    "Colchicine",
+    "Nutrition Supplements"
+]
+
+let guidlineLinkoutInfo = {
+    "SGLT2 Inhibitors and GLP-1 Receptor Agonists":
+        {
+        "text": "4.2.8. SGLT2 Inhibitors and GLP-1 Receptor Agonists",
+       "url": "www.jacc.org"
+      },
+  "Beta Blockers":
+      {
+        "text": "4.3.2. Beta Blockers",
+       "url": "www.jacc.org"
+      },
+  "Lipid Management":
+      {
+        "text": "4.2.6. Lipid Management",
+       "url": "www.jacc.org"
+      },
+  "Blood Pressure Management":
+        {
+        "text": "4.2.7. Blood Pressure Management ",
+       "url": "www.jacc.org"
+      },
+  "Renin-Angiotensin-Aldosterone Inhibitors":
+      {
+        "text": "4.3.3. Renin-Angiotensin-Aldosterone Inhibitors ",
+       "url": "www.jacc.org"
+      },
+  "Medical Therapy for Relief of Angina":
+      {
+        "text": "4.3.6. Medical Therapy for Relief of Angina",
+       "url": "www.jacc.org"
+      },
+  "Antiplatelet Therapy and Oral Anticoagulants":
+      {
+        "text": "4.3.1. Antiplatelet Therapy and Oral Anticoagulants",
+       "url": "www.jacc.org"
+      },
+  "Colchicine" :
+      {
+        "text": "4.3.4. Colchicine ",
+       "url": "www.jacc.org"
+      },
+ "Nutrition Supplements":
+      {
+        "text": "4.2.1. Nutrition, Including Supplements",
+       "url": "www.jacc.org"
+      }
+    }
+
+
+  </script>
+<body>
+
+
+  <style>
+    body {
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+
+    .flex_basis-50 {
+      flex-basis: 50%;
+    }
+
+    .ccdSelectedTab {
+      background-color: var(--start-color);
+      color: #fff;
+      position: relative;
+    }
+
+    .ccdSelectedTab:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1px;
+      border-bottom: 10px solid #eaeff3;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-top: 11px solid transparent;
+    }
+
+    .question {
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+
+    .bg_alert {
+      background-color: rgb(207, 76, 76);
+    }
+
+    .bg_green {
+      background-color: rgb(12, 131, 82);
+    }
+
+    .bg_grey {
+      background-color: rgb(156, 156, 156);
+    }
+
+
+
+    /* // RANGE slider /////////// */
+    /* .range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.range {
+  width: 100%;
+}
+.bubble {
+  background: red;
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: red;
+  top: -1px;
+  left: 50%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	background: #b1b1b1;
+	border-radius: 5px;
+} */
+
+
+
+    /* ///////////// */
+
+    /* *, *:before, *:after {
+  box-sizing: border-box;
+} */
+
+
+    .range-slider {
+      width: 60%;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    .range-slider__range {
+      -webkit-appearance: none;
+      width: calc(100% - (6rem));
+      height: 10px;
+      border-radius: 5px;
+      background: #d7dcdf;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .range-slider__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #2c502c;
+      cursor: pointer;
+      -webkit-transition: background 0.15s ease-in-out;
+      transition: background 0.15s ease-in-out;
+    }
+
+    .range-slider__range::-webkit-slider-thumb:hover {
+      background: #1abc9c;
+    }
+
+    .range-slider__range:active::-webkit-slider-thumb {
+      background: #1abc9c;
+    }
+
+    .range-slider__range::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border: 0;
+      border-radius: 50%;
+      background: #2c3e50;
+      cursor: pointer;
+      -moz-transition: background 0.15s ease-in-out;
+      transition: background 0.15s ease-in-out;
+    }
+
+    .range-slider__range::-moz-range-thumb:hover {
+      background: #1abc9c;
+    }
+
+    .range-slider__range:active::-moz-range-thumb {
+      background: #1abc9c;
+    }
+
+    .range-slider__range:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+    }
+
+    .range-slider__value {
+      display: inline;
+      position: relative;
+      width: 60px;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      background: #2c3e50;
+      padding: 5px 10px;
+      margin-left: 2px;
+    }
+
+    .range-slider__value:after {
+      position: absolute;
+      top: .7rem;
+      left: -6px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #2c3e50;
+      border-bottom: 7px solid transparent;
+      content: "";
+    }
+
+    ::-moz-range-track {
+      background: #d7dcdf;
+      border: 0;
+    }
+
+    input::-moz-focus-inner,
+    input::-moz-focus-outer {
+      border: 0;
+    }
+
+    /* ////////////// */
+
+    .evalRestartText {
+      position: relative;
+    }
+
+    .evalRestartText:before {
+      content: url('http://127.0.0.1:5500/vnlaJS/imgs/icon-restart.svg');
+      width: 20px;
+      height: 20px;
+      left: .3rem;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+    }
+  </style>
+
+  <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 bg_acc-4 br_1 br_primary br_solid">
+    <div class="ccdGuidlineHeader  text_center  ">
+      <h1 class="font_4 m-b_n3 ">Chronic Coronary Disease Guideline</h1>
+      <h2 class="font_1 font_light"> Interactive Tool</h2>
+    </div>
+    <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid text_center">
+      <div id="btnTabEval" class="ccdSelectedTab flex_basis-50  h:bg_primary h:c_white  font_2 p_4">Evaluate</div>
+      <div id="btnTabRec" class=" flex_basis-50  h:bg_primary h:c_white font_2 p_4">Recommendations</div>
+    </section>
+    <section
+      class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_3 p-t_0 bg_white-6 min-h_80">
+
+      <div id="displayEvalQuestions">
+
+        <div class="ccdQsReset flex flex_row c_secondary-1  w_100 justify_between">
+          <div class="left ccdQsReset">
+
+          </div>
+          <div class="right"></div>
+          <div class="flex flex-column">
+            <div>
+              <div id="btnResetAll" class=" flex flex_row justify_between">
+                <!-- <div class="w_20">  <img src="./imgs/restart.svg" alt="restart"></div> -->
+                <div>
+                  <p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 "> Reset All
+                  </p>
+                </div>
+              </div>
+              <div class="font_n2 c_secondary-2 p-b_2 text_center">
+                <span class="font_bold">Y:</span> Yes | <span class="font_bold">N:</span> No
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="questionsBox br_1 br_primary br_solid p_2 w_100 bg_white">
+          <div
+            class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                MI within last year
+              </div>
+              <div class="tooltip-container m-l_3">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>This panel displays a summary.</p>
+                </div>
+              </div>
+            </div>
+            <div id="mi" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div
+            class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Type 2 diabetes?
+              </div>
+            </div>
+            <div id="diabetes" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+          <div
+            class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                History of HFrEF?
+              </div>
+            </div>
+            <div id="hxHFrEF" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between p-b_3 m-b_3 br-b_1 br_solid br_primary-3">
+            <div class="flex flex_row items_center justify_between left m-l_4 w_100">
+              <div class="flex">
+                <div>
+                  LVEF
+                </div>
+              </div>
+              <div  class="flex flex_row gap_3 btnSet" data-selected-choice="">
+                <div
+                  id="LVEFlessOrEqual40" class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="N">
+                  &leq; 40%</div>
+                <div
+                  id="LVEF41to49" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="N">
+                  41-49%</div>
+                <div
+                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="N">
+                  &geq; 50%</div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                LDL-C at goal
+              </div>
+              <div class="tooltip-container m-l_3">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>LDL-C ≥ 70 mg/dL</p>
+                </div>
+              </div>
+            </div>
+            <div id="LDL-C_goal" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light"data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On maximally tolerated statin therapy?
+              </div>
+            </div>
+            <div id="maxStatin" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On a beta-blocker?
+              </div>
+            </div>
+            <div id="betaBlocker" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Blood pressure at goal?
+              </div>
+              <div class="tooltip-container m-l_3 ">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>BP&gt; 130&Backslash;&lt;80 mm Hg</p>
+                </div>
+              </div>
+            </div>
+            <div id="bloodPressureGoal" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_row justify_between m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Angina?
+              </div>
+            </div>
+            <div id="angina" class="flex flex_row gap_3 m-b_3 btnSet" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                Y</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                N</div>
+            </div>
+          </div>
+
+
+
+          <div id='btnCCD_Submit'
+            class="btnSubmit p_4 c_white bg_grey h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
+            Submit
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div id="displayReturnRecs" class="display_none w_100">
+      <div id="recsDefault" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
+                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
+                </div>
+
+
+      </div>
+
+    </section>
+  </main>
+
+
+
+
+
+<script>
+  let selectedDiv = document.querySelector("#displayReturnRecs")
+  let guidelineDivParent
+
+
+  let automaticRecs = `
+<div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Antiplatelet Therapy and Oral Anticoagulants" id="Antiplatelet Therapy and Oral Anticoagulants"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Antiplatelet Therapy and Oral Anticoagulants</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.1. Antiplatelet Therapy and Oral Anticoagulants</a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Colchicine" id="Colchicine"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Colchicine</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">Colchicine for secondary prevention may be considered</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.4. Colchicine </a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Nutrition Supplements" id="Nutrition Supplements"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Nutrition Supplements</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center">Use of nonprescription or dietary supplements is not beneficial   (COR  3 No Benefit)</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.2.1. Nutrition, Including Supplements</a></span></div></div>
+`
+
+function createGuidelindCardAndHeader (category){
+    const existingChild = Array.from(selectedDiv.children).find(child => child.id === category); ///.forEach(child=> console.log(child.id))
+console.log("existingChild", Boolean(existingChild))
+
+
+        //check if category card exists
+        categoryNames.forEach(categoryType => {
+
+            console.log(category, "\n", categoryType)
+   if (!existingChild  &&  category === categoryType){
+        //  console.log("doesn't exist")
+
+            //Create the main container div
+            const mainContainer = document.createElement('div');
+            mainContainer.id = category;
+
+            mainContainer.classList.add('br_1', 'br_primary', 'br_solid', 'font_2', 'font_light', 'p_2', 'p_3', 'm-t_4', 'bg_white');
+
+            // Create the header section
+            const headerDiv = document.createElement('div');
+            headerDiv.classList.add('br-b_1', 'br_solid', 'br_primary-3', 'flex');
+            headerDiv.setAttribute('data-category', category);
+
+            const headerImage = document.createElement('img');
+            headerImage.src = `./imgs/tempimage.png`  //${Object.values(filteredGuidelineItem)[0][0].userOutput}.png`;
+            headerImage.alt = 'icon SGLT2_Inhibitors_GLP1_Receptor_Agonists';
+            headerImage.classList.add('aspect_1x1', 'h_2xlh', 'm-t_0', 'm_3', 'p-t_0',  'w_10');
+
+            const headerTitle = document.createElement('h1');
+            headerTitle.classList.add('font_2', 'c_primary', 'font_medium', 'p-b_1', 'p-t_0', 'p_2', 'm-t_0');
+            headerTitle.textContent =  category
+
+            headerDiv.appendChild(headerImage);
+            headerDiv.appendChild(headerTitle);
+
+            // Append the main container div to the main tag
+            mainContainer.appendChild(headerDiv);
+            selectedDiv.appendChild(mainContainer)
+        }
+    });
+}
+
+
+function corColor(cor){
+  if (cor === 1 || cor === "1" ){
+    return "br_cor-IIB"
+  }
+  if (cor === "2b" ){
+    return "br_cor-IIB"
+  }
+}
+
+
+  function  addToCard(category, userOutput, cor ){
+    // console.log(buttonSelection, category, outPut, cor)
+
+
+
+
+
+for( category of categoryNames){
+     guidelineDivParent = document.querySelector(`div[data-category="${category}"]`)
+
+    // if( categoryNames = Object.keys(filteredGuidelineItem)[0]){
+
+
+            // Create the guideline section
+            const guidelineDiv = document.createElement('div');
+            guidelineDiv.classList.add('flex', 'items_center', 'justify_center', 'm-b_2', 'm-t_2');
+
+            const guidelineNumber = document.createElement('div');
+            guidelineNumber.classList.add('bg_cor-I', 'h_10', 'w_10', 'flex', 'items_center', 'justify_center', 'c_white');
+            guidelineNumber.textContent =  cor
+
+            const guidelineItem = document.createElement('div');
+            guidelineItem.classList.add('guidelineItem', 'guidelineItem', 'p-l_4', 'w_90', 'flex', 'items_center');
+            guidelineItem.textContent = userOutput
+
+            guidelineDiv.appendChild(guidelineNumber);
+            guidelineDiv.appendChild(guidelineItem);
+
+            // Create the horizontal line
+            const horizontalLine = document.createElement('div');
+            horizontalLine.classList.add('br-b_1', 'br_solid', 'br_primary-5', 'p-b_2');
+
+            // Create the paragraph element
+            const paragraphElement = document.createElement('p');
+            paragraphElement.classList.add('guidelineItem', 'br-l_10', 'br_solid', 'guidelineItem', 'p-l_4');
+            paragraphElement.classList.add( corColor(cor))
+
+
+
+
+            // Append all elements to the main container div
+            guidelineDivParent.parentElement.appendChild(guidelineDiv);
+            guidelineDivParent.appendChild(horizontalLine);
+
+
+    // Create the link
+    const linkElement = document.createElement('div');
+    const seeFullTextSpan = document.createElement('span');
+    seeFullTextSpan.innerText = "See full Guideline: "
+    const createLinkSpan = document.createElement('span');
+    seeFullTextSpan.classList.add('font_0', 'c_primary-2', 'm-t_3');
+    const createLinkA = document.createElement('a');
+    createLinkA.setAttribute('href', "https://www.jacc.org/guidelines/guideline-hubs")
+    createLinkA.setAttribute('target', "_blank")
+    createLinkA.innerText =  guidlineLinkoutInfo.category
+    createLinkA.classList.add('font_0', 'c_accent', 'h:c_accent-3', 'm-t_3', 'underline');
+    createLinkSpan.appendChild(createLinkA)
+    linkElement.appendChild(seeFullTextSpan)
+    linkElement.appendChild(createLinkSpan)
+
+
+    selectedDiv.lastChild.appendChild(linkElement);
+  }
+
+// dataSetObj.SGLT2_Inhibitors_GLP1_Receptor_Agonists
+}
+  // }
+
+
+
+
+let localSelectedDiv;
+
+function createCardLink(localCategory){
+    console.log(  Boolean(document.getElementById(localCategory)))
+    if( !Boolean(document.getElementById(localCategory))){
+        return true
+    }
+    localSelectedDiv = document.getElementById(localCategory)
+
+    // Create the link
+    const linkElement = document.createElement('div');
+    const seeFullTextSpan = document.createElement('span');
+    seeFullTextSpan.innerText = "See full Guideline: "
+    const createLinkSpan = document.createElement('span');
+    seeFullTextSpan.classList.add('font_0', 'c_primary-2', 'm-t_3');
+    const createLinkA = document.createElement('a');
+    createLinkA.setAttribute('href',  guidlineLinkoutInfo[localCategory].url)
+    createLinkA.setAttribute('target', "_blank")
+    createLinkA.innerText =  guidlineLinkoutInfo[localCategory].text
+    createLinkA.classList.add('font_0', 'c_accent', 'h:c_accent-3', 'm-t_3', 'underline');
+    createLinkSpan.appendChild(createLinkA)
+    linkElement.appendChild(seeFullTextSpan)
+    linkElement.appendChild(createLinkSpan)
+
+
+    localSelectedDiv.lastElementChild.appendChild(linkElement);
+
+
+
+}
+</script>
+
+
+
+
+
+<script>
+
+/////
+    function addReturnToEvalButton(){
+
+    const buttonDiv = document.createElement('div');
+            buttonDiv.id = 'btnReturn';
+            buttonDiv.classList.add('flex', 'flex_row', 'justify_between');
+
+            const buttonElement = document.createElement('p');
+            buttonElement.classList.add('h:bg_primary', 'h:c_white', 'br_radius', 'm-b_2', 'p_3', 'bg_primary-4');
+            buttonElement.textContent = 'Return to evaluation';
+
+
+            buttonDiv.appendChild(buttonElement);
+         selectedDiv.appendChild(buttonDiv);
+
+
+
+    /* selectedDiv.innerHTML+= `
+    <div id="btnReturn" class=" flex flex_row justify_between">
+                        <div>
+                            <p class=" h:bg_primary h:c_white br_radius m-b_2  p_3 bg_primary-4 "> Return to evaluation
+                            </p>
+                        </div>
+                    </div> `
+                    */
+ }
+
+
+  function performMatchingAndAddGuidelines(){
+    //////////////////////////////////
+    /////// Data logic Queries ///////
+    //////////////////////////////////
+
+let localCategory = "SGLT2 Inhibitors and GLP-1 Receptor Agonists"
+
+    if( buttonSelection.diabetes === "Y"){
+
+        createGuidelindCardAndHeader("SGLT2 Inhibitors and GLP-1 Receptor Agonists")
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor or GLP-1 receptor agonists is recommended</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+         }
+
+    if( buttonSelection.LVEFlessOrEqual40 === "Y"){
+
+        createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor is recommended irrespective of diabetes status</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+         }
+
+    if( buttonSelection.LVEF41to49 === "Y" ||  buttonSelection.LVEFgreaterOrEqual50 === "Y" ){
+
+        createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2B</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor can be beneficial  irrespective of diabetes status</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+         }
+createCardLink(localCategory)
+
+
+localCategory = "Beta Blockers"
+
+    if( buttonSelection.LVEFlessOrEqual40 === "Y" &&  buttonSelection.betaBlocker === "N" ){
+
+        createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center"> Beta-blocker therapy is recommended</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+         }
+
+    if( buttonSelection.LVEFlessOrEqual40 === "Y" || buttonSelection.LVEF41to49 === "Y" ){
+
+        createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">Sustained release metoprolol succinate, carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+        }
+
+    if( buttonSelection.mi === "N" &&  buttonSelection.hxHFrEF === "N" &&
+        buttonSelection.LVEFgreaterOrEqual50 === "Y" &&  buttonSelection.betaBlocker === "Y" &&
+        buttonSelection.bloodPressureGoal === "N" &&  buttonSelection.angina === "N"){
+
+        createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">It may be reasonable to reassess the indication for long-term (>1 year) use of beta-blocker therapy</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+        }
+
+    if( buttonSelection["mi"] === "N" &&  buttonSelection["hxHFrEF"] === "N" &&
+        buttonSelection["LVEFgreaterOrEqual50"] === "Y" &&  buttonSelection["betaBlocker"] === "Y" &&
+        buttonSelection["angina"] === "N"){
+            createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center">Beta-blocker therapy is not beneficial</div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+        }
+
+createCardLink(localCategory)
+
+
+localCategory = "Lipid Management"
+
+    if( buttonSelection["LDL-C_goal"] === "N" &&  buttonSelection["betaBlocker"] === "N" ){
+
+        createGuidelindCardAndHeader(localCategory)
+        document.getElementById(localCategory).innerHTML+= `
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center"> Moderate intensity statin therapy is recommended. </div></div>
+        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
+            `
+        }
+
+
+    let tempList =
+                    {
+                "mi":"",
+                "diabetes": "Y",
+                "hxHFrEF": "",
+                "LVEFlessOrEqual40": "",
+                "LVEF41to49": "",
+                "LVEFgreaterOrEqual50": "",
+                "LDL-C_goal": "",
+                "maxStatin": "",
+                "betaBlocker": "",
+                "bloodPressureGoal": "",
+                "angina": ""
+                },
+
+          tempCategories =
+                [
+                    "SGLT2_Inhibitors_GLP1_Receptor_Agonists",
+                    "Beta_Blockers",
+                    "Lipid_Management",
+                    "Blood_Pressur_Management",
+                    "Renin_Angiotensin_Aldosterone_Inhibitors",
+                    "Medical_Therapy_for_Relief_of_Angina",
+                    "Antiplatelet_Therapy_and_Oral_Anticoagulants",
+                    "Colchicine",
+                    "Nutrition_Supplements"
+                ]
+
+                //LVEF≤40  LVEF≥50 LVEF=41-49
+
+
+}
+addReturnToEvalButton()
+
+</script>
+
+
+
+  <script>
+    const grabYesBtns = document.querySelectorAll('.btnYes'),
+      grabNoBtns = document.querySelectorAll('.btnNo'),
+      grabLVEFBtns = document.querySelectorAll('.btnLVEF'),
+      grabAllBtnSets = document.querySelectorAll('.btnSet')
+
+
+    let grabYesNoBtns = [...grabYesBtns, ...grabNoBtns]
+
+
+    //Handle three choice buttons/ LVEF
+    grabLVEFBtns.forEach(btn => {
+      btn.addEventListener('click', (event) => {
+
+        selectedChoiseAddedToDataset(event)
+        grabLVEFBtns.forEach(otherBtn => {
+          if (otherBtn === btn) {
+            // otherBtn.style.backgroundColor = 'bg_success';
+            event.target.classList.toggle('bg_success')
+            console.log(buttonSelection[event.target.id])
+             buttonSelection[event.target.id] = "Y"
+            //  event.target.dataset.yn = "Y"
+          } else {
+            // otherBtn.style.backgroundColor = 'bg_grey';
+            otherBtn.classList.contains('bg_success') ? otherBtn.classList.remove('bg_success') : "";
+            buttonSelection[otherBtn.id] = "N"
+          }
+        });
+      });
+    });
+
+
+    //Handle color change btns
+    let toggleClass = (event) => {
+
+
+      if (event.target.classList.contains('btnYes')) {
+        event.target.classList.toggle('bg_grey')
+        event.target.classList.toggle('bg_success')
+        // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
+        // event.target.classList.toggle('shadow_emboss-bold', !element.classList.contains('shadow_emboss-bold'));
+        // event.target.classList.toggle('shadow_overlap-light')
+        event.target.classList.contains('shadow_emboss-bold') ? "" : event.target.nextElementSibling.classList.add('shadow_emboss-bold')
+
+        event.target.nextElementSibling.classList.contains('shadow_emboss-bold') ? event.target.nextElementSibling.classList.remove('shadow_emboss-bold') : "";
+
+        event.target.nextElementSibling.classList.contains('bg_alert') ? event.target.nextElementSibling.classList.remove('bg_alert') : "";
+        event.target.nextElementSibling.classList.contains('bg_grey') ? "" : event.target.nextElementSibling.classList.add('bg_grey')
+
+      }
+
+      if (event.target.classList.contains('btnNo')) {
+        event.target.classList.toggle('bg_grey')
+        event.target.classList.toggle('bg_alert')
+        // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
+        //     event.target.classList.toggle('shadow_emboss-bold', !element.classList.contains('shadow_emboss-bold'));
+        event.target.classList.toggle('shadow_overlap-light')
+        event.target.classList.toggle('shadow_emboss-bold')
+
+        event.target.previousElementSibling.classList.contains('shadow_emboss-bold') ? event.target.previousElementSibling.classList.remove('shadow_emboss-bold') : "";
+
+        event.target.previousElementSibling.classList.contains('bg_success') ? event.target.previousElementSibling.classList.remove('bg_success') : "";
+        event.target.previousElementSibling.classList.contains('bg_grey') ? "" : event.target.previousElementSibling.classList.add('bg_grey')
+      }
+    }
+
+function lockUnlockBtnSubmit() {
+    console.log(Object.values(buttonSelection))
+
+    if(Object.values(buttonSelection).every(item=> item != "")){
+        btnCCD_Submit.classList.remove('bg_grey')
+        btnCCD_Submit.classList.add('bg_primary-1')
+    }
+
+    //   grabAllBtnSets.forEach((btn) => {
+    //     if (btn.dataset.selectedChoice === "Y") {
+    //       return btnSubmitUnlocked = true
+    //     } else {
+    //       return btnSubmitUnlocked = false
+    //     }
+    //   })
+
+
+    };
+
+
+
+    //// Handle  selection buttons ////
+    grabYesNoBtns.forEach(element => {
+      element.addEventListener('click', (event) => {
+        toggleClass(event);
+        selectedChoiseAddedToDataset(event)
+        lockUnlockBtnSubmit()
+      })
+    });
+
+    // handle Reset all btn
+    let grabBtnResetAll = document.getElementById('btnResetAll')
+    grabBtnResetAll.addEventListener('click', () => {
+      grabYesNoBtns.forEach(element => {
+        element.classList.contains('bg_success') ? element.classList.remove('bg_success') : "";
+        element.classList.contains('bg_alert') ? element.classList.remove('bg_alert') : "";
+        element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
+      })
+      grabLVEFBtns.forEach(element => {
+        element.classList.contains('bg_success') ? element.classList.remove('bg_success') : "";
+        element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
+      })
+
+     btnCCD_Submit.classList.contains('bg_primary-1')? btnCCD_Submit.classList.remove('bg_primary-1'): "";
+     btnCCD_Submit.classList.add('bg_grey')
+
+
+      setbuttonSelectionToEmpty()
+
+         selectedDiv.innerHTML = `<div class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
+                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
+                </div>`
+     addReturnToEvalButton()
+     btnReturn= document.getElementById('btnReturn'),
+      btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
+
+    })
+
+  </script>
+
+
+  <script>
+
+    const btnTabRec = document.getElementById('btnTabRec'),
+      btnTabEval = document.getElementById('btnTabEval'),
+      displayEvalQuestions = document.getElementById('displayEvalQuestions'),
+      displayReturnRecs = document.getElementById('displayReturnRecs');
+
+    let btnReturn= document.getElementById('btnReturn');
+
+    const grabrecsDefault = document.getElementById('recsDefault'),
+      grabBetaBlockers = document.getElementById('Beta_Blockers'),
+      grabSGLT2_GLP1 = document.getElementById('SGLT2_GLP-1')
+
+    const btnCCD_Submit = document.getElementById('btnCCD_Submit')
+    let btnSubmitUnlocked = false;
+
+    // console.log(btnSubmitUnlocked)
+
+    function checkThatAllWQuestionsAreAnswered(){
+        buttonSelectionArr = Object.values(buttonSelection)
+        buttonSelectionArr.every( item=> item != "")
+    }
+
+    // handle submit btn
+
+
+    btnCCD_Submit.addEventListener('click', () => {
+   let buttonIsDisabbled = btnCCD_Submit.classList.contains("bg_grey")
+        if(buttonIsDisabbled){
+            alert('All fields required, please complete and click Submit')
+            return false
+        }
+      hideDefaultAddSpecificGuidelines()
+      showRecsHideEvalTab()
+
+          //clear previous
+    selectedDiv.innerHTML = ""
+      performMatchingAndAddGuidelines()
+      selectedDiv.innerHTML += automaticRecs
+      addReturnToEvalButton()
+      btnReturn= document.getElementById('btnReturn'),
+      btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
+  })
+
+
+
+    function hideDefaultAddSpecificGuidelines() {
+      // grabrecsDefault.classList.toggle('display_none', !grabrecsDefault.classList.contains('display_none'));
+      // grabBetaBlockers.classList.toggle('display_none', !grabBetaBlockers.classList.contains('display_none'));
+      // grabSGLT2_GLP1.classList.toggle('display_none', !grabSGLT2_GLP1.classList.contains('display_none'));
+      // grabrecsDefault.classList.contains('display_none')? grabrecsDefault.classList.remove('display_none'):grabrecsDefault.classList.add('display_none') ;
+      // grabBetaBlockers.classList.contains('display_none')? grabBetaBlockers.classList.remove('display_none'):grabBetaBlockers.classList.add('display_none') ;
+
+    }
+
+
+    //Handle tabs
+    function showRecsHideEvalTab() {
+      displayReturnRecs.classList.contains('display_none') ? displayReturnRecs.classList.remove('display_none') : '';
+      btnTabRec.classList.contains('ccdSelectedTab') ? '' : btnTabRec.classList.add('ccdSelectedTab');
+
+      displayEvalQuestions.classList.contains('display_none') ? '' : displayEvalQuestions.classList.add('display_none');
+      btnTabEval.classList.contains('ccdSelectedTab') ? btnTabEval.classList.remove('ccdSelectedTab') : '';
+    }
+
+    function showEvalsHideRecsTab() {
+      displayEvalQuestions.classList.contains('display_none') ? displayEvalQuestions.classList.remove('display_none') : '';
+      btnTabEval.classList.contains('ccdSelectedTab') ? '' : btnTabEval.classList.add('ccdSelectedTab');
+
+      displayReturnRecs.classList.contains('display_none') ? '' : displayReturnRecs.classList.add('display_none');
+      btnTabRec.classList.contains('ccdSelectedTab') ? btnTabRec.classList.remove('ccdSelectedTab') : '';
+    }
+
+
+    // handle change buttonSelection - value selected object
+    function selectedChoiseAddedToDataset(event) {
+      // console.log(event.target.parentElement.id)
+      // console.log(event.target.dataset.yn)
+      buttonSelection[event.target.parentElement.id] = event.target.dataset.yn
+    }
+
+    btnTabRec.addEventListener('click', () => showRecsHideEvalTab())
+
+    btnTabEval.addEventListener('click', () => showEvalsHideRecsTab())
+
+    btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
+
+  </script>
+
+
+</body>
+
+</html>
