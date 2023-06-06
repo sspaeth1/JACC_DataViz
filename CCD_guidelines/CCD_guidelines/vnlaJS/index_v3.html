@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css">
-  <link rel="stylesheet" href="./css/ccdGuideline.css">
+  <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css"  type="text/css">
+  <link rel="stylesheet" href="./css/ccdGuideline.css"  type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/color-code_LOE_COR.css">
+  <link rel="stylesheet" href="./css/color-code_LOE_COR.css" type="text/css">
   <title>CCD Guidelines Interactive Tool</title>
 </head>
 
@@ -156,7 +156,7 @@ let guidlineLinkoutInfo = {
     }
 
     .evalRestartText:before {
-      content: url('http://127.0.0.1:5500/vnlaJS/imgs/icon-restart.svg');
+      content: url('./imgs/icon-restart.svg');
       width: 20px;
       height: 20px;
       left: .3rem;
@@ -166,7 +166,7 @@ let guidlineLinkoutInfo = {
     }
   </style>
 
-  <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 bg_acc-4 br_1 br_primary br_solid">
+  <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 max-w_60:md bg_acc-4 br_1 br_primary br_solid">
     <div class="ccdGuidlineHeader  text_center  ">
       <h1 class="font_4 m-b_n3 ">Chronic Coronary Disease Guideline</h1>
       <h2 class="font_1 font_light"> Interactive Tool</h2>
@@ -176,9 +176,9 @@ let guidlineLinkoutInfo = {
       <div id="btnTabRec" class=" flex_basis-50 font_2 p_4">Recommendations</div>
     </section>
     <section
-      class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_3 p-t_0 bg_white-6 min-h_80">
+      class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_3 p-t_0 bg_white-6 min-h_80 m-b_5">
 
-      <div id="displayEvalQuestions">
+      <div id="displayEvalQuestions"  class="w_100">
 
         <div class="ccdQsReset flex flex_row c_secondary-1  w_100 justify_between">
           <div class="left ccdQsReset">
@@ -303,7 +303,7 @@ let guidlineLinkoutInfo = {
                 class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
                 Y</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light"data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
                 N</div>
             </div>
           </div>
@@ -415,7 +415,7 @@ let guidlineLinkoutInfo = {
 
 
   let automaticRecs = `
-<div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Antiplatelet Therapy and Oral Anticoagulants" id="Antiplatelet Therapy and Oral Anticoagulants"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Antiplatelet Therapy and Oral Anticoagulants</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.1. Antiplatelet Therapy and Oral Anticoagulants</a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Colchicine" id="Colchicine"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Colchicine</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">Colchicine for secondary prevention may be considered</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.4. Colchicine </a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Nutrition Supplements" id="Nutrition Supplements"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Nutrition Supplements</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center">Use of nonprescription or dietary supplements is not beneficial   (COR  3 No Benefit)</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.2.1. Nutrition, Including Supplements</a></span></div></div>
+<div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Antiplatelet Therapy and Oral Anticoagulants" id="Antiplatelet Therapy and Oral Anticoagulants"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Antiplatelet Therapy and Oral Anticoagulants</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.1. Antiplatelet Therapy and Oral Anticoagulants</a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Colchicine" id="Colchicine"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Colchicine</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">Colchicine for secondary prevention may be considered</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.4. Colchicine </a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Nutrition Supplements" id="Nutrition Supplements"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Nutrition Supplements</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center"><div>Use of nonprescription or dietary supplements is not beneficial <span class="font_medium">(COR  3 No Benefit)</span></div>  </div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.2.1. Nutrition, Including Supplements</a></span></div></div>
 `
 
 function createGuidelindCardAndHeader (category){
@@ -582,10 +582,10 @@ function createCardLink(localCategory){
 
     const buttonDiv = document.createElement('div');
             buttonDiv.id = 'btnReturn';
-            buttonDiv.classList.add('flex', 'flex_row', 'justify_between');
+
 
             const buttonElement = document.createElement('p');
-            buttonElement.classList.add('h:bg_primary', 'h:c_white', 'br_radius', 'm-b_2', 'p_3', 'bg_primary-4');
+            buttonElement.classList.add("p_4",  "c_white","h:bg_primary-3",  "h:c_primary", "m_3","m-t_5", "m-r_0", "float_right", "font_2", "br_radius", "text_center", "bg_primary-1");
             buttonElement.textContent = 'Return to evaluation';
 
 
@@ -615,7 +615,7 @@ let localCategory = "SGLT2 Inhibitors and GLP-1 Receptor Agonists"
 
         createGuidelindCardAndHeader(localCategory)
         document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor is recommended irrespective of diabetes status</div></div>
+        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIb h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor is recommended irrespective of diabetes status</div></div>
         <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
             `
          }
