@@ -385,7 +385,7 @@ let guidlineLinkoutInfo = {
 
 
           <div id='btnCCD_Submit'
-            class="btnSubmit texture_cross p_4 c_white bg_grey h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
+            class="btnSubmit texture_cross p_4 c_white bg_grey h:bg_primary-3 h:bg_accent-2 h:c_alert m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
             Submit
           </div>
 
@@ -585,7 +585,7 @@ function createCardLink(localCategory){
 
 
             const buttonElement = document.createElement('p');
-            buttonElement.classList.add("p_4",  "c_white","h:bg_primary-3",  "h:c_primary", "m_3","m-t_5", "m-r_0", "float_right", "font_2", "br_radius", "text_center", "bg_primary-1");
+            buttonElement.classList.add("p_4",  "c_white","h:bg_accent-3", "h:c_alert",  "h:c_primary", "m_3","m-t_5", "m-r_0", "float_right", "font_2", "br_radius", "text_center", "bg_accent");
             buttonElement.textContent = 'Return to evaluation';
 
 
@@ -767,7 +767,7 @@ function lockUnlockBtnSubmit() {
 
     if(Object.values(buttonSelection).every(item=> item != "")){
         btnCCD_Submit.classList.remove('texture_cross')
-        btnCCD_Submit.classList.add('bg_primary-1')
+        btnCCD_Submit.classList.add('bg_accent')
     }
 
     };
