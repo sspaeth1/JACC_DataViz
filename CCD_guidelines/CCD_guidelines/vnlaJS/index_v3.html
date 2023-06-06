@@ -148,6 +148,10 @@ let guidlineLinkoutInfo = {
       background-color: rgb(156, 156, 156);
     }
 
+    .texture_cross{
+        background: #717171 url('https://assets.acc.org/Arches/4.1.37909/dist/img/cross_color.png');
+    }
+
 
     /* ////////////// */
 
@@ -381,7 +385,7 @@ let guidlineLinkoutInfo = {
 
 
           <div id='btnCCD_Submit'
-            class="btnSubmit p_4 c_white bg_grey h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
+            class="btnSubmit texture_cross p_4 c_white bg_grey h:bg_primary-3 h:c_primary m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
             Submit
           </div>
 
@@ -708,12 +712,15 @@ addReturnToEvalButton()
           if (otherBtn === btn) {
             // otherBtn.style.backgroundColor = 'bg_success';
             event.target.classList.toggle('bg_success')
-            console.log(buttonSelection[event.target.id])
-             buttonSelection[event.target.id] = "Y"
+            // console.log(buttonSelection[event.target.id])
+             buttonSelection[otherBtn.id] = "Y"
             //  event.target.dataset.yn = "Y"
+            console.log( "btn:", btn.id)
           } else {
             // otherBtn.style.backgroundColor = 'bg_grey';
             otherBtn.classList.contains('bg_success') ? otherBtn.classList.remove('bg_success') : "";
+            otherBtn.classList.contains('bg_alert') ? otherBtn.classList.add('bg_alert') : "";
+            console.log( "otherBtn:", otherBtn.id)
             buttonSelection[otherBtn.id] = "N"
           }
         });
@@ -759,7 +766,7 @@ function lockUnlockBtnSubmit() {
     console.log(Object.values(buttonSelection))
 
     if(Object.values(buttonSelection).every(item=> item != "")){
-        btnCCD_Submit.classList.remove('bg_grey')
+        btnCCD_Submit.classList.remove('texture_cross')
         btnCCD_Submit.classList.add('bg_primary-1')
     }
 
@@ -790,7 +797,7 @@ function lockUnlockBtnSubmit() {
       })
 
      btnCCD_Submit.classList.contains('bg_primary-1')? btnCCD_Submit.classList.remove('bg_primary-1'): "";
-     btnCCD_Submit.classList.add('bg_grey')
+     btnCCD_Submit.classList.add('texture_cross')
 
 
       setbuttonSelectionToEmpty()
@@ -834,7 +841,7 @@ function lockUnlockBtnSubmit() {
 
 
     btnCCD_Submit.addEventListener('click', () => {
-   let buttonIsDisabbled = btnCCD_Submit.classList.contains("bg_grey")
+   let buttonIsDisabbled = btnCCD_Submit.classList.contains("texture_cross")
         if(buttonIsDisabbled){
             alert('All fields required, please complete and click Submit')
             return false
