@@ -44,7 +44,7 @@ let  categoryNames =
     "SGLT2 Inhibitors and GLP-1 Receptor Agonists",
     "Beta Blockers",
     "Lipid Management",
-    "Blood Pressur Management",
+    "Blood Pressure Management",
     "Renin Angiotensin Aldosterone Inhibitors",
     "Medical Therapy for Relief of Angina",
     "Antiplatelet Therapy and Oral Anticoagulants",
@@ -170,12 +170,14 @@ let guidlineLinkoutInfo = {
     }
   </style>
 
+
+
   <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 max-w_60:md bg_acc-4 br_1 br_primary br_solid">
     <div class="ccdGuidlineHeader  text_center  ">
         <h1 class="font_4 m-b_n3 ">JACC Chronic Coronary Disease Guideline Interactive Tool: Reevaluating Medications at Every Visit</h1>
         <h2 class="font_1 font_light">Use this tool to reevaluate chronic coronary disease patient medications at every visit.</h2>
     </div>
-    <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid text_center">
+    <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid br-l_0 br-r_0 text_center">
       <div id="btnTabEval" class="ccdSelectedTab flex_basis-50   font_2 p_4">Evaluate</div>
       <div id="btnTabRec" class=" flex_basis-50 font_2 p_4">Recommendations</div>
     </section>
@@ -219,10 +221,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="mi" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -237,10 +239,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="diabetes" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -254,10 +256,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="hxHFrEF" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -272,13 +274,13 @@ let guidlineLinkoutInfo = {
               </div>
               <div  class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
                 <div
-                  id="LVEFlessOrEqual40" class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="N">
+                  id="LVEFlessOrEqual40" class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="N">
                   &leq; 40%</div>
                 <div
-                  id="LVEF41to49" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="N">
+                  id="LVEF41to49" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="N">
                   41-49%</div>
                 <div
-                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light" data-yn="N">
+                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center" data-yn="N">
                   &geq; 50%</div>
               </div>
 
@@ -300,10 +302,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="LDL-C_goal" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -317,10 +319,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="maxStatin" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -334,10 +336,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="betaBlocker" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -357,10 +359,10 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="bloodPressureGoal" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
@@ -374,15 +376,16 @@ let guidlineLinkoutInfo = {
             </div>
             <div id="angina" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
-                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center shadow_overlap-light " data-yn="Y">
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
               <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius shadow_overlap-light" data-yn="N">
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
                No</div>
             </div>
           </div>
 
 
+          <div id="hiddenSubmit" class="br_radius c_white float_left font_2 h:bg_primary-4  m-r_0 m-t_4 m_3 p_4 p_5 w_20">  </div>
 
           <div id='btnCCD_Submit'
             class="btnSubmit texture_cross p_4 c_white bg_grey h:bg_primary-3 h:bg_accent-2 h:c_alert m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
@@ -402,10 +405,108 @@ let guidlineLinkoutInfo = {
 
       </div>
 
+
     </section>
+
+
   </main>
 
 
+  <style>
+    #toast {
+    visibility: hidden;
+    max-width: 50px;
+    /* height: 50px; */
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+#toast #desc{
+    font-size:1rem;
+    color: #fff;
+    padding: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1.5rem;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px}
+    to {min-width:80vw}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width:80vw}
+}
+@-webkit-keyframes stay {
+    from {min-width:80vw}
+    to {min-width:80vw}
+}
+
+@keyframes stay {
+    from {min-width:80vw}
+    to {min-width:80vw}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 70vw;}
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 80vw}
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}
+</style>
+
+
+    <div id="toast"><div id="desc">Please complete all of the evaluation questions in the Evaluate tab <br> then click submit to see recommendations here</div></div>
+
+
+    <script>
+     function launch_toast() {
+    var x = document.getElementById("toast")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+}
+    </script>
 
 
 
@@ -426,7 +527,7 @@ console.log("existingChild", Boolean(existingChild))
         //check if category card exists
         categoryNames.forEach(categoryType => {
 
-            console.log(category, "\n", categoryType)
+            // console.log(category, "\n", categoryType)
    if (!existingChild  &&  category === categoryType){
         //  console.log("doesn't exist")
 
@@ -548,6 +649,7 @@ function createCardLink(localCategory){
     }
     localSelectedDiv = document.getElementById(localCategory)
 
+
     // Create the link
     const linkElement = document.createElement('div');
     const seeFullTextSpan = document.createElement('span');
@@ -600,34 +702,72 @@ function createCardLink(localCategory){
     /////// Data logic Queries ///////
     //////////////////////////////////
 
+    let corObj = {
+        "1": { "num": "1", "color": "bg_cor-I" },
+        "2a": { "num": "2a", "color": "bg_cor-IIA" },
+        "2b": { "num": "2b", "color": "bg_cor-IIB" },
+        "3": { "num": "3", "color": "bg_cor-III" },
+    };
+
+    function appendElementToCategory(localCategory, corRating, guideline, cor3optional="") {
+        let grablocalCategory = document.getElementById(localCategory);
+
+        // Create the elements
+        let guidelineContainer = document.createElement("div");
+        guidelineContainer.className = "flex items_center justify_center m-b_2 m-t_2";
+        let div_corIndicator = document.createElement("div");
+        // div_corIndicator.className = `${corObj[corRating].color} h_10 w_10 flex items_center justify_center c_white`;
+        div_corIndicator.className = ` h_10 w_10 flex items_center justify_center c_white`;
+        div_corIndicator.classList.add(corObj[corRating].color)
+        div_corIndicator.textContent = corObj[corRating].num;
+        let div_guidelineTextOuter = document.createElement("div");
+        div_guidelineTextOuter.className = "guidelineItem p-l_4 w_90 flex items_center";
+        let div_guidelineTextInner = document.createElement("div");
+        div_guidelineTextInner.textContent = guideline;
+        let span_cor3 = document.createElement("span");
+        span_cor3.classList.add('font_medium', 'm-l_2');
+        span_cor3.innerText = cor3optional;
+        let divLine = document.createElement("div");
+        divLine.className = "br-b_1 br_solid br_primary-5 p-b_2";
+
+        // Append the elements to the category
+        div_guidelineTextOuter.appendChild(div_guidelineTextInner)
+        guidelineContainer.appendChild(div_corIndicator);
+        div_guidelineTextInner.appendChild(span_cor3);
+        guidelineContainer.appendChild(div_guidelineTextOuter);
+        grablocalCategory.appendChild(guidelineContainer);
+        grablocalCategory.appendChild(divLine);
+    }
+
+
+
+
+
 let localCategory = "SGLT2 Inhibitors and GLP-1 Receptor Agonists"
+
+
 
     if( buttonSelection.diabetes === "Y"){
 
         createGuidelindCardAndHeader("SGLT2 Inhibitors and GLP-1 Receptor Agonists")
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor or GLP-1 receptor agonists is recommended</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "1", "SGLT2 inhibitor or GLP-1 receptor agonists is recommended");
+
          }
 
     if( buttonSelection.LVEFlessOrEqual40 === "Y"){
 
         createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIA h_10 w_10 flex items_center justify_center c_white">2a</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor is recommended irrespective of diabetes status</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "2a", "SGLT2 inhibitor is recommended irrespective of diabetes status");
+
          }
 
     if( buttonSelection.LVEF41to49 === "Y" ||  buttonSelection.LVEFgreaterOrEqual50 === "Y" ){
 
         createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2B</div><div class="guidelineItem p-l_4 w_90 flex items_center">SGLT2 inhibitor can be beneficial  irrespective of diabetes status</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "2b", "SGLT2 inhibitor can be beneficial irrespective of diabetes status");
+
          }
+
 createCardLink(localCategory)
 
 
@@ -636,19 +776,15 @@ localCategory = "Beta Blockers"
     if( buttonSelection.LVEFlessOrEqual40 === "Y" &&  buttonSelection.betaBlocker === "N" ){
 
         createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center"> Beta-blocker therapy is recommended</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "1", "Beta-blocker therapy is recommended");
+
          }
 
     if( buttonSelection.LVEFlessOrEqual40 === "Y" || buttonSelection.LVEF41to49 === "Y" ){
 
         createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">Sustained release metoprolol succinate, carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "1", "Sustained release metoprolol succinate, carvedilol, or bisoprolol with titration to target doses is recommended in preference to other beta-blockers");
+
         }
 
     if( buttonSelection.mi === "N" &&  buttonSelection.hxHFrEF === "N" &&
@@ -656,20 +792,16 @@ localCategory = "Beta Blockers"
         buttonSelection.bloodPressureGoal === "N" &&  buttonSelection.angina === "N"){
 
         createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">It may be reasonable to reassess the indication for long-term (>1 year) use of beta-blocker therapy</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "2b", "It may be reasonable to reassess the indication for long-term (>1 year) use of beta-blocker therapy");
+
         }
 
     if( buttonSelection["mi"] === "N" &&  buttonSelection["hxHFrEF"] === "N" &&
         buttonSelection["LVEFgreaterOrEqual50"] === "Y" &&  buttonSelection["betaBlocker"] === "Y" &&
         buttonSelection["angina"] === "N"){
             createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center">Beta-blocker therapy is not beneficial</div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+            appendElementToCategory(localCategory, "3", "Beta-blocker therapy is not beneficial", "(COR 3: No benefit)");
+
         }
 
 createCardLink(localCategory)
@@ -680,11 +812,78 @@ localCategory = "Lipid Management"
     if( buttonSelection["LDL-C_goal"] === "N" &&  buttonSelection["betaBlocker"] === "N" ){
 
         createGuidelindCardAndHeader(localCategory)
-        document.getElementById(localCategory).innerHTML+= `
-        <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center"> Moderate intensity statin therapy is recommended. </div></div>
-        <div class="br-b_1 br_solid br_primary-5 p-b_2"></div>
-            `
+        appendElementToCategory(localCategory, "1", "Moderate intensity statin therapy is recommended.");
+
         }
+
+    if( buttonSelection["LDL-C_goal"] === "N" &&  buttonSelection["betaBlocker"] === "Y" ){
+
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "2a", "Other treatment options may be beneficial.");
+
+        }
+
+createCardLink(localCategory)
+
+
+localCategory = "Blood Pressure Management"
+
+    if( buttonSelection["bloodPressureGoal"] === "Y"){
+
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "1", "BP target of <130/<80 mm Hg is recommended.");
+
+    }
+    if( buttonSelection["bloodPressureGoal"] === "Y"){
+
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "1", "BP target of <130/<80 mm Hg is recommended.");
+
+    }
+
+createCardLink(localCategory)
+
+
+ localCategory = "Renin Angiotensin Aldosterone Inhibitors"
+
+    if(  buttonSelection["diabetes"] === "N" &&
+    (buttonSelection["LVEFlessOrEqual40"] === "N" || buttonSelection["LVEFlessOrEqual40"] === "Y") &&
+    (buttonSelection["bloodPressureGoal"] === "N" || buttonSelection["bloodPressureGoal"] === "Y")
+    ){
+
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "1", "ACE inhibitors, or ARBs if ACE inhibitor–intolerant, is recommended");
+
+    }
+
+    if(  (buttonSelection["diabetes"] === "N" || buttonSelection["diabetes"] === "Y") &&
+    (buttonSelection["LVEF41to49"] === "N" || buttonSelection["LVEF41to49"] === "Y") &&
+    (buttonSelection["LVEFgreaterOrEqual50"] === "N" || buttonSelection["LVEFgreaterOrEqual50"] === "Y") &&
+    buttonSelection["bloodPressureGoal"] === "N"
+    ){
+
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "2b", "ACE inhibitors or ARBs may be considered");
+
+    }
+
+createCardLink(localCategory)
+
+
+    localCategory =  "Medical Therapy for Relief of Angina"
+
+    if( buttonSelection["angina"] === "Y"){
+
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "1", "Antianginal therapy with either a beta blocker, CCB, or long-acting nitrate is recommended");
+        appendElementToCategory(localCategory, "1", "Addition of a second antianginal agent from a different therapeutic class (beta blockers, CCB, long-acting nitrates) is recommended");
+        appendElementToCategory(localCategory, "1", "Ranolazine is recommended in patients who remain symptomatic despite treatment");
+        appendElementToCategory(localCategory, "1", "Sublingual nitroglycerin or nitroglycerin spray is recommended for immediate short-term relief of angina");
+        appendElementToCategory(localCategory, "3", "Ivabradine is potentially harmful", " " + "(COR 3: harm)" );
+    }
+
+createCardLink(localCategory)
+
 
 }
 addReturnToEvalButton()
@@ -706,6 +905,7 @@ addReturnToEvalButton()
     //Handle three choice buttons/ LVEF
     grabLVEFBtns.forEach(btn => {
       btn.addEventListener('click', (event) => {
+        event.target.classList.toggle('shadow_emboss-bold')
 
         selectedChoiseAddedToDataset(event)
         grabLVEFBtns.forEach(otherBtn => {
@@ -720,8 +920,11 @@ addReturnToEvalButton()
             // otherBtn.style.backgroundColor = 'bg_grey';
             otherBtn.classList.contains('bg_success') ? otherBtn.classList.remove('bg_success') : "";
             otherBtn.classList.contains('bg_alert') ? otherBtn.classList.add('bg_alert') : "";
+            otherBtn.classList.contains('shadow_emboss-bold') ? otherBtn.classList.remove('shadow_emboss-bold') : "";
+
             console.log( "otherBtn:", otherBtn.id)
             buttonSelection[otherBtn.id] = "N"
+
           }
         });
       });
@@ -735,14 +938,11 @@ addReturnToEvalButton()
       if (event.target.classList.contains('btnYes')) {
         event.target.classList.toggle('bg_grey')
         event.target.classList.toggle('bg_success')
-        // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
-        // event.target.classList.toggle('shadow_emboss-bold', !element.classList.contains('shadow_emboss-bold'));
-        // event.target.classList.toggle('shadow_overlap-light')
-        event.target.classList.contains('shadow_emboss-bold') ? "" : event.target.nextElementSibling.classList.add('shadow_emboss-bold')
+        event.target.classList.toggle('shadow_emboss-bold')
 
         event.target.nextElementSibling.classList.contains('shadow_emboss-bold') ? event.target.nextElementSibling.classList.remove('shadow_emboss-bold') : "";
 
-        event.target.nextElementSibling.classList.contains('bg_alert') ? event.target.nextElementSibling.classList.remove('bg_alert') : "";
+        event.target.nextElementSibling.classList.contains('bg_alert') ? event.target.nextElementSibling.classList.remove('bg_alert','shadow_emboss-bold') : "";
         event.target.nextElementSibling.classList.contains('bg_grey') ? "" : event.target.nextElementSibling.classList.add('bg_grey')
 
       }
@@ -750,14 +950,11 @@ addReturnToEvalButton()
       if (event.target.classList.contains('btnNo')) {
         event.target.classList.toggle('bg_grey')
         event.target.classList.toggle('bg_alert')
-        // event.target.classList.toggle('shadow_overlap-light', !element.classList.contains('shadow_overlap-light'));
-        //     event.target.classList.toggle('shadow_emboss-bold', !element.classList.contains('shadow_emboss-bold'));
-        event.target.classList.toggle('shadow_overlap-light')
         event.target.classList.toggle('shadow_emboss-bold')
 
         event.target.previousElementSibling.classList.contains('shadow_emboss-bold') ? event.target.previousElementSibling.classList.remove('shadow_emboss-bold') : "";
 
-        event.target.previousElementSibling.classList.contains('bg_success') ? event.target.previousElementSibling.classList.remove('bg_success') : "";
+        event.target.previousElementSibling.classList.contains('bg_success') ? event.target.previousElementSibling.classList.remove('bg_success','shadow_emboss-bold') : "";
         event.target.previousElementSibling.classList.contains('bg_grey') ? "" : event.target.previousElementSibling.classList.add('bg_grey')
       }
     }
@@ -787,12 +984,12 @@ function lockUnlockBtnSubmit() {
     let grabBtnResetAll = document.getElementById('btnResetAll')
     grabBtnResetAll.addEventListener('click', () => {
       grabYesNoBtns.forEach(element => {
-        element.classList.contains('bg_success') ? element.classList.remove('bg_success') : "";
-        element.classList.contains('bg_alert') ? element.classList.remove('bg_alert') : "";
+        element.classList.contains('bg_success') ? element.classList.remove('bg_success', 'shadow_emboss-bold') : "";
+        element.classList.contains('bg_alert') ? element.classList.remove('bg_alert','shadow_emboss-bold') : "";
         element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
       })
       grabLVEFBtns.forEach(element => {
-        element.classList.contains('bg_success') ? element.classList.remove('bg_success') : "";
+        element.classList.contains('bg_success') ? element.classList.remove('bg_success','shadow_emboss-bold') : "";
         element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
       })
 
@@ -843,7 +1040,8 @@ function lockUnlockBtnSubmit() {
     btnCCD_Submit.addEventListener('click', () => {
    let buttonIsDisabbled = btnCCD_Submit.classList.contains("texture_cross")
         if(buttonIsDisabbled){
-            alert('All fields required, please complete and click Submit')
+            launch_toast()
+            // alert('All fields required, please complete and click Submit')
             return false
         }
       showRecsHideEvalTab()
@@ -856,6 +1054,24 @@ function lockUnlockBtnSubmit() {
       btnReturn= document.getElementById('btnReturn'),
       btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
   })
+
+
+//handle hidden submit button
+let btnHiddenSubmit = document.getElementById('hiddenSubmit')
+  btnHiddenSubmit.addEventListener('click', () => {
+   let buttonIsDisabbled = btnHiddenSubmit.classList.contains("texture_cross")
+      showRecsHideEvalTab()
+
+          //clear previous
+    selectedDiv.innerHTML = ""
+      performMatchingAndAddGuidelines()
+      selectedDiv.innerHTML += automaticRecs
+      addReturnToEvalButton()
+      btnReturn= document.getElementById('btnReturn'),
+      btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
+  })
+
+
 
 
     //Handle tabs
