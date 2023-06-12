@@ -73,7 +73,7 @@ let guidlineLinkoutInfo = {
         "text": "4.2.7. Blood Pressure Management ",
        "url": "www.jacc.org"
       },
-  "Renin-Angiotensin-Aldosterone Inhibitors":
+  "Renin Angiotensin Aldosterone Inhibitors":
       {
         "text": "4.3.3. Renin-Angiotensin-Aldosterone Inhibitors ",
        "url": "www.jacc.org"
@@ -725,7 +725,7 @@ function createCardLink(localCategory){
         let div_guidelineTextInner = document.createElement("div");
         div_guidelineTextInner.textContent = guideline;
         let span_cor3 = document.createElement("span");
-        span_cor3.classList.add('font_medium', 'm-l_2');
+        span_cor3.classList.add('m-l_2');
         span_cor3.innerText = cor3optional;
         let divLine = document.createElement("div");
         divLine.className = "br-b_1 br_solid br_primary-5 p-b_2";
@@ -749,7 +749,7 @@ let localCategory = "SGLT2 Inhibitors and GLP-1 Receptor Agonists"
 
     if( buttonSelection.diabetes === "Y"){
 
-        createGuidelindCardAndHeader("SGLT2 Inhibitors and GLP-1 Receptor Agonists")
+        createGuidelindCardAndHeader(localCategory)
         appendElementToCategory(localCategory, "1", "SGLT2 inhibitor or GLP-1 receptor agonists is recommended");
 
          }
