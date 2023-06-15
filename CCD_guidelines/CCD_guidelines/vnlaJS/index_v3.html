@@ -114,7 +114,7 @@ let guidlineLinkoutInfo = {
     }
 
     .ccdSelectedTab {
-      background-color: var(--start-color);
+      background-color:  var(--start-color);
       color: #fff;
       position: relative;
     }
@@ -137,7 +137,7 @@ let guidlineLinkoutInfo = {
     }
 
     .bg_alert {
-      background-color: rgb(207, 76, 76);
+      background-color: rgb(207, 76, 76) !important;
     }
 
     .bg_green {
@@ -213,7 +213,6 @@ let guidlineLinkoutInfo = {
                 MI within last year
               </div>
               <div class="tooltip-container m-l_3">
-                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
                 <div class="tooltip-content">
                   <p>This panel displays a summary.</p>
                 </div>
@@ -294,7 +293,6 @@ let guidlineLinkoutInfo = {
                 LDL-C at goal
               </div>
               <div class="tooltip-container m-l_3">
-                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
                 <div class="tooltip-content">
                   <p>LDL-C ≥ 70 mg/dL</p>
                 </div>
@@ -351,7 +349,6 @@ let guidlineLinkoutInfo = {
                 Blood pressure at goal?
               </div>
               <div class="tooltip-container m-l_3 ">
-                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
                 <div class="tooltip-content">
                   <p>BP&gt; 130&Backslash;&lt;80 mm Hg</p>
                 </div>
@@ -516,7 +513,9 @@ let guidlineLinkoutInfo = {
 
 
   let automaticRecs = `
-<div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Antiplatelet Therapy and Oral Anticoagulants" id="Antiplatelet Therapy and Oral Anticoagulants"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Antiplatelet Therapy and Oral Anticoagulants</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.1. Antiplatelet Therapy and Oral Anticoagulants</a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Colchicine" id="Colchicine"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Colchicine</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">Colchicine for secondary prevention may be considered</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.4. Colchicine </a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Nutrition Supplements" id="Nutrition Supplements"><img src="./imgs/tempimage.png" alt="icon SGLT2_Inhibitors_GLP1_Receptor_Agonists" class="aspect_1x1 h_2xlh m-t_0 m_3 p-t_0 w_10"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Nutrition Supplements</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center"><div>Use of nonprescription or dietary supplements is not beneficial <span class="font_medium">(COR  3 No Benefit)</span></div>  </div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.2.1. Nutrition, Including Supplements</a></span></div></div>
+<div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Antiplatelet Therapy and Oral Anticoagulants" id="Antiplatelet Therapy and Oral Anticoagulants"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Antiplatelet Therapy and Oral Anticoagulants</h1></div>
+  <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.</div>
+  </div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.1. Antiplatelet Therapy and Oral Anticoagulants</a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Colchicine" id="Colchicine"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Colchicine</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">Colchicine for secondary prevention may be considered</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.4. Colchicine </a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Nutrition Supplements" id="Nutrition Supplements"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Nutrition Supplements</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center"><div>Use of nonprescription or dietary supplements is not beneficial <span class="font_medium">(COR  3 No Benefit)</span></div>  </div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.2.1. Nutrition, Including Supplements</a></span></div></div>
 `
 
 function createGuidelindCardAndHeader (category){
@@ -542,16 +541,10 @@ console.log("existingChild", Boolean(existingChild))
             headerDiv.classList.add('br-b_1', 'br_solid', 'br_primary-3', 'flex');
             headerDiv.setAttribute('data-category', category);
 
-            const headerImage = document.createElement('img');
-            headerImage.src = `./imgs/tempimage.png`  //${Object.values(filteredGuidelineItem)[0][0].userOutput}.png`;
-            headerImage.alt = 'icon SGLT2_Inhibitors_GLP1_Receptor_Agonists';
-            headerImage.classList.add('aspect_1x1', 'h_2xlh', 'm-t_0', 'm_3', 'p-t_0',  'w_10');
-
             const headerTitle = document.createElement('h1');
             headerTitle.classList.add('font_2', 'c_primary', 'font_medium', 'p-b_1', 'p-t_0', 'p_2', 'm-t_0');
             headerTitle.textContent =  category
 
-            headerDiv.appendChild(headerImage);
             headerDiv.appendChild(headerTitle);
 
             // Append the main container div to the main tag
@@ -737,6 +730,8 @@ function createCardLink(localCategory){
         guidelineContainer.appendChild(div_guidelineTextOuter);
         grablocalCategory.appendChild(guidelineContainer);
         grablocalCategory.appendChild(divLine);
+
+
     }
 
 
@@ -960,7 +955,7 @@ addReturnToEvalButton()
     }
 
 function lockUnlockBtnSubmit() {
-    console.log(Object.values(buttonSelection))
+    console.log(buttonSelection) //Object.values(buttonSelection))
 
     if(Object.values(buttonSelection).every(item=> item != "")){
         btnCCD_Submit.classList.remove('texture_cross')
