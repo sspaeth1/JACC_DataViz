@@ -1,6 +1,6 @@
     // console.log(btnSubmitUnlocked)
 
-    function checkThatAllWQuestionsAreAnswered(){
+    function checkThatAllQuestionsAreAnswered(){
         buttonSelectionArr = Object.values(buttonSelection)
         buttonSelectionArr.every( item=> item != "")
     }

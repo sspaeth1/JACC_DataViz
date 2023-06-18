@@ -88,7 +88,7 @@ gulp.task('concatScripts', function(done) {
 
 
 
-  const scriptNames = ['toast.js',  'vars.js', 'createGuidelindCardAndHeader.js', 'createCardLink.js', 'handleBtns.js', 'dataLogic.js',  'checkThatAllWQuestionsAreAnswered.js', 'handleTabs.js'];
+  const scriptNames = ['toast.js',  'vars.js', 'createGuidelindCardAndHeader.js', 'createCardLink.js', 'handleBtns.js', 'dataLogic.js',  'checkThatAllQuestionsAreAnswered.js', 'handleTabs.js'];
 
 
   gulp.task('bundleScripts', function(done) {
@@ -100,7 +100,7 @@ gulp.task('concatScripts', function(done) {
     'src/js/createCardLink.js',
     'src/js/handleBtns.js',
     'src/js/dataLogic.js',
-    'src/js/checkThatAllWQuestionsAreAnswered.js',
+    'src/js/checkThatAllQuestionsAreAnswered.js',
     'src/js/handleTabs.js'])
       .pipe(concat('ccdBundle.js'))
       .pipe(terser())
