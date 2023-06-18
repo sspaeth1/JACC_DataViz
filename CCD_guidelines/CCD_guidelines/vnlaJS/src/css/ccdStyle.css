@@ -1,0 +1,69 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.flex_basis-50 {
+  flex-basis: 50%;
+}
+
+.ccdSelectedTab {
+  background-color: #5e87a9;
+  color: #fff;
+  position: relative;
+}
+
+.ccdSelectedTab:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1px;
+  border-bottom: 10px solid #eaeff3;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid transparent;
+}
+
+.question {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.bg_alert {
+  background-color: rgb(207, 76, 76) !important;
+}
+
+.bg_green {
+  background-color: rgb(12, 131, 82);
+}
+
+.bg_grey {
+  background-color: rgb(156, 156, 156);
+}
+
+.texture_cross{
+    background: #717171 url('https://assets.acc.org/Arches/4.1.37909/dist/img/cross_color.png');
+}
+
+
+/* ////////////// */
+
+.evalRestartText {
+  position: relative;
+}
+
+.evalRestartText:before {
+  content: url('../imgs/icon-restart.svg');
+  width: 20px;
+  height: 20px;
+  left: .3rem;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+
+.guidelineButtonInfluence{
+  font-size: 1rem ;
+  font-weight: 100;
+}
