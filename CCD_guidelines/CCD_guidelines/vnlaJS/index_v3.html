@@ -114,7 +114,7 @@ let guidlineLinkoutInfo = {
     }
 
     .ccdSelectedTab {
-      background-color:  var(--start-color);
+      background-color: #5e87a9;
       color: #fff;
       position: relative;
     }
@@ -167,6 +167,12 @@ let guidlineLinkoutInfo = {
       margin: 0;
       padding: 0;
       position: absolute;
+    }
+
+
+    .guidelineButtonInfluence{
+      font-size: 1rem ;
+      font-weight: 100;
     }
   </style>
 
@@ -1040,7 +1046,6 @@ function lockUnlockBtnSubmit() {
             return false
         }
       showRecsHideEvalTab()
-
           //clear previous
     selectedDiv.innerHTML = ""
       performMatchingAndAddGuidelines()
@@ -1057,7 +1062,7 @@ let btnHiddenSubmit = document.getElementById('hiddenSubmit')
    let buttonIsDisabbled = btnHiddenSubmit.classList.contains("texture_cross")
       showRecsHideEvalTab()
 
-          //clear previous
+    //clear previous
     selectedDiv.innerHTML = ""
       performMatchingAndAddGuidelines()
       selectedDiv.innerHTML += automaticRecs
