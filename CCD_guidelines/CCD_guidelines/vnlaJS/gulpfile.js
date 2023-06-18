@@ -26,7 +26,7 @@ gulp.task('copyHTML', function (done){
     .on('end', done);
 })
 
-//copy js/Css/Html files
+//copy js/Css/Html files  //use this rather than 'default' to temp pass through the files from src to dist
 gulp.task('copyAll', function (done){
     gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
@@ -57,7 +57,9 @@ gulp.task('sass', function(done){
 
 // condense each script and clean console logs/comments
 
-gulp.task('concatEachScript', function(done) {
+
+// Use this to minify each script individually
+gulp.task('minifyEachScript', function(done) {
      gulp.src('src/js/*.js')
           .pipe(terser())
           .pipe(gulp.dest('dist/js'))
@@ -73,9 +75,9 @@ gulp.task('concatScripts', function(done) {
       .pipe(terser())
       .pipe(gulp.dest('dist/js'))
       .on('end', function() {
-        // Once the JS files are bundled, update HTML files
+        // Once the JS files are bundled, update HTML files with bundle
         gulp.src('src/index_v3.html')
-        // .pipe(replace(/src="\.\/js\/.*?\.js"/g, 'src="js/ccdBundle.js"'))
+        .pipe(replace(/src="\.\/js\/.*?\.js"/g, 'src="js/ccdBundle.js"'))
         .pipe(gulp.dest('dist'))
         .on('end', function() {
         console.log('HTML files updated successfully.');
@@ -85,8 +87,43 @@ gulp.task('concatScripts', function(done) {
   });
 
 
+
+  const scriptNames = ['toast.js',  'vars.js', 'createGuidelindCardAndHeader.js', 'createCardLink.js', 'handleBtns.js', 'dataLogic.js',  'checkThatAllWQuestionsAreAnswered.js', 'handleTabs.js'];
+
+
+  gulp.task('bundleScripts', function(done) {
+    // return gulp.src('src/js/*.js')
+    return gulp.src(
+    ['src/js/toast.js',
+    'src/js/vars.js',
+    'src/js/createGuidelindCardAndHeader.js',
+    'src/js/createCardLink.js',
+    'src/js/handleBtns.js',
+    'src/js/dataLogic.js',
+    'src/js/checkThatAllWQuestionsAreAnswered.js',
+    'src/js/handleTabs.js'])
+      .pipe(concat('ccdBundle.js'))
+      .pipe(terser())
+      .pipe(gulp.dest('dist/js'))
+      .on('end', function() {
+        // Once the JS files are bundled and minified, update HTML files
+        gulp.src('src/*.html')
+          .pipe(replace(/<script.*?src="js\/(.*?)"><\/script>/g, function(match, filename) {
+            if (scriptNames.includes(filename)) {
+              return '';
+            } else {
+              return match;
+            }
+          }))
+          .pipe(replace('</body>', '<script src="js/ccdBundle.js" type="text/javascript"></script></body>'))
+          .pipe(gulp.dest('dist'))
+          .on('end', done);
+      });
+  });
+
+
 // gulp.task('default', ['message', 'copyHHTML', 'concatScripts'])
-gulp.task('default',gulp.series('message', 'copyHTML', 'sass', 'concatScripts'));
+gulp.task('default',gulp.series('message', 'copyHTML', 'sass', 'bundleScripts'));
 
 gulp.task('watch', function(){
     gulp.watch('src/*.html',gulp.series('copyHTML'));
