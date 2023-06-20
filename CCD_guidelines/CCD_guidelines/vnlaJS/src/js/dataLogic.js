@@ -50,7 +50,7 @@ localCategory = "Beta Blockers"
 
     if( buttonSelection.mi === "N" &&  buttonSelection.hxHFrEF === "N" &&
         buttonSelection.LVEFgreaterOrEqual50 === "Y" &&  buttonSelection.betaBlocker === "Y" &&
-        buttonSelection.bloodPressureGoal === "N" &&  buttonSelection.angina === "N"){
+        buttonSelection.bloodPressureGoal === "Y" &&  buttonSelection.angina === "N"){
 
         createGuidelindCardAndHeader(localCategory)
         appendElementToCategory(localCategory, "2b", "It may be reasonable to reassess the indication for long-term (>1 year) use of beta-blocker therapy");
@@ -61,7 +61,7 @@ localCategory = "Beta Blockers"
         buttonSelection["LVEFgreaterOrEqual50"] === "Y" &&  buttonSelection["betaBlocker"] === "Y" &&
         buttonSelection["angina"] === "N"){
             createGuidelindCardAndHeader(localCategory)
-            appendElementToCategory(localCategory, "3", "Beta-blocker therapy is not beneficial", "(COR 3: No benefit)");
+            appendElementToCategory(localCategory, "3noBenefit", "Beta-blocker therapy is not beneficial in the absence of another primary indication", "(COR 3: No benefit)");
 
         }
 
@@ -73,14 +73,14 @@ localCategory = "Lipid Management"
     if( buttonSelection["LDL-C_goal"] === "N" &&  buttonSelection["betaBlocker"] === "N" ){
 
         createGuidelindCardAndHeader(localCategory)
-        appendElementToCategory(localCategory, "1", "Moderate intensity statin therapy is recommended.");
+        appendElementToCategory(localCategory, "1", "If high-intensity statin therapy is contraindicated or not tolerated, moderate intensity statin therapy is recommended");
 
         }
 
     if( buttonSelection["LDL-C_goal"] === "N" &&  buttonSelection["betaBlocker"] === "Y" ){
 
         createGuidelindCardAndHeader(localCategory)
-        appendElementToCategory(localCategory, "2a", "Other treatment options may be beneficial.");
+        appendElementToCategory(localCategory, "2a", "Other treatment options such as ezetimibe or PCSK9 monoclonal antibody can be beneficial");
 
         }
 
@@ -89,27 +89,21 @@ createCardLink(localCategory)
 
 localCategory = "Blood Pressure Management"
 
-    if( buttonSelection["bloodPressureGoal"] === "Y"){
+    if( buttonSelection["bloodPressureGoal"] === "N"){
 
         createGuidelindCardAndHeader(localCategory)
         appendElementToCategory(localCategory, "1", "BP target of <130/<80 mm Hg is recommended.");
-
     }
-    if( buttonSelection["bloodPressureGoal"] === "Y"){
 
-        createGuidelindCardAndHeader(localCategory)
-        appendElementToCategory(localCategory, "1", "BP target of <130/<80 mm Hg is recommended.");
-
-    }
 
 createCardLink(localCategory)
 
 
  localCategory = "Renin Angiotensin Aldosterone Inhibitors"
 
-    if(  buttonSelection["diabetes"] === "N" &&
-    (buttonSelection["LVEFlessOrEqual40"] === "N" || buttonSelection["LVEFlessOrEqual40"] === "Y") &&
-    (buttonSelection["bloodPressureGoal"] === "N" || buttonSelection["bloodPressureGoal"] === "Y")
+    if(  buttonSelection["diabetes"] === "Y" ||
+         buttonSelection["LVEFlessOrEqual40"] === "Y" ||
+         buttonSelection["bloodPressureGoal"] === "N"
     ){
 
         createGuidelindCardAndHeader(localCategory)
@@ -117,10 +111,10 @@ createCardLink(localCategory)
 
     }
 
-    if(  (buttonSelection["diabetes"] === "N" || buttonSelection["diabetes"] === "Y") &&
-    (buttonSelection["LVEF41to49"] === "N" || buttonSelection["LVEF41to49"] === "Y") &&
-    (buttonSelection["LVEFgreaterOrEqual50"] === "N" || buttonSelection["LVEFgreaterOrEqual50"] === "Y") &&
-    buttonSelection["bloodPressureGoal"] === "N"
+    if(  buttonSelection["diabetes"] === "N"
+         || buttonSelection["LVEF41to49"] === "Y"
+         || buttonSelection["LVEFgreaterOrEqual50"] === "Y"
+         &&  buttonSelection["bloodPressureGoal"] === "Y"
     ){
 
         createGuidelindCardAndHeader(localCategory)
@@ -137,10 +131,13 @@ createCardLink(localCategory)
 
         createGuidelindCardAndHeader(localCategory)
         appendElementToCategory(localCategory, "1", "Antianginal therapy with either a beta blocker, CCB, or long-acting nitrate is recommended");
-        appendElementToCategory(localCategory, "1", "Addition of a second antianginal agent from a different therapeutic class (beta blockers, CCB, long-acting nitrates) is recommended");
+        appendElementToCategory(localCategory, "1", "Addition of a second antianginal agent from a different therapeutic class (beta blockers, CCB, long-acting nitrates) is recommended in those who remain symptomatic after initial treatment");
         appendElementToCategory(localCategory, "1", "Ranolazine is recommended in patients who remain symptomatic despite treatment");
         appendElementToCategory(localCategory, "1", "Sublingual nitroglycerin or nitroglycerin spray is recommended for immediate short-term relief of angina");
-        appendElementToCategory(localCategory, "3", "Ivabradine is potentially harmful", " " + "(COR 3: harm)" );
+    }
+
+    if( buttonSelection["angina"] === "Y" &&  buttonSelection.LVEFgreaterOrEqual50 === "Y" ){
+        appendElementToCategory(localCategory, "3harm", "Ivabradine is potentially harmful", " " + "(COR 3: harm)" );
     }
 
 createCardLink(localCategory)
