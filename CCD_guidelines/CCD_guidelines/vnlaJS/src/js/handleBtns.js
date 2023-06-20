@@ -115,9 +115,11 @@ function lockUnlockBtnSubmit() {
 
         setbuttonSelectionToEmpty()
 
-           selectedDiv.innerHTML = `<div class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
+      selectedDiv.innerHTML = `<div class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
                       Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
                   </div>`
+
+
        addReturnToEvalButton()
        btnReturn= document.getElementById('btnReturn'),
         btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
@@ -139,7 +141,7 @@ btnCCD_Submit.addEventListener('click', () => {
                //clear previous
          selectedDiv.innerHTML = ""
            performMatchingAndAddGuidelines()
-           selectedDiv.innerHTML += automaticRecs
+           addDefaultRecs()
            addReturnToEvalButton()
            btnReturn= document.getElementById('btnReturn'),
            btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
@@ -154,7 +156,7 @@ btnCCD_Submit.addEventListener('click', () => {
          //clear previous
          selectedDiv.innerHTML = ""
            performMatchingAndAddGuidelines()
-           selectedDiv.innerHTML += automaticRecs
+           addDefaultRecs()
            addReturnToEvalButton()
            btnReturn= document.getElementById('btnReturn'),
            btnReturn.addEventListener('click', () => showEvalsHideRecsTab())

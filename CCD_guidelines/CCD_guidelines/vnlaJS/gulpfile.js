@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const terser = require('gulp-terser');
 // const terser = require('gulp-uglify-es').default;
 const sass = require ('gulp-sass')(require('sass'));
+const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const replace = require('gulp-replace');
 
@@ -19,10 +20,17 @@ gulp.task('message', function(done){
 });
 
 
-// copy all html files
+// copy  html files (all)
 gulp.task('copyHTML', function (done){
     gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
+    .on('end', done);
+})
+
+// copy  css files (all)
+gulp.task('copyCSS', function (done){
+    gulp.src('src/css/*.css')
+    .pipe(gulp.dest('dist/css'))
     .on('end', done);
 })
 
@@ -87,18 +95,38 @@ gulp.task('concatScripts', function(done) {
   });
 
 
+  // clean css
+  gulp.task('cleanCSS', function(done) {
+     return gulp.src('dist/css/*.css', { read: false, allowEmpty: true })
+      .pipe(clean())
+      .on('end', done);
+  });
 
-  const scriptNames = ['toast.js',  'vars.js', 'createGuidelindCardAndHeader.js', 'createCardLink.js', 'handleBtns.js', 'dataLogic.js',  'checkThatAllQuestionsAreAnswered.js', 'handleTabs.js'];
+    // concat css
+  gulp.task('concatCSS', function(done) {
+     return gulp.src('src/css/*.css')
+      .pipe(concat('ccdMain.css'))
+      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.src('src/index.html'))
+      .pipe(replace(/href="\.\/css\/.*?\.css"/g, 'href="css/ccdMain.css"'))
+      .pipe(gulp.dest('dist'))
+      .on('end', done);
+  });
+
+
+  const scriptNames = ['toast.js',  'vars.js', 'createGuidelindCardAndHeader.js', 'appendElementToCategory.js', 'createCardLink.js', 'handleBtns.js', 'addDefaultRecs.js', 'dataLogic.js',  'checkThatAllQuestionsAreAnswered.js', 'handleTabs.js'];
 
 
   gulp.task('bundleScripts', function(done) {
     // return gulp.src('src/js/*.js')
-    return gulp.src(
+    gulp.src(
     ['src/js/toast.js',
     'src/js/vars.js',
     'src/js/createGuidelindCardAndHeader.js',
+    'src/js/appendElementToCategory.js',
     'src/js/createCardLink.js',
     'src/js/handleBtns.js',
+    'src/js/addDefaultRecs.js',
     'src/js/dataLogic.js',
     'src/js/checkThatAllQuestionsAreAnswered.js',
     'src/js/handleTabs.js'])
@@ -122,8 +150,18 @@ gulp.task('concatScripts', function(done) {
   });
 
 
-// gulp.task('default', ['message', 'copyHHTML', 'concatScripts'])
-gulp.task('default',gulp.series('message', 'copyHTML', 'sass', 'bundleScripts'));
+//replace with pbAssets dir
+gulp.task('pbAssetsPath', function() {
+    return gulp.src('src/*.html')
+      .pipe(replace(/\.\/css/g, '/pb-assets/guidelines/2023-chronic-coronary-disease/v4/css'))
+      .pipe(replace(/\.\/js/g, '/pb-assets/guidelines/2023-chronic-coronary-disease/v4/js'))
+      .pipe(replace(/\.\/img/g, '/pb-assets/guidelines/2023-chronic-coronary-disease/v4/img'))
+      .pipe(gulp.dest('dist'));
+  });
+
+
+// gulp.task('default', ['message', 'copyHTML', 'sass',  'cleanCSS', 'concatCSS', 'bundleScripts'])
+gulp.task('default',gulp.series('message', 'copyHTML', 'sass', 'cleanCSS', 'concatCSS', 'bundleScripts', 'copyCSS'));
 
 gulp.task('watch', function(){
     gulp.watch('src/*.html',gulp.series('copyHTML'));

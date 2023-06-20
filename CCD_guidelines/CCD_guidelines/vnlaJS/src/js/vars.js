@@ -68,13 +68,20 @@ let guidlineLinkoutInfo = {
 let selectedDiv = document.querySelector("#displayReturnRecs")
   let guidelineDivParent
 
-  let automaticRecs = `
-<div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Antiplatelet Therapy and Oral Anticoagulants" id="Antiplatelet Therapy and Oral Anticoagulants"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Antiplatelet Therapy and Oral Anticoagulants</h1></div>
-  <div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-I h_10 w_10 flex items_center justify_center c_white">1</div><div class="guidelineItem p-l_4 w_90 flex items_center">See guideline for information on Antiplatelet Therapy and Oral Anticoagulants.</div>
-  </div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.1. Antiplatelet Therapy and Oral Anticoagulants</a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Colchicine" id="Colchicine"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Colchicine</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-IIB h_10 w_10 flex items_center justify_center c_white">2b</div><div class="guidelineItem p-l_4 w_90 flex items_center">Colchicine for secondary prevention may be considered</div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.3.4. Colchicine </a></span></div></div><div class="br_1 br_primary br_solid font_2 font_light p_2 p_3 m-t_4 bg_white"><div class="br-b_1 br_solid br_primary-3 flex" data-category="Nutrition Supplements" id="Nutrition Supplements"><h1 class="font_2 c_primary font_medium p-b_1 p-t_0 p_2 m-t_0">Nutrition Supplements</h1></div><div class="flex items_center justify_center m-b_2 m-t_2"><div class="bg_cor-III h_10 w_10 flex items_center justify_center c_white">3</div><div class="guidelineItem p-l_4 w_90 flex items_center"><div>Use of nonprescription or dietary supplements is not beneficial <span class="font_medium">(COR  3 No Benefit)</span></div>  </div></div><div class="br-b_1 br_solid br_primary-5 p-b_2"></div><div><span class="font_0 c_primary-2 m-t_3">See full Guideline: </span><span><a href="www.jacc.org" target="_blank" class="font_0 c_accent h:c_accent-3 m-t_3 underline">4.2.1. Nutrition, Including Supplements</a></span></div></div>
-`
 
 let localSelectedDiv;
+
+
+
+/////
+let corObj = {
+    "1": { "num": "1", "color": "bg_cor-I" },
+    "2a": { "num": "2a", "color": "bg_cor-IIA" },
+    "2b": { "num": "2b", "color": "bg_cor-IIB" },
+    "3": { "num": "3", "color": "bg_cor-III" },
+};
+
+
 
 //Btn vars
 
