@@ -25,7 +25,6 @@
 
 
 <body>
-
   <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 max-w_60:md bg_acc-4 br_1 br_primary br_solid">
 
     <div class="ccdGuidlineHeader  text_center  ">
@@ -67,11 +66,6 @@
               <div>
                 MI within last year
               </div>
-              <div class="tooltip-container m-l_3">
-                <div class="tooltip-content">
-                  <p>This panel displays a summary.</p>
-                </div>
-              </div>
             </div>
             <div id="mi" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
@@ -107,6 +101,12 @@
               <div>
                 History of HFrEF?
               </div>
+              <div class="tooltip-container m-l_3 ">
+                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <div class="tooltip-content">
+                  <p>Heart failure with reduced ejection fraction</p>
+                </div>
+              </div>
             </div>
             <div id="hxHFrEF" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
@@ -124,6 +124,12 @@
 
                 <div>
                   LVEF
+                </div>
+                <div class="tooltip-container m-l_3 ">
+                  <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                  <div class="tooltip-content">
+                    <p>Left ventricular ejection fraction</p>
+                  </div>
                 </div>
               </div>
               <div  class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
@@ -145,12 +151,7 @@
           <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
             <div class="left flex flex_row items_center m-l_4">
               <div>
-                LDL-C at goal
-              </div>
-              <div class="tooltip-container m-l_3">
-                <div class="tooltip-content">
-                  <p>LDL-C ≥ 70 mg/dL</p>
-                </div>
+                LDL-Cholesterol ≤70 mg/dL?
               </div>
             </div>
             <div id="LDL-C_goal" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
@@ -201,12 +202,7 @@
           <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
             <div class="left flex flex_row items_center m-l_4">
               <div>
-                Blood pressure at goal?
-              </div>
-              <div class="tooltip-container m-l_3 ">
-                <div class="tooltip-content">
-                  <p>BP&gt; 130&Backslash;&lt;80 mm Hg</p>
-                </div>
+                Systolic BP ≤130 and diastolic BP ≤80 mm Hg?
               </div>
             </div>
             <div id="bloodPressureGoal" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
