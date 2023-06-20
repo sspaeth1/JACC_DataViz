@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css"  type="text/css">
+  <link rel="stylesheet" href="./css/ccdGuideline.css"  type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/color-code_LOE_COR.css" type="text/css">
+  <link rel="stylesheet" href="./css/toast.css" type="text/css">
+  <link rel="stylesheet" href="./css/ccdStyle.css" type="text/css">
+
+
+
+  <title>CCD Guidelines Interactive Tool</title>
+</head>
+
+ <script type="text/javascript" src="js/setbuttonSelectionToEmpty.js"></script>
+
+
+<body>
+  <main class="ccdGuidlineMain  flex flex_column m_auto  max-w_30 max-w_60:md bg_acc-4 br_1 br_primary br_solid">
+
+    <div class="ccdGuidlineHeader  text_center  ">
+        <h1 class="font_4 m-b_n3 ">JACC Chronic Coronary Disease Guideline Interactive Tool: Reevaluating Medications at Every Visit</h1>
+        <h2 class="font_1 font_light">Use this tool to reevaluate chronic coronary disease patient medications at every visit.</h2>
+    </div>
+    <section class="selectedEvalOrRec flex flex_row  h_auto justify_around br_1 br_primary br_solid br-l_0 br-r_0 text_center">
+      <div id="btnTabEval" class="ccdSelectedTab flex_basis-50   font_2 p_4">Evaluate</div>
+      <div id="btnTabRec" class=" flex_basis-50 font_2 p_4">Recommendations</div>
+    </section>
+    <section
+      class="toggleEvalrecs flex flex_column items_start justify_start toggleEvalrecs w_100 p_3 p-t_0 bg_white-6 min-h_80 m-b_5">
+
+      <div id="displayEvalQuestions"  class="w_100">
+
+        <div class="ccdQsReset flex flex_row c_secondary-1  w_100 justify_between">
+          <div class="left ccdQsReset">
+
+          </div>
+          <div class="right"></div>
+          <div class="flex flex-column">
+            <div>
+              <div id="btnResetAll" class=" flex flex_row justify_between">
+                <div>
+                  <p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 m-b_3 "> Reset All
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="questionsBox br_1 br_primary br_solid p_2 w_100 bg_white">
+          <div
+            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                MI within last year
+              </div>
+              <div class="tooltip-container m-l_3">
+                <div class="tooltip-content">
+                  <p>This panel displays a summary.</p>
+                </div>
+              </div>
+            </div>
+            <div id="mi" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div
+            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Type 2 diabetes?
+              </div>
+            </div>
+            <div id="diabetes" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+          <div
+            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                History of HFrEF?
+              </div>
+            </div>
+            <div id="hxHFrEF" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_column flex_row:md justify_between p-b_3 m-b_3 br-b_1 br_solid br_primary-3">
+            <div class="flex flex_row items_center justify_between left m-l_4 ">
+
+                <div>
+                  LVEF
+                </div>
+              </div>
+              <div  class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+                <div
+                  id="LVEFlessOrEqual40" class="btnLVEF bg_grey br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="N">
+                  &leq; 40%</div>
+                <div
+                  id="LVEF41to49" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="N">
+                  41-49%</div>
+                <div
+                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_grey br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center" data-yn="N">
+                  &geq; 50%</div>
+              </div>
+
+          </div>
+
+
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                LDL-C at goal
+              </div>
+              <div class="tooltip-container m-l_3">
+                <div class="tooltip-content">
+                  <p>LDL-C ≥ 70 mg/dL</p>
+                </div>
+              </div>
+            </div>
+            <div id="LDL-C_goal" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On maximally tolerated statin therapy?
+              </div>
+            </div>
+            <div id="maxStatin" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On a beta-blocker?
+              </div>
+            </div>
+            <div id="betaBlocker" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Blood pressure at goal?
+              </div>
+              <div class="tooltip-container m-l_3 ">
+                <div class="tooltip-content">
+                  <p>BP&gt; 130&Backslash;&lt;80 mm Hg</p>
+                </div>
+              </div>
+            </div>
+            <div id="bloodPressureGoal" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_column flex_row:md justify_between m-b_3">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Angina?
+              </div>
+            </div>
+            <div id="angina" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_grey br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_grey c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div id="hiddenSubmit" class="br_radius c_white float_left font_2 h:bg_primary-4  m-r_0 m-t_4 m_3 p_4 p_5 w_20">  </div>
+
+          <div id='btnCCD_Submit'
+            class="btnSubmit texture_cross p_4 c_white bg_grey h:bg_primary-3 h:bg_accent-2 h:c_alert m_3 m-t_5 w_40 m-r_0 float_right font_2 br_radius text_center">
+            Submit
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div id="displayReturnRecs" class="display_none w_100">
+      <div id="recsDefault" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
+                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
+                </div>
+
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+ <div id="toast"><div id="desc">Please complete all of the evaluation questions in the Evaluate tab <br> then click submit to see recommendations here</div></div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+<script src="js/ccdBundle.js" type="text/javascript"></script></body>
+
+</html>
