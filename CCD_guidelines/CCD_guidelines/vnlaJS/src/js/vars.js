@@ -79,8 +79,9 @@ let corObj = {
     "2a": { "num": "2a", "color": "bg_cor-IIA" },
     "2b": { "num": "2b", "color": "bg_cor-IIB" },
     "3": { "num": "3", "color": "bg_cor-III" },
+    "3harm": { "num": "3", "color": "bg_cor-III-HARM" },
+    "3noBenefit": { "num": "3", "color": "bg_cor-III-NOBENIFIT" }
 };
-
 
 
 //Btn vars
