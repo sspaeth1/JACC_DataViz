@@ -15,12 +15,6 @@ function addDefaultRecs(){
     appendElementToCategory(localCategory, "2b", "Colchicine for secondary prevention may be considered");
     createCardLink(localCategory)
 
-    localCategory = 'Lipid Management'
-    createGuidelindCardAndHeader(localCategory)
-    appendElementToCategory(localCategory, "1", "High-intensity statin therapy is recommended");
-    createCardLink(localCategory)
-
-
 }
 
 

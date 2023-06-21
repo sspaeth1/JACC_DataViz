@@ -29,7 +29,8 @@ console.log("existingChild", Boolean(existingChild))
 
             // Append the main container div to the main tag
             mainContainer.appendChild(headerDiv);
-            selectedDiv.appendChild(mainContainer)
+            // selectedDiv.appendChild(mainContainer)
+            selectedDiv.insertBefore(mainContainer, selectedDiv.firstChild)
         }
     });
 }

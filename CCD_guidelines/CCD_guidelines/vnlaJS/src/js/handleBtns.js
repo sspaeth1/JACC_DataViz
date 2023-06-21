@@ -1,21 +1,3 @@
-//handle add Return To Eval Button
-function addReturnToEvalButton(){
-
-    const buttonDiv = document.createElement('div');
-            buttonDiv.id = 'btnReturn';
-
-
-            const buttonElement = document.createElement('p');
-            buttonElement.classList.add("p_4",  "c_white","h:bg_accent-3", "h:c_alert",  "h:c_primary", "m_3","m-t_5", "m-r_0", "float_right", "font_2", "br_radius", "text_center", "bg_accent");
-            buttonElement.textContent = 'Return to evaluation';
-
-
-            buttonDiv.appendChild(buttonElement);
-         selectedDiv.appendChild(buttonDiv);
-
- }
-
-
 //Handle three choice buttons/ LVEF
      grabLVEFBtns.forEach(btn => {
         btn.addEventListener('click', (event) => {
@@ -26,17 +8,18 @@ function addReturnToEvalButton(){
             if (otherBtn === btn) {
               // otherBtn.style.backgroundColor = 'bg_success';
               event.target.classList.toggle('bg_success')
+              event.target.classList.toggle('bg_black-4')
               // console.log(buttonSelection[event.target.id])
                buttonSelection[otherBtn.id] = "Y"
               //  event.target.dataset.yn = "Y"
               console.log( "btn:", btn.id)
             } else {
-              // otherBtn.style.backgroundColor = 'bg_grey';
-              otherBtn.classList.contains('bg_success') ? otherBtn.classList.remove('bg_success') : "";
-              otherBtn.classList.contains('bg_alert') ? otherBtn.classList.add('bg_alert') : "";
+              if(otherBtn.classList.contains('bg_success')){
+                otherBtn.classList.remove('bg_success') ;
+                 otherBtn.classList.add('bg_black-4')
+              }
+              // otherBtn.classList.contains('bg_black-4') ? otherBtn.classList.add('bg_black-4') : "";
               otherBtn.classList.contains('shadow_emboss-bold') ? otherBtn.classList.remove('shadow_emboss-bold') : "";
-
-              console.log( "otherBtn:", otherBtn.id)
               buttonSelection[otherBtn.id] = "N"
 
             }
@@ -50,26 +33,26 @@ function addReturnToEvalButton(){
 
 
         if (event.target.classList.contains('btnYes')) {
-          event.target.classList.toggle('bg_grey')
+          event.target.classList.toggle('bg_black-4')
           event.target.classList.toggle('bg_success')
           event.target.classList.toggle('shadow_emboss-bold')
 
           event.target.nextElementSibling.classList.contains('shadow_emboss-bold') ? event.target.nextElementSibling.classList.remove('shadow_emboss-bold') : "";
 
           event.target.nextElementSibling.classList.contains('bg_alert') ? event.target.nextElementSibling.classList.remove('bg_alert','shadow_emboss-bold') : "";
-          event.target.nextElementSibling.classList.contains('bg_grey') ? "" : event.target.nextElementSibling.classList.add('bg_grey')
+          event.target.nextElementSibling.classList.contains('bg_black-4') ? "" : event.target.nextElementSibling.classList.add('bg_black-4')
 
         }
 
         if (event.target.classList.contains('btnNo')) {
-          event.target.classList.toggle('bg_grey')
+          event.target.classList.toggle('bg_black-4')
           event.target.classList.toggle('bg_alert')
           event.target.classList.toggle('shadow_emboss-bold')
 
           event.target.previousElementSibling.classList.contains('shadow_emboss-bold') ? event.target.previousElementSibling.classList.remove('shadow_emboss-bold') : "";
 
           event.target.previousElementSibling.classList.contains('bg_success') ? event.target.previousElementSibling.classList.remove('bg_success','shadow_emboss-bold') : "";
-          event.target.previousElementSibling.classList.contains('bg_grey') ? "" : event.target.previousElementSibling.classList.add('bg_grey')
+          event.target.previousElementSibling.classList.contains('bg_black-4') ? "" : event.target.previousElementSibling.classList.add('bg_black-4')
         }
       }
 
@@ -79,8 +62,9 @@ function lockUnlockBtnSubmit() {
         console.log(buttonSelection) //Object.values(buttonSelection))
 
         if(Object.values(buttonSelection).every(item=> item != "")){
+          btnCCD_Submit.classList.remove('bg_black-5')
                 btnCCD_Submit.classList.remove('texture_cross')
-                btnCCD_Submit.classList.add('bg_accent')
+                btnCCD_Submit.classList.add('bg_primary')
         }
 };
 
@@ -102,11 +86,11 @@ function lockUnlockBtnSubmit() {
         grabYesNoBtns.forEach(element => {
           element.classList.contains('bg_success') ? element.classList.remove('bg_success', 'shadow_emboss-bold') : "";
           element.classList.contains('bg_alert') ? element.classList.remove('bg_alert','shadow_emboss-bold') : "";
-          element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
+          element.classList.contains('bg_black-4') ? '' : element.classList.add('bg_black-4');
         })
         grabLVEFBtns.forEach(element => {
           element.classList.contains('bg_success') ? element.classList.remove('bg_success','shadow_emboss-bold') : "";
-          element.classList.contains('bg_grey') ? '' : element.classList.add('bg_grey');
+          element.classList.contains('bg_black-4') ? '' : element.classList.add('bg_black-4');
         })
 
        btnCCD_Submit.classList.contains('bg_accent')? btnCCD_Submit.classList.remove('bg_accent'): "";
@@ -139,7 +123,6 @@ btnCCD_Submit.addEventListener('click', () => {
              }
            showRecsHideEvalTab()
                //clear previous
-         selectedDiv.innerHTML = ""
            performMatchingAndAddGuidelines()
            addDefaultRecs()
            addReturnToEvalButton()
@@ -154,7 +137,6 @@ btnCCD_Submit.addEventListener('click', () => {
            showRecsHideEvalTab()
 
          //clear previous
-         selectedDiv.innerHTML = ""
            performMatchingAndAddGuidelines()
            addDefaultRecs()
            addReturnToEvalButton()

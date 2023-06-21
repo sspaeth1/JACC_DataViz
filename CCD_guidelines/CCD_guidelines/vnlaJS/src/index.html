@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/journal_uc.min-1683811901.css"  type="text/css">
-  <link rel="stylesheet" href="./css/ccdGuideline.css"  type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -49,7 +48,7 @@
             <div>
               <div id="btnResetAll" class=" flex flex_row justify_between">
                 <div>
-                  <p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 m-b_3 "> Reset All
+                  <p class="evalRestartText h:bg_primary h:c_white br_radius m-b_2 p-l_5 p_3 bg_primary-4 m-b_3"> Reset All
                   </p>
                 </div>
               </div>
@@ -59,9 +58,26 @@
         </div>
 
 
+
         <div class="questionsBox br_1 br_primary br_solid p_2 w_100 bg_white">
-          <div
-            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light ">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                Angina?
+              </div>
+            </div>
+            <div id="angina" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_black-4 br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_black-4 c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
             <div class="left flex flex_row items_center m-l_4">
               <div>
                 MI within last year
@@ -79,7 +95,7 @@
 
 
           <div
-            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
             <div class="left flex flex_row items_center m-l_4">
               <div>
                 Type 2 diabetes?
@@ -96,13 +112,13 @@
           </div>
 
           <div
-            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid br_primary-3 m-b_3">
+            class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
             <div class="left flex flex_row items_center m-l_4">
               <div>
                 History of HFrEF?
               </div>
               <div class="tooltip-container m-l_3 ">
-                <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                <i class="info-icon material-icons"><img src="./imgs/icon-info.svg"></i>
                 <div class="tooltip-content">
                   <p>Heart failure with reduced ejection fraction</p>
                 </div>
@@ -119,28 +135,29 @@
           </div>
 
 
-          <div class="question flex flex_column flex_row:md justify_between p-b_3 m-b_3 br-b_1 br_solid br_primary-3">
-            <div class="flex flex_row items_center justify_between left m-l_4 ">
-
+          <div class="question flex flex_column flex_row:md justify_between m-b_3 br-b_1 br_solid br_primary-3">
+            <div class="flex flex_row items_center justify_between left m-l_4 font_3 font_light">
+            <div class="left flex flex_row items_center">
                 <div>
                   LVEF
                 </div>
                 <div class="tooltip-container m-l_3 ">
-                  <i class="info-icon material-icons"><img src="./imgs/icon-question-gray.png"></i>
+                  <i class="info-icon material-icons"><img src="./imgs/icon-info.svg"></i>
                   <div class="tooltip-content">
                     <p>Left ventricular ejection fraction</p>
                   </div>
                 </div>
+            </div>
               </div>
               <div  class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
                 <div
-                  id="LVEFlessOrEqual40" class="btnLVEF bg_black-4 br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="N">
+                  id="LVEFlessOrEqual40" class="btnLVEF bg_black-4 br_radius a:bg_alert c_white h:bg_success h:c_white p-x_4 p-y_3 text_center font_3 font_light " data-yn="N">
                   &leq; 40%</div>
                 <div
-                  id="LVEF41to49" class="btnLVEF bg_black-4 br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="N">
+                  id="LVEF41to49" class="btnLVEF bg_black-4 br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center font_3 font_light" data-yn="N">
                   41-49%</div>
                 <div
-                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_black-4 br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center" data-yn="N">
+                  id="LVEFgreaterOrEqual50" class="btnLVEF bg_black-4 br_radius  c_white h:bg_success h:c_white p-x_4 p-y_3 text_center font_3 font_light" data-yn="N">
                   &geq; 50%</div>
               </div>
 
@@ -148,7 +165,7 @@
 
 
 
-          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
             <div class="left flex flex_row items_center m-l_4">
               <div>
                 LDL-Cholesterol ≤70 mg/dL?
@@ -165,41 +182,7 @@
           </div>
 
 
-          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
-            <div class="left flex flex_row items_center m-l_4">
-              <div>
-                On maximally tolerated statin therapy?
-              </div>
-            </div>
-            <div id="maxStatin" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
-              <div
-                class="bg_black-4 br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
-                Yes</div>
-              <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_black-4 c_white text_center br_radius " data-yn="N">
-               No</div>
-            </div>
-          </div>
-
-
-          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
-            <div class="left flex flex_row items_center m-l_4">
-              <div>
-                On a beta-blocker?
-              </div>
-            </div>
-            <div id="betaBlocker" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
-              <div
-                class="bg_black-4 br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
-                Yes</div>
-              <div
-                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_black-4 c_white text_center br_radius " data-yn="N">
-               No</div>
-            </div>
-          </div>
-
-
-          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3">
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
             <div class="left flex flex_row items_center m-l_4">
               <div>
                 Systolic BP ≤130 and diastolic BP ≤80 mm Hg?
@@ -216,13 +199,30 @@
           </div>
 
 
-          <div class="question flex flex_column flex_row:md justify_between m-b_3">
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
             <div class="left flex flex_row items_center m-l_4">
               <div>
-                Angina?
+                On maximally tolerated statin therapy?
               </div>
             </div>
-            <div id="angina" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+            <div id="maxStatin" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
+              <div
+                class="bg_black-4 br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
+                Yes</div>
+              <div
+                class="btnNo  h:bg_alert h:c_white p-x_4 p-y_3 bg_black-4 c_white text_center br_radius " data-yn="N">
+               No</div>
+            </div>
+          </div>
+
+
+          <div class="question flex flex_column flex_row:md justify_between br-b_1 br_solid br_primary-3 m-b_3 br-b_1 br_solid m-b_3 font_3 font_light">
+            <div class="left flex flex_row items_center m-l_4">
+              <div>
+                On a beta-blocker?
+              </div>
+            </div>
+            <div id="betaBlocker" class="flex flex_row gap_3 btnSet m-l_4 m-t_2 m-b_3" data-selected-choice="">
               <div
                 class="bg_black-4 br_radius btnYes c_white h:bg_success h:c_white p-x_4 p-y_3 text_center " data-yn="Y">
                 Yes</div>
@@ -246,10 +246,26 @@
 
 
       <div id="displayReturnRecs" class="display_none w_100">
-      <div id="recsDefault" class="br_1 br_primary br_solid font_2 font_light p_2 p_4 m-t_4 bg_white">
-                    Please complete all of the evaluation questions in  the Evaluate tab then click submit to see recommendations here
-                </div>
 
+        <div id="corLegend">
+          <div id="recsDefault" class="font_2 font_light p_2 p_4 m-t_4">
+              <div class="c_black-7 font_display font_n1 m-b_2 m-t_3">
+                Class of Recommendations (COR)
+              </div>
+                <div class="c_bl flex font_display font_n2 items_center justify_center">
+                  <span class="bg_cor-I flex items_center m_0 min-h_0:md min-h_2xlh p-x_4 p-y_3 text_center w_20">1 (strong)</span>
+                  <span class="bg_cor-IIA flex items_center m_0 min-h_0:md min-h_2xlh p-x_4 p-y_3 text_center w_20">2a (Moderate)</span>
+                  <span class="bg_cor-IIB flex items_center m_0 min-h_0:md min-h_2xlh p-x_4 p-y_3 text_center w_20">2b (Weak)</span>
+                  <span class="bg_cor-III-NOBENIFIT flex items_center m_0 min-h_0:md min-h_2xlh p-x_4 p-y_3 text_center w_20">3 (No Benefit)</span>
+                  <span class="bg_cor-III-HARM flex items_center m_0 min-h_0:md min-h_2xlh p-x_4 p-y_3 text_center w_20">3 (harm)</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="btnReturn">
+          <p class="p_4 c_white h:bg_primary-3 h:c_primary m_3 m-t_5 m-r_0 float_right font_2 br_radius text_center bg_primary">
+            Return to evaluation</p>
+        </div>
 
       </div>
 

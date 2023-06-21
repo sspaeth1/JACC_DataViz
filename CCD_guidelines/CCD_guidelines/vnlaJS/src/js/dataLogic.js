@@ -84,6 +84,10 @@ localCategory = "Lipid Management"
 
         }
 
+        //auto rec
+        createGuidelindCardAndHeader(localCategory)
+        appendElementToCategory(localCategory, "1", "High-intensity statin therapy is recommended");
+
 createCardLink(localCategory)
 
 
