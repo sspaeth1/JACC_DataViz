@@ -24,21 +24,14 @@ body {
   border-top: 11px solid transparent;
 }
 
-.question {
-  font-weight: 300;
-  font-size: 1.4rem;
+.tooltip-container > i >  img{
+  height: 1rem;
+  width: 1rem;
 }
+
 
 .bg_alert {
   background-color: rgb(207, 76, 76) !important;
-}
-
-.bg_green {
-  background-color: rgb(12, 131, 82);
-}
-
-.bg_grey {
-  background-color: rgb(156, 156, 156);
 }
 
 .texture_cross{
@@ -66,4 +59,76 @@ body {
 .guidelineButtonInfluence{
   font-size: 1rem ;
   font-weight: 100;
+}
+
+
+
+section.selectedEvalOrRec section.toggleEvalrecs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-container {
+  position: relative;
+}
+.tooltip-container:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.25s all ease;
+  transition-delay: 0s;
+  top: -75px;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: #fff;
+  left: -36px;
+  top: -58px;
+  padding: 0 15px;
+  margin: 16px;
+  font-size: 15px;
+  width: 250px;
+  transition: 0.25s all ease;
+  transition-delay: 0.25s;
+  z-index: 2;
+  color: #004176;
+  box-shadow: 2px 2px 5px #9a9a9a;
+}
+.tooltip-content:after {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  top: 100%;
+  left: 17px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+p.guidelineItem{
+  position: relative;
+}
+
+p.guidelineItem:before{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;
+  content:"I";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.25rem;
+
+}
+
+p.guidelineItem.IIb:before{
+  content:"IIb";
+}
+
+.br-l_10{
+  border: 0;
+  border-left: 2rem solid;
 }
