@@ -6,7 +6,7 @@ function appendElementToCategory(localCategory, corRating, guideline, cor3option
     guidelineContainer.className = "flex items_center justify_center m-b_2 m-t_2";
     let div_corIndicator = document.createElement("div");
     // div_corIndicator.className = `${corObj[corRating].color} h_10 w_10 flex items_center justify_center c_white`;
-    div_corIndicator.className = ` h_10 w_10 flex items_center justify_center c_white`;
+    div_corIndicator.className = ` h_10 w_10 flex items_center justify_center c_white font_medium`;
     div_corIndicator.classList.add(corObj[corRating].color)
     div_corIndicator.textContent = corObj[corRating].num;
     let div_guidelineTextOuter = document.createElement("div");
