@@ -24,7 +24,7 @@ body {
   border-top: 11px solid transparent;
 }
 
-.tooltip-container > i >  img{
+.tooltip-container > img{
   height: 1rem;
   width: 1rem;
 }
