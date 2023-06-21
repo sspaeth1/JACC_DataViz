@@ -57,17 +57,6 @@
       }
 
 
-// handle lockUnlockBtnSubmit
-function lockUnlockBtnSubmit() {
-        console.log(buttonSelection) //Object.values(buttonSelection))
-
-        if(Object.values(buttonSelection).every(item=> item != "")){
-          btnCCD_Submit.classList.remove('bg_black-5')
-                btnCCD_Submit.classList.remove('texture_cross')
-                btnCCD_Submit.classList.add('bg_primary')
-        }
-};
-
 
 
 //// Handle  selection buttons ////
@@ -105,7 +94,6 @@ function lockUnlockBtnSubmit() {
 
 
        addReturnToEvalButton()
-       btnReturn= document.getElementById('btnReturn'),
         btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
 
       })
@@ -115,38 +103,17 @@ function lockUnlockBtnSubmit() {
 // handle submit btn
 
 btnCCD_Submit.addEventListener('click', () => {
-        let buttonIsDisabbled = btnCCD_Submit.classList.contains("texture_cross")
-             if(buttonIsDisabbled){
-                 launch_toast()
-                 // alert('All fields required, please complete and click Submit')
-                 return false
-             }
            showRecsHideEvalTab()
                //clear previous
            performMatchingAndAddGuidelines()
            addDefaultRecs()
            addReturnToEvalButton()
-           btnReturn= document.getElementById('btnReturn'),
-           btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
-       })
-
-
-     //handle hidden submit button
-       btnHiddenSubmit.addEventListener('click', () => {
-        let buttonIsDisabbled = btnHiddenSubmit.classList.contains("texture_cross")
-           showRecsHideEvalTab()
-
-         //clear previous
-           performMatchingAndAddGuidelines()
-           addDefaultRecs()
-           addReturnToEvalButton()
-           btnReturn= document.getElementById('btnReturn'),
            btnReturn.addEventListener('click', () => showEvalsHideRecsTab())
        })
 
 
 
-    // handle change buttonSelection - value selected object
+   // handle change buttonSelection - value selected object
     function selectedChoiseAddedToDataset(event) {
       // console.log(event.target.parentElement.id)
       // console.log(event.target.dataset.yn)
